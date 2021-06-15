@@ -24,21 +24,21 @@ a|
 NONE
 a|
 
-* Provisioning happens using the same IPv6 or IPv4 address type of data LIF as the type of cluster or management LIF used for adding the storage.
-* If the same IPv6 or IPv4 address type of data LIF is not present in the , then the provisioning happens through the other type of data LIF, if available.
+* Provisioning happens using the same IPv6 or IPv4 address type of data LIF as the type of cluster or SVM management LIF used for adding the storage.
+* If the same IPv6 or IPv4 address type of data LIF is not present in the SVM, then the provisioning happens through the other type of data LIF, if available.
 
 a|
 IPv4
 a|
 
-* Provisioning happens using the IPv4 data LIF in the selected .
-* If the does not have an IPv4 data LIF, then the provisioning happens through the IPv6 data LIF, if it is available in the .
+* Provisioning happens using the IPv4 data LIF in the selected SVM.
+* If the SVM does not have an IPv4 data LIF, then the provisioning happens through the IPv6 data LIF, if it is available in the SVM.
 
 a|
 IPv6
 a|
 
-* Provisioning happens using the IPv6 data LIF in the selected .
-* If the does not have an IPv6 data LIF, then the provisioning happens through the IPv4 data LIF, if it is available in the .
+* Provisioning happens using the IPv6 data LIF in the selected SVM.
+* If the SVM does not have an IPv6 data LIF, then the provisioning happens through the IPv4 data LIF, if it is available in the SVM.
 
 |===

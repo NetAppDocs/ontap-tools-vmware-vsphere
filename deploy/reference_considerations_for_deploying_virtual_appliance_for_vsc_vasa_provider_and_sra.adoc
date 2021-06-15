@@ -40,7 +40,7 @@ VSC overwrites the standard roles with the current defaults each time you restar
 a|
 Regenerating an SSL certificate for VSC
 a|
-The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate.link:task_regenerating_an_ssl_certificate_for_vsc.md#[Regenerate an SSL certificate for]
+The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate.link:task_regenerating_an_ssl_certificate_for_vsc.md#[Regenerate an SSL certificate for Virtual Storage Console]
 
 a|
 Setting ESXi server values

@@ -69,9 +69,9 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 +
 xref:task_cleaning_the_vsphere_cached_downloaded_plug_in_packages.adoc[Clear the vSphere cached downloaded plug-in packages]
 
-NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install . But for ONTAP 9.7 you do not require to be registered with VASA Provider.
+NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
-xref:task_registering_oncommand_api_services_with_the_virtual_appliance_for_vsc_vasa_provider_and_sra.adoc[Registering with ONTAP tools]
+xref:task_registering_oncommand_api_services_with_the_virtual_appliance_for_vsc_vasa_provider_and_sra.adoc[Registering OnCommand API Services with ONTAP tools]
 
 *Related information*
 

@@ -25,6 +25,6 @@ The adapter is installed either on SRM.
 
 . Verify that the primary ESXi hosts are connected to the LUNs in the primary storage system on the protected site.
 . Verify that the LUNS are in igroups that have the ostype option set to vmware on the primary storage system.
-. Verify that the ESXi hosts at the recovery site have appropriate FC or iSCSI connectivity to the .
+. Verify that the ESXi hosts at the recovery site have appropriate FC or iSCSI connectivity to the storage virtual machine (SVM).
 +
-You can do this either by verifying that the ESXi hosts have local LUNs connected on the or by using the fcp show initiators command or the iscsi show initiators command on the .
+You can do this either by verifying that the ESXi hosts have local LUNs connected on the SVM or by using the fcp show initiators command or the iscsi show initiators command on the SVMs.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 
 summary: 'You can check the log files in the /opt/netapp/vscserver/log directory and the /opt/netapp/vpserver/log directory when you encounter errors.'
 ---
-= and VASA Provider log files
+= Virtual Storage Console and VASA Provider log files
 :icons: font
 :imagesdir: ../media/
 

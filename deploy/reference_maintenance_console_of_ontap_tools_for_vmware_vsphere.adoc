@@ -89,4 +89,4 @@ a|
 |===
 *Related information*
 
-xref:concept_virtual_storage_console_and_vasa_provider_log_files.adoc[and VASA Provider log files]
+xref:concept_virtual_storage_console_and_vasa_provider_log_files.adoc[Virtual Storage Console and VASA Provider log files]

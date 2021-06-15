@@ -2,17 +2,17 @@
 permalink: deploy/task_discovering_storage_systems_and_hosts.html
 sidebar: sidebar
 keywords: 
-summary: 'When you first run \(VSC\) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.'
+summary: 'When you first run Virtual Storage Console \(VSC\) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.'
 ---
 = Discover storage systems and hosts
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When you first run (VSC) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.
+When you first run Virtual Storage Console (VSC) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.
 
 * All of the ESXi hosts must be powered on and connected.
-* All the to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI or FC).
+* All the storage virtual machines (SVMs) to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI or FC).
 
 You can discover new storage systems or update information about existing storage systems to obtain the latest capacity and configuration information at any time. You can also modify the credentials that VSC uses to log in to the storage systems.
 

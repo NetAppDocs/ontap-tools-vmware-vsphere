@@ -36,7 +36,7 @@ entries:
     - title: "<strong>Enable VASA Provider for configuring virtual datastores</strong>"
       url: "/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html"
       entries:
-      - title: Registering with ONTAP tools
+      - title: Registering OnCommand API Services with ONTAP tools
         url: "/deploy/task_registering_oncommand_api_services_with_the_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
     - title: Install the NFS VAAI plug-in
       url: "/deploy/task_installing_the_nfs_vaai_plug_in.html"
@@ -72,7 +72,7 @@ entries:
           url: "/deploy/task_running_the_gos_timeout_scripts_for_solaris.html"
         - title: Setting timeout values for Linux guest operating systems
           url: "/deploy/task_running_the_gos_timeout_scripts_for_rhel4_or_sles9.html"
-    - title: Regenerate an SSL certificate for
+    - title: Regenerate an SSL certificate for Virtual Storage Console
       url: "/deploy/task_regenerating_an_ssl_certificate_for_vsc.html"
     - title: Requirements for registering VSC in multiple vCenter Servers environment
       url: "/deploy/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html"
@@ -100,7 +100,7 @@ entries:
       url: "/deploy/task_configuring_vasa_provider_to_work_with_ssh.html"
     - title: Configure remote diagnostic access
       url: "/deploy/task_configuring_vasa_provider_to_use_ssh_for_remote_diag_access.html"
-    - title: and VASA Provider log files
+    - title: Virtual Storage Console and VASA Provider log files
       url: "/deploy/concept_virtual_storage_console_and_vasa_provider_log_files.html"
     - title: Collect the log files
       url: "/deploy/task_collect_the_log_files.html"

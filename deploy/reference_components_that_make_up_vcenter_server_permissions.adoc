@@ -29,6 +29,8 @@ As the following diagram illustrates, you must have all three elements in order 
 
 NOTE: In this diagram, the gray boxes indicate components that exist in the vCenter Server, and the white boxes indicate components that exist in the operating system where the vCenter Server is running.
 
+image::../media/permission_updated_graphic.gif[]
+
 == Privileges
 
 Two kinds of privileges are associated with ONTAP® tools for VMware vSphere:

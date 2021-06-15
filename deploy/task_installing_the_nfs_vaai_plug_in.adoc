@@ -2,16 +2,16 @@
 permalink: deploy/task_installing_the_nfs_vaai_plug_in.html
 sidebar: sidebar
 keywords: 
-summary: 'You can install the NFS Plug-in for VMware vStorage APIs for Array Integration \(VAAI\) using the GUI of ONTAP tools for VMware vSphere.'
+summary: 'You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration \(VAAI\) using the GUI of ONTAP tools for VMware vSphere.'
 ---
 = Install the NFS VAAI plug-in
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can install the NFS Plug-in for VMware vStorage APIs for Array Integration (VAAI) using the GUI of ONTAP tools for VMware vSphere.
+You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration (VAAI) using the GUI of ONTAP tools for VMware vSphere.
 
-* You should have downloaded the installation package for the NFS Plug-in for VAAI (.vib) from .
+* You should have downloaded the installation package for the NFS Plug-in for VAAI (.vib) from the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 
@@ -21,10 +21,10 @@ https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 +
 These values are set automatically on the ESXi host when the Recommended Settings dialog box is updated.
 
-* You should have enabled the vstorage option on the by using the vserver nfs modify -vserver vserver_name -vstorage enabled command.
-* You should have ESXi 7.0 update1 or later if you are using NFS VAAI plug-in 2.0.
+* You should have enabled the vstorage option on the storage virtual machine (SVM) by using the vserver nfs modify -vserver vserver_name -vstorage enabled command.
+* You should have ESXi 7.0 update1 or later if you are using NetApp NFS VAAI plug-in 2.0.
 
-. Rename the .vib file that you downloaded from to NetAppNasPlugin.vib to match the predefined name that VSC uses.
+. Rename the .vib file that you downloaded from the NetApp Support Site to NetAppNasPlugin.vib to match the predefined name that VSC uses.
 . Click *Settings* in the ONTAP tools home page.
 . Click *NFS VAAI Tools* tab.
 . Click *Change* in the Existing version section.

@@ -2,14 +2,14 @@
 permalink: deploy/task_configuring_esx_server_multipathing_and_timeout_settings.html
 sidebar: sidebar
 keywords: 
-summary: 'ONTAP® tools for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with storage systems.'
+summary: 'ONTAP® tools for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with NetApp storage systems.'
 ---
 = Configure ESXi server multipathing and timeout settings
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-ONTAP® tools for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with storage systems.
+ONTAP® tools for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with NetApp storage systems.
 
 This process might take a long time, depending on your configuration and system load. The task progress is displayed in the Recent Tasks panel. As the tasks are completed, the host status Alert icon is replaced by the Normal icon or the Pending Reboot icon.
 
