@@ -1,0 +1,49 @@
+---
+permalink: deploy/task_cleaning_the_vsphere_cached_downloaded_plug_in_packages.html
+sidebar: sidebar
+keywords: clean up browser cache
+summary: 'If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.'
+---
+= Clear the vSphere cached downloaded plug-in packages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.
+
+. Logout from your existing vSphere web client or vSphere Client.
+. Remove the browser cache.
+. Remove the vSphere Client cached plug-in packages.
++
+|===
+| If you are using...| Perform the following...
+a|
+*Windows vCenter server*
+a|
+Remove the following folders com.netapp.vasa.vvol.webclient-x.x.x.xxxx, com.netapp.nvpf.webclient-x.x.x.xxxx, and com.netapp.vsch5-x.x.x.xxxx located at:
+
+ ** vSphere Web Client path: C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity
+ ** vSphere Client(HTML5) path: C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity
+
+a|
+*VCSA*
+a|
+
+ .. SSH into the VCSA appliance.
+ .. Change directories to the vCenter web client UI extensions directory using cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity
+ .. Remove the cached plugin packages using the commands:
+  *** rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx
+  *** rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx
+  *** rm -rf com.netapp.vsch5-x.x.x.xxxx
+ .. Change directories to the vCenter client(HTML5) UI extensions directory using cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity
+ .. Remove the cached plugin packages using the commands:
+  *** rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx
+  *** rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx
+  *** rm -rf com.netapp.vsch5-x.x.x.xxxx
+
++
+|===
+
+. Login to vSphere and restart vSphere Web client and vSphere Client services by using the following commands:
+ ** service-control --stop vsphere-client vsphere-ui
+ ** service-control --start vsphere-client vsphere-ui

@@ -1,0 +1,71 @@
+---
+permalink: deploy/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html
+sidebar: sidebar
+keywords: 
+summary: 'You must configure ONTAP role-based access control \(RBAC\) on the storage system if you want to use role-based access control with ONTAP® tools for VMware vSphere. You can create one or more custom user accounts with limited access privileges with the ONTAP RBAC feature.'
+---
+= How to configure ONTAP role-based access control for ONTAP® tools for VMware vSphere
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must configure ONTAP role-based access control (RBAC) on the storage system if you want to use role-based access control with ONTAP® tools for VMware vSphere. You can create one or more custom user accounts with limited access privileges with the ONTAP RBAC feature.
+
+VSC and SRA can access storage systems at either the cluster level or the level. If you are adding storage systems at the cluster level, then you must provide the credentials of the admin user to provide all of the required capabilities. If you are adding storage systems by directly adding details, you must be aware that the "`vsadmin`" user does not have all of the required roles and capabilities to perform certain tasks.
+
+VASA Provider can access storage systems only at the cluster level. If VASA Provider is required for a particular storage controller, then the storage system must be added to VSC at the cluster level even if you are using VSC or SRA.
+
+To create a new user and to connect a cluster or an to ONTAP tools, you should perform the following:
+
+* Create a cluster administrator or an administrator role
++
+NOTE: You can use one of the following to create these roles:
+
+ ** ONTAP 9.8
++
+link:task_configure_user_role_and_privileges.md#[Configure user roles and privileges]
+
+ ** RBAC User Creator for ONTAP tool (if using ONTAP 9.6 or earlier)
++
+https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203/t5/Virtualization-Articles-and-Resources/How-to-use-the-RBAC-User-Creator-for-Data-ONTAP/ta-p/86601[RBAC User Creator tool for VSC, VASA Provider and Storage Replication Adapter 7.0 for VMware vSphere]
+
+* Create users with the role assigned and the appropriate application set using ONTAP
++
+You require these storage system credentials to configure the storage systems for VSC. You can configure storage systems for VSC by entering the credentials in VSC. Each time you log in to a storage system with these credentials, you will have permissions to the VSC functions that you had set up in ONTAP while creating the credentials.
+
+* Add the storage system to VSC and provide the credentials of the user that you just created
+
+== VSC roles
+
+VSC classifies the ONTAP privileges into the following set of VSC roles:
+
+* Discovery
++
+Enables the discovery of all of the connected storage controllers
+
+* Create Storage
++
+Enables the creation of volumes and logical unit number (LUNs)
+
+* Modify Storage
++
+Enables the resizing and deduplication of storage systems
+
+* Destroy Storage
++
+Enables the destruction of volumes and LUNs
+
+== VASA Provider roles
+
+You can create only Policy Based Management at the cluster level. This role enables policy-based management of storage using storage capabilities profiles.
+
+== SRA roles
+
+SRA classifies the ONTAP privileges into a SAN or NAS role at either the cluster level or the level. This enables users to run SRM operations.
+
+NOTE: You must refer to the knowledge base articles if you want to manually configure roles and privileges using ONTAP commands.
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/VSC%2C_VASA%2C_and_SRA_7.0_ONTAP_RBAC_Configuration_Version_1[VSC, VASA, and SRA 7.0 ONTAP RBAC Configuration]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Roll_up_of_all_commands_for_VSC_and_SRA_for_SVM_level[Roll up of all commands for VSC and SRA for SVM level]
+
+VSC performs an initial privilege validation of ONTAP RBAC roles when you add the cluster to VSC. If you have added a direct storage IP, then VSC does not perform the initial validation. VSC checks and enforces the privileges later in the task workflow.
