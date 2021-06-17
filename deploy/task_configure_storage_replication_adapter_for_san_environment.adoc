@@ -1,0 +1,30 @@
+---
+permalink: deploy/task_configure_storage_replication_adapter_for_san_environment.html
+sidebar: sidebar
+keywords: 
+summary: 'You must set up the storage systems before running Storage Replication Adapter \(SRA\) for Site Recovery Manager \(SRM\).'
+---
+= Configure Storage Replication Adapter for SAN environment
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must set up the storage systems before running Storage Replication Adapter (SRA) for Site Recovery Manager (SRM).
+
+You must have installed the following programs on the protected site and the recovery site:
+
+* SRM
++
+Documentation about installing SRM is on the VMware site.
++
+https://www.vmware.com/support/pubs/srm_pubs.html[VMware Site Recovery Manager Documentation]
+
+* SRA
++
+The adapter is installed either on SRM.
+
+. Verify that the primary ESXi hosts are connected to the LUNs in the primary storage system on the protected site.
+. Verify that the LUNS are in igroups that have the ostype option set to vmware on the primary storage system.
+. Verify that the ESXi hosts at the recovery site have appropriate FC or iSCSI connectivity to the storage virtual machine (SVM).
++
+You can do this either by verifying that the ESXi hosts have local LUNs connected on the SVM or by using the fcp show initiators command or the iscsi show initiators command on the SVMs.
