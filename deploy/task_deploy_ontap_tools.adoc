@@ -1,0 +1,78 @@
+---
+permalink: deploy/task_deploy_ontap_tools.html
+sidebar: sidebar
+keywords: 
+summary: 'You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.'
+---
+= Deploy ONTAP tools for VMware vSphere
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.
+
+* You must be running a supported release of vCenter Server.
++
+NOTE: ONTAP tools can be registered either with a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
++
+https://mysupport.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&src=IMT[Interoperability Matrix Tool: VSC 9.7]
+
+* You must have configured and set up your vCenter Server environment.
+* You must have set up an ESXi host for your virtual machine.
+* You must have downloaded the .ova file.
+* You must have the administrator login credentials for your vCenter Server instance.
+* You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
++
+xref:task_clean_the_vsphere_cached_downloaded_plug_in_packages.adoc[Clear the vSphere cached downloaded plug-in packages]
+
+* You must have enabled Internet Control Message Protocol (ICMP ).
++
+If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
+
+If you are deploying a fresh installation of ONTAP tools, then VASA Provider is enabled by default. But in case of an upgrade from an earlier release of the ONTAP tools, the state of VASA Provider is retained and you might need to enable VASA Provider manually.
+
+link:task_enable_vasa_provider_for_configuring_virtual_datastores.md#[Enable VASA Provider for configuring virtual datastores]
+
+. Log in to the vSphere Client.
+. Select *Home* > *Host & Clusters*.
+. Right-click the required datacenter, and then click *Deploy OVA template*.
+. Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
++
+|===
+| Location| Action
+a|
+URL
+a|
+Provide the URL for the .ova file for ONTAP tools.
+a|
+Folder
+a|
+Select the .ova file for ONTAP tools from the saved location.
+|===
+
+. Enter the details to customize the deployment wizard.
++
+See link:reference_deploment_customization_requirements.md#[Deployment customization considerations] for complete details.
+
+. Review the configuration data, and then click *Next* to finish deployment.
++
+As you wait for deployment to finish, you can view the progress of the deployment from the Tasks tab.
+
+. Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
+. Verify that ONTAP tools is running after the deployment is completed.
+. If ONTAP tools is not registered with any vCenter Server, use https://appliance_ip:8143/Register.html to register the VSC instance.
+. Log out and re-log in to the vSphere Client to view the deployed ONTAP tools.
++
+It might take a few minutes for the plug-in to be updated in the vSphere Client.
++
+*Troubleshooting:* If you cannot view the plug-in even after logging in, you must clean the vSphere Client cache.
++
+xref:task_clean_the_vsphere_cached_downloaded_plug_in_packages.adoc[Clear the vSphere cached downloaded plug-in packages]
+
+NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
+
+xref:task_register_oncommand_api_services_with_ONTAP_tools.adoc[Registering OnCommand API Services with ONTAP tools]
+
+*Related information*
+
+https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Storage_Software%2FVirtual_Storage_Console_for_VMware_vSphere%2FError_during_fresh_deployment_of_virtual_appliance_for_VSC%252C_VASA_Provider%252C_and_SRA[Error during fresh deployment of virtual appliance for VSC, VASA Provider, and SRA]

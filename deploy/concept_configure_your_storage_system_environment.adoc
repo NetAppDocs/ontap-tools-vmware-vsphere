@@ -1,0 +1,27 @@
+---
+permalink: deploy/concept_configure_your_storage_system_environment.html
+sidebar: sidebar
+keywords: 
+summary: 'ONTAP® tools for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console \(VSC\) users to perform tasks by using the storage systems.'
+---
+= Configure ONTAP® tools for VMware vSphere storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+ONTAP® tools for VMware vSphere provides a single mechanism to discover storage systems and to set the storage credentials. The credentials provide the ONTAP permissions that are required to enable Virtual Storage Console (VSC) users to perform tasks by using the storage systems.
+
+Before VSC can display and manage the storage resources, VSC must discover the storage systems. As part of the discovery process, you must supply the ONTAP credentials for your storage systems. These are the privileges (or roles) that are associated with the user name and password pair that is assigned to each storage system. These user name and password pairs use ONTAP role-based access control (RBAC) and must be set up from within ONTAP. You cannot change these credentials from within VSC. You can define ONTAP RBAC roles by using ONTAP System Manager.
+
+NOTE: If you log in as an administrator, you automatically have all of the privileges for that storage system.
+
+When you add a storage system to VSC, you must supply an IP address for the storage system and the user name and password pair that is associated with that system. You can set up default credentials that VSC will use during the storage system discovery process, or you can manually enter credentials when the storage system is discovered. The details of the storage system that is added to VSC are automatically pushed to the extensions that you enable in your deployment. You do not have to manually add storage to VASA Provider and Storage Replication Adapter (SRA). Both VSC and SRA support the addition of credentials at the cluster level and storage virtual machine (SVM) level. VASA Provider supports only cluster-level credentials for adding storage systems.
+
+If your environment includes multiple vCenter Server instances, when you add a storage system to VSC from the Storage Systems page, the Add Storage System dialog box displays a vCenter Server box where you can specify to which vCenter Server instance the storage system is to be added. If you add a storage system by right-clicking a datacenter name, you do not have the option to specify a vCenter Server instance because the server is already associated with that datacenter.
+
+Discovery happens in one of the following ways. In each case, you must supply credentials for any newly discovered storage system.
+
+* When the VSC service starts, VSC begins its automatic background discovery process.
+* You can click the *REDISCOVER All* button in the Storage Systems page, or on a host or datacenter to select it from the *Actions* menu (*Actions* > *Netapp VSC* > *Update Host and Storage Data*). You can also click *DISCOVER* on the Getting Started tab of Overview section.
+
+All of the VSC features require specific permissions to perform tasks. You can limit what users can do based on the credentials that are associated with the ONTAP role. All of the users that have the same storage system user name and password pair share the same set of storage system credentials and can perform the same operations.
