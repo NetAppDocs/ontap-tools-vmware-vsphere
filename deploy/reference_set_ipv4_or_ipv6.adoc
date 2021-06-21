@@ -1,0 +1,44 @@
+---
+permalink: deploy/reference_set_ipv4_or_ipv6.html
+sidebar: sidebar
+keywords: 
+summary: 'There is a new option added to the preference file kaminoprefs.xmlthat you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.'
+---
+= Set IPv4 or IPv6
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There is a new option added to the preference file kaminoprefs.xmlthat you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.
+
+* The default.override.option.provision.mount.datastore.address.family parameter has been added to the kaminoprefs.xml preference file to set a preferred data LIF protocol for datastore provisioning.
++
+This preference is applicable for all of the storage systems added to VSC.
+
+* The values for the new option are `IPv4`, `IPv6`, and `NONE`.
+* By default the value is set to `NONE`.
+
+|===
+| Value| Description
+a|
+NONE
+a|
+
+* Provisioning happens using the same IPv6 or IPv4 address type of data LIF as the type of cluster or SVM management LIF used for adding the storage.
+* If the same IPv6 or IPv4 address type of data LIF is not present in the SVM, then the provisioning happens through the other type of data LIF, if available.
+
+a|
+IPv4
+a|
+
+* Provisioning happens using the IPv4 data LIF in the selected SVM.
+* If the SVM does not have an IPv4 data LIF, then the provisioning happens through the IPv6 data LIF, if it is available in the SVM.
+
+a|
+IPv6
+a|
+
+* Provisioning happens using the IPv6 data LIF in the selected SVM.
+* If the SVM does not have an IPv6 data LIF, then the provisioning happens through the IPv4 data LIF, if it is available in the SVM.
+
+|===

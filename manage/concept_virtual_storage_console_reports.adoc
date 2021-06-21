@@ -1,0 +1,23 @@
+---
+permalink: manage/concept_virtual_storage_console_reports.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the ONTAP tools console Reports menu to view pre-defined reports for all the datastores managed by a selected VSC instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.'
+---
+= ONTAP tools console reports
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the ONTAP tools console *Reports* menu to view pre-defined reports for all the datastores managed by a selected VSC instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.
+
+Reports display detailed information about datastores and virtual machines, that enables you to review and identify potential issues with datastores and virtual machines in your vCenter Server
+
+You can view, sort, and export reports.
+
+Virtual Storage Console (VSC) provides the following pre-defined reports:
+
+* Datastore Report
+* Virtual Machine Report
+* vVols Datastore Report
+* vVols Virtual Machine Report
