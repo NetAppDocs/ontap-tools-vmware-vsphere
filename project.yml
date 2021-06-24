@@ -1,5 +1,14 @@
 sidebar:
-
+  entries:
+    - title: ONTAP tools for VMware Vsphere
+      url: "/index.html"
+    - section: deploy
+    - section: manage
 
 homepage:
-  tiles: 
+  tiles:
+  - title: This is the title of a tile
+    links:
+    - title: This is the title of a link
+      summary: This is the description of the link target
+      url: deploy/index.html
