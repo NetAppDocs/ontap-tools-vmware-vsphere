@@ -1,7 +1,7 @@
 ---
-permalink: deploy/reference_deploment_customization_requirements.html
+permalink: deploy/reference_deployment_customization_requirements.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must consider few limitations while customizing the deployment ONTAP tools.'
 ---
 = Deployment customization considerations
@@ -23,7 +23,7 @@ You must access the maintenance console by using the "`maint`" user name. You ca
 
 You can set the administrator credentials for the vCenter Server while deploying ONTAP tools.
 
-If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: https://<IP>:8143/Register.html where the IP address is of ONTAP tools that you provide during deployment.
+If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: \https://<IP>:8143/Register.html where the IP address is of ONTAP tools that you provide during deployment.
 
 == vCenter Server IP address
 

@@ -1,7 +1,7 @@
 ---
 permalink: deploy/task_deploy_ontap_tools.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.'
 ---
 = Deploy ONTAP tools for VMware vSphere
@@ -31,7 +31,7 @@ If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VS
 
 If you are deploying a fresh installation of ONTAP tools, then VASA Provider is enabled by default. But in case of an upgrade from an earlier release of the ONTAP tools, the state of VASA Provider is retained and you might need to enable VASA Provider manually.
 
-link:task_enable_vasa_provider_for_configuring_virtual_datastores.md#[Enable VASA Provider for configuring virtual datastores]
+link:task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
 
 . Log in to the vSphere Client.
 . Select *Home* > *Host & Clusters*.
@@ -52,7 +52,7 @@ Select the .ova file for ONTAP tools from the saved location.
 
 . Enter the details to customize the deployment wizard.
 +
-See link:reference_deploment_customization_requirements.md#[Deployment customization considerations] for complete details.
+See link:reference_deploment_customization_requirements.html[Deployment customization considerations] for complete details.
 
 . Review the configuration data, and then click *Next* to finish deployment.
 +
@@ -60,7 +60,7 @@ As you wait for deployment to finish, you can view the progress of the deploymen
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
 . Verify that ONTAP tools is running after the deployment is completed.
-. If ONTAP tools is not registered with any vCenter Server, use https://appliance_ip:8143/Register.html to register the VSC instance.
+. If ONTAP tools is not registered with any vCenter Server, use \https://appliance_ip:8143/Register.html to register the VSC instance.
 . Log out and re-log in to the vSphere Client to view the deployed ONTAP tools.
 +
 It might take a few minutes for the plug-in to be updated in the vSphere Client.

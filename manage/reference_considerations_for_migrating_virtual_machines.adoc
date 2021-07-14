@@ -1,7 +1,7 @@
 ---
 permalink: manage/reference_considerations_for_migrating_virtual_machines.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter.'
 ---
 = Considerations for migrating or cloning virtual machines
@@ -41,7 +41,7 @@ VMware presently does not support virtual machine cloned to a VM template.
 
 Clone-of-Clone of a protected virtual machine is supported.
 
-== Virtual Machine snapshots
+== Virtual Machine Snapshots
 
 Presently only virtual machine Snapshots without memory are supported. If virtual machine has Snapshot with memory, then the virtual machine is not considered for protection.
 

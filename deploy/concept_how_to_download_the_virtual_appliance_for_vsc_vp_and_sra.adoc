@@ -1,7 +1,7 @@
 ---
-permalink: deploy/concept_how_to_download_the_virtual_appliance_for_vsc_vp_and_sra.html
+permalink: deploy/concept_how_to_download_ONTAP_tools.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can download the .ova file for ONTAP tools for VMware vSphere from the NetApp Support Site.'
 ---
 = How to download ONTAP tools
@@ -9,9 +9,9 @@ summary: 'You can download the .ova file for ONTAP tools for VMware vSphere from
 :imagesdir: ../media/
 
 [.lead]
-You can download the .ova file for ONTAP tools for VMware vSphere from the NetApp Support Site.
+You can download the '.ova' file for ONTAP tools for VMware vSphere from the NetApp Support Site.
 
-The .ova file includes the ONTAP tools. When the deployment is complete, all the three products are installed in your environment. By default, VSC starts working as soon as you decide on the subsequent deployment model and choose whether to enable VASA Provider and SRA based on your requirements.
+The '.ova' file includes the ONTAP tools. When the deployment is complete, all the three products are installed in your environment. By default, VSC starts working as soon as you decide on the subsequent deployment model and choose whether to enable VASA Provider and SRA based on your requirements.
 
 You can download ONTAP tools from the https://mysupport.netapp.com/site/products/all/details/vsc/downloads-tab[NetApp Support Site] by using the software download page.
 

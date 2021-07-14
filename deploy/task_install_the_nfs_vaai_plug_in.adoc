@@ -1,7 +1,7 @@
 ---
 permalink: deploy/task_install_the_nfs_vaai_plug_in.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration \(VAAI\) using the GUI of ONTAP tools for VMware vSphere.'
 ---
 = Install the NFS VAAI plug-in
@@ -11,7 +11,7 @@ summary: 'You can install the NetApp NFS Plug-in for VMware vStorage APIs for Ar
 [.lead]
 You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration (VAAI) using the GUI of ONTAP tools for VMware vSphere.
 
-* You should have downloaded the installation package for the NFS Plug-in for VAAI (.vib) from the NetApp Support Site.
+* You should have downloaded the installation package for the NFS Plug-in for VAAI ('.vib') from the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 
@@ -28,7 +28,7 @@ These values are set automatically on the ESXi host when the Recommended Setting
 . Click *Settings* in the ONTAP tools home page.
 . Click *NFS VAAI Tools* tab.
 . Click *Change* in the Existing version section.
-. Browse and select the renamed .vib file, and then click *Upload* to upload the file to ONTAP tools.
+. Browse and select the renamed '.vib' file, and then click *Upload* to upload the file to ONTAP tools.
 . In the Install on ESXi Hosts section, select the ESXi host on which you want to install the NFS VAAI plug-in, and then click *Install*.
 +
 You should follow the on-screen instructions to complete the installation. You can monitor the installation progress in the Tasks section of vSphere Web Client.

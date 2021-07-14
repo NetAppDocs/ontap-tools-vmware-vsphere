@@ -9,11 +9,11 @@ summary: 'If you are using ONTAP 9.6 or earlier, then the vVol dashboard can dis
 :imagesdir: ../media/
 
 [.lead]
-If you are using ONTAP 9.6 or earlier, then the vVol dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered OnCommand API Services for VASA Provider to obtain data for the vVols VM and datastore reports.
+If you are using ONTAP 9.6 or earlier, then the vVols dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered OnCommand API Services for VASA Provider to obtain data for the vVols VM and datastore reports.
 
 You must have downloaded OnCommand API Services 2.1 or later from the NetApp Support Site.
 
-NOTE: The vVol dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
+NOTE: The vVols dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
 
 . From the ONTAP toolsHome page, click *Settings*.
 . Click *Manage Extension* in the Administrative Settings tab.

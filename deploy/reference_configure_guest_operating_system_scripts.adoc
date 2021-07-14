@@ -16,21 +16,21 @@ The ISO images of the guest operating system (OS) scripts are mounted on ONTAP®
 a|
 Linux
 a|
-https://<appliance_ip>:8143/vsc/public/writable/linux_gos_timeout-install.iso
+\https://<appliance_ip>:8143/vsc/public/writable/linux_gos_timeout-install.iso
 a|
-https://<appliance_ip>:8143/vsc/public/writable/linux_gos_timeout_190-install.iso
+\https://<appliance_ip>:8143/vsc/public/writable/linux_gos_timeout_190-install.iso
 a|
 Windows
 a|
-https://<appliance_ip>:8143/vsc/public/writable/windows_gos_timeout.iso
+\https://<appliance_ip>:8143/vsc/public/writable/windows_gos_timeout.iso
 a|
-https://<appliance_ip>:8143/vsc/public/writable/windows_gos_timeout_190.iso
+\https://<appliance_ip>:8143/vsc/public/writable/windows_gos_timeout_190.iso
 a|
 Solaris
 a|
-https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout-install.iso
+\https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout-install.iso
 a|
-https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
+\https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
 |===
 You should install the script from the copy of the VSC instance that is registered to the vCenter Server that manages the virtual machine. If your environment includes multiple vCenter Servers, you should select the server that contains the virtual machine for which you want to set the storage timeout values.
 

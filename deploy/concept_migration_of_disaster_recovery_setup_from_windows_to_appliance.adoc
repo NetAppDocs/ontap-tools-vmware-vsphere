@@ -1,8 +1,8 @@
 ---
-permalink: deploy/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
+permalink: deploy/concept_migration_of_disaster_recovery_setup_from_Windows_to_appliance.html
 sidebar: sidebar
 keywords: Migration
-summary: 'If you are using Windows based Site Recovery Manager\(SRM\) for disaster recovery and you want to use the SRM Appliance for the same setup, then you should migrate your Windows disaster recovery setup to the appliance based SRM.'
+summary: 'If you are using Windows based Site Recovery Manager \(SRM\) for disaster recovery and you want to use the SRM Appliance for the same setup, then you should migrate your Windows disaster recovery setup to the appliance based SRM.'
 ---
 = Migration of Windows SRM to SRM Appliance
 :icons: font
@@ -20,4 +20,4 @@ link:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.md#[Upgrade to the 9
 . Migrating Windows based Storage Replication Adapter to Appliance based SRA.
 . Migrating Windows SRM data to SRM Appliance.
 
-See https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-F39A84D3-2E3D-4018-97DD-5D7F7E041B43.html for detailed steps
+See https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-F39A84D3-2E3D-4018-97DD-5D7F7E041B43.html[Migrate from Site Recovery Manager for Windows to Site Recovery Manager Virtual Appliance] for detailed steps

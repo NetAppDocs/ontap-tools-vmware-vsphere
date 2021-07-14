@@ -37,6 +37,6 @@ a|
 a|
 VSC sends an echo request to ONTAP to verify reachability and is required only when adding storage system and can be disabled later.
 |===
-*Note:* You should have enabled Internet Control Message Protocol (ICMP) before deploying the ONTAP tools.
+NOTE: You should have enabled Internet Control Message Protocol (ICMP) before deploying the ONTAP tools.
 
 If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.

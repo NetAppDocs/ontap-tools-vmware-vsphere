@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html
+permalink: deploy/task_upgrade_to_the_9_8_ONTAP_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords: Virtual Storage Console,Storage Replication Adapter
 summary: 'You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.'
@@ -11,7 +11,7 @@ summary: 'You can perform an in-place upgrade to the 9.8 release of ONTAP tools 
 [.lead]
 You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.
 
-* You must have downloaded the .iso file for the 9.8 release of ONTAP tools.
+* You must have downloaded the _.iso_ file for the 9.8 release of ONTAP tools.
 * You must have reserved at least 12 GB of RAM for the ONTAP tools to work optimally after the upgrade.
 * You must clean the vSphere Client browser cache.
 +
@@ -21,10 +21,10 @@ The status of VASA Provider from the existing deployment is retained after the u
 
 NOTE: You can perform an in-place upgrade to the 9.8 release of ONTAP tools only from your existing 9.7 version. When you upgrade to 9.7.1 release of ONTAP tools and you want to use vVols replication, then you will need to setup one more vCenter Server with ONTAP tools with Site Recovery Manager (SRM) installed.
 
-. Mount the downloaded .iso file to the ONTAP tools:
+. Mount the downloaded _.iso_ file to the ONTAP tools:
  .. Click *Edit Settings* > *DVD/CD-ROM Drive*.
  .. Select *Datastore ISO* file from the drop-down list.
- .. Browse to and select the downloaded .iso file, and then select the *Connect at power on* checkbox.
+ .. Browse to and select the downloaded _.iso_ file, and then select the *Connect at power on* checkbox.
 . Access the *Summary* tab of your deployed ONTAP tools.
 . Click *image:../media/launch_maintenance_console.gif[]* to start the maintenance console.
 . At the "`Main Menu`" prompt, enter option `2` for *System Configuration*, and then enter option `8` for *Upgrade*.

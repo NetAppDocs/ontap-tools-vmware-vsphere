@@ -1,7 +1,7 @@
 ---
-permalink: deploy/concept_configure_high_availability_for_virtual_appliance_for_vsc_vasa_provider_and_sra.html
+permalink: deploy/concept_configure_high_availability_for_ONTAP_tools_for_VMware_vSphere.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The ONTAP tools supports a high-availability \(HA\) configuration to help provide uninterrupted functionality of ONTAP tools during failure.'
 ---
 = Configure high availability for ONTAP tools for VMware vSphere

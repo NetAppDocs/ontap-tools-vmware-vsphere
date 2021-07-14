@@ -17,7 +17,8 @@ vVols provides the following pre-canned reports:
 
 * vVols Datastore Report
 * vVols VM Report
-* *vVols Datastore Report*
+
+*vVols Datastore Report*
 +
 The vVols Datastore Report menu provides information about the following parameters for datastores:
 
@@ -31,7 +32,7 @@ The vVols Datastore Report menu provides information about the following paramet
  ** Latency
 Performance metrics are available for NFS based vVols datastores on ONTAP 9.8 and later. You can also verify the time at which the report was generated. The vVols Datastore Report menu enables you to organize the report as per your requirement, and then export the organized report by using the *Export to CSV* button. Each SAN vVols datastore name in the report is a link that navigates to the Monitor tab of the selected SAN vVols datastore, which you can use to view the performance metrics.
 
-* *vVols Virtual Machine Report*
+*vVols Virtual Machine Report*
 +
 The vVols Virtual Machine Summary Report menu provides the performance metrics for all of the virtual machines that use the SAN vVols datastores that are provisioned by VASA Provider for ONTAP for a selected vCenter Server. The virtual machine metrics displayed in VM reports is historical data that is collected every 10 minutes for virtual machines on vVols datastores. "`Last refresh tim`"e and "`Next refresh time`" are added to the table to provide information on when data was collected and when will be the next data collection.
 

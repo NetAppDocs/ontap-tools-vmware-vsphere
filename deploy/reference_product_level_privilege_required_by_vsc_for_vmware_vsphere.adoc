@@ -1,7 +1,7 @@
 ---
-permalink: deploy/reference_product_level_privilege_required_by_vsc_for_vmware_vsphere.html
+permalink: deploy/reference_product_level_privilege_required_by_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'To access the ONTAP® tools for VMware vSphere GUI, you must have the product-level, VSC-specific View privilege assigned at the correct vSphere object level. If you log in without this privilege, VSC displays an error message when you click the NetApp icon and prevents you from accessing VSC.'
 ---
 = Product-level privilege required by ONTAP® tools for VMware vSphere
@@ -21,7 +21,7 @@ a|
 You can access the VSC GUI. This privilege does not enable you to perform tasks within VSC. To perform any VSC tasks, you must have the correct VSC-specific and native vCenter Server privileges for those tasks.
 
 a|
-The assignment level determines which portions of the UI you can see.Assigning the View privilege at the root object (folder) enables you to enter VSC by clicking the NetApp icon.
+The assignment level determines which portions of the UI you can see. Assigning the View privilege at the root object (folder) enables you to enter VSC by clicking the NetApp icon.
 
 You can assign the View privilege to another vSphere object level; however, doing that limits the VSC menus that you can see and use.
 
