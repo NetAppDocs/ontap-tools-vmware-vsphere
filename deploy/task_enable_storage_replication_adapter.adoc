@@ -32,7 +32,7 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 *For Windows SRM*
 a|
 
- .. Double-click the downloaded '.msi' .msiinstaller for the SRA plug-in.
+ .. Double-click the downloaded '.msi' installer for the SRA plug-in.
  .. Follow the on-screen instructions.
  .. Enter the IP address and password of your deployed ONTAP tools.
 
@@ -42,7 +42,7 @@ a|
 
  .. Access the SRM appliance page, and then go to Storage Replication Adapters page of SRM appliance.
  .. Click *New Adapter*.
- .. Upload the '.tar.gz' installer for the SRA plug-in to SRM.
+ .. Upload the _.tar.gz_ installer for the SRA plug-in to SRM.
  .. Rescan the adapters to verify that the details are updated in the SRM Storage Replication Adapters page.
 
 +
@@ -51,4 +51,4 @@ You must log out of the vSphere Client, and then log in again to verify that you
 
 *Related information*
 
-xref:concept_configure_storage_replication_adapter_for_disaster_recovery.adoc[Configure Storage Replication Adapter for disaster recovery]
+xref:concept_configure_storage_replication_adapter_for_disaster_recovery.html[Configure Storage Replication Adapter for disaster recovery]

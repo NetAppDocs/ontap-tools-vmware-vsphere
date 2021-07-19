@@ -15,7 +15,7 @@ You must have downloaded OnCommand API Services 2.1 or later from the NetApp Sup
 
 NOTE: The vVols dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
 
-. From the ONTAP toolsHome page, click *Settings*.
+. From the ONTAP tools home page, click *Settings*.
 . Click *Manage Extension* in the Administrative Settings tab.
 . Use the *Register OnCommand API Services* slider to enable OnCommand API Services.
 . Enter the IP address, service port, and credentials for OnCommand API Services.
@@ -23,13 +23,13 @@ NOTE: The vVols dashboard displays performance metrics only when the SAN vVols d
 You can also use the Manage VASA Provider Extensions dialog box for the following modifications:
 
  ** To update OnCommand API Services registration when there is any change to the credentials.
- ** To unregister OnCommand API Services when you no longer require the vVol dashboard.
+ ** To unregister OnCommand API Services when you no longer require the vVols dashboard.
 +
 You must clear the Register OnCommand API Services checkbox to remove the OnCommand API Services registration for VASA Provider.
 
 . Click *Apply*.
 +
-The vVol dashboard displays the metrics for ONTAP 9.6 or earlier SAN vVol datastores only after the registration of OnCommand API Services is complete.
+The vVols dashboard displays the metrics for ONTAP 9.6 or earlier SAN vVols datastores only after the registration of OnCommand API Services is complete.
 
 *Related information*
 

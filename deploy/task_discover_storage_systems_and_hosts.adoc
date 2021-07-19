@@ -1,7 +1,7 @@
 ---
 permalink: deploy/task_discover_storage_systems_and_hosts.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you first run Virtual Storage Console \(VSC\) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.'
 ---
 = Discover storage systems and hosts
@@ -16,9 +16,9 @@ When you first run Virtual Storage Console (VSC) in a vSphere Client, VSC discov
 
 You can discover new storage systems or update information about existing storage systems to obtain the latest capacity and configuration information at any time. You can also modify the credentials that VSC uses to log in to the storage systems.
 
-While discovering the storage systems, VSCcollects information from the ESXi hosts that are managed by the vCenter Server instance.
+While discovering the storage systems, VSC collects information from the ESXi hosts that are managed by the vCenter Server instance.
 
-. From the vSphere ClientHome page, select *Hosts and Clusters*.
+. From the vSphere Client Home page, select *Hosts and Clusters*.
 . Right-click the required datacenter, and then select *NetApp VSC* > *Update Host and Storage Data* .
 +
 VSC displays a Confirm dialog box that informs you that this operation might take a long time.

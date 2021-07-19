@@ -1,7 +1,7 @@
 ---
 permalink: manage/task_configure_vm_storage_policies.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should configure VM storage policies to manage virtual machines that are configured on vVols datastore and to enable services like replication for the virtual disks. For the traditional datastores, it is optional to use these VM storage policies.'
 ---
 = Configure VM Storage Policies
@@ -12,6 +12,8 @@ summary: 'You should configure VM storage policies to manage virtual machines th
 You should configure VM storage policies to manage virtual machines that are configured on vVols datastore and to enable services like replication for the virtual disks. For the traditional datastores, it is optional to use these VM storage policies.
 
 The vSphere web client provides default storage policies. But you can create policies and assign them to the virtual machines.
+
+*Steps*
 
 . On the vSphere Client page, click *Menu* > *Policies and Profiles*.
 . Click *VM Storage Policies* > *Create VM Storage Policy*.

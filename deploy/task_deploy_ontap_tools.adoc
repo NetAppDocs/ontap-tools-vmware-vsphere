@@ -23,7 +23,7 @@ https://mysupport.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&
 * You must have the administrator login credentials for your vCenter Server instance.
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
 +
-xref:task_clean_the_vsphere_cached_downloaded_plug_in_packages.adoc[Clear the vSphere cached downloaded plug-in packages]
+xref:task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
 
 * You must have enabled Internet Control Message Protocol (ICMP ).
 +
@@ -43,11 +43,11 @@ link:task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VA
 a|
 URL
 a|
-Provide the URL for the .ova file for ONTAP tools.
+Provide the URL for the _.ova_ file for ONTAP tools.
 a|
 Folder
 a|
-Select the .ova file for ONTAP tools from the saved location.
+Select the _.ova_ file for ONTAP tools from the saved location.
 |===
 
 . Enter the details to customize the deployment wizard.
@@ -67,11 +67,11 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 +
 *Troubleshooting:* If you cannot view the plug-in even after logging in, you must clean the vSphere Client cache.
 +
-xref:task_clean_the_vsphere_cached_downloaded_plug_in_packages.adoc[Clear the vSphere cached downloaded plug-in packages]
+xref:task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
 
 NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
-xref:task_register_oncommand_api_services_with_ONTAP_tools.adoc[Registering OnCommand API Services with ONTAP tools]
+xref:task_register_oncommand_api_services_with_ONTAP_tools.html[Registering OnCommand API Services with ONTAP tools]
 
 *Related information*
 

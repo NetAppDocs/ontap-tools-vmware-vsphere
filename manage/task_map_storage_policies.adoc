@@ -1,7 +1,7 @@
 ---
 permalink: manage/task_map_storage_policies.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should map the storage policies on the protected site to the storage policies on the recovery site for your recovery plan to place the recovered virtual machines on the appropriate datastores based on your mappings. After the virtual machine is recovered on recovery site, mapped VM Storage Policy will be assigned to virtual machine.'
 ---
 = Map storage policies
@@ -10,6 +10,8 @@ summary: 'You should map the storage policies on the protected site to the stora
 
 [.lead]
 You should map the storage policies on the protected site to the storage policies on the recovery site for your recovery plan to place the recovered virtual machines on the appropriate datastores based on your mappings. After the virtual machine is recovered on recovery site, mapped VM Storage Policy will be assigned to virtual machine.
+
+*Steps*
 
 . On the vSphere Client, click *Site Recovery* > *Open Site Recovery*.
 . In the Site Pair tab, click *Configure* > *Storage Policy Mappings*.

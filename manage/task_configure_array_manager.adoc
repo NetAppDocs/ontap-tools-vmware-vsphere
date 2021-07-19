@@ -1,7 +1,7 @@
 ---
 permalink: manage/task_configure_array_manager.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can configure Storage Replication Adapter \(SRA\) by using the Array Manager wizard of Site Recovery Manager \(SRM\) to enable interactions between SRM and storage virtual machines \(SVMs\).'
 ---
 = Configure SRA using array manager
@@ -10,6 +10,8 @@ summary: 'You can configure Storage Replication Adapter \(SRA\) by using the Arr
 
 [.lead]
 You can configure Storage Replication Adapter (SRA) by using the Array Manager wizard of Site Recovery Manager (SRM) to enable interactions between SRM and storage virtual machines (SVMs).
+
+*What you'll need*
 
 * You must have paired the protected sites and recovery sites in SRM.
 * You must have configured your storage before configuring the array manager.
@@ -22,6 +24,8 @@ https://docs.netapp.com/vapp-98/index.jsp
 SRA supports cluster-level management and SVM-level management. If you add storage at a cluster level, then you can discover and perform operations on all of the SVMs in the cluster. If you add storage at an SVM level, then you can manage only that specific SVM.
 
 NOTE: VMware does not support NFS4.1 protocol for SRM.
+
+*Steps*
 
 . In SRM, click *Array Managers*, and then click *Add Array Manager*.
 . Enter the following information to describe the array in SRM:

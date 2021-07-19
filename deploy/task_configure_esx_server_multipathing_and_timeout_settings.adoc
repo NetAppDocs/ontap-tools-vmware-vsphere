@@ -9,7 +9,7 @@ summary: 'ONTAP® tools for VMware vSphere checks and sets the ESXi host multipa
 :imagesdir: ../media/
 
 [.lead]
-ONTAP® tools for VMware vSphere checks and sets the ESXi host multipathing settings and HBA timeout settings that work best with NetApp storage systems.
+ONTAP® tools for VMware vSphere checks and sets the ESXi host multipath settings and HBA timeout settings that work best with NetApp storage systems.
 
 This process might take a long time, depending on your configuration and system load. The task progress is displayed in the Recent Tasks panel. As the tasks are completed, the host status Alert icon is replaced by the Normal icon or the Pending Reboot icon.
 

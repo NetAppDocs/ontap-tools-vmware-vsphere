@@ -1,7 +1,7 @@
 ---
 permalink: manage/task_create_storage_capability_profiles.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
 ---
 = Configure storage capability profiles
@@ -11,9 +11,13 @@ summary: 'You can use VSC to manually create storage capability profiles, automa
 [.lead]
 You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.
 
+*What you'll need*
+
 You must have registered your VASA Provider instance with ONTAP® tools for VMware vSphere.
 
 After setting up a profile, you can edit the profile as required.
+
+*Steps*
 
 . On the ONTAP tools Home page, click *Storage Capability Profiles*.
 . Create a profile or edit an existing profile, as required:

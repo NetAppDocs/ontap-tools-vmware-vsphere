@@ -1,7 +1,7 @@
 ---
 permalink: deploy/reference_set_ipv4_or_ipv6.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'There is a new option added to the preference file kaminoprefs.xmlthat you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.'
 ---
 = Set IPv4 or IPv6
@@ -9,7 +9,7 @@ summary: 'There is a new option added to the preference file kaminoprefs.xmlthat
 :imagesdir: ../media/
 
 [.lead]
-There is a new option added to the preference file kaminoprefs.xmlthat you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.
+There is a new option added to the preference file kaminoprefs.xml that you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.
 
 * The default.override.option.provision.mount.datastore.address.family parameter has been added to the kaminoprefs.xml preference file to set a preferred data LIF protocol for datastore provisioning.
 +

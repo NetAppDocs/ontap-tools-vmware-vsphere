@@ -1,7 +1,7 @@
 ---
 permalink: manage/task_provision_datastores.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks \(VMDKs\). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.'
 ---
 = Provision datastores
@@ -10,6 +10,8 @@ summary: 'Provisioning a datastore creates a logical container for your virtual 
 
 [.lead]
 Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks (VMDKs). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.
+
+*What you'll need*
 
 * To provision a datastore on an SVM that is directly connected to Virtual Storage Console (VSC), you must have added the SVM to VSC by using a user account that has the appropriate privileges, not the default vsadmin user account or vsadmin role.
 +
@@ -36,15 +38,19 @@ VSC can create a datastore on either an NFS volume or a LUN:
 * For an NFS datastore, VSC creates an NFS volume on the storage system, and then updates the export policies.
 * For a VMFS datastore, VSC creates a new volume (or uses an existing volume, if you selected that option), and then creates a LUN and an igroup.
 
-NOTE:
+[NOTE]
+====
 
 * The 9.8 version of ONTAP tools supports provisioniong of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
 +
 On other platforms the maximum LUN size supported is 16TB.
 
 * VMware does not support NFSv4.1 with datastore clusters.
+====
 
 If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile. You can apply storage QoS settings, throughput ceiling (Max IOPS) and throughput floor (Min IOPS) on data VMDK files of virtual machines provisioned on FlexGroup backed datastore. QoS settings can be applied either at datastore level or at individual virtual machine level by right clicking the datastore. The right click option is available only on those datastores or virtual machines that are backed by FlexGroup datastore. After the QoS is applied to a datastore, any pre-existing datastore or virtual machine QoS settings are overridden. QoS settings cannot be applied at a datastore level or at a virtual machine level for datastores that are provisioned on direct SVM's, because ONTAP does not support QoS at SVM management level.
+
+*Steps*
 
 . You can access the datastore provisioning wizard using one of the following:
 +
@@ -112,7 +118,7 @@ a|
 You can review the summary of the parameters you specified for the new datastore.There is a new field "`Volume Style`" available in the Summary page that enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
 |===
 
-. NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup volumes.
+NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup volumes.
 . In the Summary section, click *Finish*.
 
 *Related information*

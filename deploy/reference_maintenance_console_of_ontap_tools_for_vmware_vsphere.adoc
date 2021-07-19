@@ -1,7 +1,7 @@
 ---
 permalink: deploy/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can manage your application, system, and network configurations by using the maintenance console of the ONTAP tools. You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.'
 ---
 = Maintenance Console of ONTAP tools for VMware vSphere
@@ -89,4 +89,4 @@ a|
 |===
 *Related information*
 
-xref:concept_virtual_storage_console_and_vasa_provider_log_files.adoc[Virtual Storage Console and VASA Provider log files]
+xref:concept_virtual_storage_console_and_vasa_provider_log_files.html[Virtual Storage Console and VASA Provider log files]

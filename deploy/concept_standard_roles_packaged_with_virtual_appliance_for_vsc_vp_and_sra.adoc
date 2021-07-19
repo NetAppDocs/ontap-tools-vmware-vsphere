@@ -17,7 +17,7 @@ As an administrator, you can assign these roles to users, as required.
 
 NOTE: When you upgrade VSC to the latest version, the standard roles are automatically upgraded to work with the new version of VSC.
 
-You can view the VSC standard roles by clicking *Roles* on the vSphere ClientHome page.
+You can view the VSC standard roles by clicking *Roles* on the vSphere Client Home page.
 
 The roles that VSC provides enable you to perform the following tasks:
 

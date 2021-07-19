@@ -1,7 +1,7 @@
 ---
 permalink: manage/task_resize_datastores.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Resizing a datastore enables you to increase or decrease the storage for your virtual machine files. You might need to change the size of a datastore as your infrastructure requirements change.'
 ---
 = Resize datastores
@@ -14,6 +14,8 @@ Resizing a datastore enables you to increase or decrease the storage for your vi
 If you want VSC to resize the containing volume when it resizes the VMFS datastore, you should not use the *Use existing volume* option under Storage attributes section when initially provisioning VMFS datastore, but instead let it automatically create a new volume for each datastore.
 
 You can increase or decrease the size of an NFS datastore but for a VMFS datastore, you can only increase the size. Resizing of datastore is also supported for FlexGroup datastores with auto grow and shrink option. A FlexGroup that is part of a traditional datastore and FlexVol volume that is part of a vVols datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup and FlexVol volumes.
+
+*Steps*
 
 . From the vSphere ClientHome page, click *Hosts and Clusters*.
 . In the navigation pane, select the datacenter that contains the datastore.
