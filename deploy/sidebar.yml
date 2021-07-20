@@ -1,5 +1,5 @@
-section: deploy
-title: deploy
+section: Deploy
+title: Deploy
 url: "/deploy/index.html"
 entries:
   - title: Overview of the ONTAP tools
@@ -33,18 +33,18 @@ entries:
     - title: "<strong>Enable VASA Provider for configuring virtual datastores</strong>"
       url: "/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html"
       entries:
-      - title: Registering OnCommand API Services with ONTAP tools
+      - title: Register OnCommand API Services with ONTAP tools
         url: "/deploy/task_register_oncommand_api_services_with_ONTAP_tools.html"
     - title: Install the NFS VAAI plug-in
       url: "/deploy/task_install_the_nfs_vaai_plug_in.html"
     - title: Enable Storage Replication Adapter
       url: "/deploy/task_enable_storage_replication_adapter.html"
       entries:
-      - title: Configuring SRA on the SRM Appliance
+      - title: Configure SRA on the SRM Appliance
         url: "/deploy/task_configure_sra_on_srm_appliance.html"
-      - title: Updating Storage Replication Adapter (SRA) credentials
+      - title: Update Storage Replication Adapter (SRA) credentials
         url: "/deploy/task_update_sra_credentials.html"
-    - title: Migration of Windows SRM to SRM Appliance
+    - title: Migrate of Windows SRM to SRM Appliance
       url: "/deploy/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html"
     - title: Clear the vSphere cached downloaded plug-in packages
       url: "/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html"
@@ -63,11 +63,11 @@ entries:
       - title: Configure guest operating system scripts
         url: "/deploy/reference_configure_guest_operating_system_scripts.html"
         entries:
-        - title: Setting timeout values for Windows guest operating systems
+        - title: Set timeout values for Windows guest operating systems
           url: "/deploy/task_run_the_gos_timeout_scripts_for_windows.html"
-        - title: Setting timeout values for Solaris guest operating systems
+        - title: Set timeout values for Solaris guest operating systems
           url: "/deploy/task_run_the_gos_timeout_scripts_for_solaris.html"
-        - title: Setting timeout values for Linux guest operating systems
+        - title: Set timeout values for Linux guest operating systems
           url: "/deploy/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html"
     - title: Regenerate an SSL certificate for Virtual Storage Console
       url: "/deploy/task_regenerate_an_ssl_certificate_for_vsc.html"
