@@ -1,12 +1,12 @@
-section: manage
-title: manage
+section: Manage
+title: Manage
 url: "/manage/index.html"
 entries:
-  - title: Deciding whether to use this guide
+  - title: Decide whether to use this guide
     url: "/manage/concept_decide_whether_to_use_this_guide.html"
   - title: Workflow for configuring ONTAP® tools for VMware vSphere
     url: "/manage/concept_workflow_for_configuring_the_unified_appliance.html"
-  - title: Configuring storage systems for ONTAP® tools for VMware vSphere
+  - title: Configure storage systems for ONTAP® tools for VMware vSphere
     url: "/manage/concept_configure_storage_systems_for_vsc_vasa_provider_and_sra.html"
     entries:
     - title: Add storage systems to VSC

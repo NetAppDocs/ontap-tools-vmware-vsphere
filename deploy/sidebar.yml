@@ -20,7 +20,7 @@ entries:
       url: "/deploy/concept_supported_storage_system_and_applications.html"
     - title: Considerations and requirements for deploying ONTAP tools
       url: "/deploy/reference_considerations_for_deploying_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
-  - title: Deploying or upgrading ONTAP® tools for VMware vSphere
+  - title: Deploy or upgrade ONTAP® tools for VMware vSphere
     url: "/deploy/concept_deploy_or_upgrade_ontap_tools.html"
     entries:
     - title: How to download ONTAP tools
