@@ -61,7 +61,8 @@ Most of the fields in the dialog box are self-explanatory. The following table d
 a|
 General
 a|
-The General section of the New Datastore dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.    *Note:* If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
+The General section of the New Datastore dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.
+*Note:* If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
 a|
 Storage system
 a|
@@ -70,8 +71,8 @@ After FlexVol volumes are created and SnapMirror is initialized in ONTAP, you sh
 a|
 Storage attributes
 a|
-You should select the schedule for SnapMirror and the required FlexVol volume from the existing list. This schedule should be similar to the one selected in the VM Storage Policies page. The user should have created FlexVol volumes on ONTAP with SnapMirror that are listed. You can select the default storage capability profile to be used for creating vVols using the *Default storage capability profile* option. By default all the volumes are set to maximum Autogrow size to 120 % and default Snapshots are enabled on these volumes.  *Note:* A FlexVol volume that is part of a vVols datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on this FlexVol volume.
-|=== 
+You should select the schedule for SnapMirror and the required FlexVol volume from the existing list. This schedule should be similar to the one selected in the VM Storage Policies page. The user should have created FlexVol volumes on ONTAP with SnapMirror that are listed. You can select the default storage capability profile to be used for creating vVols using the *Default storage capability profile* option. By default all the volumes are set to maximum Autogrow size to 120 % and default Snapshots are enabled on these volumes. *Note:* A FlexVol volume that is part of a vVols datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on this FlexVol volume.
+|===
 +
 . In the Summary section, click **Finish**.
 
@@ -82,4 +83,4 @@ A Replication group is created in the backend when a vVols datastore is configur
 
 *Related information*
 
-xref:reference_verify_vvol_dashboard_data_requirements.adoc[vVols dashboard data requirements]
+xref:reference_verify_vvol_dashboard_data_requirements.html[vVols dashboard data requirements]

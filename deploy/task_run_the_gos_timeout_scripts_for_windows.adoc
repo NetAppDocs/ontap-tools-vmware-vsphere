@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O timeout settings for Windows guest operating systems. You can specify either a 60-second timeout or a 190-second timeout. You must reboot the Windows guest OS for the settings to take effect.'
 ---
-= Setting timeout values for Windows guest operating systems
+= Set timeout values for Windows guest operating systems
 :icons: font
 :imagesdir: ../media/
 

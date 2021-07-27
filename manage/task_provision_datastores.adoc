@@ -124,5 +124,3 @@ NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below th
 *Related information*
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline[Datastore inaccessible when volume status is changed to offline]
-
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: scope of guide
 summary: 'You can use this guide to quickly find information about tasks involving provisioning and optimizing storage and monitoring datastores and virtual machines.'
 ---
-= Deciding whether to use this guide
+= Decide whether to use this guide
 :icons: font
 :imagesdir: ../media/
 

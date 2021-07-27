@@ -1,10 +1,10 @@
 ---
 permalink: manage/concept_configure_storage_systems_for_vsc_vasa_provider_and_sra.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should add storage systems to ONTAP tools and set default credentials, if required, by using the VSC interface.'
 ---
-= Configuring storage systems for ONTAP® tools for VMware vSphere
+= Configure storage systems for ONTAP® tools for VMware vSphere
 :icons: font
 :imagesdir: ../media/
 
