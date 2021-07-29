@@ -83,4 +83,4 @@ A Replication group is created in the backend when a vVols datastore is configur
 
 *Related information*
 
-xref:reference_verify_vvol_dashboard_data_requirements.html[vVols dashboard data requirements]
+link:reference_verify_vvol_dashboard_data_requirements.html[vVols dashboard data requirements]

@@ -36,7 +36,7 @@ a|
  .. Click to select the latest SRA tarball file that you downloaded from NetApp support site, and then click *Install*.
  .. Configure SRA on the SRM Appliance.
 +
-xref:task_configure_sra_on_srm_appliance.html[Configuring SRA on the SRM Appliance]
+link:task_configure_sra_on_srm_appliance.html[Configuring SRA on the SRM Appliance]
 
 +
 |===

@@ -20,7 +20,7 @@ Unable to find a matching network to NFS mount volume to these hosts.'
 . Log in to your vCenter Server instance.
 . Launch the maintenance console using your unified appliance virtual machine.
 +
-xref:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html[Maintenance Console of ONTAP tools for VMware vSphere]
+link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html[Maintenance Console of ONTAP tools for VMware vSphere]
 
 . Enter `4` to access the Support and Diagnostics option.
 . Enter `2` to access the Access Diagnostic Shell option.
