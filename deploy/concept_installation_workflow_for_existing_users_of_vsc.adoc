@@ -18,7 +18,7 @@ The earlier releases of individual applications like ONTAP tools use a different
 +
 The configuration data includes storage system credentials, as well as preferences found in the kaminoprefs.xml and vscPreferences.xml files.
 
-link:../deploy/reference_configure_the_vsc_preferences_files.html[Configure the VSC preferences files]
+link:reference_configure_the_vsc_preferences_files.html[Configure the VSC preferences files]
 
 In many cases, you might not need to migrate configuration data. However, if you have customized the preferences files earlier, you might want to review them and make similar changes to the newly deployed ONTAP tools. You can perform one of the following:
 
@@ -31,7 +31,7 @@ If you are also upgrading from SRA 4.0 or earlier:
 
 * If you are using SRA 4.0P1, then you must first upgrade to SRA9.6 and only then you can perform an in-place upgrade of the SRA 9.6 to the latest release.
 +
-xref:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html[Upgrade to the 9.8 ONTAP tools]
+link:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html[Upgrade to the 9.8 ONTAP tools]
 
 * If you are using SRA 2.1 or 3.0, you should first make note of existing site configuration details.
 +
@@ -49,6 +49,6 @@ If you are going to deploy the latest release of ONTAP tools, you must see the t
 
 https://mysupport.netapp.com/site/tools
 
-xref:concept_requirements_for_deploying_the_virtual_appliance_for_vsc_vasa_provider_and_sra.html[Requirements for deploying the ONTAP tools]
+link:concept_requirements_for_deploying_the_virtual_appliance_for_vsc_vasa_provider_and_sra.html[Requirements for deploying the ONTAP tools]
 
-xref:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html[Upgrade to the 9.8 ONTAP tools]
+link:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html[Upgrade to the 9.8 ONTAP tools]

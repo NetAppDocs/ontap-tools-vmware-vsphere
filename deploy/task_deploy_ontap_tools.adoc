@@ -52,7 +52,7 @@ Select the _.ova_ file for ONTAP tools from the saved location.
 
 . Enter the details to customize the deployment wizard.
 +
-See link:reference_deploment_customization_requirements.html[Deployment customization considerations] for complete details.
+See link:reference_deployment_customization_requirements.html[Deployment customization considerations] for complete details.
 
 . Review the configuration data, and then click *Next* to finish deployment.
 +
