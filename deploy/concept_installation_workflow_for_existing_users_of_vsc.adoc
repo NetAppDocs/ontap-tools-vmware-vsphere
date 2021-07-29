@@ -18,7 +18,7 @@ The earlier releases of individual applications like ONTAP tools use a different
 +
 The configuration data includes storage system credentials, as well as preferences found in the kaminoprefs.xml and vscPreferences.xml files.
 
-xref:reference_configure_the_vsc_preferences_files.html[Configure the VSC preferences files]
+link:../deploy/reference_configure_the_vsc_preferences_files.html[Configure the VSC preferences files]
 
 In many cases, you might not need to migrate configuration data. However, if you have customized the preferences files earlier, you might want to review them and make similar changes to the newly deployed ONTAP tools. You can perform one of the following:
 
