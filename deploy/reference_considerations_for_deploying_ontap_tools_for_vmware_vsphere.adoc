@@ -18,14 +18,15 @@ The following table presents an overview of what you should consider before you 
 a|
 First-time deployment of ONTAP tools
 a|
-The deployment of the ONTAP tools automatically installs the VSC features.xref:concept_deploy_or_upgrade_ontap_tools.html[Deploy or upgrade ONTAP® tools for VMware vSphere]
+The deployment of the ONTAP tools automatically installs the VSC features.
+link:concept_deploy_or_upgrade_ontap_tools.html[Deploy or upgrade ONTAP® tools for VMware vSphere]
 
 link:concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
 
 a|
 Upgrading from an existing deployment of VSC
 a|
-The upgrade procedure from an existing deployment of VSC to ONTAP tools depends on the version of VSC, and whether you have deployed ONTAP tools. The deployment workflows and upgrade section has more information.xref:concept_installation_workflow_for_existing_users_of_vsc.html[Deployment workflow for existing users of ONTAP tools]
+The upgrade procedure from an existing deployment of VSC to ONTAP tools depends on the version of VSC, and whether you have deployed ONTAP tools. The deployment workflows and upgrade section has more information. link:concept_installation_workflow_for_existing_users_of_ontap.html[Deployment workflow for existing users of ONTAP tools]
 
 Best practices before an upgrade:
 
@@ -40,7 +41,7 @@ VSC overwrites the standard roles with the current defaults each time you restar
 a|
 Regenerating an SSL certificate for VSC
 a|
-The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate.xref:task_regenerate_an_ssl_certificate_for_vsc.html[Regenerate an SSL certificate for Virtual Storage Console]
+The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate. link:task_regenerate_an_ssl_certificate_for_vsc.html[Regenerate an SSL certificate for Virtual Storage Console]
 
 a|
 Setting ESXi server values
@@ -70,7 +71,7 @@ You can create the recommended ONTAP roles by using ONTAP System Manager using t
 
 If a user attempts to perform a task without the correct privileges and permissions, the task options are grayed out.
 
-* link:concept_standard_roles_packaged_with_virtual_appliance_for_vsc_vp_and_sra.html[Standard roles packaged with ONTAP tools]
+* link:concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html[Standard roles packaged with ONTAP tools]
 * link:concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html[Recommended ONTAP roles when using ONTAP tools for VMware vSphere]
 
 a|
