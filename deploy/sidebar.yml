@@ -49,7 +49,7 @@ entries:
     - title: Clear the vSphere cached downloaded plug-in packages
       url: "/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html"
     - title: Upgrade to the 9.8 ONTAP tools
-      url: "/deploy/task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html"
+      url: "/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html"
     - title: Upgrade Storage Replication Adapter
       url: "/deploy/task_upgrade_storage_replication_adapter.html"
   - title: Configure ONTAP® tools for VMware vSphere
