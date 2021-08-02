@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_remove_storage_from_a_vVols_datastore.html
+permalink: manage/task_remove_storage_from_a_vvols_datastore.html
 sidebar: sidebar
 keywords: Remove vVol datastore
 summary: 'If a VMware Virtual Volumes \(vVols\) datastore has multiple FlexVol volumes, you can remove one or more of the FlexVol volumes from the vVols datastore without deleting the datastore.'

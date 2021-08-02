@@ -7,7 +7,7 @@ entries:
   - title: Workflow for configuring ONTAP® tools for VMware vSphere
     url: "/manage/concept_workflow_for_configuring_the_unified_appliance.html"
   - title: Configure storage systems for ONTAP® tools for VMware vSphere
-    url: "/manage/concept_configure_storage_systems_for_vsc_vasa_provider_and_sra.html"
+    url: "/manage/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html"
     entries:
     - title: Add storage systems to VSC
       url: "/manage/task_add_storage_systems.html"
@@ -40,19 +40,19 @@ entries:
     - title: Edit ESXi host settings for ONTAP® tools for VMware vSphere
       url: "/manage/task_edit_esxi_host_settings.html"
   - title: Configure vVols datastores
-    url: "/manage/concept_configure_vVols_datastores.html"
+    url: "/manage/concept_configure_vvols_datastores.html"
     entries:
-    - title: Configure replication for vVols datastore
+    - title: Configure replication for vvols datastore
       url: "/manage/concept_configure_replication_for_vvols_datastore.html"
-    - title: Provision vVols datastores
-      url: "/manage/task_provision_vvol_datastores.html"
+    - title: Provision vvols datastores
+      url: "/manage/task_provision_vvols_datastores.html"
     - title: Rebalance vVols datastores
       url: "/manage/reference_rebalance_vvols_datastore.html"
     - title: Monitor vVols datastores and virtual machines using the vVols dashboard
-      url: "/manage/task_monitor_vVols_datastores_and_virtual_machines_using_vvols_dashboard.html"
+      url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"
       entries:
       - title: vVols dashboard data requirements
-        url: "/manage/reference_verify_vvol_dashboard_data_requirements.html"
+        url: "/manage/reference_verify_vvols_dashboard_data_requirements.html"
   - title: Manage disaster recovery setup
     url: "/manage/concept_manage_disaster_recovery_setup_using_srm.html"
     entries:
@@ -89,17 +89,17 @@ entries:
     - title: Resize datastores
       url: "/manage/task_resize_datastores.html"
     - title: Edit a vVols datastore
-      url: "/manage/task_edit_a_vvol_datastore.html"
+      url: "/manage/task_edit_a_vvols_datastore.html"
     - title: Add storage to a vVols datastore
-      url: "/manage/task_add_storage_to_a_vvol_datastore.html"
+      url: "/manage/task_add_storage_to_a_vvols_datastore.html"
     - title: Remove storage from a vVols datastore
       url: "/manage/task_remove_storage_from_a_vvols_datastore.html"
     - title: Mount a vVols datastore
-      url: "/manage/task_mount_a_vvol_datastore.html"
+      url: "/manage/task_mount_a_vvols_datastore.html"
     - title: Considerations for migrating or cloning virtual machines
       url: "/manage/reference_considerations_for_migrating_virtual_machines.html"
     - title: Migrate traditional virtual machines to vVols datastores
-      url: "/manage/task_migrate_standard_virtual_machines_to_vvol_datastores.html"
+      url: "/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html"
     - title: Migrate virtual machines with older storage capability profiles
       url: "/manage/task_migrate_existing_virtual_machines_to_7_1_virtual_appliance.html"
   - title: ONTAP tools console reports

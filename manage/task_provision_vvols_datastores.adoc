@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_provision_vVols_datastores.html
+permalink: manage/task_provision_vvols_datastores.html
 sidebar: sidebar
 keywords:
 summary: 'You can provision a vVols datastore using the Provision Datastore wizard only if VASA Provider is enabled in your ONTAP tools.'

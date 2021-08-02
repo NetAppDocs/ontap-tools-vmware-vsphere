@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_mount_a_vVols_datastore.html
+permalink: manage/task_mount_a_vvols_datastore.html
 sidebar: sidebar
 keywords: Mount vVol
 summary: 'You can mount a VMware Virtual Volumes \(vVols\) datastore to one or more additional hosts by using the Mount vVols Datastore dialog box. Mounting the datastore provides storage access to additional hosts.'

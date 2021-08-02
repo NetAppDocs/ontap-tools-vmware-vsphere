@@ -1,5 +1,5 @@
 ---
-permalink: deploy/concept_migration_of_disaster_recovery_setup_from_Windows_to_appliance.html
+permalink: deploy/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
 sidebar: sidebar
 keywords: Migration
 summary: 'If you are using Windows based Site Recovery Manager \(SRM\) for disaster recovery and you want to use the SRM Appliance for the same setup, then you should migrate your Windows disaster recovery setup to the appliance based SRM.'

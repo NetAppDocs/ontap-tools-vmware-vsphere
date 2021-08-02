@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_migrate_standard_virtual_machines_to_vVols_datastores.html
+permalink: manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html
 sidebar: sidebar
 keywords: Migrate traditional virtual machines
 summary: 'You can migrate virtual machines from traditional datastores to Virtual Volumes \(vVols\) datastores to take advantage of policy-based VM management and other vVols capabilities. vVols datastores enable you to meet increased workload requirements.'
