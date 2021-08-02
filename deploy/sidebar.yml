@@ -34,7 +34,7 @@ entries:
       url: "/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html"
       entries:
       - title: Register OnCommand API Services with ONTAP tools
-        url: "/deploy/task_register_oncommand_api_services_with_ONTAP_tools.html"
+        url: "/deploy/task_register_oncommand_api_services_with_ontap_tools.html"
     - title: Install the NFS VAAI plug-in
       url: "/deploy/task_install_the_nfs_vaai_plug_in.html"
     - title: Enable Storage Replication Adapter
