@@ -51,4 +51,4 @@ https://mysupport.netapp.com/site/tools
 
 link:concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html[Requirements for deploying the ONTAP tools]
 
-link:task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html[Upgrade to the 9.8 ONTAP tools]
+link:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html[Upgrade to the 9.8 ONTAP tools]

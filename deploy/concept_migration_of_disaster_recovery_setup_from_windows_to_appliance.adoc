@@ -15,7 +15,7 @@ The steps involved in the migration of the disaster recovery are:
 
 . Upgrading your existing ONTAP tools to the 9.7.1 release.
 +
-link:task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html[Upgrade to the 9.8 ONTAP tools]
+link:task_upgrade_to_the_9_8_ONTAP_tools_for_vmware_vsphere.html[Upgrade to the 9.8 ONTAP tools]
 
 . Migrating Windows based Storage Replication Adapter to Appliance based SRA.
 . Migrating Windows SRM data to SRM Appliance.
