@@ -10,7 +10,7 @@ entries:
     - title: Deployment workflow for existing users of ONTAP tools
       url: "/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html"
   - title: Requirements for deploying the ONTAP tools
-    url: "/deploy/concept_requirements_for_deploying_the_ontap_tools_for_vmware_vsphere.html"
+    url: "/deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html"
     entries:
     - title: Port requirements for VSC
       url: "/deploy/reference_port_requirements_for_vsc.html"
