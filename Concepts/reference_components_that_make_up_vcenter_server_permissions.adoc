@@ -1,7 +1,7 @@
 ---
-permalink: deploy/reference_components_that_make_up_vcenter_server_permissions.html
+permalink: concepts/reference_components_that_make_up_vcenter_server_permissions.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The vCenter Server recognizes permissions, not privileges. Each vCenter Server permission consists of three components.'
 ---
 = Components of vCenter Server permissions

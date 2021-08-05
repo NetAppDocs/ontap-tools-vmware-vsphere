@@ -1,5 +1,5 @@
 ---
-permalink: deploy/concept_virtual_storage_console_overview.html
+permalink: concepts/concept_virtual_storage_console_overview.html
 sidebar: sidebar
 keywords:
 summary: 'The ONTAP tools for VMware vSphere provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server.'

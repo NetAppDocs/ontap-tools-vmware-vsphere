@@ -1,5 +1,5 @@
 ---
-permalink: deploy/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html
+permalink: concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'To simplify working with vCenter Server privileges and role-based access control \(RBAC\), Virtual Storage Console \(VSC\) provides standard VSC roles that enable you to perform key VSC tasks. There is also a read-only role that enables you to view VSC information, but not perform any tasks.'

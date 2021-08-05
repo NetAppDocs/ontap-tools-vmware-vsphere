@@ -1,7 +1,7 @@
 ---
-permalink: manage/concept_manage_disaster_recovery_setup_using_srm.html
+permalink: concepts/concept_manage_disaster_recovery_setup_using_srm.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can create and manage the disaster recovery setup in your vCenter Server along with VMware’s Site Recovery Manager \(SRM\).'
 ---
 = Manage disaster recovery setup

@@ -1,7 +1,7 @@
 ---
-permalink: deploy/concept_guidelines_for_using_vsc_standard_roles.html
+permalink: concepts/concept_guidelines_for_using_vsc_standard_roles.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you work with standard ONTAP® tools for VMware vSphere roles, there are certain guidelines you should follow.'
 ---
 = Guidelines for using VSC standard roles
