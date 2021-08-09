@@ -25,7 +25,7 @@ entries:
     - title: Product-level privilege required by ONTAP® tools for VMware vSphere
       url: /concepts/reference_product_level_privilege_required_by_ontap_tools_for_vmware_vsphere.html
     - title: ONTAP role-based access control for ONTAP tools
-      url: /concepts/concept_ontasp_role_based_access_control_feature_for_ontap_tools.html
+      url: /concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
       entries:
       - title: Recommended ONTAP roles when using ONTAP tools for VMware vSphere
         url: /concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
