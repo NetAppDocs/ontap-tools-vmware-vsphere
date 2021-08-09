@@ -1,0 +1,30 @@
+section: concepts
+title: Concepts
+entries:
+  - title: Overview of the ONTAP tools
+    url: /concepts/concept_virtual_storage_console_overview.html
+  - title: VASA Provider configurations for vVols
+    url: /concepts/concept_configure_vvols_datastores.html
+  - title: Storage Replication Adapter for disaster recovery
+    url: /concepts/concept_manage_disaster_recovery_setup_using_srm.html
+  - title: Role based access control
+    url: /concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html
+    entries:
+      - title: Components of vCenter Server permissions
+        url: /concepts/reference_components_that_make_up_vcenter_server_permissions.html
+      - title: Key points about assigning and modifying permissions for vCenter Server
+        url: /concepts/reference_key_points_about_assigning_and_modifying_permissions.html
+      - title: Standard roles packaged with ONTAP tools
+        url: /concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html
+        entries:
+          - title: Guidelines for using VSC standard roles
+            url: /concepts/concept_guidelines_for_using_vsc_standard_roles.html
+      - title: Privileges required for VSC tasks
+        url: /concepts/concept_privileges_required_for_vsc_tasks.html
+        entries:
+          - title: Product-level privilege required by ONTAP® tools for VMware vSphere
+            url: /concepts/reference_product_level_privilege_required_by_ontap_tools_for_vmware_vsphere.html
+          - title: ONTAP role-based access control for ONTAP tools
+            url: /concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
+          - title: Recommended ONTAP roles when using ONTAP tools for VMware vSphere
+            url: /concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
