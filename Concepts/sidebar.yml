@@ -28,3 +28,12 @@ entries:
             url: /concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
           - title: Recommended ONTAP roles when using ONTAP tools for VMware vSphere
             url: /concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
+      - title: Configure high availability for ONTAP tools for VMware vSphere
+        url: concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html
+        entries:
+          - title: VMware vSphere HA
+            url: concepts/concept_vmware_high_availability_for_vcenter_server.html
+          - title: VMware vSphere Fault Tolerance
+            url: concepts/concept_vmware_fault_tolerance_for_vcenter_server.html
+      - title: MetroCluster configurations supported by ONTAP tools
+        url: concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html
