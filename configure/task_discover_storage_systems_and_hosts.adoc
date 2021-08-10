@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_discover_storage_systems_and_hosts.html
+permalink: configure/task_discover_storage_systems_and_hosts.html
 sidebar: sidebar
 keywords:
 summary: 'When you first run Virtual Storage Console \(VSC\) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.'

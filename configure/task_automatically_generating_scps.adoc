@@ -1,7 +1,7 @@
 ---
-permalink: manage/task_automatically_generating_scps.html
+permalink: configure/task_automatically_generating_scps.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'VASA Provider for ONTAP enables you to automatically generate storage capability profiles for existing traditional datastores. When you select the auto-generate option for a datastore, VASA Provider creates a profile that contains the storage capabilities that are used by that datastore.'
 ---
 = Generate storage capability profiles automatically

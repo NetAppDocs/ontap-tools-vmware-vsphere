@@ -1,7 +1,7 @@
 ---
-permalink: deploy/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
+permalink: configure/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can configure ONTAP tools to enable SSH access for the diag user.'
 ---
 = Configure remote diagnostic access

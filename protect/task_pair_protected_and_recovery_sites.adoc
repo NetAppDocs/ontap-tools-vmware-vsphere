@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_pair_protected_and_recovery_sites.html
+permalink: protect/task_pair_protected_and_recovery_sites.html
 sidebar: sidebar
 keywords:
 summary: 'You must pair the protected and recovery sites created using your vSphere Client to enable Storage Replication Adapter \(SRA\) to discover the storage systems.'

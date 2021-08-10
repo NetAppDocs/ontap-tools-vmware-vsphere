@@ -1,5 +1,5 @@
 ---
-permalink: configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html
+permalink: manage/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'You should add storage systems to ONTAP tools and set default credentials, if required, by using the VSC interface.'

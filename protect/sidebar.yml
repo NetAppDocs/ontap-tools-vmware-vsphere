@@ -20,12 +20,11 @@ entries:
     entries:
       - title: Configure network mappings
         url: protect/task_configure_network_mappings.html
-      - title: Key points about assigning and modifying permissions for vCenter Server
-        url: /concepts/reference_key_points_about_assigning_and_modifying_permissions.html
-      - title: Standard roles packaged with ONTAP tools
-        url: /concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html
-        entries:
-          - title: Guidelines for using VSC standard roles
+      - title: Configure folder mappings
+        url: manage/task_configure_folder_mappings.html
+      - title: Configure resource mappings
+        url: protect/task_configure_resource_mappings.html
+  - title: Guidelines for using VSC standard roles
             url: /concepts/concept_guidelines_for_using_vsc_standard_roles.html
       - title: Privileges required for VSC tasks
         url: /concepts/concept_privileges_required_for_vsc_tasks.html

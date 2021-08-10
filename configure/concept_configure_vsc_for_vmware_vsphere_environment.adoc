@@ -1,5 +1,5 @@
 ---
-permalink: deploy/concept_configure_vsc_for_vmware_vsphere_environment.html
+permalink: configure/concept_configure_vsc_for_vmware_vsphere_environment.html
 sidebar: sidebar
 keywords:
 summary: 'Virtual Storage Console \(VSC\) supports numerous environments. Some of the features in these environments might require additional configuration.'

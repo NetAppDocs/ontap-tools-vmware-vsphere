@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_configure_vm_storage_policies.html
+permalink: protect/task_configure_vm_storage_policies.html
 sidebar: sidebar
 keywords:
 summary: 'You should configure VM storage policies to manage virtual machines that are configured on vVols datastore and to enable services like replication for the virtual disks. For the traditional datastores, it is optional to use these VM storage policies.'

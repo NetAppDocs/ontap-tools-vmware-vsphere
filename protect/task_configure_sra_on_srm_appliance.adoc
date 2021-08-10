@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_configure_sra_on_srm_appliance.html
+permalink: protect/task_configure_sra_on_srm_appliance.html
 sidebar: sidebar
 keywords:
 summary: 'After you have deployed the SRM Appliance, you should configure SRA on the SRM Appliance. The successful configuration of SRA enables SRM Appliance to communicate with SRA for disaster recovery management. You should store the ONTAP tools credentials \(IP address and administrator password\) in the SRM Appliance to enable communication between SRM Appliance and SRA.'

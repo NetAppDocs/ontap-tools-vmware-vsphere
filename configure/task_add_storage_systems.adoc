@@ -1,7 +1,7 @@
 ---
-permalink: deploy/task_add_storage_systems.html
+permalink: configure/task_add_storage_systems.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can manually add storage system to Virtual Storage Console \(VSC\).'
 ---
 = Add storage systems to VSC

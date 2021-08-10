@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_install_the_nfs_vaai_plug_in.html
+permalink: configure/task_install_the_nfs_vaai_plug_in.html
 sidebar: sidebar
 keywords:
 summary: 'You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration \(VAAI\) using the GUI of ONTAP tools for VMware vSphere.'

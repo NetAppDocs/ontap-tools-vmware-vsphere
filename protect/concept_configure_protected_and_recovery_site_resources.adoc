@@ -1,7 +1,7 @@
 ---
-permalink: manage/concept_configure_protected_and_recovery_site_resources.html
+permalink: protect/concept_configure_protected_and_recovery_site_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must configure your resource mappings like VM networks, ESXi hosts, and folders on both sites to enable the mapping of each resource from the protected site to the appropriate resource at the recovery site.'
 ---
 = Configure protected and recovery site resources

@@ -1,5 +1,5 @@
 ---
-permalink: deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
+permalink: get-started/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords: Virtual Storage Console,Storage Replication Adapter
 summary: 'Before you deploy ONTAP tools for VMware vSphere, it is good practice to plan your deployment and decide how you want to configure ONTAP tools in your environment.'

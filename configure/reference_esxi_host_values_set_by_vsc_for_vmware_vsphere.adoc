@@ -1,7 +1,7 @@
 ---
-permalink: deploy/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
+permalink: configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can set timeouts and other values on the ESXi hosts using ONTAP® tools for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console \(VSC\) sets are based on internal NetApp testing.'
 ---
 = ESXi host values set using ONTAP® tools for VMware vSphere

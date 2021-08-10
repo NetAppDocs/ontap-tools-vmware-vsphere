@@ -1,7 +1,7 @@
 ---
-permalink: manage/concept_configure_replication_for_vvols_datastore.html
+permalink: configure/concept_configure_replication_for_vvols_datastore.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can configure replication for your vVols datastore using ONTAP tools. The main aim of vVols replication is to protect critical virtual machines during disaster recovery using VMware Site Recovery Manager \(SRM\).'
 ---
 = Configure replication for vVols datastore

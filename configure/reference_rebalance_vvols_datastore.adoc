@@ -1,5 +1,5 @@
 ---
-permalink: manage/reference_rebalance_vvols_datastore.html
+permalink: configure/reference_rebalance_vvols_datastore.html
 sidebar: sidebar
 keywords: vVols datastore,rebalancing
 summary: 'The 9.8 release of ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.'

@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_map_storage_to_storage_capability_profiles.html
+permalink: configure/task_map_storage_to_storage_capability_profiles.html
 sidebar: sidebar
 keywords:
 summary: 'You can map the datastores that are associated with VASA Provider for ONTAP to storage capability profiles. You can assign a profile to a datastore that is not associated with a storage capability profile.'

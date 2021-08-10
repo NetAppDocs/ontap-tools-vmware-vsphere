@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_configure_protection_groups.html
+permalink: protect/task_configure_protection_groups.html
 sidebar: sidebar
 keywords:
 summary: 'You must create protection groups to protect a group of virtual machines on the protected site.'

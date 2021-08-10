@@ -1,7 +1,7 @@
 ---
-permalink: deploy/task_refresh_the_storage_system_display.html
+permalink: configure/task_refresh_the_storage_system_display.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the update feature that is provided by ONTAP® tools for VMware vSphere to refresh the information about storage systems and to force Virtual Storage Console \(VSC\) to discover storage systems.'
 ---
 = Refresh the storage system display

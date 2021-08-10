@@ -1,7 +1,7 @@
 ---
-permalink: deploy/concept_supported_storage_system_and_applications.html
+permalink: get-started/concept_supported_storage_system_and_applications.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should be aware of the basic storage system requirements, application requirements, and license requirements before you begin deploying the ONTAP tools for VMware vSphere.'
 ---
 = Supported storage system, licensing, and applications for the ONTAP tools

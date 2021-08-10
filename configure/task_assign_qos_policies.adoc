@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_assign_qos_policies.html
+permalink: configure/task_assign_qos_policies.html
 sidebar: sidebar
 keywords:
 summary: 'The provisioning of FlexGroup datastores does not support assigning storage capability profiles to the datastores. But you can assign QoS policies to virtual machines that are created on FlexGroup backed datastores.'

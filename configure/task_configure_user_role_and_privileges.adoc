@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_configure_user_role_and_privileges.html
+permalink: configure/task_configure_user_role_and_privileges.html
 sidebar: sidebar
 keywords: user roles
 summary: 'You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.'

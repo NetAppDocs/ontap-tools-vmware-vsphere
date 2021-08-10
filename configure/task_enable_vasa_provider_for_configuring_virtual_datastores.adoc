@@ -1,7 +1,7 @@
 ---
-permalink: deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
+permalink: configure/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The ONTAP tools for VMware vSphere has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes \(vVols\) datastores with required storage capability profiles for each vVols datastore.'
 ---
 = *Enable VASA Provider for configuring virtual datastores*

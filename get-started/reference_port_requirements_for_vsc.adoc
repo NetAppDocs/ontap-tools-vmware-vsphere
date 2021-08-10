@@ -1,5 +1,5 @@
 ---
-permalink: deploy/reference_port_requirements_for_vsc.html
+permalink: get-started/reference_port_requirements_for_vsc.html
 sidebar: sidebar
 keywords: port requirements
 summary: 'By default, Virtual Storage Console \(VSC\) uses designated ports to enable communication between its components, which include storage systems and the VMware vCenter Server. If you have firewalls enabled, you must ensure that the firewalls are set to allow exceptions.'

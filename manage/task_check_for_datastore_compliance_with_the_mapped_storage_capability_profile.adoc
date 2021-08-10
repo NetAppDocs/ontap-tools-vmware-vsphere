@@ -1,5 +1,5 @@
 ---
-permalink: configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html
+permalink: manage/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html
 sidebar: sidebar
 keywords:
 summary: 'You can quickly verify whether your datastores are compliant with the storage capability profiles that are mapped to the datastores.'
