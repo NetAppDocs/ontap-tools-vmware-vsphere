@@ -1,5 +1,5 @@
 ---
-permalink: deploy/reference_configure_guest_operating_system_scripts.html
+permalink: configure/reference_configure_guest_operating_system_scripts.html
 sidebar: sidebar
 keywords: Guest operating system
 summary: 'The ISO images of the guest operating system \(OS\) scripts are mounted on ONTAP® tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.'

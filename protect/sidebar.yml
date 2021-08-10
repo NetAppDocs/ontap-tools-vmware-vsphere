@@ -1,17 +1,25 @@
-section: Concepts
-title: Concepts
+section: protect
+title: Protect
 entries:
-  - title: Overview of the ONTAP tools
-    url: /concepts/concept_virtual_storage_console_overview.html
-  - title: VASA Provider configurations for vVols
-    url: /concepts/concept_configure_vvols_datastores.html
-  - title: Storage Replication Adapter for disaster recovery
-    url: /concepts/concept_manage_disaster_recovery_setup_using_srm.html
-  - title: Role based access control
-    url: /concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html
+  - title: Enable Storage Replication Adapter
+    url: protect/task_enable_storage_replication_adapter.html
+  - title: Configure SRA on the SRM Appliance
+    url: protect/task_configure_sra_on_srm_appliance.html
+  - title: Update Storage Replication Adapter (SRA) credentials
+    url: protect/task_update_sra_credentials.html
+  - title: Migration of Windows SRM to SRM Appliance
+    url: protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
+  - title: Configure VM Storage Policies
+    url: protect/task_configure_vm_storage_policies.html
+  - title: Configure protection groups
+    url: protect/task_configure_protection_groups.html
+  - title: Pair protected and recovery sites
+    url: protect/task_pair_protected_and_recovery_sites.html
+  - title: Configure protected and recovery site resources
+    url: protect/concept_configure_protected_and_recovery_site_resources.html
     entries:
-      - title: Components of vCenter Server permissions
-        url: /concepts/reference_components_that_make_up_vcenter_server_permissions.html
+      - title: Configure network mappings
+        url: protect/task_configure_network_mappings.html
       - title: Key points about assigning and modifying permissions for vCenter Server
         url: /concepts/reference_key_points_about_assigning_and_modifying_permissions.html
       - title: Standard roles packaged with ONTAP tools

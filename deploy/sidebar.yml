@@ -1,6 +1,6 @@
 section: Deploy
 title: Deploy
-url: "/deploy/index.html"
+
 entries:
   - title: Overview of the ONTAP tools
     url: "/deploy/concept_virtual_storage_console_overview.html"

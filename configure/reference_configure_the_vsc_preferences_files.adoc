@@ -1,5 +1,5 @@
 ---
-permalink: deploy/reference_configure_the_vsc_preferences_files.html
+permalink: configure/reference_configure_the_vsc_preferences_files.html
 sidebar: sidebar
 keywords: preferences files
 summary: 'The preferences files contain settings that control ONTAP® tools for VMware vSphere operations. Under most circumstances, you do not have to modify the settings in these files. It is helpful to know which preference files Virtual Storage Console \(VSC\) uses.'

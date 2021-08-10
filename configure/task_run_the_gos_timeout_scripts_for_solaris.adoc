@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_run_the_gos_timeout_scripts_for_solaris.html
+permalink: configure/task_run_the_gos_timeout_scripts_for_solaris.html
 sidebar: sidebar
 keywords:
 summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O timeout settings for Solaris 10. You can specify either a 60-second timeout or a 190-second timeout.'

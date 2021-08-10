@@ -2,7 +2,10 @@ sidebar:
   entries:
     - title: ONTAP tools for VMware vSphere
       url: "/index.html"
-    - section: concepts
+    - section: Concepts
+    - section: get-started
+    - section: configure
+    - section: protect
     - section: deploy
     - section: manage
 
