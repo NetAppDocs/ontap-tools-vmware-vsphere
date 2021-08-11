@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can use VASA Provider for ONTAP to create and manage VMware Virtual Volumes \(vVols\). You can provision, edit, mount, and delete a vVols datastore. You can also add storage to the vVols datastore or remove storage from the vVols datastore. to provide greater flexibility. You can provision and manage every virtual machine and the related VMDK.'
 ---
-= Configure vVols datastores
+= VASA Provider configurations for vVols
 :icons: font
 :imagesdir: ../media/
 
