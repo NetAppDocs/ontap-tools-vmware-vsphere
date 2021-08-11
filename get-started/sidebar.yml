@@ -21,4 +21,4 @@ entries:
   - title: Clear the vSphere cached downloaded plug-in packages
     url: get-started/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
   - title: Deploy ONTAP tools for VMware vSphere
-    url: get-started/task_deploy_ontap_tools.html            
+    url: get-started/task_deploy_ontap_tools.html

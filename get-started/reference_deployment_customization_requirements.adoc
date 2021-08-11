@@ -1,5 +1,5 @@
 ---
-permalink: deploy/reference_deployment_customization_requirements.html
+permalink: get-started/reference_deployment_customization_requirements.html
 sidebar: sidebar
 keywords:
 summary: 'You must consider few limitations while customizing the deployment ONTAP tools.'
