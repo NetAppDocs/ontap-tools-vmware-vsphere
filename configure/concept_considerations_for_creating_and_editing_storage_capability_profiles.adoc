@@ -1,7 +1,7 @@
 ---
-permalink: manage/concept_considerations_for_creating_and_editing_storage_capability_profiles.html
+permalink: configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should be aware of the considerations for creating and editing storage capability profiles.'
 ---
 = Considerations for creating and editing storage capability profiles

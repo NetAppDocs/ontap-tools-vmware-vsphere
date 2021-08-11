@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_configure_folder_mappings.html
+permalink: protect/task_configure_folder_mappings.html
 sidebar: sidebar
 keywords:
 summary: 'You must map your folders on the protected site and recovery site to enable communication between them.'

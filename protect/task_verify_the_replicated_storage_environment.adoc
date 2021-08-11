@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_verify_the_replicated_storage_environment.html
+permalink: protect/task_verify_the_replicated_storage_environment.html
 sidebar: sidebar
 keywords:
 summary: 'You must verify that the protected site and recovery site are successfully paired after configuring Storage Replication Adapter \(SRA\). The replicated storage system must be discoverable by both the protected site and the recovery site.'

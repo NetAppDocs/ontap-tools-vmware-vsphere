@@ -1,5 +1,5 @@
 ---
-permalink: concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html
+permalink: Concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'The ONTAP tools for VMware vSphere supports environments that use MetroCluster IP and FC configurations for ONTAP. Most of this support is automatic. However, you might notice a few differences when you use a MetroCluster environment with VSC and VASA Provider.'

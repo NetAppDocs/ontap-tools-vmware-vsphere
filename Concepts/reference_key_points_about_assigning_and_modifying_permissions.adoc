@@ -1,5 +1,5 @@
 ---
-permalink: concepts/reference_key_points_about_assigning_and_modifying_permissions.html
+permalink: Concepts/reference_key_points_about_assigning_and_modifying_permissions.html
 sidebar: sidebar
 keywords:
 summary: 'There are several key points to keep in mind when you are working with vCenter Server permissions. Whether a ONTAP® tools for VMware vSphere task succeeds can depend on where you assigned a permission, or what actions a user took after a permission was modified.'

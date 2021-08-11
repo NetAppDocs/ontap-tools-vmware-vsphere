@@ -1,7 +1,7 @@
 ---
-permalink: deploy/task_regenerate_an_ssl_certificate_for_vsc.html
+permalink: configure/task_regenerate_an_ssl_certificate_for_vsc.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The SSL certificate is generated when you install Virtual Storage Console \(VSC\). The distinguished name \(DN\) that is generated for the SSL certificate might not be a common name \(CN\) that the client machines recognize. By changing the keystore and private key passwords, you can regenerate the certificate and create a site-specific certificate.'
 ---
 = Regenerate an SSL certificate for Virtual Storage Console

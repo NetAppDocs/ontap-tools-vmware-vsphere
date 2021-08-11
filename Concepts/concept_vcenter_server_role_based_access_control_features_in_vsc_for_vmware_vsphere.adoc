@@ -1,5 +1,5 @@
 ---
-permalink: concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html
+permalink: Concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'vCenter Server provides role-based access control \(RBAC\) that enables you to control access to vSphere objects. In ONTAP® tools for VMware vSphere, vCenter Server RBAC works with ONTAP RBAC to determine which VSC tasks a specific user can perform on objects on a specific storage system.'

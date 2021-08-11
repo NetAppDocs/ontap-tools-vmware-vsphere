@@ -1,5 +1,5 @@
 ---
-permalink: deploy/task_register_oncommand_api_services_with_ontap_tools.html
+permalink: configure/task_register_oncommand_api_services_with_ontap_tools.html
 sidebar: sidebar
 keywords: virtual volume datastores
 summary: 'If you are using ONTAP 9.6 or earlier, then the vVol dashboard can display the details of VMware Virtual Volumes \(vVols\) datastores and virtual machines only if you have registered OnCommand API Services for VASA Provider to obtain data for the vVols VM and datastore reports.'
