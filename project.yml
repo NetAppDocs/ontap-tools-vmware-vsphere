@@ -11,8 +11,10 @@ sidebar:
 
 homepage:
   tiles:
-  - title: This is the title of a tile
+  - title: Get started
     links:
-    - title: This is the title of a link
+    - title: Learn about ONTAP tools for VMware vSphere
       summary: This is the description of the link target
-      url: deploy/index.html
+      url: Concepts/concept_virtual_storage_console_overview.html
+    - title: Upgrade ONTAP tools
+      url: upgrade/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
