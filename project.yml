@@ -14,19 +14,16 @@ homepage:
   - title: Get started
     links:
     - title: Learn about ONTAP tools for VMware vSphere
-      summary: This is the description of the link target
       url: /Concepts/concept_virtual_storage_console_overview.html
     - title: Deploy ONTAP tools
       url: /deploy/task_deploy_ontap_tools.html
     - title: Upgrade ONTAP tools
       url: /deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
-  - titles: Use ONTAP tools
+  - title: Use ONTAP tools
     links:
     - title: Provision traditional datastores
-      summary: This is the description of the link target
       url: /configure/concept_configure_traditional_datastores.html
     - title: Provision vVols datastores
-      summary: This is the description of the link target
       url: /configure/task_provision_vvols_datastores.html
     - title: Configure role-based access control
       url: /Concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
@@ -48,10 +45,8 @@ homepage:
   - title: More resources
     links:
     - title: NetApp Knowledge Base - ONTAP tools
-    summary: This is the description of the link target
-    url: /https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
-  - title: NetApp Import Utility for SnapCenter and Virtual Storage Console Overview
-    url: /https://www.youtube.com/watch?v=CEQmIEzNVfA
-  - title: NetApp Community - ONTAP tools
-    url: /https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
-  
+      url: /https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+    - title: NetApp Import Utility for SnapCenter and Virtual Storage Console Overview
+      url: /https://www.youtube.com/watch?v=CEQmIEzNVfA
+    - title: NetApp Community - ONTAP tools
+      url: /https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
