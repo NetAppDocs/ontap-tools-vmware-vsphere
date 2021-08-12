@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can create and manage the disaster recovery setup in your vCenter Server along with VMware’s Site Recovery Manager \(SRM\).'
 ---
-= Manage disaster recovery setup
+= Configure disaster recovery setup
 :icons: font
 :imagesdir: ../media/
 

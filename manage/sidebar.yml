@@ -2,7 +2,7 @@ section: monitor
 title: Monitor
 entries:
   - title: Datastore Reports
-    url: monitor/concept_datastore_reports.html
+    url: /monitor/concept_datastore_reports.html
     entries:
       - title: ONTAP tools console reports
         url: /monitor/concept_virtual_storage_console_reports.html
