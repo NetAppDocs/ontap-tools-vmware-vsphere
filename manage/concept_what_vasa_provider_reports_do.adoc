@@ -1,5 +1,5 @@
 ---
-permalink: monitor/concept_what_vasa_provider_reports_do.html
+permalink: manage/concept_what_vasa_provider_reports_do.html
 sidebar: sidebar
 keywords: VSC, VASA Provider, and SRA
 summary: 'vVols reports display detailed information about VMware Virtual Volumes \(vVols\) datastores and the virtual machines that are created on these datastores. The vVols dashboard enables you to review and identify potential issues with the vVols datastores and virtual machines in your vCenter Server.'

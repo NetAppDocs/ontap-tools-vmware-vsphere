@@ -1,5 +1,5 @@
 ---
-permalink: get-started/task_deploy_ontap_tools.html
+permalink: deploy/task_deploy_ontap_tools.html
 sidebar: sidebar
 keywords:
 summary: 'You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.'

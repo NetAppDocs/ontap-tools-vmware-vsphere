@@ -1,5 +1,5 @@
 ---
-permalink: get-started/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
+permalink: deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
 sidebar: sidebar
 keywords: clean up browser cache
 summary: 'If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.'

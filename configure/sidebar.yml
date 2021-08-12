@@ -3,11 +3,6 @@ title: Configure
 entries:
   - title: Workflow for configuring ONTAP® tools for VMware vSphere
     url: /configure/concept_workflow_for_configuring_the_unified_appliance.html
-  - title: Enable VASA Provider for configuring virtual datastores
-    url: /configure/task_enable_vasa_provider_for_configuring_virtual_datastores.html
-    entries:
-  - title: Install the NFS VAAI plug-in
-    url: /configure/task_install_the_nfs_vaai_plug_in.html
   - title: Configure ONTAP® tools for VMware vSphere
     url: /configure/concept_configure_vsc_for_vmware_vsphere_environment.html
     entries:

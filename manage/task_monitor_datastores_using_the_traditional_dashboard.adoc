@@ -1,5 +1,5 @@
 ---
-permalink: monitor/task_monitor_datastores_using_the_traditional_dashboard.html
+permalink: manage/task_monitor_datastores_using_the_traditional_dashboard.html
 sidebar: sidebar
 keywords:
 summary: 'You can monitor the traditional datastores and virtual machines using the traditional dashboard of the ONTAP tools. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints.'

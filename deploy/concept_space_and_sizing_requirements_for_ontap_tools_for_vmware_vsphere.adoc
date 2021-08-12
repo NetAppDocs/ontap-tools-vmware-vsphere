@@ -1,5 +1,5 @@
 ---
-permalink: get-started/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html
+permalink: deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords: Virtual Storage Console,Storage Replication Adapter
 summary: 'Before deploying the ONTAP tools for VMware vSphere, you should be familiar with the space requirements for the deployment package and some basic host system requirements.'
