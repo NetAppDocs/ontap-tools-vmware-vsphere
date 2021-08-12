@@ -1,0 +1,17 @@
+section: monitor
+title: Monitor
+entries:
+  - title: Datastore Reports
+    url: monitor/concept_datastore_reports.html
+    entries:
+      - title: ONTAP tools console reports
+        url: /monitor/concept_virtual_storage_console_reports.html
+      - title: vVols reports
+        url: /monitor/concept_what_vasa_provider_reports_do.html
+  - title: Monitor datastores and virtual machines using the traditional dashboard
+    url: /monitor/task_monitor_datastores_using_the_traditional_dashboard.html
+  - title: Monitor vVols datastores and virtual machines using the vVols dashboard
+    url: /monitor/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
+    entries:
+      - title: vVols dashboard data requirements
+        url: /monitor/reference_verify_vvols_dashboard_data_requirements.html

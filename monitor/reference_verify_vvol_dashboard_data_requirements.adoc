@@ -1,5 +1,5 @@
 ---
-permalink: manage/reference_verify_vvols_dashboard_data_requirements.html
+permalink: monitor/reference_verify_vvols_dashboard_data_requirements.html
 sidebar: sidebar
 keywords: vVol dashboard
 summary: 'You must verify some important requirements of the vVols dashboard to display dynamic details of the VMware Virtual Volumes \(vVols\) datastores and virtual machines.'

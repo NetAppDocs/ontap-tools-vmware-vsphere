@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
+permalink: monitor/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
 sidebar: sidebar
 keywords:
 summary: 'You can monitor the performance and view the top five SAN and NAS VMware Virtual Volumes \(vVols\) datastores in your vCenter Server based on the parameters that you select by using the vVols dashboard of the ONTAP tools.'

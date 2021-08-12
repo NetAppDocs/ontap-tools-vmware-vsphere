@@ -6,8 +6,8 @@ sidebar:
     - section: get-started
     - section: configure
     - section: protect
-    - section: deploy
     - section: manage
+    - section: monitor
 
 homepage:
   tiles:
