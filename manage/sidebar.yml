@@ -1,11 +1,31 @@
-section: monitor
-title: Monitor
+section: manage
+title: Manage
 entries:
-  - title: Datastore Reports
-    url: /monitor/concept_datastore_reports.html
+  - title: Edit ESXi host settings for ONTAP® tools for VMware vSphere
+    url: /manage/task_edit_esxi_host_settings.html
+  - title: Mount datastore on additional hosts
+    url: /manage/task_mount_datastores_on_host.html
+  - title: Resize datastores
+    url: /manage/task_resize_datastores.html
+  - title: Edit a vVols datastore
+    url: /manage/task_edit_a_vvols_datastore.html
+  - title: Add storage to a vVols datastore
+    url: /manage/task_add_storage_to_a_vvols_datastore.html
+  - title: Remove storage from a vVols datastore
+    url: /manage/task_remove_storage_from_a_vvols_datastore.html
+  - title: Mount a vVols datastore
+    url: /manage/task_mount_a_vvols_datastore.html
+  - title: Considerations for migrating or cloning virtual machines
+    url: /manage/reference_considerations_for_migrating_virtual_machines.html
+  - title: Migrate traditional virtual machines to vVols datastores
+    url: /manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html
+  - title: Migrate virtual machines with older storage capability profiles
+    url: /manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
+  - title: ONTAP tools console reports
+    url: /monitor/concept_virtual_storage_console_reports.html
     entries:
-      - title: ONTAP tools console reports
-        url: /monitor/concept_virtual_storage_console_reports.html
+      - title: Datastore Reports
+        url: /monitor/concept_datastore_reports.html
       - title: vVols reports
         url: /monitor/concept_what_vasa_provider_reports_do.html
   - title: Monitor datastores and virtual machines using the traditional dashboard
