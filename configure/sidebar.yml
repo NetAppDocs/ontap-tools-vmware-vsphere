@@ -24,10 +24,11 @@ entries:
     url: /configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html
   - title: Configure the VSC preferences files
     url: /configure/reference_configure_the_vsc_preferences_files.html
-  - title: Set IPv4 or IPv6
-    url: /configure/reference_set_ipv4_or_ipv6.html
-  - title: Enable datastore mounting across different subnets
-    url: /configure/task_enable_datastore_mounting_across_different_subnets.html
+    entries:
+      - title: Set IPv4 or IPv6
+        url: /configure/reference_set_ipv4_or_ipv6.html
+      - title: Enable datastore mounting across different subnets
+        url: /configure/task_enable_datastore_mounting_across_different_subnets.html
   - title: Maintenance Console of ONTAP tools for VMware vSphere
     url: /configure/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
     entries:
@@ -56,6 +57,9 @@ entries:
     url: /configure/task_configure_user_role_and_privileges.html
   - title: Create storage capability profiles
     url: /configure/concept_configure_storage_capability_profiles.html
+    entries:
+      - title: Considerations for creating and editing storage capability profiles
+        url: /configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html
   - title: Provision datastores
     url: /configure/task_provision_datastores.html
     entries:
