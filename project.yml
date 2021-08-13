@@ -6,7 +6,7 @@ sidebar:
     - section: deploy
     - section: configure
     - section: protect
-    - section: Manage
+    - section: manage
 
 
 homepage:
@@ -34,7 +34,6 @@ homepage:
   - title: Protect and manage datastores
     links:
     - title: Protect your datastores
-      summary: This is the description of the link target
       url: /Concepts/concept_manage_disaster_recovery_setup_using_srm.html
     - title: Protect virtual machines
       url: /configure/concept_configure_replication_for_vvols_datastore.html
