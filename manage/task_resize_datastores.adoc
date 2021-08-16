@@ -1,4 +1,4 @@
----
+ ---
 permalink: manage/task_resize_datastores.html
 sidebar: sidebar
 keywords:
@@ -17,7 +17,7 @@ You can increase or decrease the size of an NFS datastore but for a VMFS datasto
 
 *Steps*
 
-. From the vSphere ClientHome page, click *Hosts and Clusters*.
+. From the vSphere Client Home page, click *Hosts and Clusters*.
 . In the navigation pane, select the datacenter that contains the datastore.
 . Right-click the datastore and select *NetApp ONTAP tools* > *Assign QoS*.
 . In the Resize dialog box, specify a new size for the datastore, and then click *OK*.

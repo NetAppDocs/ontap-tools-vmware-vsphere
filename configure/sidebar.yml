@@ -60,6 +60,8 @@ entries:
     entries:
       - title: Considerations for creating and editing storage capability profiles
         url: /configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html
+      - title: Configure storage capability profiles
+        url: /configure/task_create_storage_capability_profiles.html
   - title: Provision datastores
     url: /configure/task_provision_datastores.html
     entries:

@@ -15,7 +15,7 @@ A vVols datastore exists as long as at least one FlexVol volume is available on 
 
 *Steps*
 
-. From the vSphere ClientHome page, click *Hosts and Clusters*.
+. From the vSphere Client Home page, click *Hosts and Clusters*.
 . Right-click the vVols datastore that you want to modify, and then select *NetApp ONTAP tools* > *Remove Storage from vVols Datastore*.
 +
 The Remove Storage from vVols Datastore dialog box is displayed.

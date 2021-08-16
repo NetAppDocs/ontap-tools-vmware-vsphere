@@ -15,7 +15,7 @@ To create new user roles, you must log in as an administrator on storage systems
 
 * ONTAP System Manager 9.7 or later
 +
-link:task_configure_user_role_and_privileges.html[Configure user roles and privileges]
+link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges]
 
 * RBAC User Creator for ONTAP tool (if using ONTAP 9.6 or earlier)
 +

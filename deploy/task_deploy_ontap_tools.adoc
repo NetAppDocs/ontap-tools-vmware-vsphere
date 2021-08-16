@@ -23,7 +23,7 @@ https://mysupport.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&
 * You must have the administrator login credentials for your vCenter Server instance.
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
 +
-link:task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
 
 * You must have enabled Internet Control Message Protocol (ICMP ).
 +
@@ -31,7 +31,7 @@ If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VS
 
 If you are deploying a fresh installation of ONTAP tools, then VASA Provider is enabled by default. But in case of an upgrade from an earlier release of the ONTAP tools, the state of VASA Provider is retained and you might need to enable VASA Provider manually.
 
-link:task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
+link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
 
 . Log in to the vSphere Client.
 . Select *Home* > *Host & Clusters*.
@@ -52,7 +52,7 @@ Select the _.ova_ file for ONTAP tools from the saved location.
 
 . Enter the details to customize the deployment wizard.
 +
-See link:reference_deployment_customization_requirements.html[Deployment customization considerations] for complete details.
+See link:../deploy/reference_deployment_customization_requirements.html[Deployment customization considerations] for complete details.
 
 . Review the configuration data, and then click *Next* to finish deployment.
 +
@@ -67,11 +67,11 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 +
 *Troubleshooting:* If you cannot view the plug-in even after logging in, you must clean the vSphere Client cache.
 +
-link:task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
 
 NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
-link:task_register_oncommand_api_services_with_ONTAP_tools.html[Registering OnCommand API Services with ONTAP tools]
+link:../configure/task_register_oncommand_api_services_with_ONTAP_tools.html[Registering OnCommand API Services with ONTAP tools]
 
 *Related information*
 

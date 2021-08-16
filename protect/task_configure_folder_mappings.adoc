@@ -20,7 +20,7 @@ You must have connected the protected and recovery sites.
 . Log in to your vCenter Server, and click on *Site Recovery* > *Sites*.
 . Select your protected site, and then click *Manage*.
 . In the Manage tab, select *Folder Mappings*.
-. Click theimage:../media/new_folder_mappings.gif[] icon to create a new folder mapping.
+. Click the image:../media/new_folder_mappings.gif[] icon to create a new folder mapping.
 +
 The Create Folder Mapping wizard appears.
 

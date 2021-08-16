@@ -21,7 +21,7 @@ https://mysupport.netapp.com/site/global/dashboard
 
 * You should be using ONTAP 9.3 or later for your storage system.
 
-xref:reference_verify_vvol_dashboard_data_requirements.html[vVols dashboard data requirements]
+link:../manage/reference_verify_vvol_dashboard_data_requirements.html[vVols dashboard data requirements]
 
 The IOPS data that is provided by ONTAP is rounded off and displayed on the vVols dashboard. There might be a difference between the actual IOPS value that is provided by ONTAP and the IOPS value that is displayed on the vVols dashboard. From the 9.8 release of ONTAP tools, performance monitoring is available for NFS based vVols datastores.
 

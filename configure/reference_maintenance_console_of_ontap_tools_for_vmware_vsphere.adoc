@@ -89,4 +89,4 @@ a|
 |===
 *Related information*
 
-link:concept_virtual_storage_console_and_vasa_provider_log_files.html[Virtual Storage Console and VASA Provider log files]
+link:../configure/concept_virtual_storage_console_and_vasa_provider_log_files.html[Virtual Storage Console and VASA Provider log files]

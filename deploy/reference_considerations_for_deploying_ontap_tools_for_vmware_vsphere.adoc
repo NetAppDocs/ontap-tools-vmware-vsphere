@@ -19,9 +19,9 @@ a|
 First-time deployment of ONTAP tools
 a|
 The deployment of the ONTAP tools automatically installs the VSC features.
-link:concept_deploy_or_upgrade_ontap_tools.html[Deploy or upgrade ONTAP® tools for VMware vSphere]
+link:../deploy/concept_deploy_or_upgrade_ontap_tools.html[Deploy or upgrade ONTAP® tools for VMware vSphere]
 
-link:concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
+link:../deploy/concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
 
 a|
 Upgrading from an existing deployment of VSC
