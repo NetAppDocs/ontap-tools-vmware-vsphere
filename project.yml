@@ -44,8 +44,8 @@ homepage:
   - title: More resources
     links:
     - title: NetApp Knowledge Base - ONTAP tools
-      url: /https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+      url: /https:/kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
     - title: NetApp Import Utility for SnapCenter and Virtual Storage Console Overview
-      url: /https://www.youtube.com/watch?v=CEQmIEzNVfA
+      url: /https:/www.youtube.com/watch?v=CEQmIEzNVfA
     - title: NetApp Community - ONTAP tools
-      url: /https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
+      url: /https:/community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
