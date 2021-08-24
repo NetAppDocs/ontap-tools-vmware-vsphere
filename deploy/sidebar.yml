@@ -2,8 +2,6 @@ section: Deploy
 title: Deploy
 
 entries:
-  - title: Overview of the ONTAP tools
-    url: /deploy/concept_virtual_storage_console_overview.html
   - title: Deployment workflow for new users of ONTAP tools for VMware vSphere
     url: /deploy/concept_installation_workflow_for_new_users.html
     entries:

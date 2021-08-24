@@ -16,3 +16,5 @@ VASA Provider now comes built-in with the capabilities of Storage Replication Ad
 This release of ONTAP tools provides you with an option to use synchronous SnapMirror configuration for disaster recovery.
 
 NOTE: VMware Site Recovery Manager (SRM) does not use SRA for managing disaster recovery of vVols datastores. Instead VASA Provider is used for replication and failover control of vVols datastores on ONTAP 9.7 and later clusters.
+
+link:../protect/task_enable_storage_replication_adapter.html[Enable Storage Replication Adapter]

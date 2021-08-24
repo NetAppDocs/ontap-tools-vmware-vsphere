@@ -51,4 +51,4 @@ You must log out of the vSphere Client, and then log in again to verify that you
 
 *Related information*
 
-link:../Concepts/concept_configure_storage_replication_adapter_for_disaster_recovery.html[Configure Storage Replication Adapter for disaster recovery]
+link:../Concepts/concept_manage_disaster_recovery_setup_using_srm.html[Configure Storage Replication Adapter for disaster recovery]
