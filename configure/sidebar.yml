@@ -1,5 +1,5 @@
 section: configure
-title: Configure
+title: Configure ONTAP tools
 entries:
   - title: Workflow for configuring ONTAP® tools for VMware vSphere
     url: /configure/concept_workflow_for_configuring_the_unified_appliance.html

@@ -1,6 +1,5 @@
 section: Deploy
 title: Deploy and upgrade ONTAP tools
-
 entries:
   - title: Deployment workflow for new users of ONTAP tools for VMware vSphere
     url: /deploy/concept_installation_workflow_for_new_users.html

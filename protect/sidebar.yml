@@ -1,5 +1,5 @@
 section: protect
-title: Protect
+title: Protect your datastores
 entries:
   - title: Enable Storage Replication Adapter
     url: /protect/task_enable_storage_replication_adapter.html
