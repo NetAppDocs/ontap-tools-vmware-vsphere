@@ -41,7 +41,7 @@ homepage:
     - title: Protect your datastores
       url: /Concepts/concept_manage_disaster_recovery_setup_using_srm.html
     - title: Protect virtual machines
-      url: /configure/concept_configure_replication_for_vvols_datastore.html
+      url: /protect/concept_configure_replication_for_vvols_datastore.html
     - title: Monitor traditional datastores and virtual machines
       url: /manage/task_monitor_datastores_using_the_traditional_dashboard.html
     - title: Monitor vVols datastores and virtual machines
