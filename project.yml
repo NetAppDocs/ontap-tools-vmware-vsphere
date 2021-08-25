@@ -9,7 +9,7 @@ sidebar:
     - section: configure
     - section: protect
     - section: manage
-    - section: Legal notices
+    - title: Legal notices
       url: /reference_legal_notices.html
 
 homepage:
