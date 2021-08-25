@@ -18,4 +18,4 @@ entries:
   - title: Configure protected and recovery site resources
     url: /protect/concept_configure_protected_and_recovery_site_resources.html
   - title: Configure replication for vVols datastore
-    url: /configure/concept_configure_replication_for_vvols_datastore.html
+    url: /protect/concept_configure_replication_for_vvols_datastore.html
