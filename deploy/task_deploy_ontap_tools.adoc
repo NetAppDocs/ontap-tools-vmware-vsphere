@@ -11,6 +11,8 @@ summary: 'You should deploy ONTAP tools in your environment, and specify the req
 [.lead]
 You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.
 
+*What you will need*
+
 * You must be running a supported release of vCenter Server.
 +
 NOTE: ONTAP tools can be registered either with a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
@@ -29,9 +31,13 @@ link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Cl
 +
 If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
 
+*About this task*
+
 If you are deploying a fresh installation of ONTAP tools, then VASA Provider is enabled by default. But in case of an upgrade from an earlier release of the ONTAP tools, the state of VASA Provider is retained and you might need to enable VASA Provider manually.
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
+
+*Steps*
 
 . Log in to the vSphere Client.
 . Select *Home* > *Host & Clusters*.

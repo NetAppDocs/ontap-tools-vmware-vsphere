@@ -11,7 +11,7 @@ summary: 'You must create protection groups to protect a group of virtual machin
 [.lead]
 You must create protection groups to protect a group of virtual machines on the protected site.
 
-*What you'll need*
+*What you will need*
 
 You should ensure that both the source and target sites are configured for the following:
 

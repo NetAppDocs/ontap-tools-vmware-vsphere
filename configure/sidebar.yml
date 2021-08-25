@@ -76,7 +76,5 @@ entries:
   - title: Provision vVols datastores
     url: /configure/task_provision_vvols_datastores.html
     entries:
-      - title: Configure replication for vVols datastore
-        url: /configure/concept_configure_replication_for_vvols_datastore.html
       - title: Rebalance vVols datastores
         url: /configure/reference_rebalance_vvols_datastore.html

@@ -11,6 +11,8 @@ summary: 'After upgrading ONTAP tools or deploying the latest version of ONTAP t
 [.lead]
 After upgrading ONTAP tools or deploying the latest version of ONTAP tools, you have to upgrade your Storage Replication Adapter (SRA).
 
+*Steps*
+
 . You must upgrade to the latest adapter using one of the following procedures based on your adapter:
 +
 |===

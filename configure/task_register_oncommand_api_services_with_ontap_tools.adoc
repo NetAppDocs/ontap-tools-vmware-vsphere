@@ -11,9 +11,13 @@ summary: 'If you are using ONTAP 9.6 or earlier, then the vVols dashboard can di
 [.lead]
 If you are using ONTAP 9.6 or earlier, then the vVols dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered OnCommand API Services for VASA Provider to obtain data for the vVols VM and datastore reports.
 
+*What you will need*
+
 You must have downloaded OnCommand API Services 2.1 or later from the NetApp Support Site.
 
 NOTE: The vVols dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
+
+*Steps*
 
 . From the ONTAP tools home page, click *Settings*.
 . Click *Manage Extension* in the Administrative Settings tab.

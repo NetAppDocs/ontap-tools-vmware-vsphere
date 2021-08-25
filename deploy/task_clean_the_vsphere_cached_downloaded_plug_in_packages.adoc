@@ -11,6 +11,8 @@ summary: 'If plug-ins are not updated automatically after deploying or upgrading
 [.lead]
 If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.
 
+*Steps*
+
 . Logout from your existing vSphere web client or vSphere Client.
 . Remove the browser cache.
 . Remove the vSphere Client cached plug-in packages.

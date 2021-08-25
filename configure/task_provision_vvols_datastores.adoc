@@ -11,7 +11,7 @@ summary: 'You can provision a vVols datastore using the Provision Datastore wiza
 [.lead]
 You can provision a vVols datastore using the Provision Datastore wizard only if VASA Provider is enabled in your ONTAP tools.
 
-*What you'll need*
+*What you will need*
 
 * You should ensure that the subnet details of all the networks to which the ESXi hosted is connected is entered in the Kaminoprefs.xml.
 +

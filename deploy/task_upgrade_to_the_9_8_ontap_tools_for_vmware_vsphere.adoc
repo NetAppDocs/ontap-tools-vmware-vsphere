@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: Virtual Storage Console, Storage Replication Adapter
 summary: 'You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.'
 ---
-= Upgrade to the 9.8 ONTAP tools
+= Upgrade ONTAP tools
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.
 
-*What you'll need*
+*What you will need*
 
 * You must have downloaded the _.iso_ file for the 9.8 release of ONTAP tools.
 * You must have reserved at least 12 GB of RAM for the ONTAP tools to work optimally after the upgrade.

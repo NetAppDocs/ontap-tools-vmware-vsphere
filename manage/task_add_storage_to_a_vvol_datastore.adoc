@@ -11,6 +11,8 @@ summary: 'You can increase the available storage by using the Add Storage wizard
 [.lead]
 You can increase the available storage by using the Add Storage wizard to add FlexVol volumes to an existing VMWare Virtual Volumes (vVols) datastore.
 
+*About this task*
+
 When you add a FlexVol volume, you also have the option of changing the storage capability profile associated with that volume. You can either use the VASA Provider auto-generate feature to create a new profile for the volume, or you can assign one of the existing profiles to the volume.
 
 [NOTE]

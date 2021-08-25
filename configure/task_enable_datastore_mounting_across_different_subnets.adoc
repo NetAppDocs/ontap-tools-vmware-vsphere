@@ -11,11 +11,15 @@ summary: 'If you use iSCSI or NFS and the subnet is different between your ESXi 
 [.lead]
 If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP® tools for VMware vSphere preferences files. If you do not modify the preferences file, then datastore provisioning fails because Virtual Storage Console (VSC) cannot mount the datastore.
 
+*About this task*
+
 When datastore provisioning fails, VSC logs the following error messages:
 
 'Unable to continue. No ip addresses found when cross-referencing kernel ip addresses and addresses on the controller.
 
 Unable to find a matching network to NFS mount volume to these hosts.'
+
+*Steps*
 
 . Log in to your vCenter Server instance.
 . Launch the maintenance console using your unified appliance virtual machine.

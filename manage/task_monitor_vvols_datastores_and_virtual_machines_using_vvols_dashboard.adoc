@@ -11,7 +11,7 @@ summary: 'You can monitor the performance and view the top five SAN and NAS VMwa
 [.lead]
 You can monitor the performance and view the top five SAN and NAS VMware Virtual Volumes (vVols) datastores in your vCenter Server based on the parameters that you select by using the vVols dashboard of the ONTAP tools.
 
-*What you'll need*
+*What you will need*
 
 * You should have enabled OnCommand API Services 2.1 or later if you are using ONTAP 9.6 or earlier.
 +
@@ -37,6 +37,8 @@ This is because OnCommand API Services takes time to obtain updated metrics from
 Read IOPS, Write IOPS, and Total IOPS are separate metrics that are provided by OnCommand API Services. If there is a difference between the Total IOPS value and the cumulative IOPS value (Read IOPS value + Write IOPS value) provided by OnCommand API Services, then the same difference is observed in the IOPS values on the vVols dashboard.
 
 * NFS based data vVols provisioned on ONTAP 9.8 and above are automatically registered for performance monitoring in the vVols dashboard.
+
+*Steps*
 
 . From the vSphere Client home page, click *ONTAP tools*.
 . Select the required vCenter Server using the *vCenter server* drop-down menu to view the datastores.

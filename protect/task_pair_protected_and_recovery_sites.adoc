@@ -11,10 +11,12 @@ summary: 'You must pair the protected and recovery sites created using your vSph
 [.lead]
 You must pair the protected and recovery sites created using your vSphere Client to enable Storage Replication Adapter (SRA) to discover the storage systems.
 
-*What you'll need*
+*What you will need*
 
 * You must have installed Site Recovery Manager (SRM) on the protected and recovery sites.
 * You must have installed SRA on the protected and recovery sites.
+
+*About this task*
 
 SnapMirror fan-out configurations are those where a source volume is replicated to two different destinations. These create a problem during recovery when SRM needs to recover the virtual machinefrom destination.
 

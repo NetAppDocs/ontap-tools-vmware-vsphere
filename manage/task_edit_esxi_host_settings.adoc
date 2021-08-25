@@ -11,7 +11,7 @@ summary: 'You can use the dashboard of ONTAP tools for VMware vSphere to edit yo
 [.lead]
 You can use the dashboard of ONTAP tools for VMware vSphere to edit your ESXi host settings.
 
-*What you'll need*
+*What you will need*
 
 You must have configured an ESXi host system for your vCenter Server instance.
 

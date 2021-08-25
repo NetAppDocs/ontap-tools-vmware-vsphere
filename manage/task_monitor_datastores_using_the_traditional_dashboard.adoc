@@ -11,7 +11,7 @@ summary: 'You can monitor the traditional datastores and virtual machines using 
 [.lead]
 You can monitor the traditional datastores and virtual machines using the traditional dashboard of the ONTAP tools. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints.
 
-*What you'll need*
+*What you will need*
 
 You should select either the *Enable Storage I/O Control and statistics collection* or *Disable Storage I/O Control but enable statistics collection* option in the Configure Storage I/O Control dialog box. You can enable Storage I/O Control only if you have the Enterprise Plus license from VMware.
 
@@ -38,7 +38,7 @@ You can change the listing of the datastores based on the space utilized, IOPS, 
 +
 The Virtual Machines portlet provides the following details:
 
- ** Number of virtual machines using NetAppdatastores in your vCenter Server
+ ** Number of virtual machines using NetApp datastores in your vCenter Server
  ** Top five virtual machines based on committed capacity, latency, IOPS, throughput, and uptime
 +
 The IOPS and throughput data in the Virtual Machines portlet is available only for datastores created on FlexGroup backed volumes.

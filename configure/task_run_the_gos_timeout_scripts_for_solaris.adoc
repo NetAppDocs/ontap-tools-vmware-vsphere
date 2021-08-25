@@ -11,7 +11,11 @@ summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O tim
 [.lead]
 The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for Solaris 10. You can specify either a 60-second timeout or a 190-second timeout.
 
+*What you will need*
+
 You must have mounted the ISO image containing the Solaris script.
+
+*Steps*
 
 . Access the console of the Solaris virtual machine, and log in to an account with root privileges.
 . Run the 'solaris_gos_timeout-install.sh' script.

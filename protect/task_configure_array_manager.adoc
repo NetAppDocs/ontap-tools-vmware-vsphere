@@ -11,7 +11,7 @@ summary: 'You can configure Storage Replication Adapter \(SRA\) by using the Arr
 [.lead]
 You can configure Storage Replication Adapter (SRA) by using the Array Manager wizard of Site Recovery Manager (SRM) to enable interactions between SRM and storage virtual machines (SVMs).
 
-*What you'll need*
+*What you will need*
 
 * You must have paired the protected sites and recovery sites in SRM.
 * You must have configured your storage before configuring the array manager.

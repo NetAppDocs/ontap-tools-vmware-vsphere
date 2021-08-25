@@ -11,10 +11,16 @@ summary: 'The ONTAP tools for VMware vSphere has the VASA Provider capability en
 [.lead]
 The ONTAP tools for VMware vSphere has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes (vVols) datastores with required storage capability profiles for each vVols datastore.
 
+*What you will need*
+
 * You must have set up your vCenter Server instance and configured ESXi.
 * You must have deployed ONTAP tools .
 
+*About this task*
+
 If the VASA Provider capability is disabled before upgrading to the 9.7.1 release of ONTAP tools , the VASA Provider capability remains disabled after the upgrade. This release allows you to enable vVols replication feature for vVols datastores.
+
+*Steps*
 
 . Log in to the web user interface of VMware vSphere.
 . From the vSphere Client, click *Menu* > *ONTAP tools Console*.

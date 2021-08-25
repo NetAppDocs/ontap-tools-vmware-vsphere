@@ -11,7 +11,7 @@ summary: 'You must verify that the protected site and recovery site are successf
 [.lead]
 You must verify that the protected site and recovery site are successfully paired after configuring Storage Replication Adapter (SRA). The replicated storage system must be discoverable by both the protected site and the recovery site.
 
-*What you'll need*
+*What you will need*
 
 * You must have configured your storage system.
 * You must have paired the protected site and recovery site by using the SRM array manager.

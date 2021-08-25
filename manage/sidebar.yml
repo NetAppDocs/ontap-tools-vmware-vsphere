@@ -22,16 +22,16 @@ entries:
   - title: Migrate virtual machines with older storage capability profiles
     url: /manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
   - title: ONTAP tools console reports
-    url: /monitor/concept_virtual_storage_console_reports.html
+    url: /manage/concept_virtual_storage_console_reports.html
     entries:
       - title: Datastore Reports
-        url: /monitor/concept_datastore_reports.html
+        url: /manage/concept_datastore_reports.html
       - title: vVols reports
-        url: /monitor/concept_what_vasa_provider_reports_do.html
+        url: /manage/concept_what_vasa_provider_reports_do.html
   - title: Monitor datastores and virtual machines using the traditional dashboard
-    url: /monitor/task_monitor_datastores_using_the_traditional_dashboard.html
+    url: /manage/task_monitor_datastores_using_the_traditional_dashboard.html
   - title: Monitor vVols datastores and virtual machines using the vVols dashboard
-    url: /monitor/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
+    url: /manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
     entries:
       - title: vVols dashboard data requirements
-        url: /monitor/reference_verify_vvols_dashboard_data_requirements.html
+        url: /manage/reference_verify_vvols_dashboard_data_requirements.html

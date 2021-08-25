@@ -11,7 +11,8 @@ summary: 'You can use VSC to set alarms to notify you when volume thresholds and
 [.lead]
 You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.
 
-.Steps
+*Steps*
+
 . From the ONTAP tools Home page, click *Settings*.
 . Click *Unified Appliance Settings*.
 . Specify the percent values for the *Nearly full threshold (%)* field and the *Full threshold (%)* field for both the volume alarm thresholds and the aggregate alarm thresholds.

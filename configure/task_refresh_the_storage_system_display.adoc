@@ -11,9 +11,13 @@ summary: 'You can use the update feature that is provided by ONTAP® tools for V
 [.lead]
 You can use the update feature that is provided by ONTAP® tools for VMware vSphere to refresh the information about storage systems and to force Virtual Storage Console (VSC) to discover storage systems.
 
+*About this task*
+
 The "`refresh`" option is useful if you changed the default credentials for the storage systems after receiving an authentication error. You should always perform an update operation if you changed the storage system credentials after the storage system reported an "`Authentication Failure Status`". During the update operation, VSC tries to connect to the storage system by using the new credentials.
 
 Depending on your system setup, this task can take a long time to complete.
+
+*Steps*
 
 . On the VMware vSphere Client Home page, click *Storage Systems*.
 . Start the update:

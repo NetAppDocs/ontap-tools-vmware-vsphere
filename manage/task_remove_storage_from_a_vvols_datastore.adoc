@@ -11,6 +11,8 @@ summary: 'If a VMware Virtual Volumes \(vVols\) datastore has multiple FlexVol v
 [.lead]
 If a VMware Virtual Volumes (vVols) datastore has multiple FlexVol volumes, you can remove one or more of the FlexVol volumes from the vVols datastore without deleting the datastore.
 
+*About this task*
+
 A vVols datastore exists as long as at least one FlexVol volume is available on the datastore. If you want to delete a vVols datastore in a HA cluster, then you should first unmount the datastore from all hosts within the HA cluster, and then delete the residing .vsphere-HA folder manually using vCenter Server user interface. You can then delete the vVols datastore.
 
 *Steps*

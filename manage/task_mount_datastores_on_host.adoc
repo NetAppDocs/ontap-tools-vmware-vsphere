@@ -11,7 +11,7 @@ summary: 'Mounting a datastore provides storage access to additional hosts. You 
 [.lead]
 Mounting a datastore provides storage access to additional hosts. You can mount the datastore on the additional hosts after you add the hosts to your VMware environment.
 
-*What you'll need*
+*What you will need*
 
 You must ensure that the subnet details of all the networks to which the ESXi hosted is connected is entered in the Kaminoprefs.xml.
 

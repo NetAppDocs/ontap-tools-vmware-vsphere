@@ -11,7 +11,7 @@ summary: 'You must map your folders on the protected site and recovery site to e
 [.lead]
 You must map your folders on the protected site and recovery site to enable communication between them.
 
-*What you'll need*
+*What you will need*
 
 You must have connected the protected and recovery sites.
 

@@ -11,7 +11,11 @@ summary: 'You can manually add storage system to Virtual Storage Console \(VSC\)
 [.lead]
 You can manually add storage system to Virtual Storage Console (VSC).
 
+*About this task*
+
 Each time you start Virtual Storage Console (VSC) or select the *REDISCOVER All* option, VSC automatically discovers the available storage systems.
+
+*Steps*
 
 . Add a storage system to VSC by using the ONTAP tools home page:
  ** Click *Storage Systems* > *Add*.
