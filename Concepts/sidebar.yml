@@ -1,7 +1,7 @@
 section: Concepts
 title: Concepts
 entries:
-  - title: Overview of the ONTAP tools
+  - title: ONTAP tools Overview
     url: /Concepts/concept_virtual_storage_console_overview.html
   - title: VASA Provider configurations for vVols
     url: /Concepts/concept_configure_vvols_datastores.html
@@ -21,7 +21,7 @@ entries:
         url: /Concepts/concept_privileges_required_for_vsc_tasks.html
       - title: ONTAP role-based access control for ONTAP tools
         url: /Concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
-  - title: Configure high availability for ONTAP tools for VMware vSphere
+  - title: Configure high availability for ONTAP tools
     url: /Concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html
   - title: MetroCluster configurations supported by ONTAP tools
     url: /Concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html
