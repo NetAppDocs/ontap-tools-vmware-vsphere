@@ -9,7 +9,7 @@ summary: 'If plug-ins are not updated automatically after deploying or upgrading
 :imagesdir: ../media/
 
 [.lead]
-If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Serverto resolve vCenter Server plug-in issues.
+If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Server to resolve vCenter Server plug-in issues.
 
 *Steps*
 

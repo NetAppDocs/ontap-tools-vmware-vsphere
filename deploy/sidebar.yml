@@ -3,11 +3,9 @@ title: Deploy and upgrade ONTAP tools
 entries:
   - title: Deployment workflow for new users of ONTAP tools for VMware vSphere
     url: /deploy/concept_installation_workflow_for_new_users.html
-    entries:
-    - title: Deployment workflow for existing users of ONTAP tools
-      url: /deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html
+  - title: Deployment workflow for existing users of ONTAP tools
+    url: /deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html
   - title: Requirements for deploying the ONTAP tools
-    url: /deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html
     entries:
     - title: Port requirements for VSC
       url: /deploy/reference_port_requirements_for_vsc.html
@@ -17,6 +15,8 @@ entries:
       url: /deploy/concept_supported_storage_system_and_applications.html
     - title: Considerations and requirements for deploying ONTAP tools
       url: /deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
+    - title: Deployment customization considerations
+      url: /deploy/reference_deploment_customization_requirements.html
   - title: Deploy ONTAP® tools
     url: /deploy/concept_deploy_or_upgrade_ontap_tools.html
     entries:
@@ -24,9 +24,6 @@ entries:
       url: /deploy/concept_how_to_download_ontap_tools.html
     - title: Deploy ONTAP tools for VMware vSphere
       url: /deploy/task_deploy_ontap_tools.html
-      entries:
-      - title: Deployment customization considerations
-        url: /deploy/reference_deploment_customization_requirements.html
     - title: Enable VASA Provider for configuring virtual datastores
       url: /deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
       entries:
@@ -34,18 +31,11 @@ entries:
         url: /deploy/task_register_oncommand_api_services_with_ontap_tools.html
     - title: Install the NFS VAAI plug-in
       url: /deploy/task_install_the_nfs_vaai_plug_in.html
-    - title: Enable Storage Replication Adapter
-      url: /deploy/task_enable_storage_replication_adapter.html
-      entries:
-      - title: Configure SRA on the SRM Appliance
-        url: /deploy/task_configure_sra_on_srm_appliance.html
-      - title: Update Storage Replication Adapter (SRA) credentials
-        url: /deploy/task_update_sra_credentials.html
-    - title: Migrate of Windows SRM to SRM Appliance
-      url: /deploy/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
     - title: Clear the vSphere cached downloaded plug-in packages
       url: /deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
   - title: Upgrade ONTAP tools
-    url: /deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
-  - title: Upgrade Storage Replication Adapter
-    url: /deploy/task_upgrade_storage_replication_adapter.html
+    entries:
+      - title: Upgrade to latest release of ONTAP task_deploy_ontap_tools
+        url: /deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
+      - title: Upgrade Storage Replication Adapter
+        url: /deploy/task_upgrade_storage_replication_adapter.html
