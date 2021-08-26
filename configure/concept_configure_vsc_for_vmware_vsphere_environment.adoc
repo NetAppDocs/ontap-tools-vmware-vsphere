@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Virtual Storage Console \(VSC\) supports numerous environments. Some of the features in these environments might require additional configuration.'
 ---
-= Configure ONTAP® tools for VMware vSphere
+= Configure ONTAP tools for VMware vSphere
 :icons: font
 :imagesdir: ../media/
 

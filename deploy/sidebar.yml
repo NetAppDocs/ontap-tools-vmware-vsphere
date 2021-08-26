@@ -18,7 +18,6 @@ entries:
     - title: Deployment customization considerations
       url: /deploy/reference_deploment_customization_requirements.html
   - title: Deploy ONTAP® tools
-    url: /deploy/concept_deploy_or_upgrade_ontap_tools.html
     entries:
     - title: How to download ONTAP tools
       url: /deploy/concept_how_to_download_ontap_tools.html
@@ -35,7 +34,7 @@ entries:
       url: /deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
   - title: Upgrade ONTAP tools
     entries:
-      - title: Upgrade to latest release of ONTAP task_deploy_ontap_tools
+      - title: Upgrade to the latest release of ONTAP tools
         url: /deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
       - title: Upgrade Storage Replication Adapter
         url: /deploy/task_upgrade_storage_replication_adapter.html

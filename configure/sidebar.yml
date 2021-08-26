@@ -3,23 +3,21 @@ title: Configure ONTAP tools
 entries:
   - title: Workflow for configuring ONTAP® tools for VMware vSphere
     url: /configure/concept_workflow_for_configuring_the_unified_appliance.html
-  - title: Configure ONTAP® tools for VMware vSphere
-    url: /configure/concept_configure_vsc_for_vmware_vsphere_environment.html
+  - title: Configure ONTAP tools for VMware vSphere
     entries:
-  - title: Configure ESXi server multipathing and timeout settings
-    url: /configure/task_configure_esx_server_multipathing_and_timeout_settings.html
-    entries:
+      - title: Configure ESXi server multipathing and timeout settings
+        url: /configure/task_configure_esx_server_multipathing_and_timeout_settings.html
       - title: ESXi host values set using ONTAP® tools for VMware vSphere
         url: /configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
-      - title: Configure guest operating system scripts
-        url: /configure/reference_configure_guest_operating_system_scripts.html
-        entries:
-          - title: Set timeout values for Windows guest operating systems
-            url: /configure/task_run_the_gos_timeout_scripts_for_windows.html
-          - title: Set timeout values for Solaris guest operating systems
-            url: /configure/task_run_the_gos_timeout_scripts_for_solaris.html
-          - title: Set timeout values for Linux guest operating systems
-            url: /configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html
+  - title: Configure guest operating system scripts
+    url: /configure/reference_configure_guest_operating_system_scripts.html
+    entries:
+      - title: Set timeout values for Windows guest operating systems
+        url: /configure/task_run_the_gos_timeout_scripts_for_windows.html
+      - title: Set timeout values for Solaris guest operating systems
+        url: /configure/task_run_the_gos_timeout_scripts_for_solaris.html
+      - title: Set timeout values for Linux guest operating systems
+        url: /configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html
   - title: Requirements for registering VSC in multiple vCenter Servers environment
     url: /configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html
   - title: Configure the VSC preferences files
@@ -29,19 +27,19 @@ entries:
         url: /configure/reference_set_ipv4_or_ipv6.html
       - title: Enable datastore mounting across different subnets
         url: /configure/task_enable_datastore_mounting_across_different_subnets.html
-  - title: Maintenance Console of ONTAP tools for VMware vSphere
-    url: /configure/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
+  - title: Maintenance Console of ONTAP tools
     entries:
+      - title: Maintenance console options for ONTAP tools
+        url: /configure/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
       - title: Change the administrator password
         url: /configure/task_change_the_administrative_password.html
       - title: Configure VASA Provider to work with SSH
         url: /configure/task_configure_vasa_provider_to_work_with_ssh.html
       - title: Configure remote diagnostic access
         url: /configure/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
-      - title: Collect the log files
-        url: /configure/task_collect_the_log_files.html
-  - title: Configure storage systems for ONTAP® tools for VMware vSphere
-    url: /configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html
+  - title: Collect the log files
+    url: /configure/task_collect_the_log_files.html
+  - title: Configure storage systems for ONTAP tools
     entries:
       - title: Set default credentials for storage systems
         url: /configure/task_set_default_credentials_for_storage_systems.html
@@ -56,15 +54,17 @@ entries:
   - title: Configure user roles and privileges
     url: /configure/task_configure_user_role_and_privileges.html
   - title: Create storage capability profiles
-    url: /configure/concept_configure_storage_capability_profiles.html
     entries:
+      - title: Overview of storage capability task_create_storage_capability_profiles
+        url: /configure/concept_configure_storage_capability_profiles.html
       - title: Considerations for creating and editing storage capability profiles
         url: /configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html
       - title: Configure storage capability profiles
         url: /configure/task_create_storage_capability_profiles.html
-  - title: Provision datastores
-    url: /configure/task_provision_datastores.html
+  - title: Configure datastores
     entries:
+      - title: Provision datastores
+        url: /configure/task_provision_datastores.html
       - title: Map datastores to storage capability profiles
         url: /configure/task_map_storage_to_storage_capability_profiles.html
       - title: Generate storage capability profiles automatically
@@ -73,8 +73,7 @@ entries:
         url: /configure/task_assign_qos_policies.html
       - title: Verify datastore compliance with the mapped storage capability profile
         url: /configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html
-  - title: Provision vVols datastores
-    url: /configure/task_provision_vvols_datastores.html
-    entries:
+      - title: Provision vVols datastores
+        url: /configure/task_provision_vvols_datastores.html
       - title: Rebalance vVols datastores
         url: /configure/reference_rebalance_vvols_datastore.html
