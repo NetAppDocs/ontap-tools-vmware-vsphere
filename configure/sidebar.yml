@@ -9,9 +9,10 @@ entries:
         url: /configure/task_configure_esx_server_multipathing_and_timeout_settings.html
       - title: ESXi host values set using ONTAP® tools for VMware vSphere
         url: /configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
-  - title: Configure guest operating system scripts
-    url: /configure/reference_configure_guest_operating_system_scripts.html
+  - title: Configure scripts and timeout values for guest operating systems
     entries:
+      - title: Configure guest operating system scripts
+        url: /configure/reference_configure_guest_operating_system_scripts.html
       - title: Set timeout values for Windows guest operating systems
         url: /configure/task_run_the_gos_timeout_scripts_for_windows.html
       - title: Set timeout values for Solaris guest operating systems
@@ -20,9 +21,10 @@ entries:
         url: /configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html
   - title: Requirements for registering VSC in multiple vCenter Servers environment
     url: /configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html
-  - title: Configure the VSC preferences files
-    url: /configure/reference_configure_the_vsc_preferences_files.html
+  - title: Configure the ONTAP tools preferences file
     entries:
+      - title: Overview of the VSC preferences files
+        url: /configure/reference_configure_the_vsc_preferences_files.html
       - title: Set IPv4 or IPv6
         url: /configure/reference_set_ipv4_or_ipv6.html
       - title: Enable datastore mounting across different subnets
