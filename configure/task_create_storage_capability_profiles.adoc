@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
 ---
-= Configure storage capability profiles
+= Create storage capability profiles
 :icons: font
 :imagesdir: ../media/
 

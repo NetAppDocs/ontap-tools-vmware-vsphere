@@ -19,7 +19,7 @@ entries:
         url: /Concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html
       - title: Privileges required for VSC tasks
         url: /Concepts/concept_privileges_required_for_vsc_tasks.html
-      - title: ONTAP role-based access control for ONTAP tools
+      - title: Permissions for ONTAP storage systems and vSphere objects
         url: /Concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
   - title: Configure high availability for ONTAP tools
     url: /Concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html

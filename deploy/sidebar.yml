@@ -13,21 +13,18 @@ entries:
       url: /deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html
     - title: Supported storage system, licensing, and applications for the ONTAP tools
       url: /deploy/concept_supported_storage_system_and_applications.html
-    - title: Considerations and requirements for deploying ONTAP tools
+    - title: Considerations for deploying ONTAP tools
       url: /deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
     - title: Deployment customization considerations
       url: /deploy/reference_deploment_customization_requirements.html
-  - title: Deploy ONTAP® tools
+  - title: Deploy ONTAP tools
     entries:
     - title: How to download ONTAP tools
       url: /deploy/concept_how_to_download_ontap_tools.html
-    - title: Deploy ONTAP tools for VMware vSphere
+    - title: How to deploy ONTAP tools
       url: /deploy/task_deploy_ontap_tools.html
     - title: Enable VASA Provider for configuring virtual datastores
       url: /deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
-      entries:
-      - title: Register OnCommand API Services with ONTAP tools
-        url: /deploy/task_register_oncommand_api_services_with_ontap_tools.html
     - title: Install the NFS VAAI plug-in
       url: /deploy/task_install_the_nfs_vaai_plug_in.html
     - title: Clear the vSphere cached downloaded plug-in packages

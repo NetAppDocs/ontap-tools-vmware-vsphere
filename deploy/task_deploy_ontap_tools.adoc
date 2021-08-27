@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.'
 ---
-= Deploy ONTAP tools for VMware vSphere
+= How to deploy ONTAP tools
 :icons: font
 :imagesdir: ../media/
 

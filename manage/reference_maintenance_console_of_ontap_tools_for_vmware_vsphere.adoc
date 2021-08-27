@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can manage your application, system, and network configurations by using the maintenance console of the ONTAP tools. You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.'
 ---
-= Maintenance Console of ONTAP tools for VMware vSphere
+= Overview of ONTAP tools maintenance console
 :icons: font
 :imagesdir: ../media/
 
