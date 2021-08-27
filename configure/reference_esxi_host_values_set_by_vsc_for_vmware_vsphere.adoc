@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can set timeouts and other values on the ESXi hosts using ONTAP® tools for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console \(VSC\) sets are based on internal NetApp testing.'
 ---
-= ESXi host values set using ONTAP® tools for VMware vSphere
+= ESXi host values set using ONTAP tools
 :icons: font
 :imagesdir: ../media/
 

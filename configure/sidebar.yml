@@ -1,13 +1,13 @@
 section: configure
 title: Configure ONTAP tools
 entries:
-  - title: Workflow for configuring ONTAP® tools for VMware vSphere
+  - title: Workflow for configuring ONTAP tools
     url: /configure/concept_workflow_for_configuring_the_unified_appliance.html
   - title: Configure ESXi settings
     entries:
       - title: Configure ESXi server multipathing and timeout settings
         url: /configure/task_configure_esx_server_multipathing_and_timeout_settings.html
-      - title: ESXi host values set using ONTAP® tools for VMware vSphere
+      - title: ESXi host values set using ONTAP tools
         url: /configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
   - title: Configure guest operating systems
     entries:

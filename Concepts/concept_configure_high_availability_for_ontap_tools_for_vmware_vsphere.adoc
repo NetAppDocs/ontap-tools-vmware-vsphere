@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The ONTAP tools supports a high-availability \(HA\) configuration to help provide uninterrupted functionality of ONTAP tools during failure.'
 ---
-= Configure high availability for ONTAP tools for VMware vSphere
+= Configure high availability for ONTAP tools
 :icons: font
 :imagesdir: ../media/
 

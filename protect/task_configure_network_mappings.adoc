@@ -9,7 +9,14 @@ summary: 'You must map your networks on the protected site and the recovery site
 :imagesdir: ../media/
 
 [.lead]
-You must map your networks on the protected site and the recovery site to enable communication between them.
+You must configure your resource mappings like VM networks, ESXi hosts, and folders on both sites to enable the mapping of each resource from the protected site to the appropriate resource at the recovery site.
+
+You must complete the following resource configurations:
+
+* Network mappings
+* Folder mappings
+* Resource mappings
+* Placeholder datastores
 
 *What you will need*
 

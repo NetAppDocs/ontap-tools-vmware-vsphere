@@ -31,7 +31,7 @@ homepage:
     - title: Provision vVols datastores
       url: /configure/task_provision_vvols_datastores.html
     - title: Configure role-based access control
-      url: /Concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
+      url: Concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html
     - title: Configure remote diagnostics
       url: /configure/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
     - title: Configure high availability
@@ -39,7 +39,7 @@ homepage:
   - title: Protect and manage datastores
     links:
     - title: Protect your datastores
-      url: /Concepts/concept_manage_disaster_recovery_setup_using_srm.html
+      url: protect/task_enable_storage_replication_adapter.html
     - title: Protect virtual machines
       url: /protect/concept_configure_replication_for_vvols_datastore.html
     - title: Monitor traditional datastores and virtual machines
@@ -50,7 +50,7 @@ homepage:
     links:
     - title: NetApp Knowledge Base - ONTAP tools
       url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
-    - title: NetApp Import Utility for SnapCenter and Virtual Storage Console Overview
+    - title: NetApp Import Utility - Video
       url: https://www.youtube.com/watch?v=CEQmIEzNVfA
     - title: NetApp Community - ONTAP tools
       url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions

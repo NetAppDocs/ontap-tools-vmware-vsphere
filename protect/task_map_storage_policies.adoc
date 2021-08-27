@@ -1,5 +1,5 @@
 ---
-permalink: configure/task_map_storage_policies.html
+permalink: protect/task_map_storage_policies.html
 sidebar: sidebar
 keywords:
 summary: 'You should map the storage policies on the protected site to the storage policies on the recovery site for your recovery plan to place the recovered virtual machines on the appropriate datastores based on your mappings. After the virtual machine is recovered on recovery site, mapped VM Storage Policy will be assigned to virtual machine.'
