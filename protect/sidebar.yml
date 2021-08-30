@@ -5,7 +5,7 @@ entries:
     url: /protect/task_enable_storage_replication_adapter.html
   - title: Configure SRA on the SRM Appliance
     url: /protect/task_configure_sra_on_srm_appliance.html
-  - title: Update Storage Replication Adapter (SRA) credentials
+  - title: Update SRA credentials
     url: /protect/task_update_sra_credentials.html
   - title: Migration of Windows SRM to SRM Appliance
     url: /protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html

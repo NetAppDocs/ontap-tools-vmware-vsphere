@@ -25,7 +25,7 @@ entries:
         url: /manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
   - title: Modify ONTAP tools ESXi host settings
     url: /manage/task_edit_esxi_host_settings.html
-  - title: Maintenance Console of ONTAP tools
+  - title: ONTAP tools maintenance console
     entries:
     - title: Overview of ONTAP tools maintenance console
       url: /manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
@@ -41,7 +41,7 @@ entries:
     entries:
       - title: ONTAP tools console reports
         url: /manage/concept_virtual_storage_console_reports.html
-      - title: Datastore Reports
+      - title: Datastore reports
         url: /manage/concept_datastore_reports.html
       - title: vVols reports
         url: /manage/concept_what_vasa_provider_reports_do.html
