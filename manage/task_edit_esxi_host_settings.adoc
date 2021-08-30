@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can use the dashboard of ONTAP tools for VMware vSphere to edit your ESXi host settings.'
 ---
-= Modify ONTAP tools ESXi host settings
+= Modify ESXi host settings using ONTAP tools
 :icons: font
 :imagesdir: ../media/
 

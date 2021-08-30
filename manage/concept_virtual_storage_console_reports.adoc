@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can use the ONTAP tools console Reports menu to view pre-defined reports for all the datastores managed by a selected VSC instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.'
 ---
-= ONTAP tools console reports
+= Overview of ONTAP tools datastore and vVols reports
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can monitor the traditional datastores and virtual machines using the traditional dashboard of the ONTAP tools. The dashboard data enables you to analyze the datastore usage and to take corrective action to prevent the virtual machines from running into space-related constraints.'
 ---
-= Monitor datastores and virtual machines using the traditional dashboard
+= Analyze performance data using the traditional dashboard
 :icons: font
 :imagesdir: ../media/
 
