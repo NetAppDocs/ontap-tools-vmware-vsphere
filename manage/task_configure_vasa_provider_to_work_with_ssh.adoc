@@ -1,5 +1,5 @@
 ---
-permalink: configure/task_configure_vasa_provider_to_work_with_ssh.html
+permalink: manage/task_configure_vasa_provider_to_work_with_ssh.html
 sidebar: sidebar
 keywords:
 summary: 'You can set up VASA Provider to use SSH for secure access by configuring the ONTAP tools .'

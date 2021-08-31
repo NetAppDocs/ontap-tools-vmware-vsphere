@@ -1,5 +1,5 @@
 ---
-permalink: configure/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
+permalink: manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'You can manage your application, system, and network configurations by using the maintenance console of the ONTAP tools. You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.'

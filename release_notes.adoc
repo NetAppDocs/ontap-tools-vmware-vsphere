@@ -1,12 +1,12 @@
 ---
-permalink: reference_release_notes.html
+permalink: release_notes.html
 sidebar: sidebar
-keywords: release notes, ontap tools for vmware vsphere
+keywords: release notes, ontap tools for VMware vSphere
 summary: 'Provides important information about this release of ONTAP tools for VMware vSphere, including fixed issues, known issues, cautions, and limitations.'
 ---
 = Release notes
-:icons:font
-:imagesdir:../media/
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
 

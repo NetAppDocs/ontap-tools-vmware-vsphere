@@ -7,11 +7,11 @@ entries:
     url: /protect/task_configure_sra_on_srm_appliance.html
   - title: Update SRA credentials
     url: /protect/task_update_sra_credentials.html
-  - title: Migration of Windows SRM to SRM Appliance
+  - title: Migrate Windows SRM to SRM Appliance
     url: /protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
   - title: Configure replication for vVols datastore to protect virtual machines
     url: /protect/concept_configure_replication_for_vvols_datastore.html
-  - title: Protecting unprotected virtual machines
+  - title: Protect unprotected virtual machines
     url: /protect/task_protect_non_protected_virtual_machines.html
   - title: Configure VM Storage Policies
     url: /protect/task_configure_vm_storage_policies.html
@@ -27,7 +27,7 @@ entries:
         url: /protect/task_configure_folder_mappings.html
       - title: Configure resource mappings
         url: /protect/task_configure_resource_mappings.html
-      - title: Mapping storage policies
+      - title: Map storage policies
         url: /protect/task_map_storage_policies.html
       - title: Configure placeholder datastores
         url: /protect/task_configure_placeholder_datastores.html
