@@ -15,8 +15,6 @@ entries:
       url: /deploy/concept_supported_storage_system_and_applications.html
     - title: Considerations for deploying ONTAP tools
       url: /deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
-    - title: Deployment customization considerations
-      url: /deploy/reference_deploment_customization_requirements.html
   - title: Deploy ONTAP tools
     entries:
     - title: How to download ONTAP tools

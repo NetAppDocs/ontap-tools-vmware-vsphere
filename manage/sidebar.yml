@@ -25,7 +25,7 @@ entries:
         url: /manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
   - title: Modify ESXi host settings
     url: /manage/task_edit_esxi_host_settings.html
-  - title: ONTAP tools maintenance console
+  - title: Access ONTAP tools maintenance console
     entries:
     - title: Overview of ONTAP tools maintenance console
       url: /manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html

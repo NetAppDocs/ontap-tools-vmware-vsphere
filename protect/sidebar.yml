@@ -1,5 +1,5 @@
 section: protect
-title: Protect your datastores
+title: Protect datastores and virtual machines
 entries:
   - title: Enable Storage Replication Adapter to protect datastores
     url: /protect/task_enable_storage_replication_adapter.html
