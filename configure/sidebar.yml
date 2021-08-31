@@ -51,7 +51,7 @@ entries:
         url: /configure/task_automatically_generating_scps.html
   - title: Configure datastores
     entries:
-      - title: Provision datastores
+      - title: Provision traditional datastores
         url: /configure/task_provision_datastores.html
       - title: Map datastores to storage capability profiles
         url: /configure/task_map_storage_to_storage_capability_profiles.html

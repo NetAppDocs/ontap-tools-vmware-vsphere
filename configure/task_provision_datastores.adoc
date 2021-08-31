@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks \(VMDKs\). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.'
 ---
-= Provision datastores
+= Provision traditional datastores
 :icons: font
 :imagesdir: ../media/
 
