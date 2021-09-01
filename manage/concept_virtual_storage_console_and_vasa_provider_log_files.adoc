@@ -1,5 +1,5 @@
 ---
-permalink: configure/concept_virtual_storage_console_and_vasa_provider_log_files.html
+permalink: manage/concept_virtual_storage_console_and_vasa_provider_log_files.html
 sidebar: sidebar
 keywords:
 summary: 'You can check the log files in the /opt/netapp/vscserver/log directory and the /opt/netapp/vpserver/log directory when you encounter errors.'

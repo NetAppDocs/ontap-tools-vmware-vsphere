@@ -27,7 +27,7 @@ entries:
         url: /configure/reference_set_ipv4_or_ipv6.html
       - title: Enable datastore mounting across different subnets
         url: /configure/task_enable_datastore_mounting_across_different_subnets.html
-  - title: Configure storage systems for ONTAP tools
+  - title: Configure storage systems
     entries:
       - title: Set default credentials for storage systems
         url: /configure/task_set_default_credentials_for_storage_systems.html
