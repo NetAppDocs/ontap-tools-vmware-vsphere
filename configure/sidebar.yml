@@ -27,6 +27,8 @@ entries:
         url: /configure/reference_set_ipv4_or_ipv6.html
       - title: Enable datastore mounting across different subnets
         url: /configure/task_enable_datastore_mounting_across_different_subnets.html
+      - title: Regenerate an SSL certificate for vsc
+        url: /configure/task_regenerate_an_ssl_certificate_for_vsc.html
   - title: Configure storage systems
     entries:
       - title: Set default credentials for storage systems

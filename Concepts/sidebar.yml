@@ -21,6 +21,8 @@ entries:
         url: /Concepts/concept_privileges_required_for_vsc_tasks.html
       - title: Permissions for ONTAP storage systems and vSphere objects
         url: /Concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html
+      - title: How to configure role-based access control for ONTAP tools
+        url: /Concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html
   - title: Configure high availability for ONTAP tools
     url: /Concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html
   - title: MetroCluster configurations supported by ONTAP tools
