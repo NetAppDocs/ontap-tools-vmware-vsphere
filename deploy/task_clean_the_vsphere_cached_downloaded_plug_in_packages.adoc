@@ -55,7 +55,6 @@ a|
 
 . Login to vSphere and restart vSphere Web client and vSphere Client services by using the following commands:
 ----
-
  ** 'service-control --stop vsphere-client vsphere-ui'
  ** 'service-control --start vsphere-client vsphere-ui'
- ----
+----
