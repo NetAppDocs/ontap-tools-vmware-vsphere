@@ -1,7 +1,7 @@
 ---
 permalink: deploy/task_upgrade_storage_replication_adapter.html
 sidebar: sidebar
-keywords: SRA,upgrade
+keywords: SRA, upgrade
 summary: 'After upgrading ONTAP tools or deploying the latest version of ONTAP tools, you have to upgrade your Storage Replication Adapter \(SRA\).'
 ---
 = Upgrade Storage Replication Adapter
@@ -17,7 +17,7 @@ After upgrading ONTAP tools or deploying the latest version of ONTAP tools, you 
 +
 |===
     |*For...*
-a   |*Perform the following...*
+    |*Perform the following...*
 a|
 *Windows*
 a|

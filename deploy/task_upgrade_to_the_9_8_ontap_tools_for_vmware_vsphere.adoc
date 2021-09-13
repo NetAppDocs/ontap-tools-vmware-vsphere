@@ -47,7 +47,6 @@ IMPORTANT: IPv6 is supported only with vCenter Server 6.7 and later.
  .. Log in to the vSphere Client.
 +
 It might take a few minutes for the plug-in to be updated in the vSphere Client.
-+
 
 [NOTE]
 ====
@@ -56,3 +55,5 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
   * If upgrading from an earlier version to the 9.8 version of ONTAP tools, it is found that the 'vvol.rebalance.threshold' property is missing in the 'vvol. properties' file.
 +
 The default value of the property is set to 85%.
+
+====
