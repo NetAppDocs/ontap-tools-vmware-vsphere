@@ -33,7 +33,7 @@ homepage:
     - title: Configure role-based access control
       url: /Concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html
     - title: Configure remote diagnostics
-      url: /configure/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
+      url: /manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
     - title: Configure high availability
       url: /Concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html
   - title: Protect and manage datastores
