@@ -23,6 +23,8 @@ When you add a FlexVol volume, you also have the option of changing the storage 
 * When a vVols datastore is created on a AFF cluster, then you cannot expand the datastore with another FlexVol volume that has auto generate storage capability profile.
 ** You can expand the vVols datastore with FlexVol volumes that have pre-created storage capability profiles.
 
+====
+
 *Steps*
 
 . On the vSphere Client Home page, click *Hosts and Clusters*.
