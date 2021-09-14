@@ -31,13 +31,13 @@ You should ensure that both the source and target sites are configured for the f
 . In the *Type* field, select one of the following:
 +
 |===
-| For...| Type field option...
+| *For...*| *Type field option...*
 a|
-*Traditional datastore*
+Traditional datastore
 a|
 Datastore groups (array-based replication)
 a|
-*vVols datastore*
+vVols datastore
 a|
 Virtual Volumes (vVol replication)
 |===

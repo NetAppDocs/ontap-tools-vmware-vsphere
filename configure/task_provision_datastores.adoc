@@ -55,7 +55,7 @@ If a storage capability profile is not specified during provisioning, you can la
 . You can access the datastore provisioning wizard using one of the following:
 +
 |===
-| If you select from ...| Perform the following...
+| *If you select from ...*| *Perform the following...*
 a|
 *vSphere Client home page*
 a|
@@ -79,7 +79,7 @@ a|
 . Specify the hosts on which you want to mount the datastore.
 +
 |===
-| To make the datastore available to...| Do this...
+| *To make the datastore available to...*| *Do this...*
 a|
 All of the hosts in a datacenter
 a|
@@ -99,7 +99,7 @@ Right-click a host, and select *NetApp ONTAP tools* > *Provision Datastore*.
 Most of the fields in the dialog box are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
 |===
-| Section| Description
+| *Section*| *Description*
 a|
 General
 a|

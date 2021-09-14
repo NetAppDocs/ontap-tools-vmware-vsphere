@@ -12,7 +12,7 @@ summary: 'The ISO images of the guest operating system \(OS\) scripts are mounte
 The ISO images of the guest operating system (OS) scripts are mounted on ONTAP® tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.
 
 |===
-| Operating System Type| 60-second timeout settings| 190-second timeout settings
+|*Operating System Type*| *60-second timeout settings*| *190-second timeout settings*
 a|
 Linux
 a|

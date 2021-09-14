@@ -34,18 +34,12 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 . You can use one of the following methods to deploy SRA:
 +
 |===
-    a|
-*For Windows SRM*
+    a|*For Windows SRM*|*For SRM appliance*
 a|
-
  .. Double-click the downloaded '.msi' installer for the SRA plug-in.
  .. Follow the on-screen instructions.
  .. Enter the IP address and password of your deployed ONTAP tools.
-
 a|
-*For SRM appliance*
-a|
-
  .. Access the SRM appliance page, and then go to Storage Replication Adapters page of SRM appliance.
  .. Click *New Adapter*.
  .. Upload the _.tar.gz_ installer for the SRA plug-in to SRM.

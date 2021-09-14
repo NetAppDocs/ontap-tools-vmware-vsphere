@@ -18,7 +18,7 @@ _Unable to communicate with the server_
 VSC uses the following default bidirectional TCP ports:
 
 |===
-| Default port number| Description
+| *Default port number*|*Description* 
 a|
 9083
 a|

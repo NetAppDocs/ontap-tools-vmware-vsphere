@@ -14,7 +14,7 @@ Before you deploy ONTAP tools for VMware vSphere, it is good practice to plan yo
 The following table presents an overview of what you should consider before you deploy ONTAP tools.
 
 |===
-| Considerations| Description
+| *Considerations*|*Description*
 a|
 First-time deployment of ONTAP tools
 a|
@@ -59,7 +59,7 @@ The guest operating system (guest OS) timeout scripts set the SCSI I/O timeout v
 The following table presents an overview of what you require to configure the ONTAP tools.
 
 |===
-| Considerations| Description
+| *Considerations*|*Description*
 a|
 Requirements of role-based access control (RBAC)
 a|

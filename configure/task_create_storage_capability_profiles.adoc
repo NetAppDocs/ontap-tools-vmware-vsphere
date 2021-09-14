@@ -23,7 +23,7 @@ After setting up a profile, you can edit the profile as required.
 . Create a profile or edit an existing profile, as required:
 +
 |===
-| If you want to...| Do this...
+| *If you want to...*| *Do this...*
 a|
 Create a profile
 a|
@@ -43,7 +43,7 @@ Click the profile that you want to modify from the profiles listed on the Storag
 Most of the fields in this wizard are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
 |===
-| Field| Explanation
+| *Field*| *Explanation*
 a|
 Identifying multiple profiles
 a|

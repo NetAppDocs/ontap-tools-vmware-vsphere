@@ -29,7 +29,7 @@ This preference is applicable for all of the storage systems added to VSC.
 * By default the value is set to `NONE`.
 
 |===
-| Value| Description
+| *Value*| *Description*
 a|
 NONE
 a|

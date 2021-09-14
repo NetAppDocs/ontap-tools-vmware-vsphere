@@ -18,7 +18,7 @@ If plug-ins are not updated automatically after deploying or upgrading ONTAP too
 . Remove the vSphere Client cached plug-in packages.
 +
 |===
-| If you are using...| Perform the following...
+| *If you are using...*| *Perform the following...*
 a|
 *Windows vCenter server*
 a|

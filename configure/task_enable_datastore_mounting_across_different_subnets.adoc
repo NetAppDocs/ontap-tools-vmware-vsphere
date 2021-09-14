@@ -32,7 +32,7 @@ link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html[Mainte
 . Update the 'kaminoprefs.xml' file.
 +
 |===
-| If you use...| Do this...
+| *If you use...*| *Do this...*
 a|
 iSCSI
 a|

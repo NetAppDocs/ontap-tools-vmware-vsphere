@@ -16,7 +16,7 @@ You must configure the storage timeout intervals per the recommended settings fo
 You should set the following timeout values on SRM for scaled environment:
 
 |===
-| Advanced settings| Timeout values
+| *Advanced settings*| *Timeout values*
 a|
 StorageProvider.resignatureTimeout
 a|

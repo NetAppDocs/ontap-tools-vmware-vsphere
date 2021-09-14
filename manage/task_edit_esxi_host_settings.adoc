@@ -23,7 +23,7 @@ If there is an issue with your ESXi host settings, the issue is displayed in the
 . Edit the ESXi host settings.
 +
 |===
-| If you want to edit the ESXi host settings from...| Do this...
+| *If you want to edit the ESXi host settings from...*| *Do this...*
 a|
 Issues displayed
 a|

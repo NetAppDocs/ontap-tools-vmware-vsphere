@@ -23,7 +23,7 @@ Depending on your system setup, this task can take a long time to complete.
 . Start the update:
 +
 |===
-| If this location is...| Click...
+| *If this location is...*| *Click...*
 a|
 Virtual Storage Console
 a|

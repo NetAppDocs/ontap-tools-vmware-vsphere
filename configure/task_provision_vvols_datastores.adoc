@@ -37,7 +37,7 @@ You cannot use SVM credentials to create vVols datastores.
 . Specify the hosts on which you want to mount the datastore.
 +
 |===
-| To make the datastore available to...| Do this...
+| *To make the datastore available to...*| *Do this...*
 a|
 All of the hosts in a datacenter
 a|
@@ -57,7 +57,7 @@ Right-click a host, and then select *NetApp VSC* > *Provision Datastore*.
 Most of the fields in the dialog box are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
 |===
-| Section| Description
+| *Section*| *Description*
 a|
 General
 a|
