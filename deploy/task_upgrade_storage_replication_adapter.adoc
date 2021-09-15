@@ -18,7 +18,7 @@ After upgrading ONTAP tools or deploying the latest version of ONTAP tools, you 
 |===
     |*For...* |*Perform the following...*
 a|
-*Windows*
+Windows
 a|
 
  .. Log in to the SRM Windows Server.
@@ -28,7 +28,7 @@ a|
  .. Enter the IP address and password of your deployed ONTAP tools .
 
 a|
-*Appliance based adapter*
+Appliance based adapter
 a|
 
  .. Log in to the SRM Appliance Management page.
