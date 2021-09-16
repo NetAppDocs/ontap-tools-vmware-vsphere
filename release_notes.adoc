@@ -2,7 +2,7 @@
 permalink: release_notes.html
 sidebar: sidebar
 keywords: release notes, ontap tools for VMware vSphere
-summary: 'Provides important information about this release of ONTAP tools for VMware vSphere, including fixed issues, known issues, cautions, and limitations.'
+summary: 'Provides important information about this release of ONTAP tools for VMware vSphere, including new features and enhancements, fixed issues, known issues, cautions, and limitations.'
 ---
 = Release notes
 :icons: font

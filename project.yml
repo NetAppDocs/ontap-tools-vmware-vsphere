@@ -10,7 +10,7 @@ sidebar:
     - section: protect
     - section: manage
     - title: Legal notices
-      url: /reference_legal_notices.html
+      url: /legal-notices.html
 
 homepage:
   tiles:
@@ -48,6 +48,8 @@ homepage:
       url: /manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
   - title: More resources
     links:
+    - title: Documentation for earlier versions of ONTAP tools for VMware task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere
+      url: https://docs.netapp.com/vapp-98/index.jsp?topic=%2Fcom.netapp.ndc.vapp-vers%2FGUID-DEB0FBD4-89B8-4EA1-98BF-685190F79086.html
     - title: NetApp Knowledge Base - ONTAP tools
       url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
     - title: NetApp Import Utility - Video
