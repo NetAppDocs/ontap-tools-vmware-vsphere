@@ -19,7 +19,7 @@ a|
 First-time deployment of ONTAP tools
 a|
 The deployment of the ONTAP tools automatically installs the VSC features.
-*
++
 link:../deploy/concept_deploy_or_upgrade_ontap_tools.html[Deploy or upgrade ONTAP® tools for VMware vSphere]
 
 link:../deploy/concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
@@ -28,7 +28,7 @@ a|
 Upgrading from an existing deployment of VSC
 a|
 The upgrade procedure from an existing deployment of VSC to ONTAP tools depends on the version of VSC, and whether you have deployed ONTAP tools. The deployment workflows and upgrade section has more information.
-*
++
 link:concept_installation_workflow_for_existing_users_of_ontap_tools.html[Deployment workflow for existing users of ONTAP tools]
 
 Best practices before an upgrade:
@@ -45,7 +45,7 @@ a|
 Regenerating an SSL certificate for VSC
 a|
 The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate.
-*
++
 link:task_regenerate_an_ssl_certificate_for_vsc.html[Regenerate an SSL certificate for Virtual Storage Console]
 
 a|

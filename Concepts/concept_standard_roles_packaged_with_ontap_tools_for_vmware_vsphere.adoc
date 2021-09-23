@@ -22,7 +22,7 @@ You can view the VSC standard roles by clicking *Roles* on the vSphere Client Ho
 The roles that VSC provides enable you to perform the following tasks:
 
 |===
-| Role| Description
+| *Role *| *Description*
 a|
 VSC Administrator
 a|
