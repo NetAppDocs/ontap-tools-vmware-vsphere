@@ -31,14 +31,14 @@ Click *image:../media/create_icon.gif[]*.
 a|
 Edit an existing profile
 a|
-Click the profile that you want to modify from the profiles listed on the Storage Capability Profiles page.
+Click the profile that you want to modify from the profiles listed on the *Storage Capability Profiles* page.
 |===
 *Note:*
 
  ** To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.
  ** You cannot modify any existing storage capability profiles that were created before the 9.6 ONTAP tools.
 
-. Complete the pages in the Create Storage Capability Profile wizard to set up a profile or to edit values to modify an existing profile.
+. Complete the pages in the *Create Storage Capability Profile* wizard to set up a profile or to edit values to modify an existing profile.
 +
 Most of the fields in this wizard are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
@@ -48,9 +48,9 @@ a|
 Identifying multiple profiles
 a|
 You can use the *Description* field on the Name and Description tab to describe the purpose of the storage capability profile.    Providing a good description is useful because it is a good practice to set up different profiles based on the applications that are being used.
-+
+
 For example, a business-critical application requires a profile with capabilities that support higher performance, such as an AFF platform. A datastore that is used for testing or training might use a profile with a lower performance FAS platform, and enable all of the storage efficiency capabilities and tiering to control costs.
-+
+
 If you have enabled "`linked`" mode for your vCenter Servers, then you must select the vCenter Server for which you are creating the storage capability profile.
 a|
 Platform
@@ -66,7 +66,7 @@ You can set traditional QoS policies for your storage system by using the Perfor
 +
 You can set the value for *Max IOPS* and *Min IOPS* which enables you to use the QoS functionality. If you select Infinite IOPS, the Max IOPS field is disabled. When applied for a traditional datastore, a QoS policy with "`Max IOPS`" value is created and assigned to a FlexVol volume. When used with a VVol datastore, a QoS policy with Max IOPS and Min IOPS values is created for each data VVol.
 +
-NOTE:
+*NOTE*:
 
   *** Max IOPS and Min IOPS can also be applied to the FlexVol volume for a traditional datastore.
   *** You must ensure that the performance metrics are not also set separately at an storage virtual machine (SVM) level, an aggregate level, or a FlexVol volume level.

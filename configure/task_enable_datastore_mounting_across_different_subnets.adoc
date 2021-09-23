@@ -15,9 +15,9 @@ If you use iSCSI or NFS and the subnet is different between your ESXi hosts and 
 
 When datastore provisioning fails, VSC logs the following error messages:
 
-'Unable to continue. No ip addresses found when cross-referencing kernel ip addresses and addresses on the controller.
+`Unable to continue. No ip addresses found when cross-referencing kernel ip addresses and addresses on the controller.
 
-Unable to find a matching network to NFS mount volume to these hosts.'
+Unable to find a matching network to NFS mount volume to these hosts.`
 
 *Steps*
 
@@ -28,22 +28,22 @@ link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html[Mainte
 
 . Enter `4` to access the Support and Diagnostics option.
 . Enter `2` to access the Access Diagnostic Shell option.
-. Enter `vi /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml` to update the kaminoprefs.xml file.
-. Update the 'kaminoprefs.xml' file.
+. Enter `vi /opt/netapp/vscserver/etc/kamino/kaminoprefs.xml` to update the `kaminoprefs.xml` file.
+. Update the `kaminoprefs.xml` file.
 +
 |===
 | *If you use...*| *Do this...*
 a|
 iSCSI
 a|
-Change the value of the entry key 'default.allow.iscsi.mount.networks' from ALL to the value of your ESXi host networks.
+Change the value of the entry key `default.allow.iscsi.mount.networks` from ALL to the value of your ESXi host networks.
 a|
 NFS
 a|
-Change the value of the entry key 'default.allow.nfs.mount.networks' from ALL to the value of your ESXi host networks.
+Change the value of the entry key `default.allow.nfs.mount.networks` from ALL to the value of your ESXi host networks.
 |===
 The preferences file includes sample values for these entry keys.
 +
 NOTE: The value "`ALL`" does not mean all networks. The "`ALL`" value enables all of the matching networks, between the host and the storage system, to be used for mounting datastores. When you specify host networks, then you can enable mounting only across the specified subnets.
 
-. Save and close the 'kaminoprefs.xml' file.
+. Save and close the `kaminoprefs.xml` file.

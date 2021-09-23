@@ -21,7 +21,7 @@ https://mysupport.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&
 
 * You must have configured and set up your vCenter Server environment.
 * You must have set up an ESXi host for your virtual machine.
-* You must have downloaded the .ova file.
+* You must have downloaded the _.ova_ file.
 * You must have the administrator login credentials for your vCenter Server instance.
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
 +
@@ -66,7 +66,7 @@ As you wait for deployment to finish, you can view the progress of the deploymen
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
 . Verify that ONTAP tools is running after the deployment is completed.
-. If ONTAP tools is not registered with any vCenter Server, use \https://appliance_ip:8143/Register.html to register the VSC instance.
+. If ONTAP tools is not registered with any vCenter Server, use ``\https://appliance_ip:8143/Register.html` to register the VSC instance.
 . Log out and re-log in to the vSphere Client to view the deployed ONTAP tools.
 +
 It might take a few minutes for the plug-in to be updated in the vSphere Client.
@@ -77,7 +77,7 @@ link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Cl
 
 NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
-link:../configure/task_register_oncommand_api_services_with_ONTAP_tools.html[Registering OnCommand API Services with ONTAP tools]
+link:../deploy/task_register_oncommand_api_services_with_ONTAP_tools.html[Registering OnCommand API Services with ONTAP tools]
 
 *Related information*
 

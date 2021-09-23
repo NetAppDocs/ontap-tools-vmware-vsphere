@@ -11,7 +11,7 @@ summary: 'The ONTAP tools supports a high-availability \(HA\) configuration to h
 [.lead]
 The ONTAP tools supports a high-availability (HA) configuration to help provide uninterrupted functionality of ONTAP tools during failure.
 
-The ONTAP tools relies on the VMware vSphere High-availability (HA) feature and vSphere fault tolerance (FT) feature to provide high availability. high-availability (HA) solution provides for rapid recovery from outages caused by:
+The ONTAP tools relies on the VMware vSphere High-availability (HA) feature and vSphere fault tolerance (FT) feature to provide high availability. High-availability (HA) solution provides for rapid recovery from outages caused by:
 
 * Host failure
 * Network failure

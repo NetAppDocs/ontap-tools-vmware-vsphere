@@ -18,7 +18,7 @@ You must have mounted the ISO image containing the Solaris script.
 *Steps*
 
 . Access the console of the Solaris virtual machine, and log in to an account with root privileges.
-. Run the 'solaris_gos_timeout-install.sh' script.
+. Run the `solaris_gos_timeout-install.sh` script.
 +
 For Solaris 10, a message similar to the following is displayed:
 +

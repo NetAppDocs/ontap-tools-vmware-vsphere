@@ -52,7 +52,7 @@ a|
 Right-click a host, and then select *NetApp VSC* > *Provision Datastore*.
 |===
 
-. Complete the fields in the New Datastore dialog box to create the datastore.
+. Complete the fields in the *New Datastore* dialog box to create the datastore.
 +
 Most of the fields in the dialog box are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
@@ -62,16 +62,21 @@ a|
 General
 a|
 The General section of the New Datastore dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.
+
 *Note:* If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
 a|
 Storage system
 a|
-This section enables you to select whether you want the vVols datastore to have either replication enabled or disabled. Only asynchronous type replication profile is allowed for this release. You can then select one or more storage capability profiles listed. The system recommended values of paired *Storage system* and *Storage VM* are populated automatically. The recommended values are populated only if they are paired in ONTAP. You can modify these values if required.    *Note:* While creating FlexVol volumes in ONTAP, you should ensure to create them with the attributes you wish to select in the storage capability profile. Both read write and data protection FlexVol volumes should have similar attributes.
+This section enables you to select whether you want the vVols datastore to have either replication enabled or disabled. Only asynchronous type replication profile is allowed for this release. You can then select one or more storage capability profiles listed. The system recommended values of paired *Storage system* and *Storage VM* are populated automatically. The recommended values are populated only if they are paired in ONTAP. You can modify these values if required.
+
+*Note:* While creating FlexVol volumes in ONTAP, you should ensure to create them with the attributes you wish to select in the storage capability profile. Both read write and data protection FlexVol volumes should have similar attributes.
 After FlexVol volumes are created and SnapMirror is initialized in ONTAP, you should run a storage rediscovery in VSC to be able to see the new volumes.
 a|
 Storage attributes
 a|
-You should select the schedule for SnapMirror and the required FlexVol volume from the existing list. This schedule should be similar to the one selected in the VM Storage Policies page. The user should have created FlexVol volumes on ONTAP with SnapMirror that are listed. You can select the default storage capability profile to be used for creating vVols using the *Default storage capability profile* option. By default all the volumes are set to maximum Autogrow size to 120 % and default Snapshots are enabled on these volumes. *Note:* A FlexVol volume that is part of a vVols datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on this FlexVol volume.
+You should select the schedule for SnapMirror and the required FlexVol volume from the existing list. This schedule should be similar to the one selected in the VM Storage Policies page. The user should have created FlexVol volumes on ONTAP with SnapMirror that are listed. You can select the default storage capability profile to be used for creating vVols using the *Default storage capability profile* option. By default all the volumes are set to maximum Autogrow size to 120 % and default Snapshots are enabled on these volumes.
+
+*Note:* A FlexVol volume that is part of a vVols datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on this FlexVol volume.
 |===
 +
 . In the Summary section, click **Finish**.

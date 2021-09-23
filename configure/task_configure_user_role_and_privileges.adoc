@@ -19,7 +19,7 @@ You can configure new user roles for managing storage systems using the JSON fil
 
 *Steps*
 
-. Unzip the downloaded \https://\{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip file.
+. Unzip the downloaded `\https://\{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip` file.
 . Access ONTAP System Manager.
 . Click *CLUSTER* > *Settings* > *Users and Roles*.
 . Click *Add User*.

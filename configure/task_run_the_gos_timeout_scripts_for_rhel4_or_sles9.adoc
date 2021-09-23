@@ -18,7 +18,7 @@ You must have mounted the ISO image containing the Linux script.
 *Steps*
 
 . Access the console of the Linux virtual machine, and log in to an account with root privileges.
-. Run the 'linux_gos_timeout-install.sh' script.
+. Run the `linux_gos_timeout-install.sh` script.
 +
 For Red Hat Enterprise Linux 4 or SUSE Linux Enterprise Server 9, a message similar to the following is displayed:
 +

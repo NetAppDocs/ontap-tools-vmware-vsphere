@@ -20,7 +20,7 @@ Each time you start Virtual Storage Console (VSC) or select the *REDISCOVER All*
 . Add a storage system to VSC by using the ONTAP tools home page:
  ** Click *Storage Systems* > *Add*.
  ** Click *Overview* > *Getting Started*, and then click *ADD* button under Add Storage System.
-. In the Add Storage System dialog box, enter the management IP address and credentials for that storage system.
+. In the *Add Storage System* dialog box, enter the management IP address and credentials for that storage system.
 +
 You can also add storage systems using the IPv6 address of the cluster or SVM. You can also change the defaults for TLS and the port number in this dialog box.
 +

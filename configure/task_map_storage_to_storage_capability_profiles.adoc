@@ -40,5 +40,5 @@ A datastore can match multiple profiles, but a datastore can be associated with 
 To locate specific datastores or other information on the Storage Mapping page, you can enter a name or a partial string in the search box. VSC displays the search results in a dialog box. To return to the full display, you should remove the text from the search box, and then click *Enter*.
 
 . From the Actions menu, select *Assign matching profile*.
-. Select the profile that you want to map to the datastore from the list of matching profiles that is provided in the Assign profile to datastore dialog box, and then click *OK* to map the selected profile to the datastore.
+. Select the profile that you want to map to the datastore from the list of matching profiles that is provided in the *Assign profile to datastore* dialog box, and then click *OK* to map the selected profile to the datastore.
 . Refresh the screen to verify the new assignment.

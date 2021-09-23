@@ -50,7 +50,7 @@ NOTE: To simplify working with vCenter Server RBAC, VSC provides several standar
 If you change the privileges within a permission, the user that is associated with that permission should log out, and then log in to enable the updated permission.
 
 |===
-| Privilege| Roles| Tasks
+| *Privilege *| *Roles *| *Tasks *
 a|
 *NetApp ONTAP tools Console* > *View*
 a|

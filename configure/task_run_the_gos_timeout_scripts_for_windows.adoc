@@ -18,13 +18,15 @@ You must have mounted the ISO image containing the Windows script.
 *Steps*
 
 . Access the console of the Windows virtual machine, and log in to an account with Administrator privileges.
-. If the script does not automatically start, open the CD drive, and then run the 'windows_gos_timeout.reg' script.
+. If the script does not automatically start, open the CD drive, and then run the `windows_gos_timeout.reg` script.
 +
 The Registry Editor dialog is displayed.
 
 . Click *Yes* to continue.
 +
-The following message is displayed: The keys and values contained in 'D:\windows_gos_timeout.reg' have been successfully added to the registry.
+The following message is displayed:
++
+`The keys and values contained in 'D:\windows_gos_timeout.reg' have been successfully added to the registry.``
 
 . Reboot the Windows guest OS.
 . Unmount the ISO image.

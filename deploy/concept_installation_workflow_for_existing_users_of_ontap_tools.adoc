@@ -16,7 +16,7 @@ The earlier releases of individual applications like ONTAP tools use a different
 . Deploy the latest release of ONTAP tools.
 . Migrate any existing configuration data.
 +
-The configuration data includes storage system credentials, as well as preferences found in the kaminoprefs.xml and vscPreferences.xml files.
+The configuration data includes storage system credentials, as well as preferences found in the `kaminoprefs.xml` and `vscPreferences.xml`   files.
 
 link:../configure/reference_configure_the_vsc_preferences_files.html[Configure the VSC preferences files]
 
@@ -35,11 +35,11 @@ link:../deploy/task_upgrade_to_the_9_8_ONTAP_tools_for_vmware_vsphere.html[Upgra
 
 * If you are using SRA 2.1 or 3.0, you should first make note of existing site configuration details.
 +
-_Installation and Setup Guide for Storage Replication Adapter 4.0 for ONTAP_ has the detailed instructions in the "Upgrade Overview" section. These SRA releases also use the VASA Provider, so you must unregister VASA Provider and then deploy the latest version of ONTAP tools. The previous release of the server ('.ova') can be removed when the upgrade is complete.
+_Installation and Setup Guide for Storage Replication Adapter 4.0 for ONTAP_ has the detailed instructions in the "Upgrade Overview" section. These SRA releases also use the VASA Provider, so you must unregister VASA Provider and then deploy the latest version of ONTAP tools. The previous release of the server (`.ova`) can be removed when the upgrade is complete.
 
-For any SRA upgrade, the SRA software (the adapter on the Site Recovery Manager server, installed by the '.msi' file) should be removed from the Site Recovery Manager server. You can use the Windows system control panel to uninstall the software and then install the latest SRA software on the SRA server using the '.msi' file.
+For any SRA upgrade, the SRA software (the adapter on the Site Recovery Manager server, installed by the `.msi` file) should be removed from the Site Recovery Manager server. You can use the Windows system control panel to uninstall the software and then install the latest SRA software on the SRA server using the `.msi` file.
 
-If you have the VASA Provider deployment, then after the upgrade from existing setup, you must configure the memory size for your ONTAP tools to be 12GB using the Edit Settings option. You must also modify the virtual memory reservation. The virtual machine must be powered off to modify the memory size.
+If you have the VASA Provider deployment, then after the upgrade from existing setup, you must configure the memory size for your ONTAP tools to be 12GB using the `Edit Settings` option. You must also modify the virtual memory reservation. The virtual machine must be powered off to modify the memory size.
 
 If you are having 7.2 or 7.2.1 release of ONTAP tools in your setup, then you cannot directly upgrade to 9.7P1 or later release of the ONTAP tools. You must first upgrade your existing setup to the 9.7 release of ONTAP tools and then upgrade to the latest release.
 
