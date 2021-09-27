@@ -31,7 +31,7 @@ The login session remains valid only until midnight the next day.
 
 . From the vCenter Server, open a console to VASA Provider.
 . Log in as the maintenance user.
-. Enter `4` to select *Support and Diagnostics*.
-. Enter `3` to select *Enable remote diagnostics access*.
+. Enter `4` to select Support and Diagnostics.
+. Enter `3` to select Enable remote diagnostics access.
 . Enter `y` in the Confirmation dialog box to enable remote diagnostic access.
 . Enter a password for remote diagnostic access.

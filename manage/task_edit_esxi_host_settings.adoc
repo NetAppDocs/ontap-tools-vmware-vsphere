@@ -19,7 +19,7 @@ If there is an issue with your ESXi host settings, the issue is displayed in the
 
 *Steps*
 
-. From the vSphere Client**Home** page, click *ONTAP tools*.
+. From the vSphere Client Home page, click *ONTAP tools*.
 . Edit the ESXi host settings.
 +
 |===

@@ -19,9 +19,9 @@ VSC has several preference files. These files include entry keys and values that
 
 You might have to modify the preferences files in certain situations. For example, if you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the preferences files. If you do not modify the settings in the preferences file, datastore provisioning fails because VSC cannot mount the datastore.
 
-There is a new option added to the preference file 'kaminoprefs.xml' that you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.
+There is a new option added to the preference file `kaminoprefs.xml` that you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.
 
-* The default.override.option.provision.mount.datastore.address.family parameter has been added to the 'kaminoprefs.xml' preference file to set a preferred data LIF protocol for datastore provisioning.
+* The `default.override.option.provision.mount.datastore.address.family` parameter has been added to the `kaminoprefs.xml` preference file to set a preferred data LIF protocol for datastore provisioning.
 +
 This preference is applicable for all of the storage systems added to VSC.
 

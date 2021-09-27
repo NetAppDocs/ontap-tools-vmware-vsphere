@@ -28,4 +28,4 @@ The vSphere web client provides default storage policies. But you can create pol
  .. Verify the compatible datastores listed, and then click *NEXT* in the Storage compatibility tab.
 +
 For vVols datastores having data protection FlexVol volumes, compatible datastores check is not performed.
-. Review your VM Storage Policy selection in the Review and finish tab, and then click *Finish*.
+. Review your VM Storage Policy selection in the *Review and finish* tab, and then click *Finish*.

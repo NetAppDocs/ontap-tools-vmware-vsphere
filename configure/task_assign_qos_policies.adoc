@@ -21,4 +21,4 @@ NOTE: You cannot apply QoS settings at a datastore or virtual machine level for 
 
 . On the ONTAP tools homepage, click *Menu* > *Host and Clusters*.
 . Right-click the required datastore or virtual machine and click *NetApp ONTAP tools* > *Assign QoS*.
-. In the *Assign QoS* dialog box, enter values the required IOPS values, and click *Apply*.
+. In the Assign QoS dialog box, enter values the required IOPS values, and click *Apply*.

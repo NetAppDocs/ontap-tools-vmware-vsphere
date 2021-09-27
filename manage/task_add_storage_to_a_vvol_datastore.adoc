@@ -19,7 +19,8 @@ When you add a FlexVol volume, you also have the option of changing the storage 
 ====
 
 * While expanding a vVols datastore with replication capabilities, you cannot create new FlexVol volumes but can only select pre-configured FlexVol volumes from the existing list.
-+ * When cloning a protected virtual machine deployed on datastore with vVols replication fails due to insufficient space, then you should increase the FlexVol volume size.
++
+* When cloning a protected virtual machine deployed on datastore with vVols replication fails due to insufficient space, then you should increase the FlexVol volume size.
 * When a vVols datastore is created on a AFF cluster, then you cannot expand the datastore with another FlexVol volume that has auto generate storage capability profile.
 ** You can expand the vVols datastore with FlexVol volumes that have pre-created storage capability profiles.
 

@@ -32,4 +32,6 @@ NOTE: Storage Replication Adapter (SRA) does not support fan-out SnapMirror conf
  .. Enter the SSO administrative credentials, and then click *Finish*.
 . If prompted, click *Yes* to accept the security certificates.
 
+*Result*
+
 Both the protected and recovery sites will appear in the Objects dialog box.

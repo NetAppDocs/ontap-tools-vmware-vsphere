@@ -29,7 +29,7 @@ NOTE: You can perform an in-place upgrade to the 9.8 release of ONTAP tools only
  .. Click *Edit Settings* > *DVD/CD-ROM Drive*.
  .. Select *Datastore ISO* file from the drop-down list.
  .. Browse to and select the downloaded _.iso_ file, and then select the *Connect at power on* checkbox.
-. Access the *Summary* tab of your deployed ONTAP tools.
+. Access the Summary tab of your deployed ONTAP tools.
 . Click *image:../media/launch_maintenance_console.gif[]* to start the maintenance console.
 . At the "`Main Menu`" prompt, enter option `2` for *System Configuration*, and then enter option `8` for *Upgrade*.
 +

@@ -21,5 +21,5 @@ You should map the storage policies on the protected site to the storage policie
 SRM will select storage policies on the protected site for which a storage policy with the same name exists on the recovery site. You can also select the manual mapping option to select multiple storage policies.
 
 . Click *Add mappings*, and the click *NEXT*.
-. In the Reverse mapping section, select the required check boxes for mapping, and then click *NEXT*.
-. In the Ready to complete section, review your selections and click *FINISH*.
+. In the *Reverse mapping* section, select the required check boxes for mapping, and then click *NEXT*.
+. In the *Ready to complete* section, review your selections and click *FINISH*.

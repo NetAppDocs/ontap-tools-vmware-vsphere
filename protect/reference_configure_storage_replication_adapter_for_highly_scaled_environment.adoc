@@ -18,23 +18,23 @@ You should set the following timeout values on SRM for scaled environment:
 |===
 | *Advanced settings*| *Timeout values*
 a|
-StorageProvider.resignatureTimeout
+`StorageProvider.resignatureTimeout`
 a|
 Increase the value of the setting from 900 seconds to 12000 seconds.
 a|
-storageProvider.hostRescanDelaySec
+`storageProvider.hostRescanDelaySec`
 a|
 60
 a|
-storageProvider.hostRescanRepeatCnt
+`storageProvider.hostRescanRepeatCnt`
 a|
 20
 a|
-storageProvider.hostRescanTimeoutSec
+`storageProvider.hostRescanTimeoutSec`
 a|
 Set a high value(For example: 99999)
 |===
-You should also enable the StorageProvider.autoResignatureMode option.
+You should also enable the `StorageProvider.autoResignatureMode` option.
 
 See VMware documentation for more information on modifying Storage Provider settings.
 
@@ -42,7 +42,7 @@ https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GU
 
 == Storage settings
 
-You must set the value of the storage.commandTimeout and storage.maxConcurrentCommandCnt timeout interval for highly scaled environments to 99,999 seconds.
+You must set the value of the `storage.commandTimeout` and `storage.maxConcurrentCommandCnt` timeout interval for highly scaled environments to 99,999 seconds.
 
 NOTE: The timeout interval specified is the maximum value. You do not need to wait for the maximum timeout to be reached. Most commands finish within the set maximum timeout interval.
 

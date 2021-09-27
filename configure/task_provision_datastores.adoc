@@ -57,7 +57,7 @@ If a storage capability profile is not specified during provisioning, you can la
 |===
 | *If you select from ...*| *Perform the following...*
 a|
-*vSphere Client home page*
+vSphere Client home page
 a|
 
  .. Click *Hosts and Clusters*.
@@ -65,7 +65,7 @@ a|
  .. To specify the hosts to mount the datastore, see the next step.
 
 a|
-*ONTAP tools home page*
+ONTAP tools home page
 a|
 
  .. Click *Overview*.

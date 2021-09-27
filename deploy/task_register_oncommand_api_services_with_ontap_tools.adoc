@@ -21,7 +21,7 @@ NOTE: The vVols dashboard displays performance metrics only when the SAN vVols d
 
 . From the ONTAP tools home page, click *Settings*.
 . Click *Manage Extension* in the Administrative Settings tab.
-. Use the *Register OnCommand API Services* slider to enable OnCommand API Services.
+. Use the Register OnCommand API Services slider to enable OnCommand API Services.
 . Enter the IP address, service port, and credentials for OnCommand API Services.
 +
 You can also use the Manage VASA Provider Extensions dialog box for the following modifications:

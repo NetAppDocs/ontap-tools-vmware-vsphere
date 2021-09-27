@@ -15,7 +15,7 @@ The ONTAP tools for VMware vSphere provides the option to enable the SRA capabil
 
 * You must have set up your vCenter Server instance and configured ESXi.
 * You must have deployed ONTAP tools.
-* You must have downloaded the '.msi' file for the SRA plug-in, or the '.tar.gz' file for SRM appliance only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution.
+* You must have downloaded the `.msi` file for the SRA plug-in, or the `.tar.gz` file for SRM appliance only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution.
 +
 https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html[Site Recovery Manager Installation and Configuration Site Recovery Manager 8.2] has more information.
 
@@ -28,15 +28,15 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 . Log in to the web user interface of VMware vSphere.
 . From the vSphere Client, click *Menu* > *ONTAP tools Console*.
 . Click *Settings*.
-. Click *Manage Capabilities* in the Administrative Settings tab.
-. In the Manage Capabilities dialog box, select the SRA extension want to enable.
+. Click *Manage Capabilities* in the *Administrative Settings* tab.
+. In the *Manage Capabilities* dialog box, select the SRA extension want to enable.
 . Enter the IP address of ONTAP tools and the administrator password, and then click *Apply*.
 . You can use one of the following methods to deploy SRA:
 +
 |===
     a|*For Windows SRM*|*For SRM appliance*
 a|
- .. Double-click the downloaded '.msi' installer for the SRA plug-in.
+ .. Double-click the downloaded `.msi` installer for the SRA plug-in.
  .. Follow the on-screen instructions.
  .. Enter the IP address and password of your deployed ONTAP tools.
 a|

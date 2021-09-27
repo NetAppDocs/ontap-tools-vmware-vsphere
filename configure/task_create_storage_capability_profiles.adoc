@@ -38,7 +38,7 @@ Click the profile that you want to modify from the profiles listed on the *Stora
  ** To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.
  ** You cannot modify any existing storage capability profiles that were created before the 9.6 ONTAP tools.
 
-. Complete the pages in the *Create Storage Capability Profile* wizard to set up a profile or to edit values to modify an existing profile.
+. Complete the pages in the Create Storage Capability Profile wizard to set up a profile or to edit values to modify an existing profile.
 +
 Most of the fields in this wizard are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +

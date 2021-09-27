@@ -17,7 +17,7 @@ You must have ensured that VASA Provider is not running on any of the virtual ma
 
 *About this task*
 
-When you migrate from a traditional datastore to a VVol datastore, the vCenter Server uses vStorage APIs for Array Integration (VAAI) offloads when moving data from VMFS datastores, but not from an NFS VMDK file. VAAI offloads normally reduce the load on the host.
+When you migrate from a traditional datastore to a vVols datastore, the vCenter Server uses vStorage APIs for Array Integration (VAAI) offloads when moving data from VMFS datastores, but not from an NFS VMDK file. VAAI offloads normally reduce the load on the host.
 
 *Steps*
 
