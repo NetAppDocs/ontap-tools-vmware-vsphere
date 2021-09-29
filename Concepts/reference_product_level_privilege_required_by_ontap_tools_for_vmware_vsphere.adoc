@@ -14,7 +14,7 @@ To access the ONTAP® tools for VMware vSphere GUI, you must have the product-le
 The following information describes the VSC product-level View privilege:
 
 |===
-| Privilege| Description| Assignment level
+|*Privilege*| *Description*| *Assignment level*
 a|
 View
 a|
