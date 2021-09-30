@@ -48,7 +48,3 @@ If you are going to deploy the latest release of ONTAP tools, you must see the t
 *Related information*
 
 https://mysupport.netapp.com/site/tools
-
-link:../deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html[Requirements for deploying the ONTAP tools]
-
-link:../deploy/task_upgrade_to_the_9_8_ONTAP_tools_for_vmware_vsphere.html[Upgrade to the 9.8 ONTAP tools]
