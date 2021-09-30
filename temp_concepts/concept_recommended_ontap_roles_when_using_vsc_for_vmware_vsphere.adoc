@@ -1,5 +1,5 @@
 ---
-permalink: Concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
+permalink: concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'You can set up several recommended ONTAP roles for working with ONTAP® tools for VMware vSphere and role-based access control \(RBAC\). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the Virtual Storage Console \(VSC\) tasks.'

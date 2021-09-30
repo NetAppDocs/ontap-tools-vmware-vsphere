@@ -1,5 +1,5 @@
 ---
-permalink: Concepts/concept_privileges_required_for_vsc_tasks.html
+permalink: concepts/concept_privileges_required_for_vsc_tasks.html
 sidebar: sidebar
 keywords:
 summary: 'Different ONTAP® tools for VMware vSphere tasks require different combinations of privileges specific to Virtual Storage Console \(VSC\) and native vCenter Server privileges.'

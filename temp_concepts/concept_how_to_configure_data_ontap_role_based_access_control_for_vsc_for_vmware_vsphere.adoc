@@ -1,5 +1,5 @@
 ---
-permalink: Concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html
+permalink: concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
 summary: 'You must configure ONTAP role-based access control \(RBAC\) on the storage system if you want to use role-based access control with ONTAP® tools for VMware vSphere. You can create one or more custom user accounts with limited access privileges with the ONTAP RBAC feature.'
