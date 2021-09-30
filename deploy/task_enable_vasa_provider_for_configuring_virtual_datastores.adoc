@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The ONTAP tools for VMware vSphere has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes \(vVols\) datastores with required storage capability profiles for each vVols datastore.'
 ---
-= *Enable VASA Provider for configuring virtual datastores*
+= Enable VASA Provider for configuring virtual datastores
 :icons: font
 :imagesdir: ../media/
 
@@ -32,7 +32,7 @@ If the VASA Provider capability is disabled before upgrading to the 9.7.1 releas
 +
 NOTE: If VASA Provider status displays as "`Offline`" even after enabling the VASA Provider extesnsion, then check the ``/var/log/vmware/vmware-sps/sps.log` file for any connection errors with VASA Provider or restart the "`vmware-sps`" service.
 
-== Register OnCommad API services with ONTAP 9.6 or earlier releases
+== Register OnCommand API services with ONTAP 9.6 or earlier releases
 
 If you are using ONTAP 9.6 or earlier, then the vVols dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered OnCommand API Services for VASA Provider to obtain data for the vVols VM and datastore reports.
 
