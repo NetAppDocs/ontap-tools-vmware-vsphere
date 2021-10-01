@@ -4,7 +4,7 @@ sidebar:
       url: /index.html
     - title: Release notes
       url: /release_notes.html
-    - section: Concepts
+    - section: concepts
     - section: deploy
     - section: configure
     - section: protect
