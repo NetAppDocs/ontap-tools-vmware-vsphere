@@ -77,7 +77,7 @@ You can create the recommended ONTAP roles by using ONTAP System Manager using t
 If a user attempts to perform a task without the correct privileges and permissions, the task options are grayed out.
 
 * link:../concepts/concept_standard_roles_packaged_with_virtual_appliance_for_vsc_vp_and_sra.html[Standard roles packaged with ONTAP tools]
-* link:..concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html[Permissions for ONTAP storage systems and vSphere objects]
+* link:../concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html[Permissions for ONTAP storage systems and vSphere objects]
 
 a|
 ONTAP version
