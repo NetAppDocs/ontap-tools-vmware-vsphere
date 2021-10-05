@@ -1,111 +1,49 @@
 section: manage
-title: manage
-url: "/manage/index.html"
+title: Manage ONTAP tools
 entries:
-  - title: Deciding whether to use this guide
-    url: "/manage/concept_decide_whether_to_use_this_guide.html"
-  - title: Workflow for configuring ONTAP® tools for VMware vSphere
-    url: "/manage/concept_workflow_for_configuring_the_unified_appliance.html"
-  - title: Configuring storage systems for ONTAP® tools for VMware vSphere
-    url: "/manage/concept_configure_storage_systems_for_vsc_vasa_provider_and_sra.html"
+  - title: Manage datastores
     entries:
-    - title: Add storage systems to VSC
-      url: "/manage/task_add_storage_systems.html"
-    - title: Set default credentials for storage systems
-      url: "/manage/task_set_default_credentials_for_storage_systems.html"
-    - title: Configure alarm thresholds
-      url: "/manage/task_configure_alarm_thresholds.html"
-  - title: Create storage capability profiles
-    url: "/manage/concept_configure_storage_capability_profiles.html"
+      - title: Mount datastore on additional hosts
+        url: /manage/task_mount_datastores_on_host.html
+      - title: Resize datastores
+        url: /manage/task_resize_datastores.html
+      - title: Edit a vVols datastore
+        url: /manage/task_edit_a_vvols_datastore.html
+      - title: Add storage to a vVols datastore
+        url: /manage/task_add_storage_to_a_vvols_datastore.html
+      - title: Remove storage from a vVols datastore
+        url: /manage/task_remove_storage_from_a_vvols_datastore.html
+      - title: Mount a vVols datastore
+        url: /manage/task_mount_a_vvols_datastore.html
+  - title: Manage virtual machines
     entries:
-    - title: Considerations for creating and editing storage capability profiles
-      url: "/manage/concept_considerations_for_creating_and_editing_storage_capability_profiles.html"
-    - title: Configure storage capability profiles
-      url: "/manage/task_create_storage_capability_profiles.html"
-  - title: Configure traditional datastores and virtual machines
-    url: "/manage/concept_configure_traditional_datastores.html"
+      - title: Considerations for migrating or cloning virtual machines
+        url: /manage/reference_considerations_for_migrating_virtual_machines.html
+      - title: Migrate traditional virtual machines to vVols datastores
+        url: /manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html
+      - title: Migrate virtual machines with older storage capability profiles
+        url: /manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
+  - title: Modify ESXi host settings
+    url: /manage/task_edit_esxi_host_settings.html
+  - title: Access ONTAP tools maintenance console
     entries:
-    - title: Provision datastores
-      url: "/manage/task_provision_datastores.html"
-    - title: Map datastores to storage capability profiles
-      url: "/manage/task_map_storage_to_storage_capability_profiles.html"
-    - title: Generate storage capability profiles automatically
-      url: "/manage/task_automatically_generating_scps.html"
-    - title: Assign QoS policies
-      url: "/manage/task_assign_qos_policies.html"
-    - title: Verify datastore compliance with the mapped storage capability profile
-      url: "/manage/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html"
-    - title: Monitor datastores and virtual machines using the traditional dashboard
-      url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
-    - title: Edit ESXi host settings for ONTAP® tools for VMware vSphere
-      url: "/manage/task_edit_esxi_host_settings.html"
-  - title: Configure vVols datastores
-    url: "/manage/concept_configure_vVols_datastores.html"
+    - title: Overview of ONTAP tools maintenance console
+      url: /manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
+    - title: VSC and VASA Provider log files
+      url: /manage/concept_virtual_storage_console_and_vasa_provider_log_files.html
+    - title: Change the administrator password
+      url: /manage/task_change_the_administrative_password.html
+    - title: Configure VASA Provider to work with SSH
+      url: /manage/task_configure_vasa_provider_to_work_with_ssh.html
+    - title: Configure remote diagnostic access
+      url: /manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
+  - title: Collect the log files
+    url: /manage/task_collect_the_log_files.html
+  - title: Monitor performance of datastores and vVols reports
     entries:
-    - title: Configure replication for vVols datastore
-      url: "/manage/concept_configure_replication_for_vvols_datastore.html"
-    - title: Provision vVols datastores
-      url: "/manage/task_provision_vvol_datastores.html"
-    - title: Rebalance vVols datastores
-      url: "/manage/reference_rebalance_vvols_datastore.html"
-    - title: Monitor vVols datastores and virtual machines using the vVols dashboard
-      url: "/manage/task_monitor_vVols_datastores_and_virtual_machines_using_vvols_dashboard.html"
-      entries:
-      - title: vVols dashboard data requirements
-        url: "/manage/reference_verify_vvol_dashboard_data_requirements.html"
-  - title: Manage disaster recovery setup
-    url: "/manage/concept_manage_disaster_recovery_setup_using_srm.html"
-    entries:
-    - title: Configure VM Storage Policies
-      url: "/manage/task_configure_vm_storage_policies.html"
-    - title: Configure protection groups
-      url: "/manage/task_configure_protection_groups.html"
-    - title: Pair protected and recovery sites
-      url: "/manage/task_pair_protected_and_recovery_sites.html"
-    - title: Configure protected and recovery site resources
-      url: "/manage/concept_configure_protected_and_recovery_site_resources.html"
-      entries:
-      - title: Configure network mappings
-        url: "/manage/task_configure_network_mappings.html"
-      - title: Configure folder mappings
-        url: "/manage/task_configure_folder_mappings.html"
-      - title: Configure resource mappings
-        url: "/manage/task_configure_resource_mappings.html"
-      - title: Map storage policies
-        url: "/manage/task_map_storage_policies.html"
-      - title: Configure placeholder datastores
-        url: "/manage/task_configure_placeholder_datastores.html"
-      - title: Configure SRA using array manager
-        url: "/manage/task_configure_array_manager.html"
-    - title: Verify replicated storage systems
-      url: "/manage/task_verify_the_replicated_storage_environment.html"
-    - title: Protect unprotected virtual machines
-      url: "/manage/task_protect_non_protected_virtual_machines.html"
-  - title: Manage traditional and vVols datastores
-    url: "/manage/concept_manage_datastore.html"
-    entries:
-    - title: Mount datastore on additional hosts
-      url: "/manage/task_mount_datastores_on_host.html"
-    - title: Resize datastores
-      url: "/manage/task_resize_datastores.html"
-    - title: Edit a vVols datastore
-      url: "/manage/task_edit_a_vvol_datastore.html"
-    - title: Add storage to a vVols datastore
-      url: "/manage/task_add_storage_to_a_vvol_datastore.html"
-    - title: Remove storage from a vVols datastore
-      url: "/manage/task_remove_storage_from_a_vvols_datastore.html"
-    - title: Mount a vVols datastore
-      url: "/manage/task_mount_a_vvol_datastore.html"
-    - title: Considerations for migrating or cloning virtual machines
-      url: "/manage/reference_considerations_for_migrating_virtual_machines.html"
-    - title: Migrate traditional virtual machines to vVols datastores
-      url: "/manage/task_migrate_standard_virtual_machines_to_vvol_datastores.html"
-    - title: Migrate virtual machines with older storage capability profiles
-      url: "/manage/task_migrate_existing_virtual_machines_to_7_1_virtual_appliance.html"
-  - title: ONTAP tools console reports
-    url: "/manage/concept_virtual_storage_console_reports.html"
-    entries:
-    - title: Datastore Reports
-      url: "/manage/concept_datastore_reports.html"
-    - title: vVols reports
-      url: "/manage/concept_what_vasa_provider_reports_do.html"
+      - title: Overview of ONTAP tools datastores and virtual machine reports
+        url: /manage/concept_virtual_storage_console_reports.html
+      - title: Analyze performance data using the traditional dashboard
+        url: /manage/task_monitor_datastores_using_the_traditional_dashboard.html
+      - title: Analyze performance data using the vVols dashboard
+        url: /manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html

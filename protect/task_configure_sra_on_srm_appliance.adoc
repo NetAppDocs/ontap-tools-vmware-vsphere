@@ -1,0 +1,30 @@
+---
+permalink: protect/task_configure_sra_on_srm_appliance.html
+sidebar: sidebar
+keywords:
+summary: 'After you have deployed the SRM Appliance, you should configure SRA on the SRM Appliance. The successful configuration of SRA enables SRM Appliance to communicate with SRA for disaster recovery management. You should store the ONTAP tools credentials \(IP address and administrator password\) in the SRM Appliance to enable communication between SRM Appliance and SRA.'
+---
+= Configure SRA on the SRM Appliance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you have deployed the SRM Appliance, you should configure SRA on the SRM Appliance. The successful configuration of SRA enables SRM Appliance to communicate with SRA for disaster recovery management. You should store the ONTAP tools credentials (IP address and administrator password) in the SRM Appliance to enable communication between SRM Appliance and SRA.
+
+*What you will need*
+
+You should have uploaded the _tar.gz_ file to SRM Appliance.
+
+*About this task*
+
+The configuration of SRA on SRM Appliance stores the SRA credentials in the SRM Appliance.
+
+*Steps*
+
+. Log in using administrator account to the SRM Appliance using putty.
+. Switch to the root user using the command: `su root`
+. At the log location enter the command to get the docker ID used by SRA docker `ps -l`
+. To login to the container ID, enter command docker `exec -it -u srm <container id> sh`
+. Configure SRM with the ONTAP tools IP address and password using the command: `perl command.pl -I <va-IP> administrator <va-password>``
++
+A success message confirming that the storage credentials are stored is displayed. SRA can communicate with SRA server using the provided IP address, port and credentials.

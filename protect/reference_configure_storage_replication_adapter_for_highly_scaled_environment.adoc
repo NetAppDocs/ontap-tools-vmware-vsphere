@@ -1,0 +1,55 @@
+---
+permalink: protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html
+sidebar: sidebar
+keywords:
+summary: 'You must configure the storage timeout intervals per the recommended settings for Storage Replication Adapter \(SRA\) to perform optimally in highly scaled environments.'
+---
+= Configure Storage Replication Adapter for highly scaled environment
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must configure the storage timeout intervals per the recommended settings for Storage Replication Adapter (SRA) to perform optimally in highly scaled environments.
+
+== Storage Provider settings
+
+You should set the following timeout values on SRM for scaled environment:
+
+|===
+| *Advanced settings*| *Timeout values*
+a|
+`StorageProvider.resignatureTimeout`
+a|
+Increase the value of the setting from 900 seconds to 12000 seconds.
+a|
+`storageProvider.hostRescanDelaySec`
+a|
+60
+a|
+`storageProvider.hostRescanRepeatCnt`
+a|
+20
+a|
+`storageProvider.hostRescanTimeoutSec`
+a|
+Set a high value(For example: 99999)
+|===
+You should also enable the `StorageProvider.autoResignatureMode` option.
+
+See VMware documentation for more information on modifying Storage Provider settings.
+
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html[VMware vSphere Documentation: Change Storage Provider Settings]
+
+== Storage settings
+
+You must set the value of the `storage.commandTimeout` and `storage.maxConcurrentCommandCnt` timeout interval for highly scaled environments to 99,999 seconds.
+
+NOTE: The timeout interval specified is the maximum value. You do not need to wait for the maximum timeout to be reached. Most commands finish within the set maximum timeout interval.
+
+You should also set the maximum time for SRA to perform a single operation in the vvol.properties file: offtap.operation.timeout.period.seconds=86400.
+
+https://kb.netapp.com/app/answers/answer_view/a_id/1001111[NetApp Knowledgebase Answer 1001111: NetApp Storage Replication Adapter 4.0/7.X for ONTAP Sizing Guide]
+
+VMware documentation on modifying SAN Provider settings has more information.
+
+https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html[VMware Site Recovery Manager Documentation: Change Storage Settings]

@@ -1,7 +1,7 @@
 ---
 permalink: deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must configure the storage timeout intervals per the recommended settings for Storage Replication Adapter \(SRA\) to perform optimally in highly scaled environments.'
 ---
 = Configure Storage Replication Adapter for highly scaled environment

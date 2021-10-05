@@ -1,0 +1,38 @@
+---
+permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html
+sidebar: sidebar
+keywords:
+summary: 'If you are using ONTAP® tools for VMware vSphere in an environment where a single VMware vSphere HTML5 client. is managing multiple vCenter Server instances, you must register one instance of VSC with each vCenter Server so that there is a 1:1 pairing between VSC and the vCenter Server. Doing this enables you to manage all of the servers running vCenter 6.0 or later in both linked mode and non-linked mode from a single vSphere HTML5 client.'
+---
+= Requirements for registering VSC in multiple vCenter Servers environment
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are using ONTAP® tools for VMware vSphere in an environment where a single VMware vSphere HTML5 client. is managing multiple vCenter Server instances, you must register one instance of VSC with each vCenter Server so that there is a 1:1 pairing between VSC and the vCenter Server. Doing this enables you to manage all of the servers running vCenter 6.0 or later in both linked mode and non-linked mode from a single vSphere HTML5 client.
+
+NOTE: If you want to use VSC with a vCenter Server, then you must have set up or registered one VSC instance for every vCenter Server instance that you want to manage. Each registered VSC instance must be of the same version.
+
+Linked mode is installed automatically during the vCenter Server deployment. Linked mode uses Microsoft Active Directory Application Mode (ADAM) to store and synchronize data across multiple vCenter Server systems.
+
+Using the vSphere HTML5 client to perform VSC tasks across multiple vCenter Servers requires the following:
+
+* Each vCenter Server in the VMware inventory that you want to manage must have a single VSC server registered with it in a unique 1:1 pairing.
++
+For example, you can have VSC server A registered to vCenter Server A, VSC server B registered to vCenter Server B, VSC server C registered to vCenter Server C, and so on.
++
+You *cannot* have VSC server A registered to both vCenter Server A and vCenter Server B.
++
+If a VMware inventory includes a vCenter Server that does not have a VSC server registered to it, but there are one or more vCenter Servers that are registered with VSC, then you can view the instances of VSC and perform VSC operations for the vCenter Servers that have VSC registered.
+
+* You must have the VSC-specific View privilege for each vCenter Server that is registered to the single sign-on (SSO).
++
+You must also have the correct RBAC permissions.
+
+When you are performing a task that requires you to specify a vCenter Server, the *vCenter Server* drop-down box displays the available vCenter Servers in alphanumeric order. The default vCenter Server is always the first server in the drop-down list.
+
+If the location of the storage is known (for example, when you use the Provisioning wizard and the datastore is on a host managed by a specific vCenter Server), the vCenter Server list is displayed as a read-only option. This happens only when you use the right-click option to select an item in the vSphere Web Client.
+
+VSC warns you when you attempt to select an object that it does not manage.
+
+You can filter storage systems based on a specific vCenter Server from the VSC summary page. A summary page appears for every VSC instance that is registered with a vCenter Server. You can manage the storage systems that are associated with a specific VSC instance and vCenter Server, but you should keep the registration information for each storage system separate if you are running multiple instances of VSC.

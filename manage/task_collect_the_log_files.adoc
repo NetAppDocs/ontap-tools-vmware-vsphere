@@ -1,0 +1,30 @@
+---
+permalink: manage/task_collect_the_log_files.html
+sidebar: sidebar
+keywords:
+summary: 'You can collect log files for ONTAP® tools for VMware vSphere from the option available in the VSC graphical user interface \(GUI\). Technical support might ask you to collect the log files to help troubleshoot a problem.'
+---
+= Collect the log files
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can collect log files for ONTAP® tools for VMware vSphere from the option available in the VSC graphical user interface (GUI). Technical support might ask you to collect the log files to help troubleshoot a problem.
+
+*About this task*
+
+If you need VASA Provider log files, you can generate a support bundle from the Vendor Provider Control Panel screen. This page is part of the VASA Provider maintenance menus, which are accessible from the virtual appliance's console.
+
+`\https://vm_ip:9083`
+
+You can collect the VSC log files by using the "`Export VSC Logs`" feature in the VSC GUI. When you collect a VSC log bundle with VASA Provider enabled, the VSC log bundle will also have the VP logs. The following steps tell you how to collect the VSC log files:
+
+*Steps*
+
+. From the ONTAP tools home page, click *Configuration* > *Export VSC Logs*.
++
+This operation can take several minutes.
+
+. When prompted, save the file to your local computer.
++
+You can then send the _.zip_ file to technical support.

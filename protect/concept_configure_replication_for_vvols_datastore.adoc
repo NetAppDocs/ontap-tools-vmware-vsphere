@@ -1,0 +1,22 @@
+---
+permalink: protect/concept_configure_replication_for_vvols_datastore.html
+sidebar: sidebar
+keywords:
+summary: 'You can configure replication for your vVols datastore using ONTAP tools. The main aim of vVols replication is to protect critical virtual machines during disaster recovery using VMware Site Recovery Manager \(SRM\).'
+---
+= Configure replication for vVols datastore to protect virtual machines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure replication for your vVols datastore using ONTAP tools. The main aim of vVols replication is to protect critical virtual machines during disaster recovery using VMware Site Recovery Manager (SRM).
+
+However, to configure vVols replication for ONTAP tools, VASA Provider capability and vVols replication must be enabled. VASA Provider is enabled by default in ONTAP tools. The Array Based Replication is performed at the FlexVol level. Each vVols datastore is mapped to a storage container that consists of one or more FlexVol volumes. The FlexVol volumes should be pre-configured with SnapMirror from ONTAP.
+
+WARNING: You should not configure a mix of protected and unprotected virtual machines in a single vVols datastore. A reprotect operation after failover will cause unprotected virtual machines to be deleted. Ensure that all virtual machines in a vVols datastore are protected when using replication.
+
+Replication groups are created during vVols datastore create workflow for each FlexVol volume. To use vVols replication, you will need to create VM Storage Policies that include replication status and schedule along with storage capability profile. A Replication group includes virtual machines that are replicated as part of disaster recovery to the target site. You can configure replication groups with protection groups and recovery plans using SRM console, for DR workflows.
+
+NOTE: If you are using disaster recovery for vVols datastore, then you do not need to configure Storage Replication Adapter (SRA) separately as VASA Provider capability is enhanced to have vVols replication.
+
+image::../media/vvols_replication.png[]

@@ -1,0 +1,51 @@
+---
+permalink: protect/task_configure_protection_groups.html
+sidebar: sidebar
+keywords:
+summary: 'You must create protection groups to protect a group of virtual machines on the protected site.'
+---
+= Configure protection groups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must create protection groups to protect a group of virtual machines on the protected site.
+
+*What you will need*
+
+You should ensure that both the source and target sites are configured for the following:
+
+* Same version of SRM installed
+* vVols datastore configured with replication enabled and datastore mounted
+* Similar storage capability profiles
+* Similar VM Storage Policies with replication capability that must be mapped in SRM
+* Virtual machines
+* Paired protected and recovery sites
+* Source and destination datastores should be mounted on respective sites
+
+*Steps*
+
+. Log in to your vCenter Server, and then click *Site Recovery* > *Protection Groups*.
+. In the *Protection Groups* pane, click *New*.
+. Specify a name and description for the protection group, direction, and then click *NEXT*.
+. In the *Type* field, select one of the following:
++
+|===
+| *For...*| *Type field option...*
+a|
+Traditional datastore
+a|
+Datastore groups (array-based replication)
+a|
+vVols datastore
+a|
+Virtual Volumes (vVol replication)
+|===
+The fault domain is nothing but SVMs with replication enabled. The SVMs that have only peering implemented and with no issues are displayed.
+
+. In the Replication groups tab, select either the enabled array pair or the replication groups that have the virtual machine you configured, and then click *NEXT*.
++
+All of the virtual machines on the replication group are added to the protection group.
+
+. Select either the existing recovery plan or create a new plan by clicking *Add to new recovery plan*.
+. In the Ready to complete tab, review the details of the protection group that you created, and then click *Finish*.

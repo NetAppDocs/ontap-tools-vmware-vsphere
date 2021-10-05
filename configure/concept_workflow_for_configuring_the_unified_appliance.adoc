@@ -1,0 +1,14 @@
+---
+permalink: configure/concept_workflow_for_configuring_the_unified_appliance.html
+sidebar: sidebar
+keywords:
+summary: 'Configuring ONTAP tools involves configuring your storage systems, creating a storage capability profile, provisioning the datastore, and optionally configuring SRA for disaster recovery.'
+---
+= Workflow for configuring ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Configuring ONTAP tools involves configuring your storage systems, creating a storage capability profile, provisioning the datastore, and optionally configuring SRA for disaster recovery.
+
+image::../media/use_case_vsc_users.gif[Workflow to configure ONTAP tools]

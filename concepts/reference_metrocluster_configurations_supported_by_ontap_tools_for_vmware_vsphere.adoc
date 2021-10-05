@@ -1,0 +1,30 @@
+---
+permalink: concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords:
+summary: 'The ONTAP tools for VMware vSphere supports environments that use MetroCluster IP and FC configurations for ONTAP. Most of this support is automatic. However, you might notice a few differences when you use a MetroCluster environment with VSC and VASA Provider.'
+---
+= MetroCluster configurations supported by ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP tools for VMware vSphere supports environments that use MetroCluster IP and FC configurations for ONTAP. Most of this support is automatic. However, you might notice a few differences when you use a MetroCluster environment with VSC and VASA Provider.
+
+NOTE: SRA does not support MetroCluster configurations.
+
+== MetroCluster configurations and VSC
+
+You must ensure that VSC discovers the storage system controllers at the primary site and the secondary site. Typically, VSC automatically discovers storage controllers. If you are using a cluster management LIF, then it is a good practice to verify that VSC has discovered the clusters at both sites. Otherwise, you can manually add the storage controllers to VSC. You can also modify the user name and password pairs that VSC uses to connect to the storage controllers.
+
+When a switchover occurs, the SVMs on the secondary site take over. These SVMs have the "`-mc`" suffix appended to their names. If a switchover operation occurs while you are performing operations such as provisioning a datastore, the name of the SVM where the datastore resides is changed to include the "`-mc`" suffix. This suffix is dropped when the switchback occurs, and the SVMs on the primary site resume control.
+
+NOTE: If you have added direct SVMs with MetroCluster configuration to VSC, then after switchover, the change in the SVM name (the addition of the "`-mc`" suffix) is not reflected. All other switchover operations continue to execute normally.
+
+When a switchover or switchback occurs, VSC might take a few minutes to automatically detect and discover the clusters. If this happens while you are performing a VSC operation such as provisioning a datastore, you might experience a delay.
+
+== MetroCluster configurations and VASA Provider
+
+VASA Provider automatically supports environments that use MetroCluster configurations. The switchover is transparent in VASA Provider environments. You cannot add direct SVMs to VASA Provider.
+
+NOTE: VASA Provider does not append the "`-mc`" suffix to the names of the SVMs on the secondary site after a switchover.

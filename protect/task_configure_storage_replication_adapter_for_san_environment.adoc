@@ -1,0 +1,59 @@
+---
+permalink: protect/task_configure_storage_replication_adapter_for_san_environment.html
+sidebar: sidebar
+keywords:
+summary: 'You must set up the storage systems before running Storage Replication Adapter \(SRA\) for Site Recovery Manager \(SRM\).'
+---
+= Configure Storage Replication Adapter for SAN environment
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must set up the storage systems before running Storage Replication Adapter (SRA) for Site Recovery Manager (SRM).
+
+*What you will need*
+
+You must have installed the following programs on the protected site and the recovery site:
+
+* SRM
++
+Documentation about installing SRM is on the VMware site.
++
+https://www.vmware.com/support/pubs/srm_pubs.html[VMware Site Recovery Manager Documentation]
+
+* SRA
++
+The adapter is installed either on SRM.
+
+*Steps*
+
+. Verify that the primary ESXi hosts are connected to the LUNs in the primary storage system on the protected site.
+. Verify that the LUNS are in igroups that have the `ostype` option set to _VMware_ on the primary storage system.
+. Verify that the ESXi hosts at the recovery site have appropriate FC or iSCSI connectivity to the storage virtual machine (SVM).
++
+You can do this either by verifying that the ESXi hosts have local LUNs connected on the SVM or by using the `fcp show initiators` command or the `iscsi show initiators` command on the SVMs.
+
+== Configure Storage Replication Adapter for NAS environment
+
+*What you will need*
+
+You must have installed the following programs on the protected site and the recovery site:
+
+* SRM
++
+Documentation about installing SRM can be found on the VMware site.
++
+https://www.vmware.com/support/pubs/srm_pubs.html[VMware Site Recovery Manager Documentation]
+
+* SRA
++
+The adapter is installed on SRM and the SRA server.
+
+*Steps*
+
+. Verify that the datastores at the protected site contain virtual machines that are registered with vCenter Server.
+. Verify that the ESXi hosts at the protected site have mounted the NFS exports volumes from the storage virtual machine (SVM).
+. Verify that valid addresses such as the IP address, host name, or FQDN on which the NFS exports are present are specified in the *NFS Addresses* field when using the Array Manager wizard to add arrays to SRM.
+. Use the `ping` command on each ESXi host at the recovery site to verify that the host has a VMkernel port that can access the IP addresses that are used to serve NFS exports from the SVM.
+
+https://mysupport.netapp.com/site/global/dashboard[NetApp Support]

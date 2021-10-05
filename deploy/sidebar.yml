@@ -1,149 +1,35 @@
-section: deploy
-title: deploy
-url: "/deploy/index.html"
+section: Deploy
+title: Deploy and upgrade ONTAP tools
 entries:
-  - title: Overview of the ONTAP tools
-    url: "/deploy/concept_virtual_storage_console_overview.html"
   - title: Deployment workflow for new users of ONTAP tools for VMware vSphere
-    url: "/deploy/concept_installation_workflow_for_new_users.html"
-    entries:
-    - title: Deployment workflow for existing users of ONTAP tools
-      url: "/deploy/concept_installation_workflow_for_existing_users_of_vsc.html"
+    url: /deploy/concept_installation_workflow_for_new_users.html
+  - title: Deployment workflow for existing users of ONTAP tools
+    url: /deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html
   - title: Requirements for deploying the ONTAP tools
-    url: "/deploy/concept_requirements_for_deploying_the_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
     entries:
     - title: Port requirements for VSC
-      url: "/deploy/reference_port_requirements_for_vsc.html"
+      url: /deploy/reference_port_requirements_for_vsc.html
     - title: Space and sizing requirements for the ONTAP tools
-      url: "/deploy/concept_space_and_sizing_requirements_for_the_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
+      url: /deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html
     - title: Supported storage system, licensing, and applications for the ONTAP tools
-      url: "/deploy/concept_supported_storage_system_and_applications.html"
-    - title: Considerations and requirements for deploying ONTAP tools
-      url: "/deploy/reference_considerations_for_deploying_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
-  - title: Deploying or upgrading ONTAP® tools for VMware vSphere
-    url: "/deploy/concept_deploy_or_upgrade_ontap_tools.html"
+      url: /deploy/concept_supported_storage_system_and_applications.html
+    - title: Considerations for deploying ONTAP tools
+      url: /deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
+  - title: Deploy ONTAP tools
     entries:
     - title: How to download ONTAP tools
-      url: "/deploy/concept_how_to_download_the_virtual_appliance_for_vsc_vp_and_sra.html"
-    - title: Deploy ONTAP tools for VMware vSphere
-      url: "/deploy/task_deploy_ontap_tools.html"
-      entries:
-      - title: Deployment customization considerations
-        url: "/deploy/reference_deploment_customization_requirements.html"
-    - title: "<strong>Enable VASA Provider for configuring virtual datastores</strong>"
-      url: "/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html"
-      entries:
-      - title: Registering OnCommand API Services with ONTAP tools
-        url: "/deploy/task_register_oncommand_api_services_with_ONTAP_tools.html"
+      url: /deploy/concept_how_to_download_ontap_tools.html
+    - title: How to deploy ONTAP tools
+      url: /deploy/task_deploy_ontap_tools.html
+    - title: Enable VASA Provider for configuring virtual datastores
+      url: /deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
     - title: Install the NFS VAAI plug-in
-      url: "/deploy/task_install_the_nfs_vaai_plug_in.html"
-    - title: Enable Storage Replication Adapter
-      url: "/deploy/task_enable_storage_replication_adapter.html"
-      entries:
-      - title: Configuring SRA on the SRM Appliance
-        url: "/deploy/task_configure_sra_on_srm_appliance.html"
-      - title: Updating Storage Replication Adapter (SRA) credentials
-        url: "/deploy/task_update_sra_credentials.html"
-    - title: Migration of Windows SRM to SRM Appliance
-      url: "/deploy/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html"
+      url: /deploy/task_install_the_nfs_vaai_plug_in.html
     - title: Clear the vSphere cached downloaded plug-in packages
-      url: "/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html"
-    - title: Upgrade to the 9.8 ONTAP tools
-      url: "/deploy/task_upgrade_to_the_9_8_ONTAP_tools_for_Vmware_vSphere.html"
-    - title: Upgrade Storage Replication Adapter
-      url: "/deploy/task_upgrade_storage_replication_adapter.html"
-  - title: Configure ONTAP® tools for VMware vSphere
-    url: "/deploy/concept_configure_vsc_for_vmware_vsphere_environment.html"
+      url: /deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
+  - title: Upgrade ONTAP tools
     entries:
-    - title: Configure ESXi server multipathing and timeout settings
-      url: "/deploy/task_configure_esx_server_multipathing_and_timeout_settings.html"
-      entries:
-      - title: ESXi host values set using ONTAP® tools for VMware vSphere
-        url: "/deploy/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html"
-      - title: Configure guest operating system scripts
-        url: "/deploy/reference_configure_guest_operating_system_scripts.html"
-        entries:
-        - title: Setting timeout values for Windows guest operating systems
-          url: "/deploy/task_run_the_gos_timeout_scripts_for_windows.html"
-        - title: Setting timeout values for Solaris guest operating systems
-          url: "/deploy/task_run_the_gos_timeout_scripts_for_solaris.html"
-        - title: Setting timeout values for Linux guest operating systems
-          url: "/deploy/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html"
-    - title: Regenerate an SSL certificate for Virtual Storage Console
-      url: "/deploy/task_regenerate_an_ssl_certificate_for_vsc.html"
-    - title: Requirements for registering VSC in multiple vCenter Servers environment
-      url: "/deploy/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html"
-    - title: Configure the VSC preferences files
-      url: "/deploy/reference_configure_the_vsc_preferences_files.html"
-      entries:
-      - title: Set IPv4 or IPv6
-        url: "/deploy/reference_set_ipv4_or_ipv6.html"
-    - title: Enable datastore mounting across different subnets
-      url: "/deploy/task_enable_datastore_mounting_across_different_subnets.html"
-    - title: Maintenance Console of ONTAP tools for VMware vSphere
-      url: "/deploy/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html"
-    - title: Change the administrator password
-      url: "/deploy/task_change_the_administrative_password.html"
-    - title: Configure high availability for ONTAP tools for VMware vSphere
-      url: "/deploy/concept_configure_high_availability_for_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
-      entries:
-      - title: VMware vSphere HA
-        url: "/deploy/concept_vmware_high_availability_for_vcenter_server.html"
-      - title: VMware vSphere Fault Tolerance
-        url: "/deploy/concept_vmware_fault_tolerance_for_vcenter_server.html"
-    - title: MetroCluster configurations supported by ONTAP tools
-      url: "/deploy/reference_metrocluster_configurations_supported_by_virtual_appliance_for_vsc_vasa_provider_and_sra.html"
-    - title: Configure VASA Provider to work with SSH
-      url: "/deploy/task_configure_vasa_provider_to_work_with_ssh.html"
-    - title: Configure remote diagnostic access
-      url: "/deploy/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html"
-    - title: Virtual Storage Console and VASA Provider log files
-      url: "/deploy/concept_virtual_storage_console_and_vasa_provider_log_files.html"
-    - title: Collect the log files
-      url: "/deploy/task_collect_the_log_files.html"
-  - title: Configure ONTAP® tools for VMware vSphere storage system
-    url: "/deploy/concept_configure_your_storage_system_environment.html"
-    entries:
-    - title: Set default credentials for storage systems
-      url: "/deploy/task_set_default_credentials_for_storage_systems.html"
-    - title: Add storage systems to VSC
-      url: "/deploy/task_add_storage_systems.html"
-    - title: Discover storage systems and hosts
-      url: "/deploy/task_discover_storage_systems_and_hosts.html"
-    - title: Refresh the storage system display
-      url: "/deploy/task_refresh_the_storage_system_display.html"
-  - title: Role-based access control in ONTAP tools for VMware vSphere
-    url: "/deploy/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
-    entries:
-    - title: Components of vCenter Server permissions
-      url: "/deploy/reference_components_that_make_up_vcenter_server_permissions.html"
-    - title: Key points about assigning and modifying permissions for vCenter Server
-      url: "/deploy/reference_key_points_about_assigning_and_modifying_permissions.html"
-    - title: Standard roles packaged with ONTAP tools
-      url: "/deploy/concept_standard_roles_packaged_with_virtual_appliance_for_vsc_vp_and_sra.html"
-      entries:
-      - title: Guidelines for using VSC standard roles
-        url: "/deploy/concept_guidelines_for_using_vsc_standard_roles.html"
-    - title: Privileges required for VSC tasks
-      url: "/deploy/concept_privileges_required_for_vsc_tasks.html"
-      entries:
-      - title: Product-level privilege required by ONTAP® tools for VMware vSphere
-        url: "/deploy/reference_product_level_privilege_required_by_vsc_for_vmware_vsphere.html"
-      - title: ONTAP role-based access control for ONTAP tools
-        url: "/deploy/concept_ontap_role_based_access_control_feature_for_virtual_appliance.html"
-      - title: Recommended ONTAP roles when using ONTAP tools for VMware vSphere
-        url: "/deploy/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html"
-      - title: How to configure ONTAP role-based access control for ONTAP® tools for
-          VMware vSphere
-        url: "/deploy/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html"
-      - title: Configure user roles and privileges
-        url: "/deploy/task_configure_user_role_and_privileges.html"
-  - title: Configure Storage Replication Adapter for disaster recovery
-    url: "/deploy/concept_configure_storage_replication_adapter_for_disaster_recovery.html"
-    entries:
-    - title: Configure Storage Replication Adapter for SAN environment
-      url: "/deploy/task_configure_storage_replication_adapter_for_san_environment.html"
-    - title: Configure Storage Replication Adapter for NAS environment
-      url: "/deploy/task_configure_storage_replication_adapter_for_nas_environment.html"
-    - title: Configure Storage Replication Adapter for highly scaled environment
-      url: "/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html"
+      - title: Upgrade to the latest release of ONTAP tools
+        url: /deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
+      - title: Upgrade Storage Replication Adapter
+        url: /deploy/task_upgrade_storage_replication_adapter.html

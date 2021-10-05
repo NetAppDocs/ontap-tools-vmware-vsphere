@@ -1,0 +1,30 @@
+---
+permalink: protect/task_protect_non_protected_virtual_machines.html
+sidebar: sidebar
+keywords: virtual machines, configuring protection
+summary: 'You can configure protection for your existing unprotected virtual machines that were created using VM storage Policy with replication disabled. To provide protection, you should change the VM storage policy and assign a replication group.'
+---
+= Protect unprotected virtual machines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure protection for your existing unprotected virtual machines that were created using VM storage Policy with replication disabled. To provide protection, you should change the VM storage policy and assign a replication group.
+
+*About this task*
+
+If SVM is having both IPv4 and IPv6 LIFs, then you should disable IPv6 LIFs and later perform disaster recovery workflows.
+
+*Steps*
+
+. Click the required virtual machine and verify that it is configured with default VM storage policy.
+. Right-click the selected virtual machine, and click *VM Policies* > *Edit VM Storage Policies*.
+. Select a VM Storage policy that has replication enabled from the *VM storage policy* drop-down.
+. Select a replication group from the *Replication group* drop-down, and then click *OK*.
+. Verify the Summary of the virtual machine to confirm that the virtual machine is protected.
++
+[NOTE]
+====
+ * This release of ONTAP tools does not support hot clone of protected virtual machines. You should power off the virtual machine and then perform the clone operation.
+ * If a datastore does not appear in ONTAP tools after a Reprotect operation, then you should run a storage system discovery or wait for the next scheduled discovery operation.
+====

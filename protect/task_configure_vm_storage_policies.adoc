@@ -1,0 +1,31 @@
+---
+permalink: protect/task_configure_vm_storage_policies.html
+sidebar: sidebar
+keywords:
+summary: 'You should configure VM storage policies to manage virtual machines that are configured on vVols datastore and to enable services like replication for the virtual disks. For the traditional datastores, it is optional to use these VM storage policies.'
+---
+= Configure VM Storage Policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should configure VM storage policies to manage virtual machines that are configured on vVols datastore and to enable services like replication for the virtual disks. For the traditional datastores, it is optional to use these VM storage policies.
+
+*About this task*
+
+The vSphere web client provides default storage policies. But you can create policies and assign them to the virtual machines.
+
+*Steps*
+
+. On the vSphere Client page, click *Menu* > *Policies and Profiles*.
+. Click *VM Storage Policies* > *Create VM Storage Policy*.
+. In the Create VM Storage Policy page, provide the following details:
+ .. Enter a name and description for the VM Storage Policy.
+ .. Select *Enable rules for "NetApp clustered Data ONTAP.VP.vvol" storage*.
+ .. Select the required storage capability profile in the Placement tab.
+ .. Select the *Custom* option to enable Replication.
+ .. Click *ADD RULE* to select *Asynchronous* replication and required SnapMirror Schedule, and then click *NEXT*.
+ .. Verify the compatible datastores listed, and then click *NEXT* in the Storage compatibility tab.
++
+For vVols datastores having data protection FlexVol volumes, compatible datastores check is not performed.
+. Review your VM Storage Policy selection in the *Review and finish* tab, and then click *Finish*.

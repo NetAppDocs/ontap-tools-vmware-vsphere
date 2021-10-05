@@ -1,0 +1,54 @@
+---
+permalink: configure/reference_set_ipv4_or_ipv6.html
+sidebar: sidebar
+keywords:
+summary: 'There is a new option added to the preference file kaminoprefs.xmlthat you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.'
+---
+= Set IPv4 or IPv6 using the preferences file
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The preferences files contain settings that control ONTAP tools for VMware vSphere operations. Under most circumstances, you do not have to modify the settings in these files. It is helpful to know which preference files Virtual Storage Console (VSC) uses.
+
+VSC has several preference files. These files include entry keys and values that determine how VSC performs various operations. The following are some of the preference files that VSC uses:
+
+`/opt/netapp/vscserver/etc/kamino/kaminoprefs.xml`
+
+`/opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
+
+You might have to modify the preferences files in certain situations. For example, if you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the preferences files. If you do not modify the settings in the preferences file, datastore provisioning fails because VSC cannot mount the datastore.
+
+There is a new option added to the preference file `kaminoprefs.xml` that you can set to enable support for IPv4 or IPv6 for all storage systems added to VSC.
+
+* The `default.override.option.provision.mount.datastore.address.family` parameter has been added to the `kaminoprefs.xml` preference file to set a preferred data LIF protocol for datastore provisioning.
++
+This preference is applicable for all of the storage systems added to VSC.
+
+* The values for the new option are `IPv4`, `IPv6`, and `NONE`.
+* By default the value is set to `NONE`.
+
+|===
+| *Value*| *Description*
+a|
+NONE
+a|
+
+* Provisioning happens using the same IPv6 or IPv4 address type of data LIF as the type of cluster or SVM management LIF used for adding the storage.
+* If the same IPv6 or IPv4 address type of data LIF is not present in the SVM, then the provisioning happens through the other type of data LIF, if available.
+
+a|
+IPv4
+a|
+
+* Provisioning happens using the IPv4 data LIF in the selected SVM.
+* If the SVM does not have an IPv4 data LIF, then the provisioning happens through the IPv6 data LIF, if it is available in the SVM.
+
+a|
+IPv6
+a|
+
+* Provisioning happens using the IPv6 data LIF in the selected SVM.
+* If the SVM does not have an IPv6 data LIF, then the provisioning happens through the IPv4 data LIF, if it is available in the SVM.
+
+|===

@@ -1,0 +1,30 @@
+---
+permalink: configure/task_automatically_generating_scps.html
+sidebar: sidebar
+keywords:
+summary: 'VASA Provider for ONTAP enables you to automatically generate storage capability profiles for existing traditional datastores. When you select the auto-generate option for a datastore, VASA Provider creates a profile that contains the storage capabilities that are used by that datastore.'
+---
+= Generate storage capability profiles automatically
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+VASA Provider for ONTAP enables you to automatically generate storage capability profiles for existing traditional datastores. When you select the auto-generate option for a datastore, VASA Provider creates a profile that contains the storage capabilities that are used by that datastore.
+
+*What you will need*
+
+* You must have registered your VASA Provider instance with Virtual Storage Console (VSC).
+* VSC must have discovered your storage.
+
+*About this task*
+
+After you create a storage capability profile, you can modify the profile to include more capabilities. The Create storage capability profile wizard provides information about the capabilities that you can include in a profile.
+
+*Steps*
+
+. From the ONTAP tools home page, click *Storage Mapping*.
+. Select the datastore from the available list.
+. From the Actions menu, select *Auto-generate*.
+. When the auto-generate process finishes, refresh the screen to view information about the new profile.
++
+The new profile is listed in the Associated profile column. The name of the new profile is based on the resources in the profile. You can rename the profile, if required.

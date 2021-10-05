@@ -1,0 +1,59 @@
+---
+permalink: protect/task_configure_array_manager.html
+sidebar: sidebar
+keywords:
+summary: 'You can configure Storage Replication Adapter \(SRA\) by using the Array Manager wizard of Site Recovery Manager \(SRM\) to enable interactions between SRM and storage virtual machines \(SVMs\).'
+---
+= Configure SRA using array manager
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure Storage Replication Adapter (SRA) by using the Array Manager wizard of Site Recovery Manager (SRM) to enable interactions between SRM and storage virtual machines (SVMs).
+
+*What you will need*
+
+* You must have paired the protected sites and recovery sites in SRM.
+* You must have configured your storage before configuring the array manager.
+* You must have configured and replicated the SnapMirror relationships between the protected sites and recovery sites.
+* You must have enabled the SVM management LIFs to enable multitenancy.
+
+SRA supports cluster-level management and SVM-level management. If you add storage at a cluster level, then you can discover and perform operations on all of the SVMs in the cluster. If you add storage at an SVM level, then you can manage only that specific SVM.
+
+NOTE: VMware does not support NFS4.1 protocol for SRM.
+
+*Steps*
+
+. In SRM, click *Array Managers*, and then click *Add Array Manager*.
+. Enter the following information to describe the array in SRM:
+ .. Enter a name to identify the array manager in the *Display Name* field.
+ .. In the *SRA Type* field, select *NetApp Storage Replication Adapter for ONTAP*.
+ .. Enter the information to connect to the cluster or the SVM:
+  *** If you are connecting to a cluster, you should enter the cluster management LIF.
+  *** If you are connecting directly to an SVM, you should enter the IP address of the SVM management LIF.
++
+NOTE: When configuring the array manager, you must use the same connection and credentials for the storage system that was used to add the storage system in Virtual Storage Console's Storage Systems menu. For example, if the array manager configuration is SVM scoped, then the storage under VSC must be added at SVM level.
+
+ .. If you are connecting to a cluster, enter the name of the SVM in the *SVM name* field.
++
+You can also leave this field blank.
+
+ .. Enter the volumes to be discovered in the *Volume include list* field.
++
+You can enter the source volume at the protected site and the replicated destination volume at the recovery site. You can enter either the full volume name or the partial volume name.
++
+For example, if you want to discover volume src_vol1 that is in a SnapMirror relationship with volume dst_vol1, you must specify src_vol1 in the protected site field and dst_vol1 in the recovery site field.
+
+ .. *(Optional)* Enter the volumes to be excluded from discovery in the *Volume exclude list* field.
++
+You can enter the source volume at the protected site and the replicated destination volume at the recovery site. You can enter either the full volume name or the partial volume name.
++
+For example, if you want to exclude volume _src_vol1_ that is in a SnapMirror relationship with volume _dst_vol1_, you must specify _src_vol1_ in the protected site field and _dst_vol1_ in the recovery site field.
+
+ .. *(Optional)* Enter the user name of the cluster-level account or SVM-level account in the *Username* field.
+ .. Enter the password of the user account in the *Password* field.
+. Click *Next*.
+. Verify that the array is discovered and displayed at the bottom of the Add Array Manager window.
+. Click *Finish*.
+
+You can follow the same steps for the recovery site by using the appropriate SVM management IP addresses and credentials. On the Enable Array Pairs screen of the Add Array Manager wizard, you should verify that the correct array pair is selected, and that it shows as ready to be enabled.

@@ -1,0 +1,124 @@
+---
+permalink: deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords: Virtual Storage Console,Storage Replication Adapter
+summary: 'Before you deploy ONTAP tools for VMware vSphere, it is good practice to plan your deployment and decide how you want to configure ONTAP tools in your environment.'
+---
+= Considerations for deploying ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you deploy ONTAP tools for VMware vSphere, it is good practice to plan your deployment and decide how you want to configure ONTAP tools in your environment.
+
+The following table presents an overview of what you should consider before you deploy ONTAP tools.
+
+|===
+| *Considerations*|*Description*
+a|
+First-time deployment of ONTAP tools
+a|
+The deployment of the ONTAP tools automatically installs the VSC features.
+
+link:../deploy/concept_deploy_or_upgrade_ontap_tools.html[Deploy and upgrade ONTAP tools]
+
+link:../deploy/concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
+
+a|
+Upgrading from an existing deployment of VSC
+a|
+The upgrade procedure from an existing deployment of VSC to ONTAP tools depends on the version of VSC, and whether you have deployed ONTAP tools. The deployment workflows and upgrade section has more information.
+
+link:../deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html[Deployment workflow for existing users of ONTAP tools]
+
+Best practices before an upgrade:
+
+* You should record information about the storage systems that are being used and their credentials.
++
+After the upgrade, you should verify that all of the storage systems were automatically discovered and that they have the correct credentials.
+
+* If you modified any of the standard VSC roles, you should copy those roles to save your changes.
++
+VSC overwrites the standard roles with the current defaults each time you restart the VSC service.
+
+a|
+Regenerating an SSL certificate for VSC
+a|
+The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate.
+
+link:../configure/task_regenerate_an_ssl_certificate_for_vsc.html[Regenerate an SSL certificate for Virtual Storage Console]
+
+a|
+Setting ESXi server values
+a|
+Although most of your ESXi server values are set by default, it is a good practice to check the values. These values are based on internal testing. Depending on your environment, you might have to change some of the values to improve performance.
+
+* link:../configure/task_configure_esx_server_multipathing_and_timeout_settings.html[Configure ESXi server multipathing and timeout settings]
+* link:../configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html[ESXi host values set using ONTAP® tools for VMware vSphere]
+
+a|
+Guest operating system timeout values
+a|
+The guest operating system (guest OS) timeout scripts set the SCSI I/O timeout values for supported Linux, Solaris, and Windows guest operating systems to provide correct failover behavior.
+|===
+The following table presents an overview of what you require to configure the ONTAP tools.
+
+|===
+| *Considerations*|*Description*
+a|
+Requirements of role-based access control (RBAC)
+a|
+VSC supports both vCenter Server RBAC and ONTAP RBAC. The account used to register VSC to vCenter Server (`https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run VSC as an administrator, you must have all of the required permissions and privileges for all of the tasks.
+
+If your company requires that you restrict access to vSphere objects, you can create and assign standard VSC roles to users to meet the vCenter Server requirements.
+
+You can create the recommended ONTAP roles by using ONTAP System Manager using the JSON file provided with the ONTAP tools.
+
+If a user attempts to perform a task without the correct privileges and permissions, the task options are grayed out.
+
+* link:../concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html[Standard roles packaged with ONTAP tools]
+* link:../concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html[Permissions for ONTAP storage systems and vSphere objects]
+
+a|
+ONTAP version
+a|
+Your storage systems must be running ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
+a|
+Storage capability profiles
+a|
+To use storage capability profiles or to set up alarms, you must enable VASA Provider for ONTAP. After you enable VASA Provider, you can configure VMware Virtual Volumes (vVols) datastores, and you can create and manage storage capability profiles and alarms. The alarms warn you when a volume or an aggregate is at nearly full capacity or when a datastore is no longer in compliance with the associated storage capability profile.
+
+|===
+
+== Additional deployment considerations
+You must consider few requirements while customizing the deployment ONTAP tools.
+
+=== Appliance administrator user password
+
+You must not use any spaces in the administrator password.
+
+=== Appliance maintenance console credentials
+
+You must access the maintenance console by using the "`maint`" user name. You can set the password for the "`maint`" user during deployment. You can use the Application Configuration menu of the maintenance console of your ONTAP tools to change the password.
+
+=== vCenter Server administrator credentials
+
+You can set the administrator credentials for the vCenter Server while deploying ONTAP tools.
+
+If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: ``\https://<IP>:8143/Register.html` where the IP address is of ONTAP tools that you provide during deployment.
+
+=== vCenter Server IP address
+
+* You should provide the IP address (IPv4 or IPv6) of the vCenter Server instance to which you want to register ONTAP tools.
++
+The type of VSC and VASA certificates generated depends on the IP address (IPv4 or IPv6) that you have provided during deployment. While deploying ONTAP tools, if you have not entered any static IP details and your DHCP then the network provides both IPv4 and IPv6 addresses.
+
+* The ONTAP tools IP address used to register with vCenter Server depends on the type of vCenter Server IP address (IPv4 or IPv6) entered in the deployment wizard.
++
+Both the VSC and VASA certificates will be generated using the same type of IP address used during vCenter Server registration.
++
+NOTE: IPv6 is supported only with vCenter Server 6.7 and later.
+
+=== Appliance network properties
+
+If you are not using DHCP, specify a valid DNS hostname (unqualified) as well as the static IP address for the ONTAP tools and the other network parameters. All of these parameters are required for proper installation and operation.

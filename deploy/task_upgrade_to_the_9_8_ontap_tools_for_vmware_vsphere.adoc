@@ -1,0 +1,59 @@
+---
+permalink: deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords: Virtual Storage Console, Storage Replication Adapter
+summary: 'You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.'
+---
+= Upgrade to the latest release of ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.
+
+*What you will need*
+
+* You must have downloaded the _.iso_ file for the 9.8 release of ONTAP tools.
+* You must have reserved at least 12 GB of RAM for the ONTAP tools to work optimally after the upgrade.
+* You must clean the vSphere Client browser cache.
++
+link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
+
+The status of VASA Provider from the existing deployment is retained after the upgrade. You should manually enable or disable VASA Provider based on your requirement after you upgrade. However, it is best to enable VASA Provider even if VMware Virtual Volumes (vVols) are not in use, as it enables storage capability profiles for traditional datastore provisioning, and storage alarms.
+
+NOTE: You can perform an in-place upgrade to the 9.8 release of ONTAP tools only from your existing 9.7 version. When you upgrade to 9.7.1 release of ONTAP tools and you want to use vVols replication, then you will need to setup one more vCenter Server with ONTAP tools with Site Recovery Manager (SRM) installed.
+
+*Steps*
+
+. Mount the downloaded _.iso_ file to the ONTAP tools:
+ .. Click *Edit Settings* > *DVD/CD-ROM Drive*.
+ .. Select *Datastore ISO* file from the drop-down list.
+ .. Browse to and select the downloaded _.iso_ file, and then select the *Connect at power on* checkbox.
+. Access the Summary tab of your deployed ONTAP tools.
+. Click *image:../media/launch_maintenance_console.gif[]* to start the maintenance console.
+. At the "`Main Menu`" prompt, enter option `2` for *System Configuration*, and then enter option `8` for *Upgrade*.
++
+After the upgrade finishes, the ONTAP tools restarts. ONTAP tools is registered to the vCenter Server with the same IP address as before the upgrade.
+
+. If you want ONTAP tools to be registered with the vCenter Server with the IPv6 address, then you must perform the following:
+ .. Unregister ONTAP tools.
+ .. Register the IPv6 address of ONTAP tools to vCenter Server using the *Register* page.
+ .. Regenerate VSC and VASA Provider certificates after the registration.
+
++
+IMPORTANT: IPv6 is supported only with vCenter Server 6.7 and later.
+. Log out and re-login to the vSphere Client to view the deployed ONTAP tools.
+ .. Log out from your existing vSphere web client or vSphere Client and close the window.
+ .. Log in to the vSphere Client.
++
+It might take a few minutes for the plug-in to be updated in the vSphere Client.
+
+[NOTE]
+====
+
+  * If upgrading from the 7.0 version of ONTAP tools to the latest version of ONTAP tools, you must first create storage capability profiles before attempting to edit an existing VM Storage Policy or you might get an error that there are incorrect or missing values.
+  * If upgrading from an earlier version to the 9.8 version of ONTAP tools, it is found that the `vvol.rebalance.threshold` property is missing in the `vvol.properties file.
++
+The default value of the property is set to 85%.
+
+====

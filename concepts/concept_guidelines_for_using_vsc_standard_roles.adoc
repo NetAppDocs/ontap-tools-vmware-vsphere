@@ -1,0 +1,34 @@
+---
+permalink: concepts/concept_guidelines_for_using_vsc_standard_roles.html
+sidebar: sidebar
+keywords:
+summary: 'When you work with standard ONTAP® tools for VMware vSphere roles, there are certain guidelines you should follow.'
+---
+= Guidelines for using VSC standard roles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you work with standard ONTAP® tools for VMware vSphere roles, there are certain guidelines you should follow.
+
+You should not directly modify the standard roles. If you do, VSC will overwrite your changes each time you upgrade VSC. The installer updates the standard role definitions each time you upgrade VSC. Doing this ensures that the roles are current for your version of VSC as well as for all supported versions of the vCenter Server.
+
+You can, however, use the standard roles to create roles that are tailored to your environment. To do this, you should copy the VSC standard role and then edit the copied role. By creating a new role, you can maintain this role even when you restart or upgrade the VSC Windows service.
+
+Some of the ways that you might use the VSC standard roles include the following:
+
+* Use the standard VSC roles for all VSC tasks.
++
+In this scenario, the standard roles provide all the privileges a user needs to perform the VSC tasks.
+
+* Combine roles to expand the tasks a user can perform.
++
+If the standard VSC roles provide too much granularity for your environment, you can expand the roles by creating higher-level groups that contain multiple roles.
++
+If a user needs to perform other, non-VSC tasks that require additional native vCenter Server privileges, you can create a role that provides those privileges and add it to the group also.
+
+* Create more fine-grained roles.
++
+If your company requires that you implement roles that are more restrictive than the standard VSC roles, you can use the VSC roles to create new roles.
++
+In this case, you would clone the necessary VSC roles and then edit the cloned role so that it has only the privileges your user requires.

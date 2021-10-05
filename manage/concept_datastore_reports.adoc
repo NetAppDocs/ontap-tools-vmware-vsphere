@@ -19,7 +19,8 @@ The datastore provides the following pre-defined reports:
 
 * Datastore Report
 * Virtual Machine Report
-* *Datastore Report*
+
+*Datastore Report*
 +
 The Datastore Report menu provides information on the following parameters for datastores:
 
@@ -45,7 +46,7 @@ The report displays the latency information for the datastore.
 +
 You can also verify the time at which the report was generated. The Datastore Report menu enables you to organize the report as per your requirement, and then export the organized report using the *Export to CSV* button. The datastore names in the report are links that navigate to the Monitor tab of the selected datastore, where you can view the datastore performance metrics.
 
-* *Virtual Machine Report*
+*Virtual Machine Report*
 +
 The Virtual Machine Report menu provides the performance metrics for all the virtual machines that use datastores provisioned by VSC for a selected vCenter Server. The virtual machine metrics displayed in the Virtual Machine Reports is historical data that is collected every 30 minutes for virtual machines on traditional datastores. The "`Last refresh time`" and "`Next refresh time `" are added to the table to provide details on when the data was collected and when will be the next data collection.
 

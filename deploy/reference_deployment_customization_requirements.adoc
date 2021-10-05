@@ -1,0 +1,42 @@
+---
+permalink: deploy/reference_deployment_customization_requirements.html
+sidebar: sidebar
+keywords:
+summary: 'You must consider few limitations while customizing the deployment ONTAP tools.'
+---
+= Deployment customization considerations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must consider few limitations while customizing the deployment ONTAP tools.
+
+== Appliance administrator user password
+
+You must not use any spaces in the administrator password.
+
+== Appliance maintenance console credentials
+
+You must access the maintenance console by using the "`maint`" user name. You can set the password for the "`maint`" user during deployment. You can use the Application Configuration menu of the maintenance console of your ONTAP tools to change the password.
+
+== vCenter Server administrator credentials
+
+You can set the administrator credentials for the vCenter Server while deploying ONTAP tools.
+
+If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: \https://<IP>:8143/Register.html where the IP address is of ONTAP tools that you provide during deployment.
+
+== vCenter Server IP address
+
+* You should provide the IP address (IPv4 or IPv6) of the vCenter Server instance to which you want to register ONTAP tools.
++
+The type of VSC and VASA certificates generated depends on the IP address (IPv4 or IPv6) that you have provided during deployment. While deploying ONTAP tools, if you have not entered any static IP details and your DHCP then the network provides both IPv4 and IPv6 addresses.
+
+* The ONTAP tools IP address used to register with vCenter Server depends on the type of vCenter Server IP address (IPv4 or IPv6) entered in the deployment wizard.
++
+Both the VSC and VASA certificates will be generated using the same type of IP address used during vCenter Server registration.
++
+NOTE: : IPv6 is supported only with vCenter Server 6.7 and later.
+
+== Appliance network properties
+
+If you are not using DHCP, specify a valid DNS hostname (unqualified) as well as the static IP address for the ONTAP tools and the other network parameters. All of these parameters are required for proper installation and operation.

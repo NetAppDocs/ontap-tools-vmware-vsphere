@@ -1,0 +1,33 @@
+---
+permalink: configure/reference_rebalance_vvols_datastore.html
+sidebar: sidebar
+keywords: vVols datastore,rebalancing
+summary: 'The 9.8 release of ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.'
+---
+= Rebalance vVols datastores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The 9.8 release of ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.
+
+The rebalancing of vVols datastore is performed by LUN move or file move. The criteria considered during vVols rebalancing is:
+
+* Existing FlexVol volumes will not be resized and neither will new FlexVol volumes be added
+* Only FlexVol volumes that have same storage capability or volume attributes are rebalanced
+* FlexVol volumes with highest space utilization are considered for rebalancing
+* All vVols associated with a virtual machine are moved to the same FlexVol volumes
+* LUN and File count limit is retained
+* Rebalance is not performed if the delta between the FlexVol volumes space utilization is 10%
+
+The rebalance command removes empty FlexVol volumes to provide space for other datastores. Thus, the command enables you to remove unwanted FlexVol volumes so that they can be removed from the datastore. The command intends to move all the vVols associated with a virtual machine to same FlexVol volume. There is a precheck performed by the command before rebalance is started to minimize failures. But even with successful precheck, the rebalance operation might fail for one or more vVols. When this happens, then there is no rollback of the rebalance operation. So, vVols associated with a virtual machine might be placed on different FlexVol volumes and will result in warning logs.
+[NOTE]
+====
+
+* Parallel datastore and virtual machine operations are not supported.
+* You must perform cluster rediscovery operation after every vVols rebalance operation completes.
+* During vVols rebalance operation, if large number of vVols datastores are identified, then the transfer operation times out after the set default value.
+** If this occurs, then you should modify the `vvol.properties` file to set the value to `offtap.operation.timeout.period.seconds=29700` and restart VASA Provider service.
+* If a FlexVol volume has Snapshots, then during the vVols rebalance operation, the vVols are not correctly rebalanced due to insufficient details on the space utilization.
+
+====

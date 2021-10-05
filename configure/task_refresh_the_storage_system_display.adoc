@@ -1,0 +1,41 @@
+---
+permalink: configure/task_refresh_the_storage_system_display.html
+sidebar: sidebar
+keywords:
+summary: 'You can use the update feature that is provided by ONTAP® tools for VMware vSphere to refresh the information about storage systems and to force Virtual Storage Console \(VSC\) to discover storage systems.'
+---
+= Refresh the storage system display
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the update feature that is provided by ONTAP® tools for VMware vSphere to refresh the information about storage systems and to force Virtual Storage Console (VSC) to discover storage systems.
+
+*About this task*
+
+The "`refresh`" option is useful if you changed the default credentials for the storage systems after receiving an authentication error. You should always perform an update operation if you changed the storage system credentials after the storage system reported an "`Authentication Failure Status`". During the update operation, VSC tries to connect to the storage system by using the new credentials.
+
+Depending on your system setup, this task can take a long time to complete.
+
+*Steps*
+
+. On the VMware vSphere Client Home page, click *Storage Systems*.
+. Start the update:
++
+|===
+| *If this location is...*| *Click...*
+a|
+Virtual Storage Console
+a|
+The *REDISCOVER ALL* icon.
+a|
+Datacenter
+a|
+Right-click the datacenter, and then click *NetApp VSC* > *Update Host and Storage Data*.
+|===
+
+. In the Update Host and Storage Data dialog box, click *OK*.
++
+The discovery might take few minutes depending on the number of hosts and storage systems in your datacenter. This discovery operation works in the background.
+
+. Click *OK* in the Success dialog box.

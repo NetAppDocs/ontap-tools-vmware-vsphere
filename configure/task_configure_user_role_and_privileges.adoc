@@ -1,0 +1,40 @@
+---
+permalink: configure/task_configure_user_role_and_privileges.html
+sidebar: sidebar
+keywords: user roles
+summary: 'You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.'
+---
+= Configure user roles and privileges
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.
+
+*What you'll need*
+
+* You should have downloaded the ONTAP Privileges file from ONTAP tools using \https://\{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip.
+* You should have configured ONTAP 9.8 storage.
+* You should have logged in with administrator privileges for the storage system.
+
+*Steps*
+
+. Unzip the downloaded `\https://\{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip` file.
+. Access ONTAP System Manager.
+. Click *CLUSTER* > *Settings* > *Users and Roles*.
+. Click *Add User*.
+. In the Add User dialog box, select *Virtualization products*.
+. Click *Browse* to select and upload the ONTAP Privileges JSON file.
++
+The PRODUCT field is auto populated.
+
+. Select the required capability from the PRODUCT CAPABILITY drop-down menu.
++
+The *ROLE* field is auto populated based on the product capability selected.
+
+. Enter the required username and password.
+. Select the privileges (Discovery, Create Storage, Modify Storage, Destroy Storage) required for the user, and then click *Add*.
+
+The new role and user is added and you can see the detailed privileges under the role that you have configured.
+
+NOTE: The uninstall operation does not remove VSC roles but removes the localized names for the VSC-specific privileges and appends the prefix to "`XXX missing privilege`" them. This behavior happens because the vCenter Server does not provide an option to remove privileges. When you reinstall VSC or upgrade to a newer version of VSC, all of the standard VSC roles and VSC-specific privileges are restored.

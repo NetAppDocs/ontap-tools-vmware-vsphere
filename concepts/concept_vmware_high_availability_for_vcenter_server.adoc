@@ -1,0 +1,18 @@
+---
+permalink: concepts/concept_vmware_high_availability_for_vcenter_server.html
+sidebar: sidebar
+keywords: VSC
+summary: 'You can configure your vSphere environment where ONTAP tools for VMware vSphere is deployed for high availability \(HA\). The VMware HA feature provides failover protection from hardware failures and operating system failures in virtual environments.'
+---
+= VMware vSphere HA
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure your vSphere environment where ONTAP tools for VMware vSphere is deployed for high availability (HA). The VMware HA feature provides failover protection from hardware failures and operating system failures in virtual environments.
+
+The VMware HA feature monitors virtual machines to detect operating system failures and hardware failures. When a failure is detected, the VMware HA feature restarts the virtual machines on the other physical servers in the resource pool. Manual intervention is not required when a server failure is detected.
+
+The procedure to configure VMware HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure VMware HA.
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html[VMware vSphere Documentation: Creating and Using vSphere HA Clusters]
