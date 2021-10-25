@@ -32,7 +32,7 @@ a|
 a|
 
  .. SSH into the VCSA appliance.
- .. Change directories to the vCenter web client UI extensions directory using `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity`
+ .. Change directories to the vCenter web client UI extensions directory using `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
  .. Remove the cached plugin packages using the commands:
 
  ----

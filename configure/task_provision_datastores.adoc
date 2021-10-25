@@ -41,7 +41,7 @@ VSC can create a datastore on either an NFS volume or a LUN:
 [NOTE]
 ====
 
-* The 9.8 version of ONTAP tools supports provisioniong of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
+* The 9.8 version of ONTAP tools supports provisioning of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
 +
 On other platforms the maximum LUN size supported is 16TB.
 
@@ -103,7 +103,7 @@ Most of the fields in the dialog box are self-explanatory. The following table d
 a|
 General
 a|
-The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore. You can select *NFS* or *VMFS* protocol to configure a traditional datastore. This release allows you to configure a VMFS datastore of maximum size 64TB. You can select the option "`Distribute datastore data across the ONTAP cluster`" to provision a FlexGroup volume on the storage system. Selecting this option automatically deselects the checkbox "`Use Storage Capability Profile for provisioning`". For FlexGroup datastore provisioning, ONTAP cluster that are 9.8 and above only are listed for selection.The vVols datastore type is used to configure a vVols datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
+The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore. You can select *NFS* or *VMFS* protocol to configure a traditional datastore. This release allows you to configure a VMFS datastore of maximum size 64TB. You can select the option "`Distribute datastore data across the ONTAP cluster`" to provision a FlexGroup volume on the storage system. Selecting this option automatically deselects the checkbox "`Use Storage Capability Profile for provisioning`". For FlexGroup datastore provisioning, ONTAP cluster that are 9.8 and above only are listed for selection. The vVols datastore type is used to configure a vVols datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
 a|
 Storage system
 a|
@@ -115,7 +115,7 @@ By default, VSC populates the recommended values for *Aggregates* and *Volumes* 
 a|
 Summary
 a|
-You can review the summary of the parameters you specified for the new datastore.There is a new field "`Volume Style`" available in the Summary page that enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
+You can review the summary of the parameters you specified for the new datastore. There is a new field "`Volume Style`" available in the Summary page that enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
 |===
 
 NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup volumes.

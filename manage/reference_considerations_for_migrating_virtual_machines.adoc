@@ -9,7 +9,7 @@ summary: 'You should be aware of some of the considerations while migrating exis
 :imagesdir: ../media/
 
 [.lead]
-You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter.
+You should be aware of some of the considerations while migrating existing virtual machines in your datacenter.
 
 == Migrate protected virtual machines
 
@@ -19,7 +19,7 @@ You can migrate the protected virtual machines to:
 * Different compatible vVols datastore in same ESXi host
 * Different compatible vVols datastore in a different ESXi host
 
-If virtual machine is migrated to different FlexVol volume, then respective metadata file also gets updated with the virtual machine information. If a virtual machine is migrated to a different ESXi host but same storage then underlying FlexVol volume metadafile will not be modified.
+If virtual machine is migrated to different FlexVol volume, then respective metadata file also gets updated with the virtual machine information. If a virtual machine is migrated to a different ESXi host but same storage then underlying FlexVol volume metada file will not be modified.
 
 == Clone protected virtual machines
 

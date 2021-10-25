@@ -13,7 +13,7 @@ You can migrate virtual machines from traditional datastores to Virtual Volumes 
 
 *What you will need*
 
-You must have ensured that VASA Provider is not running on any of the virtual machines that you plan to migrate.If you migrate a virtual machine that is running VASA Provider to a vVols datastore, you cannot perform any management operations, including powering on the virtual machines that are on vVols datastores.
+You must have ensured that VASA Provider is not running on any of the virtual machines that you plan to migrate. If you migrate a virtual machine that is running VASA Provider to a vVols datastore, you cannot perform any management operations, including powering on the virtual machines that are on vVols datastores.
 
 *About this task*
 

@@ -16,7 +16,7 @@ You should be aware of the considerations for creating and editing storage capab
 +
 This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.
 
-* You can configure storage capability profiles for both FAS and AFFdatastores.
+* You can configure storage capability profiles for both FAS and AFF datastores.
 +
 For FAS systems, you can configure space reserve to be either thick or thin, but for AFF systems, space reserve can only be configured to thin.
 
