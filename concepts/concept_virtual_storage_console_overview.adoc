@@ -52,7 +52,7 @@ NOTE: For ONTAP 9.6 and earlier, VASA Provider requires a dedicated instance of 
 
 == Storage Replication Adapter (SRA)
 
-When SRA is enabled and used in conjunction with VMware Site Recovery Manager (SRM), you can recover the vCenter Serverdatastores and virtual machines in the event of a failure. SRA enables you to use array based replication (ABR) for protected sites and recovery sites for disaster recovery in the event of a failure.
+When SRA is enabled and used in conjunction with VMware Site Recovery Manager (SRM), you can recover the vCenter Server datastores and virtual machines in the event of a failure. SRA enables you to use array based replication (ABR) for protected sites and recovery sites for disaster recovery in the event of a failure.
 
 *Related information*
 

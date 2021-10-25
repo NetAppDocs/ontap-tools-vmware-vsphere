@@ -34,7 +34,7 @@ Performance metrics are available for NFS based vVols datastores on ONTAP 9.8 an
 
 *vVols Virtual Machine Report*
 +
-The vVols Virtual Machine Summary Report menu provides the performance metrics for all of the virtual machines that use the SAN vVols datastores that are provisioned by VASA Provider for ONTAP for a selected vCenter Server. The virtual machine metrics displayed in VM reports is historical data that is collected every 10 minutes for virtual machines on vVols datastores. "`Last refresh tim`"e and "`Next refresh time`" are added to the table to provide information on when data was collected and when will be the next data collection.
+The vVols Virtual Machine Summary Report menu provides the performance metrics for all of the virtual machines that use the SAN vVols datastores that are provisioned by VASA Provider for ONTAP for a selected vCenter Server. The virtual machine metrics displayed in VM reports is historical data that is collected every 10 minutes for virtual machines on vVols datastores. "`Last refresh time` and "`Next refresh time`" are added to the table to provide information on when data was collected and when will be the next data collection.
 
  ** Name of the virtual machine
  ** Committed capacity

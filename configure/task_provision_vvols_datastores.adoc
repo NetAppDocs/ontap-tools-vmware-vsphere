@@ -21,7 +21,7 @@ See *Enabling datastore mounting across different subnets* section in _ONTAP too
 
 The Provision datastore menu enables you to specify a storage capability profile for the datastore, which helps in specifying consistent service level objectives (SLOs) and simplifies the provisioning process. You can specify a storage capability profile only if you have enabled VASA Provider.
 
-FlexVol volumes that are used as backing storage are displayed on the vVols dashboard only if they are running ONTAP 9.5 or later. You should not use the vCenter ServerNew Datastore wizard to provision vVols datastores.
+FlexVol volumes that are used as backing storage are displayed on the vVols dashboard only if they are running ONTAP 9.5 or later. You should not use the vCenter Server New Datastore wizard to provision vVols datastores.
 
 * You must use cluster credentials to create vVols datastores.
 +
