@@ -1,3 +1,10 @@
+---
+settings:
+  name: ONTAP Tools for VMware vSphere
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
 sidebar:
   entries:
     - title: ONTAP tools for VMware vSphere docs
