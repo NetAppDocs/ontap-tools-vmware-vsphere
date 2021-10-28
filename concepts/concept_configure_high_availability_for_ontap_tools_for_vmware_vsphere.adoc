@@ -1,0 +1,49 @@
+---
+permalink: concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords:
+summary: 'The ONTAP tools supports a high-availability \(HA\) configuration to help provide uninterrupted functionality of ONTAP tools during failure.'
+---
+= Configure high availability for ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP tools supports a high-availability (HA) configuration to help provide uninterrupted functionality of ONTAP tools during failure.
+
+The ONTAP tools relies on the VMware vSphere High-availability (HA) feature and vSphere fault tolerance (FT) feature to provide high availability. High-availability (HA) solution provides for rapid recovery from outages caused by:
+
+* Host failure
+* Network failure
+* Virtual machine failure (Guest OS failure)
+* Application (ONTAP tools) crash
+
+No additional configuration is required for ONTAP tools to provide high availability. Only the vCenter Server and ESXi hosts must be configured with the VMware vSphere HA feature or the vSphere FT feature based on their requirements. Both HA and FT require clustered hosts together with shared storage. FT has additional requirements and limitations.
+
+In addition to the VMware vSphere HA solution and vSphere FT solution, ONTAP tools also helps keep the ONTAP tools services running at all times. The ONTAP tools watchdog process periodically monitors all three services, and restarts them automatically when any kind of failure is detected. This helps to prevent application failures.
+
+NOTE: vCenter HA is not supported by ONTAP tools.
+
+== VMware vSphere HA
+You can configure your vSphere environment where ONTAP tools for VMware vSphere is deployed for high availability (HA). The VMware HA feature provides failover protection from hardware failures and operating system failures in virtual environments.
+
+The VMware HA feature monitors virtual machines to detect operating system failures and hardware failures. When a failure is detected, the VMware HA feature restarts the virtual machines on the other physical servers in the resource pool. Manual intervention is not required when a server failure is detected.
+
+The procedure to configure VMware HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure VMware HA.
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html[VMware vSphere Documentation: Creating and Using vSphere HA Clusters]
+
+== VMware vSphere Fault Tolerance
+The VMware vSphere Fault Tolerance (FT) feature provides high availability (HA) at a higher level and enables you to protect virtual machines without any loss of data or connections. You must enable or disable vSphere FT for ONTAP tools from your vCenter Server.
+
+Ensure your vSphere license supports FT with the number of vCPUs needed for ONTAP tools in your environment (at least 2 vCPUs; 4 vCPUs for large scale environments).
+
+vSphere FT enables virtual machines to operate continuously even during server failures. When vSphere FT is enabled on a virtual machine, a copy of the primary virtual machine is automatically created on another host (the secondary virtual machine) that is selected by Distributed Resource Scheduler (DRS). If DRS is not enabled, the target host is selected from the available hosts. vSphere FT operates the primary virtual machine and secondary virtual machine in lockstep mode, with each mirroring the execution state of the primary virtual machine to the secondary virtual machine.
+
+When there is a hardware failure that causes the primary virtual machine to fail, the secondary virtual machine immediately picks up where the primary virtual machine stopped. The secondary virtual machine continues to run without any loss of network connections, transactions, or data.
+
+Your system must meet the CPU requirements, virtual machine limit requirements, and licensing requirements for configuring vSphere FT for your vCenter Server instance.
+
+The procedure to configure HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure HA.
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-57929CF0-DA9B-407A-BF2E-E7B72708D825.html[VMware vSphere Documentation: Fault Tolerance Requirements, Limits, and Licensing]

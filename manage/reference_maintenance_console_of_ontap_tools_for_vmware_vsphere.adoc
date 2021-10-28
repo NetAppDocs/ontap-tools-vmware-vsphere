@@ -1,0 +1,89 @@
+---
+permalink: manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords:
+summary: 'You can manage your application, system, and network configurations by using the maintenance console of the ONTAP tools. You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.'
+---
+= Overview of ONTAP tools maintenance console
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manage your application, system, and network configurations by using the maintenance console of the ONTAP tools. You can change your administrator password and maintenance password. You can also generate support bundles, set different log levels, view and manage TLS configurations, and start remote diagnostics.
+
+You must have installed VMware tools after deploying ONTAP tools to access the maintenance console. You should use "`maint`" as the user name and the password you configured during deployment to log in to the maintenance console of the ONTAP tools.
+
+NOTE: You must set a password for the "`diag`" user while enabling remote diagnostics.
+
+You should use the Summary tab of your deployed ONTAP tools to access the maintenance console. When you click  image:../media/launch_maintenance_console.gif[], the maintenance console starts.
+
+|===
+| *Console Menu*| *Options*
+a|
+Application Configuration
+a|
+
+. Display server status summary
+. Start Virtual Storage Console service
+. Stop Virtual Storage Console service
+. Start VASA Provider and SRA service
+. Stop VASA Provider and SRA service
+. Change 'administrator' user password
+. Re-generate certificates
+. Hard reset key Store and certificates
+. Hard reset database
+. Change LOG level for Virtual Storage Console service
+. Change LOG level for VASA Provider and SRA service
+. Display TLS configuration
+. Enable TLS protocol
+. Disable TLS protocol
+
+a|
+System Configuration
+a|
+
+. Reboot virtual machine
+. Shutdown virtual machine
+. Change 'maint' user password
+. Change time zone
+. Add new NTP server
++
+You can provide an IPv6 address for your NTP server.
+
+. Enable SSH Access
+. Increase jail disk size (/jail)
+. Upgrade
+. Install VMware Tools
+
+a|
+Network Configuration
+a|
+
+. Display IP address settings
+. Change IP address settings
++
+You can use this option to change the IP address post deployment to IPv6.
+
+. Display domain name search settings
+. Change domain name search settings
+. Display static routes
+. Change static routes
++
+You can use this option to add an IPv6 route.
+
+. Commit changes
+. Ping a host
++
+You can use this option to ping to an IPv6 host.
+
+. Restore default settings
+
+a|
+Support and Diagnostics
+a|
+
+. Generate support bundle
+. Access diagnostic shell
+. Enable remote diagnostic access
+
+|===

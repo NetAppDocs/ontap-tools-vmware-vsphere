@@ -1,0 +1,54 @@
+---
+permalink: configure/concept_configure_storage_capability_profiles.html
+sidebar: sidebar
+keywords: storage capability profiles
+summary: 'VASA Provider for ONTAP allows you to create storage capability profiles and map them to your storage. This helps you maintain consistency across the storage. You can also use VASA Provider to check for compliance between the storage and the storage capability profiles.'
+---
+= Overview of storage capability profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+VASA Provider for ONTAP allows you to create storage capability profiles and map them to your storage. This helps you maintain consistency across the storage. You can also use VASA Provider to check for compliance between the storage and the storage capability profiles.
+
+A storage capability is a set of storage system attributes that identifies a specific level of storage performance, storage efficiency, and other capabilities such as encryption for the storage object that is associated with the storage capability.
+
+For traditional datastores, you can use a storage capability profile to create datastores consistently with common attributes, and assign QoS policy to them. During provisioning VSC displays clusters, SVMs, and aggregates that match the storage capability profile. You can generate a storage capability profile from existing traditional datastores by using the *GLOBAL AUTO-GENERATE PROFILES* option from the Storage Mapping menu. After the profile is created, you can use VSC to monitor the compliance of datastores with the profile.
+
+When used with vVols datastores, the provisioning wizard can use multiple storage capability profiles to create different FlexVol volumes in the datastore. You can use the VM storage policy to automatically create vVols for a virtual machine in appropriate FlexVol volumes as defined. For example, you can create profiles for common storage classes (such as for performance limits and other capabilities like encryption or FabricPool). You can later create VM storage policies in vCenter Server representing business classes of virtual machines and link these to the appropriate storage capability profile by name (for example Production, Test, HR).
+
+When used with vVols, the storage capability profile is also used to set the storage performance for the individual virtual machine and place it on the FlexVol volume in the vVols datastore that best satisfies the performance requirement. You can specify QoS policy with minimum and/or maximum IOPS for performance. You can use the default policies when you initially provision a virtual machine, or change your VM storage policy later if your business requirements change. The 9.8 release of ONTAP tools provides the following new default storage capability profiles:
+
+* FAS_MAX20
+* FAS_Default
+* AFF_Default
+* AFF_Tiering
+* AFF_Encrypted
+* AFF_Encrypted_Tiering
+* AFF_Encrypted_Min50
+
+The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.
+
+With ONTAP tools for VMware vSphere, you can configure every virtual volume (vVols) datastore with a new storage capability profile that supports the provisioning of virtual machines with varying IOPS requirements on the same vVols datastore. While executing the VM provisioning workflow with IOPS requirement, all of the vVols datastores are listed in the compatible datastore list.
+
+NOTE: When you try to provision or modify virtual machines for vCenter Server earlier than 6.5, only the vVols datastores that contain storage capability profiles with performance set to "`MAX_IOPS`" are listed in the compatible datastore list. The remaining vVols datastores are listed in the incompatible datastore list. You can ignore this classification and select any vVols datastore from the incompatible datastore list to provision or modify the virtual machine.
+
+== Considerations for creating and editing storage capability profiles
+You should be aware of the considerations for creating and editing storage capability profiles.
+
+* You can configure Min IOPS only on AFF systems.
+* You can configure QoS metrics at a virtual volume (VVol) datastore level.
++
+This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.
+
+* You can configure storage capability profiles for both FAS and AFFdatastores.
++
+For FAS systems, you can configure space reserve to be either thick or thin, but for AFF systems, space reserve can only be configured to thin.
+
+* You can use storage capability profiles to provide encryption for your datastores.
+* You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.
++
+The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics related to the performance of the storage capability profiles.
+
+* You cannot modify or use the legacy storage capability profiles to provision new virtual datastores or VM storage policies.
+* You must use new storage capability profiles for all new datastores.

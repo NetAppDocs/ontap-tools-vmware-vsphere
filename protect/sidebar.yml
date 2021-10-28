@@ -1,0 +1,45 @@
+section: protect
+title: Protect datastores and virtual machines
+entries:
+  - title: Enable Storage Replication Adapter to protect datastores
+    url: /protect/task_enable_storage_replication_adapter.html
+  - title: Configure storage system for disaster recovery
+    entries:
+      - title: Configure storage systems for SAN and NAS
+        url: /protect/task_configure_storage_replication_adapter_for_san_environment.html
+      - title: Configure storage for highly scaled environments
+        url: /protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html
+  - title: Configure SRA on the SRM Appliance
+    url: /protect/task_configure_sra_on_srm_appliance.html
+  - title: Update SRA credentials
+    url: /protect/task_update_sra_credentials.html
+  - title: Migrate Windows SRM to SRM Appliance
+    url: /protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
+  - title: Configure replication for vVols datastore to protect virtual machines
+    url: /protect/concept_configure_replication_for_vvols_datastore.html
+  - title: Protect unprotected virtual machines
+    url: /protect/task_protect_non_protected_virtual_machines.html
+  - title: Configure protected and recovery sites
+    entries:
+      - title: Configure VM Storage Policies
+        url: /protect/task_configure_vm_storage_policies.html
+      - title: Configure protection groups
+        url: /protect/task_configure_protection_groups.html
+      - title: Pair protected and recovery sites
+        url: /protect/task_pair_protected_and_recovery_sites.html
+      - title: Configure protected and recovery site resources
+        entries:
+          - title: Configure network mappings
+            url: /protect/task_configure_network_mappings.html
+          - title: Configure folder mappings
+            url: /protect/task_configure_folder_mappings.html
+          - title: Configure resource mappings
+            url: /protect/task_configure_resource_mappings.html
+          - title: Map storage policies
+            url: /protect/task_map_storage_policies.html
+          - title: Configure placeholder datastores
+            url: /protect/task_configure_placeholder_datastores.html
+          - title: Configure SRA using array manager
+            url: /protect/task_configure_array_manager.html
+      - title: Verify the replicated storage systems
+        url: /protect/task_verify_the_replicated_storage_environment.html

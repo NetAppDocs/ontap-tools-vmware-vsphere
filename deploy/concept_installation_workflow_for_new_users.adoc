@@ -1,0 +1,14 @@
+---
+permalink: deploy/concept_installation_workflow_for_new_users.html
+sidebar: sidebar
+keywords:
+summary: 'If you are new to VMware and have never used a NetApp VSC product, you need to configure your vCenter Server and setup an ESXi host, before you deploy and configure the ONTAP tools.'
+---
+= Deployment workflow for new users of ONTAP tools for VMware vSphere
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are new to VMware and have never used a NetApp VSC product, you need to configure your vCenter Server and setup an ESXi host, before you deploy and configure the ONTAP tools.
+
+image::../media/new_user_deployment_workflow_vsc_vp_and_sra_7_0.gif[]

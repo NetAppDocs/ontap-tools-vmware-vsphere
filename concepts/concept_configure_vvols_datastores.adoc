@@ -1,0 +1,58 @@
+---
+permalink: concepts/concept_configure_vvols_datastores.html
+sidebar: sidebar
+keywords:
+summary: 'You can use VASA Provider for ONTAP to create and manage VMware Virtual Volumes \(vVols\). You can provision, edit, mount, and delete a vVols datastore. You can also add storage to the vVols datastore or remove storage from the vVols datastore. to provide greater flexibility. You can provision and manage every virtual machine and the related VMDK.'
+---
+= VASA Provider configurations for vVols
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use VASA Provider for ONTAP to create and manage VMware Virtual Volumes (vVols). You can provision, edit, mount, and delete a vVols datastore. You can also add storage to the vVols datastore or remove storage from the vVols datastore. to provide greater flexibility. You can provision and manage every virtual machine and the related VMDK.
+
+A vVols datastore consists of one or more FlexVol volumes within a storage container (also called "`backing storage`"). A virtual machine can be spread across one vVols datastore or multiple vVols datastores.
+
+While you can create a vVols datastore that has multiple FlexVol volumes, all of the FlexVol volumes within the storage container must use the same protocol (NFS, iSCSI, or FCP) and the same storage virtual machines (SVMs).
+
+You do not require detailed knowledge of the underlying storage. For example, you do not have to identify a specific FlexVol volume to contain the storage. After you add FlexVol volumes to the vVols datastore, the storage container manages the storage requirements and prevents any situations during VM provisioning where VMware provisioned to a backing volume with no capacity.
+
+NOTE: It is a good practice to include multiple FlexVol volumes in a vVols datastore for performance and flexibility. Because FlexVol volumes have LUN count restrictions that limit the number of virtual machines, including multiple FlexVol volumes allows you to store more virtual machines in your vVols datastore.
+
+As part of the setup process, you must specify a storage capability profile for the vVols datastore that you are creating. You can select one or more VASA Provider storage capability profiles for a vVols datastore. You can also specify a default storage capability profile for any vVols datastores that are automatically created in that storage container.
+
+VASA Provider creates different types of vVols during virtual machine provisioning or VMDK creation, as required.
+
+* *Config*
++
+VMware vSphere uses this vVols datastore to store configuration information.
++
+In SAN (block) implementations, the storage is a 4 GB LUN.
++
+In an NFS implementation, this is a directory containing VM config files such as the vmx file and pointers to other vVols datastores.
+
+* *Data*
++
+This vVols contains operating system information and user files.
++
+In SAN implementations, this is a LUN that is the size of the virtual disk.
++
+In an NFS implementation, this is a file that is the size of the virtual disk.
++
+For every NFS data vVols that is provisioned on ONTAP clusters 9.8 and above, all the VMDK files are registered for monitoring performance metrics like IOPS, Throughput, and Latency.
+
+* *Swap*
++
+This vVols is created when the virtual machine is powered on and is deleted when the virtual machine is powered off.
++
+In SAN implementations, this is a LUN that is the size of the virtual memory.
++
+In an NFS implementation, this is a file that is the size of the virtual memory.
+
+* *Memory*
++
+This vVols is created if the memory snapshots option is selected when creating VM snapshot.
++
+In SAN implementations, this is a LUN that is the size of the virtual memory.
++
+In an NFS implementation, this is a file that is the size of the virtual memory.

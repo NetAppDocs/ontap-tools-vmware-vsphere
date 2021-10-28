@@ -1,0 +1,12 @@
+---
+permalink: configure/concept_configure_traditional_datastores.html
+sidebar: sidebar
+keywords:
+summary: 'You can use Virtual Storage Console \(VSC\) to configure datastores and virtual machines in your vCenter Server. The datastores and virtual machines that are provisioned by VSC are displayed on the dashboard of VSC. This enables you to easily monitor and manage these datastores and virtual machines.'
+---
+= Configure traditional datastores and virtual machines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use Virtual Storage Console (VSC) to configure datastores and virtual machines in your vCenter Server. The datastores and virtual machines that are provisioned by VSC are displayed on the dashboard of VSC. This enables you to easily monitor and manage these datastores and virtual machines.

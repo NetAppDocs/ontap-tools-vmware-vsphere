@@ -1,0 +1,29 @@
+---
+permalink: configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html
+sidebar: sidebar
+keywords:
+summary: 'You should be aware of the considerations for creating and editing storage capability profiles.'
+---
+= Considerations for creating and editing storage capability profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should be aware of the considerations for creating and editing storage capability profiles.
+
+* You can configure Min IOPS only on AFF systems.
+* You can configure QoS metrics at a virtual volume (VVol) datastore level.
++
+This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.
+
+* You can configure storage capability profiles for both FAS and AFF datastores.
++
+For FAS systems, you can configure space reserve to be either thick or thin, but for AFF systems, space reserve can only be configured to thin.
+
+* You can use storage capability profiles to provide encryption for your datastores.
+* You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.
++
+The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics related to the performance of the storage capability profiles.
+
+* You cannot modify or use the legacy storage capability profiles to provision new virtual datastores or VM storage policies.
+* You must use new storage capability profiles for all new datastores.

@@ -1,0 +1,33 @@
+---
+permalink: configure/task_configure_alarm_thresholds.html
+sidebar: sidebar
+keywords:
+summary: 'You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.'
+---
+= Configure alarm thresholds
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.
+
+*Steps*
+
+. From the ONTAP tools Home page, click *Settings*.
+. Click *Unified Appliance Settings*.
+. Specify the percent values for the *Nearly full threshold (%)* field and the *Full threshold (%)* field for both the volume alarm thresholds and the aggregate alarm thresholds.
++
+While setting the values, you must keep the following information in mind:
+
+ ** Clicking *Reset* resets the thresholds to the previous values.
++
+Clicking *Reset* does not reset the thresholds to the default values of 80 percent for "`Nearly full`" and 90 percent for "`Full`".
+
+ ** There are two ways to set the values:
+  *** You can use the up and down arrows next to the values to adjust the threshold values.
+  *** You can slide the arrows on the track bar below the values to adjust the threshold values.
+ ** The lowest value that you can set for the *Full threshold (%)* field for volumes and aggregates is 6 percent.
+
+. After specifying the required values, click *Apply*.
++
+You must click *Apply* for both volume alarm and aggregate alarm.

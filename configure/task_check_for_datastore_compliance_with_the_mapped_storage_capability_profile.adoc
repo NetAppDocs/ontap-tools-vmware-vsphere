@@ -1,0 +1,30 @@
+---
+permalink: configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html
+sidebar: sidebar
+keywords:
+summary: 'You can quickly verify whether your datastores are compliant with the storage capability profiles that are mapped to the datastores.'
+---
+= Verify datastore compliance with the mapped storage capability profile
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can quickly verify whether your datastores are compliant with the storage capability profiles that are mapped to the datastores.
+
+*What you will need*
+
+* You must have registered your VASA Provider instance with ONTAP® tools for VMware vSphere (VSC).
+* VSC must have discovered your storage.
+
+*Steps*
+
+. From the ONTAP tools Home page, click *Storage Mapping*.
+. Review the information in the Compliance Status column to identify non-compliant datastores and review the alerts for non-compliance reason.
++
+NOTE: When you click the *COMPLIANCE CHECK* button, VSC performs a rediscovery operation for all of the storage, which might take few minutes.
++
+If a datastore is no longer compliant with its profile, then the Compliance Status column displays an alert stating the reason for non-compliance. For example, a profile might require compression. If that setting has been changed on the storage, compression is no longer used, and the datastore is non-compliant.
+
+When you discover a datastore that is not compliant with its profile, you can modify the settings on the volume backing the datastore to make the datastore compliant, or you can assign a new profile to the datastore.
+
+You can modify the settings from the Storage Capability Profile page.

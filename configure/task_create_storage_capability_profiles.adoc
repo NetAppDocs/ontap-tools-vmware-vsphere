@@ -1,0 +1,100 @@
+---
+permalink: configure/task_create_storage_capability_profiles.html
+sidebar: sidebar
+keywords:
+summary: 'You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
+---
+= Create storage capability profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.
+
+*What you'll need*
+
+You must have registered your VASA Provider instance with ONTAP® tools for VMware vSphere.
+
+After setting up a profile, you can edit the profile as required.
+
+*Steps*
+
+. On the ONTAP tools Home page, click *Storage Capability Profiles*.
+. Create a profile or edit an existing profile, as required:
++
+|===
+| *If you want to...*| *Do this...*
+a|
+Create a profile
+a|
+Click *image:../media/create_icon.gif[]*.
+a|
+Edit an existing profile
+a|
+Click the profile that you want to modify from the profiles listed on the *Storage Capability Profiles* page.
+|===
+*Note:*
+
+ ** To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.
+ ** You cannot modify any existing storage capability profiles that were created before the 9.6 ONTAP tools.
+
+. Complete the pages in the Create Storage Capability Profile wizard to set up a profile or to edit values to modify an existing profile.
++
+Most of the fields in this wizard are self-explanatory. The following table describes some of the fields for which you might require guidance.
++
+|===
+| *Field*| *Explanation*
+a|
+Identifying multiple profiles
+a|
+You can use the *Description* field on the Name and Description tab to describe the purpose of the storage capability profile.    Providing a good description is useful because it is a good practice to set up different profiles based on the applications that are being used.
+
+For example, a business-critical application requires a profile with capabilities that support higher performance, such as an AFF platform. A datastore that is used for testing or training might use a profile with a lower performance FAS platform, and enable all of the storage efficiency capabilities and tiering to control costs.
+
+If you have enabled "`linked`" mode for your vCenter Servers, then you must select the vCenter Server for which you are creating the storage capability profile.
+a|
+Platform
+a|
+You can select your storage system to have either the AFF or FAS platform type.     The options on the subsequent screens are updated based on your selection of the type of storage system.
+a|
+Performance
+a|
+You can set traditional QoS policies for your storage system by using the Performance tab.
+
+ ** When you select *None*, a QoS policy with no limit (infinite) is applied to a data VVol.
+ ** When you select *QoS Policy Group*, then a traditional QoS policy is applied to a VVol.
++
+You can set the value for *Max IOPS* and *Min IOPS* which enables you to use the QoS functionality. If you select Infinite IOPS, the Max IOPS field is disabled. When applied for a traditional datastore, a QoS policy with "`Max IOPS`" value is created and assigned to a FlexVol volume. When used with a VVol datastore, a QoS policy with Max IOPS and Min IOPS values is created for each data VVol.
++
+*NOTE*:
+
+  *** Max IOPS and Min IOPS can also be applied to the FlexVol volume for a traditional datastore.
+  *** You must ensure that the performance metrics are not also set separately at an storage virtual machine (SVM) level, an aggregate level, or a FlexVol volume level.
+
+a|
+Storage Attributes
+a|
+The storage attributes that you can enable in this tab depend on the storage type that you select in the Personality tab.
+
+ ** If you select FAS storage, you can configure space reserve (thick or thin), enable deduplication, compression, and encryption.
++
+The tiering attribute is disabled because this attribute is not applicable to FAS storage.
+
+ ** If you select AFF storage, you can enable encryption and tiering.
++
+Deduplication and compression are enabled by default for AFF storage and cannot be disabled. Space reserve is configured as thin and cannot be changed to thick (thin is required for aggregate efficiency and tiering).
+
++
+The tiering attribute enables the use of volumes that are part of a FabricPool-enabled aggregate (supported by VASA Provider for AFF systems with ONTAP 9.4 and later). You can configure one of the following policies for the tiering attribute:
+
+ ** Any: Allows use of this storage capability profile with any FlexVol volume whether Fabric Pool is used or not
+ ** None: Prevents volume data from being moved to the capacity tier
+ ** Snapshot-Only: Moves user data blocks of volume Snapshot copies that are not associated with the active file system to the capacity tier
+ ** Auto: Moves cold user data blocks in the Snapshot copies and the active file system to the capacity tier
+
++
+|===
+
+. Review your selections on the Summary page, and then click *OK*.
++
+After you create a profile, you can return to the Storage Mapping page to view which profiles match which datastores.

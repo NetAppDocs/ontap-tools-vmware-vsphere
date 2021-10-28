@@ -1,0 +1,33 @@
+---
+permalink: deploy/concept_supported_storage_system_and_applications.html
+sidebar: sidebar
+keywords:
+summary: 'You should be aware of the basic storage system requirements, application requirements, and license requirements before you begin deploying the ONTAP tools for VMware vSphere.'
+---
+= Supported storage system, licensing, and applications for the ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should be aware of the basic storage system requirements, application requirements, and license requirements before you begin deploying the ONTAP tools for VMware vSphere.
+
+The Interoperability Matrix Tool (IMT) contains the latest information about the supported versions of ONTAP, vCenter Server, ESXi hosts, plug-in applications, and Site Recovery Manager (SRM).
+
+https://mysupport.netapp.com/matrix/[Interoperability Matrix Tool]
+
+You must enable the FlexClone license for performing virtual machine snapshot operations and clone operations for VMware Virtual Volumes (vVols) datastores.
+
+Storage Replication Adapter (SRA) requires the following licenses:
+
+* SnapMirror license
++
+You must enable the SnapMirror license for performing failover operations for SRA.
+
+* FlexClone license
++
+You must enable the FlexClone license for performing test failover operations for SRA.
+
+To view the IOPS for a datastore, you must either enable Storage I/O control or uncheck the disable Storage I/O statistics collection checkbox in the Storage I/O control configuration. You can enable the Storage I/O control only if you have the Enterprise Plus license from VMware.
+
+* https://kb.vmware.com/s/article/1022091[Troubleshooting Storage I/O Control]
+* https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-37CC0E44-7BC7-479C-81DC-FFFC21C1C4E3.html[Storage I/O Control Requirements]

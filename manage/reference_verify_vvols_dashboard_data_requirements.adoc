@@ -1,0 +1,42 @@
+---
+permalink: manage/reference_verify_vvols_dashboard_data_requirements.html
+sidebar: sidebar
+keywords: vVol dashboard
+summary: 'You must verify some important requirements of the vVols dashboard to display dynamic details of the VMware Virtual Volumes \(vVols\) datastores and virtual machines.'
+---
+= vVols dashboard data requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must verify some important requirements of the vVols dashboard to display dynamic details of the VMware Virtual Volumes (vVols) datastores and virtual machines.
+
+The following table presents an overview of what you should verify if the vVols dashboard does not display the performance metrics for the provisioned SAN vVols datastores and virtual machines.
+
+|===
+| *Considerations*| *Description*
+a|
+First-time deployment of OnCommand API Services
+a|
+
+* If you are having ONTAP clusters 9.6 or earlier, then you are using OnCommand API Services 2.1 or later.
++
+You do not require OnCommand API Services to be registered with VASA Provider if you are using ONTAP 9.7 and later.
+
+* You must have followed the installation instructions that are provided in the _OnCommand API Services Installation and Setup guide_ after downloading and installing OnCommand API Services from the NetApp Support Site.
+* Each VASA Provider instance must have a dedicated OnCommand API Services instance.
++
+OnCommand API Services must not be shared among multiple VASA Provider instances or vCenter Servers.
+
+* OnCommand API Services is running and accessible.
+
+a|
+Storage system
+a|
+
+* You are using ONTAP 9.3 or later.
+* You are using appropriate credentials for the storage system.
+* Your storage system is active and accessible.
+* The virtual machine that you selected must be using at least one vVols datastore, and I/O operations are executing on the disk of the virtual machine.
+
+|===

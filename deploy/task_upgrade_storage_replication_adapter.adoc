@@ -1,0 +1,43 @@
+---
+permalink: deploy/task_upgrade_storage_replication_adapter.html
+sidebar: sidebar
+keywords: SRA, upgrade
+summary: 'After upgrading ONTAP tools or deploying the latest version of ONTAP tools, you have to upgrade your Storage Replication Adapter \(SRA\).'
+---
+= Upgrade Storage Replication Adapter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After upgrading ONTAP tools or deploying the latest version of ONTAP tools, you have to upgrade your Storage Replication Adapter (SRA).
+
+*Step*
+
+. You must upgrade to the latest adapter using one of the following procedures based on your adapter:
++
+|===
+    |*For...* |*Perform the following...*
+a|
+Windows
+a|
+
+ .. Log in to the SRM Windows Server.
+ .. Uninstall existing SRA _.msi_ installer from SRM Server.
+ .. Change the system path to `C:\Program Files\VMware\VMware vCenter Site Recovery Manager\external\perl\c\bin`
+ .. Double-click on the _.msi_ installer you downloaded from NetApp support site, and follow on-screen instructions.
+ .. Enter the IP address and password of your deployed ONTAP tools .
+
+a|
+Appliance based adapter
+a|
+
+ .. Log in to the SRM Appliance Management page.
+ .. Click *Storage Replication Adapter*, and click *Delete* to remove the existing SRA.
+ .. Click *New Adapter* > *Browse*.
+ .. Click to select the latest SRA tarball file that you downloaded from NetApp support site, and then click *Install*.
+ .. Configure SRA on the SRM Appliance.
++
+link:../protect/task_configure_sra_on_srm_appliance.html[Configuring SRA on the SRM Appliance]
+
++
+|===

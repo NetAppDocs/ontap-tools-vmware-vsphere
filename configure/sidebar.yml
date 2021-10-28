@@ -1,0 +1,69 @@
+section: configure
+title: Configure ONTAP tools
+entries:
+  - title: Workflow for configuring ONTAP tools
+    url: /configure/concept_workflow_for_configuring_the_unified_appliance.html
+  - title: Configure ESXi settings
+    entries:
+      - title: Configure ESXi server multipathing and timeout settings
+        url: /configure/task_configure_esx_server_multipathing_and_timeout_settings.html
+      - title: ESXi host values set using ONTAP tools
+        url: /configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
+  - title: Configure guest operating systems
+    entries:
+      - title: Configure guest operating system scripts
+        url: /configure/reference_configure_guest_operating_system_scripts.html
+      - title: Set timeout values for Windows guest operating systems
+        url: /configure/task_run_the_gos_timeout_scripts_for_windows.html
+      - title: Set timeout values for Solaris guest operating systems
+        url: /configure/task_run_the_gos_timeout_scripts_for_solaris.html
+      - title: Set timeout values for Linux guest operating systems
+        url: /configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html
+  - title: Requirements for registering VSC in multiple vCenter Servers environment
+    url: /configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html
+  - title: Configure the ONTAP tools preferences file
+    entries:
+      - title: Set IPv4 or IPv6 using the preferences file
+        url: /configure/reference_set_ipv4_or_ipv6.html
+      - title: Enable datastore mounting across different subnets
+        url: /configure/task_enable_datastore_mounting_across_different_subnets.html
+      - title: Regenerate an SSL certificate for vsc
+        url: /configure/task_regenerate_an_ssl_certificate_for_vsc.html
+  - title: Configure storage systems
+    entries:
+      - title: Overview of storage system for ONTAP tools
+        url: /configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html
+      - title: Set default credentials for storage systems
+        url: /configure/task_set_default_credentials_for_storage_systems.html
+      - title: Add storage systems to VSC
+        url: /configure/task_add_storage_systems.html
+      - title: Discover storage systems and hosts
+        url: /configure/task_discover_storage_systems_and_hosts.html
+      - title: Refresh the storage system display
+        url: /configure/task_refresh_the_storage_system_display.html
+      - title: Configure alarm thresholds
+        url: /configure/task_configure_alarm_thresholds.html
+  - title: Configure user roles and privileges
+    url: /configure/task_configure_user_role_and_privileges.html
+  - title: Configure storage capability profiles
+    entries:
+      - title: Overview of storage capability profiles
+        url: /configure/concept_configure_storage_capability_profiles.html
+      - title: Create storage capability profiles
+        url: /configure/task_create_storage_capability_profiles.html
+      - title: Generate storage capability profiles automatically
+        url: /configure/task_automatically_generating_scps.html
+  - title: Configure datastores
+    entries:
+      - title: Provision traditional datastores
+        url: /configure/task_provision_datastores.html
+      - title: Map datastores to storage capability profiles
+        url: /configure/task_map_storage_to_storage_capability_profiles.html
+      - title: Assign QoS policies
+        url: /configure/task_assign_qos_policies.html
+      - title: Verify datastore compliance with the mapped storage capability profile
+        url: /configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html
+      - title: Provision vVols datastores
+        url: /configure/task_provision_vvols_datastores.html
+      - title: Rebalance vVols datastores
+        url: /configure/reference_rebalance_vvols_datastore.html

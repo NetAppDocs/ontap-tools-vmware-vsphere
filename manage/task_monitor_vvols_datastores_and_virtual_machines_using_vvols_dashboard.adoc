@@ -1,0 +1,90 @@
+---
+permalink: manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html
+sidebar: sidebar
+keywords:
+summary: 'You can monitor the performance and view the top five SAN and NAS VMware Virtual Volumes \(vVols\) datastores in your vCenter Server based on the parameters that you select by using the vVols dashboard of the ONTAP tools.'
+---
+= Analyze performance data using the vVols dashboard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can monitor the performance and view the top five SAN and NAS VMware Virtual Volumes (vVols) datastores in your vCenter Server based on the parameters that you select by using the vVols dashboard of the ONTAP tools.
+
+*What you will need*
+
+* You should have enabled OnCommand API Services 2.1 or later if you are using ONTAP 9.6 or earlier.
++
+You do not require to register OnCommand API Services with VASA Provider to get the details of SAN vVols datastore or SAN vVols VM datastore report for ONTAP 9.7 or later.
++
+https://mysupport.netapp.com/site/global/dashboard
+
+* You should be using ONTAP 9.3 or later for your storage system.
+
+The IOPS data that is provided by ONTAP is rounded off and displayed on the vVols dashboard. There might be a difference between the actual IOPS value that is provided by ONTAP and the IOPS value that is displayed on the vVols dashboard. From the 9.8 release of ONTAP tools, performance monitoring is available for NFS based vVols datastores.
+
+NOTE: If you are registering OnCommand API Services for the first time, then you can view all of the performance metrics data for SAN vVols datastores on the vVols dashboard only after 15 to 30 minutes.
+
+* The vVols dashboard data is refreshed periodically, at an interval of 10 minutes.
+* If you have added, modified, or deleted a storage system from your vCenter Server instance, then you might not notice any change in the data on the vVols dashboard for some time.
++
+This is because OnCommand API Services takes time to obtain updated metrics from ONTAP.
+
+* The Total IOPS value that is displayed in the Overview portlet of the vVols dashboard is not a cumulative value of the Read IOPS value and Write IOPS value.
++
+Read IOPS, Write IOPS, and Total IOPS are separate metrics that are provided by OnCommand API Services. If there is a difference between the Total IOPS value and the cumulative IOPS value (Read IOPS value + Write IOPS value) provided by OnCommand API Services, then the same difference is observed in the IOPS values on the vVols dashboard.
+
+* NFS based data vVols provisioned on ONTAP 9.8 and above are automatically registered for performance monitoring in the vVols dashboard.
+
+*Steps*
+
+. From the vSphere Client home page, click *ONTAP tools*.
+. Select the required vCenter Server using the *vCenter server* drop-down menu to view the datastores.
+. Click *vVols Dashboard*.
++
+The Datastores portlet provides the following details:
+
+ ** The number of vVols datastores that are managed by VASA Provider in your vCenter Server instance
+ ** The top five vVols datastores based on resource usage and performance parameters
+You can change the listing of the datastores based on the space utilized, IOPS, or latency and in the order required.
+
+. View the details of the virtual machines using the Virtual Machines portlet.
++
+The Virtual Machines portlet provides the following details:
+
+ ** Number of virtual machines using ONTAP datastores in your vCenter Server
+ ** Top five virtual machines based on IOPS, latency, throughput, committed capacity, uptime, and logical space
+You can customize how the top five virtual machines are listed in the vVols dashboard.
+
+== vVols dashboard data requirements
+You must verify some important requirements of the vVols dashboard to display dynamic details of the VMware Virtual Volumes (vVols) datastores and virtual machines.
+
+The following table presents an overview of what you should verify if the vVols dashboard does not display the performance metrics for the provisioned SAN vVols datastores and virtual machines.
+
+|===
+| *Considerations*| *Description*
+a|
+First-time deployment of OnCommand API Services
+a|
+
+* If you are having ONTAP clusters 9.6 or earlier, then you are using OnCommand API Services 2.1 or later.
++
+You do not require OnCommand API Services to be registered with VASA Provider if you are using ONTAP 9.7 and later.
+
+* You must have followed the installation instructions that are provided in the _OnCommand API Services Installation and Setup guide_ after downloading and installing OnCommand API Services from the NetApp Support Site.
+* Each VASA Provider instance must have a dedicated OnCommand API Services instance.
++
+OnCommand API Services must not be shared among multiple VASA Provider instances or vCenter Servers.
+
+* OnCommand API Services is running and accessible.
+
+a|
+Storage system
+a|
+
+* You are using ONTAP 9.3 or later.
+* You are using appropriate credentials for the storage system.
+* Your storage system is active and accessible.
+* The virtual machine that you selected must be using at least one vVols datastore, and I/O operations are executing on the disk of the virtual machine.
+
+|===

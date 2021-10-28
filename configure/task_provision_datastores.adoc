@@ -1,0 +1,126 @@
+---
+permalink: configure/task_provision_datastores.html
+sidebar: sidebar
+keywords:
+summary: 'Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks \(VMDKs\). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.'
+---
+= Provision traditional datastores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Provisioning a datastore creates a logical container for your virtual machines and their virtual machine disks (VMDKs). You can provision a datastore, and then attach the datastore to a single host, to all of the hosts in a cluster, or to all of the hosts in a datacenter.
+
+*What you will need*
+
+* To provision a datastore on an SVM that is directly connected to Virtual Storage Console (VSC), you must have added the SVM to VSC by using a user account that has the appropriate privileges, not the default vsadmin user account or vsadmin role.
++
+You can also provision a datastore by adding a cluster.
+
+* You must ensure that the subnet details of all the networks to which the ESXi host is connected is entered in the kaminoprefs.xml.
++
+See "Enabling datastore mounting across different subnets" section in _VSC 9.8 Deployment and Setup Guide_.
+
+* If you use NFS or iSCSI, and the subnet is different between your ESXi hosts and your storage system, then the NFS or iSCSI settings in the kaminoprefs preferences file must include ESXi host subnet masks.
++
+This preference file is also applicable to vVols datastore creation. _ONTAP tools for VMware vSphere Deployment and Setup Guide for 9.8 release_ has more information on preferences file and enabling datastore mounting across different subnets.
+
+* If you have enabled VASA Provider and you want to specify storage capability profiles for your NFS datastores or VMFS datastores, then you must have created one or more storage capability profiles.
+* To create an NFSv4.1 datastore, you must have enabled NFSv4.1 at the SVM level.
+
+The *Provision Datastore* option enables you to specify a storage capability profile for the datastore. Storage capability profiles help in specifying consistent service level objectives (SLOs) and simplify the provisioning process. You can specify a storage capability profile only if you have enabled VASA Provider. The ONTAP tools for VMware vSphere supports the following protocols:
+
+* NFSv3 and NFSv4.1
+* VMFS5 and VMFS6
+
+VSC can create a datastore on either an NFS volume or a LUN:
+
+* For an NFS datastore, VSC creates an NFS volume on the storage system, and then updates the export policies.
+* For a VMFS datastore, VSC creates a new volume (or uses an existing volume, if you selected that option), and then creates a LUN and an igroup.
+
+[NOTE]
+====
+
+* The 9.8 version of ONTAP tools supports provisioning of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
++
+On other platforms the maximum LUN size supported is 16TB.
+
+* VMware does not support NFSv4.1 with datastore clusters.
+====
+
+If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile. You can apply storage QoS settings, throughput ceiling (Max IOPS) and throughput floor (Min IOPS) on data VMDK files of virtual machines provisioned on FlexGroup backed datastore. QoS settings can be applied either at datastore level or at individual virtual machine level by right clicking the datastore. The right click option is available only on those datastores or virtual machines that are backed by FlexGroup datastore. After the QoS is applied to a datastore, any pre-existing datastore or virtual machine QoS settings are overridden. QoS settings cannot be applied at a datastore level or at a virtual machine level for datastores that are provisioned on direct SVM's, because ONTAP does not support QoS at SVM management level.
+
+*Steps*
+
+. You can access the datastore provisioning wizard using one of the following:
++
+|===
+| *If you select from ...*| *Perform the following...*
+a|
+vSphere Client home page
+a|
+
+ .. Click *Hosts and Clusters*.
+ .. In the navigation pane, select the datacenter on which you want to provision the datastore.
+ .. To specify the hosts to mount the datastore, see the next step.
+
+a|
+ONTAP tools home page
+a|
+
+ .. Click *Overview*.
+ .. Click *Getting Started* tab.
+ .. Click *Provision* button.
+ .. Click *Browse* to select the destination to provision the datastore as per the next step.
+
++
+|===
+
+. Specify the hosts on which you want to mount the datastore.
++
+|===
+| *To make the datastore available to...*| *Do this...*
+a|
+All of the hosts in a datacenter
+a|
+Right-click a datacenter, and then select *NetApp ONTAP tools* > *Provision Datastore*.
+a|
+All of the hosts in a cluster
+a|
+Right-click a host cluster, and then select *NetApp ONTAP tools* > *Provision Datastore*.
+a|
+A single host
+a|
+Right-click a host, and select *NetApp ONTAP tools* > *Provision Datastore*.
+|===
+
+. Complete the fields in the New Datastore dialog box to create the datastore.
++
+Most of the fields in the dialog box are self-explanatory. The following table describes some of the fields for which you might require guidance.
++
+|===
+| *Section*| *Description*
+a|
+General
+a|
+The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore. You can select *NFS* or *VMFS* protocol to configure a traditional datastore. This release allows you to configure a VMFS datastore of maximum size 64TB. You can select the option "`Distribute datastore data across the ONTAP cluster`" to provision a FlexGroup volume on the storage system. Selecting this option automatically deselects the checkbox "`Use Storage Capability Profile for provisioning`". For FlexGroup datastore provisioning, ONTAP cluster that are 9.8 and above only are listed for selection. The vVols datastore type is used to configure a vVols datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
+a|
+Storage system
+a|
+You can select one of the listed storage capability profiles if you have selected the option in the General section. If you are provisioning a FlexGroup datastore, then storage capability profile for this datastore is not supported. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
+a|
+Storage attributes
+a|
+By default, VSC populates the recommended values for *Aggregates* and *Volumes* options. You can customize the values based on your requirements. Aggregate selection is not supported for FlexGroup datastores as ONTAP manages the aggregate selection. The *Space reserve* option available under *Advanced* menu is also populated to give optimum results.
+a|
+Summary
+a|
+You can review the summary of the parameters you specified for the new datastore. There is a new field "`Volume Style`" available in the Summary page that enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
+|===
+
+NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup volumes.
+. In the Summary section, click *Finish*.
+
+*Related information*
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline[Datastore inaccessible when volume status is changed to offline]

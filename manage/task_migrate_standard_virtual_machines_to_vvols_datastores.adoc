@@ -1,0 +1,27 @@
+---
+permalink: manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html
+sidebar: sidebar
+keywords: Migrate traditional virtual machines
+summary: 'You can migrate virtual machines from traditional datastores to Virtual Volumes \(vVols\) datastores to take advantage of policy-based VM management and other vVols capabilities. vVols datastores enable you to meet increased workload requirements.'
+---
+= Migrate traditional virtual machines to vVols datastores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can migrate virtual machines from traditional datastores to Virtual Volumes (vVols) datastores to take advantage of policy-based VM management and other vVols capabilities. vVols datastores enable you to meet increased workload requirements.
+
+*What you will need*
+
+You must have ensured that VASA Provider is not running on any of the virtual machines that you plan to migrate. If you migrate a virtual machine that is running VASA Provider to a vVols datastore, you cannot perform any management operations, including powering on the virtual machines that are on vVols datastores.
+
+*About this task*
+
+When you migrate from a traditional datastore to a vVols datastore, the vCenter Server uses vStorage APIs for Array Integration (VAAI) offloads when moving data from VMFS datastores, but not from an NFS VMDK file. VAAI offloads normally reduce the load on the host.
+
+*Steps*
+
+. Right-click the virtual machine that you want to migrate, and then click *Migrate*.
+. Select *Change storage only*, and then click *Next*.
+. Select a virtual disk format, a VM Storage Policy, and a VVol datastore that matches the features of the datastore that you are migrating, and then click *Next*.
+. Review the settings, and then click *Finish*.

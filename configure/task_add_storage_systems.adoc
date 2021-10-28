@@ -1,0 +1,29 @@
+---
+permalink: configure/task_add_storage_systems.html
+sidebar: sidebar
+keywords:
+summary: 'You can manually add storage system to Virtual Storage Console \(VSC\).'
+---
+= Add storage systems to VSC
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can manually add storage system to Virtual Storage Console (VSC).
+
+*About this task*
+
+Each time you start Virtual Storage Console (VSC) or select the *REDISCOVER All* option, VSC automatically discovers the available storage systems.
+
+*Steps*
+
+. Add a storage system to VSC by using the ONTAP tools home page:
+ ** Click *Storage Systems* > *Add*.
+ ** Click *Overview* > *Getting Started*, and then click *ADD* button under Add Storage System.
+. In the *Add Storage System* dialog box, enter the management IP address and credentials for that storage system.
++
+You can also add storage systems using the IPv6 address of the cluster or SVM. You can also change the defaults for TLS and the port number in this dialog box.
++
+When you add storage from the VSC Storage System page, you must also specify the vCenter Server instance where the storage will be located. The Add Storage System dialog box provides a drop-down list of the available vCenter Server instances. VSC does not display this option if you are adding storage to a datacenter that is already associated with a vCenter Server instance.
+
+. Click *OK* after you have added all of the required information.

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="322px" height="164px" viewBox="0 0 322 164" enable-background="new 0 0 322 164" xml:space="preserve" preserveAspectRatio="xMidYMid meet" zoomAndPan="magnify" contentScriptType="application/ecmascript" contentStyleType="text/css">
+<g id="lines">
+	<polygon fill="#000100" stroke="#000100" points="39.254,82.188 41.985,79.331 44.717,76.474 45.835,78.436 46.954,80.398    43.104,81.293  "/>
+	<polygon fill="#000100" stroke="#000100" points="145.295,133.851 144.167,130.063 143.037,126.275 145.295,126.275    147.554,126.275 146.425,130.063  "/>
+	<polygon fill="#000100" stroke="#000100" points="145.295,75.351 144.167,71.563 143.037,67.775 145.295,67.775 147.554,67.775    146.425,71.563  "/>
+	<polygon fill="#000100" stroke="#000100" points="279.629,133.351 278.5,129.563 277.371,125.775 279.629,125.775 281.889,125.775    280.759,129.563  "/>
+	<polygon fill="#000100" stroke="#000100" points="255.326,133.956 252.019,131.793 248.711,129.629 250.435,128.171    252.16,126.713 253.743,130.334  "/>
+	<polygon fill="#000100" stroke="#000100" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" points="   249.265,67.312 245.451,66.273 241.638,65.234 242.828,63.316 244.021,61.396 246.643,64.354  "/>
+	
+		<line fill="#000100" stroke="#000100" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="178.375" y1="28.125" x2="246.875" y2="65.875"/>
+	
+		<line fill="#000100" stroke="#000100" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="162.125" y1="38.375" x2="252.625" y2="129.875"/>
+	
+		<line fill="#000100" stroke="#000100" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="145.125" y1="36.875" x2="145.125" y2="128.875"/>
+	
+		<line fill="#000100" stroke="#000100" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="133.875" y1="37.625" x2="43.875" y2="79.625"/>
+	
+		<line fill="#000100" stroke="#000100" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="279.625" y1="88.875" x2="279.625" y2="129.875"/>
+</g>
+<g id="boxes">
+	
+		<rect x="250.125" y="57.125" fill="#FFFFFF" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" width="67.75" height="33.5"/>
+	
+		<rect x="235.875" y="135.125" fill="#FFFFFF" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" width="68.75" height="24.5"/>
+	
+		<rect x="111.625" y="4.375" fill="#B2B2B2" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" width="68.5" height="34.25"/>
+	
+		<rect x="3.875" y="81.875" fill="#B2B2B2" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" width="68.5" height="34.25"/>
+	
+		<rect x="112.375" y="76.125" fill="#B2B2B2" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" width="68.5" height="34.25"/>
+	
+		<rect x="112.375" y="135.375" fill="#B2B2B2" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" width="68.5" height="24.25"/>
+</g>
+<g id="text">
+	<rect x="5.625" y="41.375" fill="none" width="80" height="19"/>
+	<text transform="matrix(1 0 0 1 6.3628 47.8369)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="9">vCenter Admin sets </tspan><tspan x="7.753" y="10.8" font-family="'Helvetica'" font-size="9">up permissions.</tspan></text>
+	<rect x="241.125" y="18.375" fill="none" width="77" height="29.5"/>
+	<text transform="matrix(1 0 0 1 244.3633 24.8369)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="9">Operating system </tspan><tspan x="6.502" y="10.8" font-family="'Helvetica'" font-size="9">Admin creates </tspan><tspan x="-0.756" y="21.6" font-family="'Helvetica'" font-size="9">users and groups.</tspan></text>
+	<rect x="118.625" y="17.375" fill="none" width="53.5" height="13.5"/>
+	<text transform="matrix(1 0 0 1 123.1226 23.8369)" font-family="'Helvetica'" font-size="9">Permission</text>
+	<rect x="10.125" y="89.875" fill="none" width="52.5" height="22"/>
+	<text transform="matrix(1 0 0 1 17.6147 96.3369)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="9">Managed </tspan><tspan x="5.755" y="10.8" font-family="'Helvetica'" font-size="9">Object</tspan></text>
+	<rect x="119.625" y="89.375" fill="none" width="50" height="14"/>
+	<text transform="matrix(1 0 0 1 135.373 95.8369)" font-family="'Helvetica'" font-size="9">Role</text>
+	<rect x="116.125" y="143.375" fill="none" width="60" height="13.5"/>
+	<text transform="matrix(1 0 0 1 128.8721 149.8369)" font-family="'Helvetica'" font-size="9">Privilege</text>
+	<rect x="262.125" y="69.875" fill="none" width="40" height="15.5"/>
+	<text transform="matrix(1 0 0 1 269.6191 76.3369)" font-family="'Helvetica'" font-size="9">Group</text>
+	<rect x="249.125" y="143.375" fill="none" width="40" height="15.5"/>
+	<text transform="matrix(1 0 0 1 259.626 149.8369)" font-family="'Helvetica'" font-size="9">User</text>
+	<rect x="150.125" y="117.875" fill="none" width="20.5" height="10.5"/>
+	<text transform="matrix(1 0 0 1 153.6201 124.3369)" font-family="'Helvetica'" font-size="9">1..*</text>
+	<rect x="283.625" y="105.375" fill="none" width="20.5" height="10.5"/>
+	<text transform="matrix(1 0 0 1 287.1201 111.8369)" font-family="'Helvetica'" font-size="9">1..*</text>
+	<rect x="209.125" y="65.375" fill="none" width="36.5" height="28.5"/>
+	<text transform="matrix(1 0 0 1 215.6211 71.8369)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="9">Either </tspan><tspan x="-6.003" y="10.8" font-family="'Helvetica'" font-size="9">Group or </tspan><tspan x="2.255" y="21.6" font-family="'Helvetica'" font-size="9">User</tspan></text>
+</g>
+</svg>

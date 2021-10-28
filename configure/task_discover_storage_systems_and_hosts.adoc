@@ -1,0 +1,40 @@
+---
+permalink: configure/task_discover_storage_systems_and_hosts.html
+sidebar: sidebar
+keywords:
+summary: 'When you first run Virtual Storage Console \(VSC\) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.'
+---
+= Discover storage systems and hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you first run Virtual Storage Console (VSC) in a vSphere Client, VSC discovers the ESXi hosts, their LUNs and NFS exports, and the NetApp storage systems that own those LUNs and exports.
+
+*What you will need*
+
+* All of the ESXi hosts must be powered on and connected.
+* All the storage virtual machines (SVMs) to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI or FC).
+
+*About this task*
+
+You can discover new storage systems or update information about existing storage systems to obtain the latest capacity and configuration information at any time. You can also modify the credentials that VSC uses to log in to the storage systems.
+
+While discovering the storage systems, VSC collects information from the ESXi hosts that are managed by the vCenter Server instance.
+
+*Steps*
+
+. From the vSphere Client Home page, select *Hosts and Clusters*.
+. Right-click the required datacenter, and then select *NetApp VSC* > *Update Host and Storage Data* .
++
+VSC displays a Confirm dialog box that informs you that this operation might take a long time.
+
+. Click *OK*.
+. Select the discovered storage controllers that have the status "`Authentication Failure`", and then click *ACTIONS* > *Modify*.
+. Fill in the required information in the Modify Storage System dialog box.
+. Repeat steps 4 and 5 for all storage controllers with "`Authentication Failure`" status.
+
+After the discovery process is complete, perform the following:
+
+* Use VSC to configure ESXi host settings for hosts that display the Alert icon in the Adapter Settings column, the MPIO Settings column, or the NFS Settings column.
+* Provide the storage system credentials.

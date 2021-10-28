@@ -1,0 +1,55 @@
+---
+permalink: manage/task_edit_esxi_host_settings.html
+sidebar: sidebar
+keywords:
+summary: 'You can use the dashboard of ONTAP tools for VMware vSphere to edit your ESXi host settings.'
+---
+= Modify ESXi host settings using ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the dashboard of ONTAP tools for VMware vSphere to edit your ESXi host settings.
+
+*What you will need*
+
+You must have configured an ESXi host system for your vCenter Server instance.
+
+If there is an issue with your ESXi host settings, the issue is displayed in the ESXi Host Systems portlet of the dashboard. You can click the issue to view the host name or the IP address of the ESXi host that has the issue.
+
+*Steps*
+
+. From the vSphere Client Home page, click *ONTAP tools*.
+. Edit the ESXi host settings.
++
+|===
+| *If you want to edit the ESXi host settings from...*| *Do this...*
+a|
+Issues displayed
+a|
+
+ .. Click the issue in the ESXi Host Systems portlet.
+ .. Click the ESXi host names for which you want to modify the settings.
+ .. Right-click the ESXi host name, and click *NetApp ONTAP tools* > *Set Recommended Values*.
+ .. Modify the required settings, and then click *OK*.
+
+a|
+vSphere Client home page
+a|
+
+ .. Click *Menu* > *Hosts and Clusters*.
+ .. Right-click the required ESXi host, and select *NetApp ONTAP tools* > *Set Recommended Value*.
+ .. Click *OK*.
+
+a|
+ESXi Host Systems portlet
+a|
+
+ .. Click the *Traditional dashboard* tab in the Overview section of VSC.
+ .. Click *Edit ESXi Host Settings*.
+ .. Select the ESXi host name in the Host settings and status tab for which you want to modify the settings, and click *NEXT*.
+ .. Select the required settings in the Recommended host settings tab, and then click *Next*.
+ .. Review your selection in the Summary tab, and then click *FINISH*.
+
++
+|===

@@ -1,0 +1,9 @@
+---
+permalink: manage/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Administration Guide
+:icons: font
+:imagesdir: ../media/

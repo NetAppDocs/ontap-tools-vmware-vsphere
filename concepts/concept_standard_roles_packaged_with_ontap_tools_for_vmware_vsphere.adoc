@@ -1,0 +1,69 @@
+---
+permalink: concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords:
+summary: 'To simplify working with vCenter Server privileges and role-based access control \(RBAC\), Virtual Storage Console \(VSC\) provides standard VSC roles that enable you to perform key VSC tasks. There is also a read-only role that enables you to view VSC information, but not perform any tasks.'
+---
+= Standard roles packaged with ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To simplify working with vCenter Server privileges and role-based access control (RBAC), Virtual Storage Console (VSC) provides standard VSC roles that enable you to perform key VSC tasks. There is also a read-only role that enables you to view VSC information, but not perform any tasks.
+
+The standard VSC roles have both the required VSC-specific privileges and the native vCenter Server privileges that are required for users to perform VSC tasks. In addition, the roles are set up so that they have the required privileges across all supported versions of the vCenter Server.
+
+As an administrator, you can assign these roles to users, as required.
+
+NOTE: When you upgrade VSC to the latest version, the standard roles are automatically upgraded to work with the new version of VSC.
+
+You can view the VSC standard roles by clicking *Roles* on the vSphere Client Home page.
+
+The roles that VSC provides enable you to perform the following tasks:
+
+|===
+| *Role *| *Description*
+a|
+VSC Administrator
+a|
+Provides all of the native vCenter Server privileges and VSC-specific privileges that are required to perform all VSC tasks.
+a|
+VSC Read-only
+a|
+Provides read-only access to VSC. These users cannot perform any VSC actions that are access-controlled.
+
+a|
+VSC Provision
+a|
+Provides all of the native vCenter Server privileges and VSC-specific privileges that are required to provision storage. You can perform the following tasks:
+
+* Create new datastores
+* Destroy datastores
+* View information about storage capability profiles
+
+|===
+
+== Guidelines for using VSC standard roles
+When you work with standard ONTAP® tools for VMware vSphere roles, there are certain guidelines you should follow.
+
+You should not directly modify the standard roles. If you do, VSC will overwrite your changes each time you upgrade VSC. The installer updates the standard role definitions each time you upgrade VSC. Doing this ensures that the roles are current for your version of VSC as well as for all supported versions of the vCenter Server.
+
+You can, however, use the standard roles to create roles that are tailored to your environment. To do this, you should copy the VSC standard role and then edit the copied role. By creating a new role, you can maintain this role even when you restart or upgrade the VSC Windows service.
+
+Some of the ways that you might use the VSC standard roles include the following:
+
+* Use the standard VSC roles for all VSC tasks.
++
+In this scenario, the standard roles provide all the privileges a user needs to perform the VSC tasks.
+
+* Combine roles to expand the tasks a user can perform.
++
+If the standard VSC roles provide too much granularity for your environment, you can expand the roles by creating higher-level groups that contain multiple roles.
++
+If a user needs to perform other, non-VSC tasks that require additional native vCenter Server privileges, you can create a role that provides those privileges and add it to the group also.
+
+* Create more fine-grained roles.
++
+If your company requires that you implement roles that are more restrictive than the standard VSC roles, you can use the VSC roles to create new roles.
++
+In this case, you would clone the necessary VSC roles and then edit the cloned role so that it has only the privileges your user requires.

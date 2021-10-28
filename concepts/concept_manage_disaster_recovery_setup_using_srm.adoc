@@ -1,0 +1,20 @@
+---
+permalink: concepts/concept_manage_disaster_recovery_setup_using_srm.html
+sidebar: sidebar
+keywords:
+summary: 'You can create and manage the disaster recovery setup in your vCenter Server along with VMware’s Site Recovery Manager \(SRM\).'
+---
+= Configure disaster recovery setup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create and manage the disaster recovery setup in your vCenter Server along with VMware's Site Recovery Manager (SRM).
+
+VASA Provider now comes built-in with the capabilities of Storage Replication Adapter (SRA). If you have configured vVols datastores in your datacenter, then for recovery of vVols datastores, you do not need to install SRA separately for disaster recovery. In Site Recovery Manager (SRM), you must pair the protected and recovery sites. After the site pairing has occurred, the next part of the SRM configuration involves setting up an array pair which enables SRM to communicate with storage system to discover devices and device replication. Before you can configure the array pair, you must first create a site pair in SRM.
+
+This release of ONTAP tools provides you with an option to use synchronous SnapMirror configuration for disaster recovery.
+
+NOTE: VMware Site Recovery Manager (SRM) does not use SRA for managing disaster recovery of vVols datastores. Instead VASA Provider is used for replication and failover control of vVols datastores on ONTAP 9.7 and later clusters.
+
+link:../protect/task_enable_storage_replication_adapter.html[Enable Storage Replication Adapter]

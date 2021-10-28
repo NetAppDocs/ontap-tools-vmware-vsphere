@@ -1,0 +1,34 @@
+---
+permalink: manage/concept_decide_whether_to_use_this_guide.html
+sidebar: sidebar
+keywords: scope of guide
+summary: 'You can use this guide to quickly find information about tasks involving provisioning and optimizing storage and monitoring datastores and virtual machines.'
+---
+= Decide whether to use this guide
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use this guide to quickly find information about tasks involving provisioning and optimizing storage and monitoring datastores and virtual machines.
+
+The information in this guide is for the VSC user, not the system administrator. This guide provides information about all post-deployment tasks for the ONTAP® tools for VMware vSphere.
+
+*Requirements for using this guide*
+
+This guide is based on the following assumptions:
+
+* You have installed and configured VSC.
+* The features that you need for the tasks you are performing have been installed.
++
+These features might include the NFS Plug-in for VMware VAAI, the VASA Provider for ONTAP, and Storage Replication Adapter.
+
+* VSC has discovered all the storage systems that you are using.
+* Role-based access control (RBAC) for both vCenter Server and ONTAP has been set up.
++
+If you do not have all of the necessary privileges and permissions, the task you are performing might appear to work as you go through the wizard, but still fail to complete successfully.
+
+Most of the tasks presented in this guide also require that only one operation at a time be performed on the target datastore or virtual machine.
+
+If you have questions about VSC or want share information with other VSC users, you can go to the NetApp Communities Forum.
+
+https://community.netapp.com/t5/Products-and-Services/ct-p/products-and-solutions[NetApp Community: Virtual Storage Console for VMware vSphere]

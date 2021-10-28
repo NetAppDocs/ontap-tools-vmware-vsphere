@@ -1,0 +1,35 @@
+section: Deploy
+title: Deploy and upgrade ONTAP tools
+entries:
+  - title: Deployment workflow for new users of ONTAP tools for VMware vSphere
+    url: /deploy/concept_installation_workflow_for_new_users.html
+  - title: Deployment workflow for existing users of ONTAP tools
+    url: /deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html
+  - title: Requirements for deploying the ONTAP tools
+    entries:
+    - title: Port requirements for VSC
+      url: /deploy/reference_port_requirements_for_vsc.html
+    - title: Space and sizing requirements for the ONTAP tools
+      url: /deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html
+    - title: Supported storage system, licensing, and applications for the ONTAP tools
+      url: /deploy/concept_supported_storage_system_and_applications.html
+    - title: Considerations for deploying ONTAP tools
+      url: /deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html
+  - title: Deploy ONTAP tools
+    entries:
+    - title: How to download ONTAP tools
+      url: /deploy/concept_how_to_download_ontap_tools.html
+    - title: How to deploy ONTAP tools
+      url: /deploy/task_deploy_ontap_tools.html
+    - title: Enable VASA Provider for configuring virtual datastores
+      url: /deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
+    - title: Install the NFS VAAI plug-in
+      url: /deploy/task_install_the_nfs_vaai_plug_in.html
+    - title: Clear the vSphere cached downloaded plug-in packages
+      url: /deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html
+  - title: Upgrade ONTAP tools
+    entries:
+      - title: Upgrade to the latest release of ONTAP tools
+        url: /deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
+      - title: Upgrade Storage Replication Adapter
+        url: /deploy/task_upgrade_storage_replication_adapter.html

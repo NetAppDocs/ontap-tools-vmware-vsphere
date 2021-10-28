@@ -1,0 +1,48 @@
+---
+permalink: manage/reference_considerations_for_migrating_virtual_machines.html
+sidebar: sidebar
+keywords:
+summary: 'You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter.'
+---
+= Considerations for migrating or cloning virtual machines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should be aware of some of the considerations while migrating existing virtual machines in your datacenter.
+
+== Migrate protected virtual machines
+
+You can migrate the protected virtual machines to:
+
+* Same vVols datastore in a different ESXi host
+* Different compatible vVols datastore in same ESXi host
+* Different compatible vVols datastore in a different ESXi host
+
+If virtual machine is migrated to different FlexVol volume, then respective metadata file also gets updated with the virtual machine information. If a virtual machine is migrated to a different ESXi host but same storage then underlying FlexVol volume metada file will not be modified.
+
+== Clone protected virtual machines
+
+You can clone protected virtual machines to the following:
+
+* Same container of same FlexVol volume using replication group
++
+Same FlexVol volume's metadata file is updated with the cloned virtual machine details.
+
+* Same container of a different FlexVol volume using replication group
++
+The FlexVol volume where the cloned virtual machine is placed, the metadata file gets updated with the cloned virtual machine details.
+
+* Different container or vVols datastore
++
+The FlexVol volume where the cloned virtual machine is placed, the metadata file gets updated virtual machine details.
+
+VMware presently does not support virtual machine cloned to a VM template.
+
+Clone-of-Clone of a protected virtual machine is supported.
+
+== Virtual Machine Snapshots
+
+Presently only virtual machine Snapshots without memory are supported. If virtual machine has Snapshot with memory, then the virtual machine is not considered for protection.
+
+You also cannot protect unprotected virtual machine that has memory Snapshot. For this release, you are expected to delete memory snapshot before enabling protection for the virtual machine.

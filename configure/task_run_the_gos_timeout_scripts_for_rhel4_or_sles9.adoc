@@ -1,0 +1,73 @@
+---
+permalink: configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html
+sidebar: sidebar
+keywords:
+summary: 'The guest operating system \(OS\) timeout scripts set the SCSI I/O timeout settings for versions 4, 5, 6, and 7 of Red Hat Enterprise Linux and versions 9, 10, and 11 of SUSE Linux Enterprise Server. You can specify either a 60-second timeout or a 190-second timeout. You must run the script each time you upgrade to a new version of Linux.'
+---
+= Set timeout values for Linux guest operating systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The guest operating system (OS) timeout scripts set the SCSI I/O timeout settings for versions 4, 5, 6, and 7 of Red Hat Enterprise Linux and versions 9, 10, and 11 of SUSE Linux Enterprise Server. You can specify either a 60-second timeout or a 190-second timeout. You must run the script each time you upgrade to a new version of Linux.
+
+*What you will need*
+
+You must have mounted the ISO image containing the Linux script.
+
+*Steps*
+
+. Access the console of the Linux virtual machine, and log in to an account with root privileges.
+. Run the `linux_gos_timeout-install.sh` script.
++
+For Red Hat Enterprise Linux 4 or SUSE Linux Enterprise Server 9, a message similar to the following is displayed:
++
+----
+Restarting udev... this may take a few seconds.
+----
++
+----
+Setting I/O Timeout (60s) for /dev/sda - SUCCESS!
+----
++
+For Red Hat Enterprise Linux 5, Red Hat Enterprise Linux 6, and Red Hat Enterprise Linux 7 a message similar to the following is displayed:
++
+----
+patching file /etc/udev/rules.d/50-udev.rules
+----
++
+----
+Hunk #1 succeeded at 333 (offset 13 lines).
+----
++
+----
+Restarting udev... this may take a few seconds.
+----
++
+----
+Starting udev: [ OK ]
+----
++
+----
+Setting I/O Timeout (60s) for /dev/sda - SUCCESS!
+----
++
+For SUSE Linux Enterprise Server 10 or SUSE Linux Enterprise Server 11, a message similar to the following is displayed:
++
+----
+patching file /etc/udev/rules.d/50-udev-default.rules
+----
++
+----
+Hunk #1 succeeded at 114 (offset 1 line).
+----
++
+----
+Restarting udev ...this may take a few seconds.
+----
++
+----
+Updating all available device nodes in /dev:   done
+----
+
+. Unmount the ISO image.

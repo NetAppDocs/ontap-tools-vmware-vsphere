@@ -1,0 +1,10 @@
+---
+permalink: deploy/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Deployment and Setup Guide
+:icons: font
+:imagesdir: ../media/
+

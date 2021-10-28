@@ -1,0 +1,24 @@
+---
+permalink: configure/task_assign_qos_policies.html
+sidebar: sidebar
+keywords:
+summary: 'The provisioning of FlexGroup datastores does not support assigning storage capability profiles to the datastores. But you can assign QoS policies to virtual machines that are created on FlexGroup backed datastores.'
+---
+= Assign QoS policies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The provisioning of FlexGroup datastores does not support assigning storage capability profiles to the datastores. But you can assign QoS policies to virtual machines that are created on FlexGroup backed datastores.
+
+*About this task*
+
+The QoS policies can be applied either at a virtual machine level or a datastore level. The QoS policies are required for a datastore to configure throughput (Max and Min IOPS) thresholds. When you set QoS on a datastore it is applied to the virtual machines residing on the datastore and not on the FlexGroup volume. But if you set QoS on all the virtual machines in a datastore, then any individual QoS settings for the virtual machines are overridden. This is applicable only to the virtual machines available in the datastore and not to any migrated or added virtual machines. If you want to apply QoS to newly added or migrated virtual machines of a particular datastore, then you have to manually set the QoS values.
+
+NOTE: You cannot apply QoS settings at a datastore or virtual machine level for datastores that are provisioned on direct storage VM's because ONTAP does not support QoS at storage VM management level.
+
+*Steps*
+
+. On the ONTAP tools homepage, click *Menu* > *Host and Clusters*.
+. Right-click the required datastore or virtual machine and click *NetApp ONTAP tools* > *Assign QoS*.
+. In the Assign QoS dialog box, enter values the required IOPS values, and click *Apply*.

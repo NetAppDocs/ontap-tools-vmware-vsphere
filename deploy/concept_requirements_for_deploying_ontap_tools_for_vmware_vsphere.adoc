@@ -1,0 +1,12 @@
+---
+permalink: deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html
+sidebar: sidebar
+keywords:
+summary: 'You should be aware of the deployment requirements before deploying ONTAP tools, and you should decide the tasks that you want to perform. Based on your tasks, you can choose the deployment model for deploying the ONTAP tools'
+---
+= Requirements for deploying the ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should be aware of the deployment requirements before deploying ONTAP tools, and you should decide the tasks that you want to perform. Based on your tasks, you can choose the deployment model for deploying the ONTAP tools

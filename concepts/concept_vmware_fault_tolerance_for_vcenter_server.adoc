@@ -1,0 +1,24 @@
+---
+permalink: concepts/concept_vmware_fault_tolerance_for_vcenter_server.html
+sidebar: sidebar
+keywords: VSC
+summary: 'The VMware vSphere Fault Tolerance \(FT\) feature provides high availability \(HA\) at a higher level and enables you to protect virtual machines without any loss of data or connections. You must enable or disable vSphere FT for ONTAP tools from your vCenter Server.'
+---
+= VMware vSphere Fault Tolerance
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The VMware vSphere Fault Tolerance (FT) feature provides high availability (HA) at a higher level and enables you to protect virtual machines without any loss of data or connections. You must enable or disable vSphere FT for ONTAP tools from your vCenter Server.
+
+Ensure your vSphere license supports FT with the number of vCPUs needed for ONTAP tools in your environment (at least 2 vCPUs; 4 vCPUs for large scale environments).
+
+vSphere FT enables virtual machines to operate continuously even during server failures. When vSphere FT is enabled on a virtual machine, a copy of the primary virtual machine is automatically created on another host (the secondary virtual machine) that is selected by Distributed Resource Scheduler (DRS). If DRS is not enabled, the target host is selected from the available hosts. vSphere FT operates the primary virtual machine and secondary virtual machine in lockstep mode, with each mirroring the execution state of the primary virtual machine to the secondary virtual machine.
+
+When there is a hardware failure that causes the primary virtual machine to fail, the secondary virtual machine immediately picks up where the primary virtual machine stopped. The secondary virtual machine continues to run without any loss of network connections, transactions, or data.
+
+Your system must meet the CPU requirements, virtual machine limit requirements, and licensing requirements for configuring vSphere FT for your vCenter Server instance.
+
+The procedure to configure HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure HA.
+
+https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-57929CF0-DA9B-407A-BF2E-E7B72708D825.html[VMware vSphere Documentation: Fault Tolerance Requirements, Limits, and Licensing]

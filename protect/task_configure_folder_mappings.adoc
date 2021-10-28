@@ -1,0 +1,35 @@
+---
+permalink: protect/task_configure_folder_mappings.html
+sidebar: sidebar
+keywords:
+summary: 'You must map your folders on the protected site and recovery site to enable communication between them.'
+---
+= Configure folder mappings
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must map your folders on the protected site and recovery site to enable communication between them.
+
+*What you will need*
+
+You must have connected the protected and recovery sites.
+
+*Steps*
+
+. Log in to your vCenter Server, and click on *Site Recovery* > *Sites*.
+. Select your protected site, and then click *Manage*.
+. In the Manage tab, select *Folder Mappings*.
+. Click the image:../media/new_folder_mappings.gif[] icon to create a new folder mapping.
++
+The Create Folder Mapping wizard appears.
+
+. In the Create Folder Mapping wizard, perform the following:
+ .. Select *Automatically Prepare Mappings for Folders with Matching Names*, and click *Next*.
+ .. Select the required data center objects for the protected and recovery sites, and click *Add Mappings*.
+ .. Click *Next* after mappings are created successfully.
+ .. Select the object that was used earlier to create reverse mapping, and then click *Finish*.
+
+*Result*
+
+The Folder Mappings page displays the protected site resources and the recovery site resources. You can follow the same steps for other networks in your environment.

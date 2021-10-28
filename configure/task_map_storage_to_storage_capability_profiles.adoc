@@ -1,0 +1,44 @@
+---
+permalink: configure/task_map_storage_to_storage_capability_profiles.html
+sidebar: sidebar
+keywords:
+summary: 'You can map the datastores that are associated with VASA Provider for ONTAP to storage capability profiles. You can assign a profile to a datastore that is not associated with a storage capability profile.'
+---
+= Map datastores to storage capability profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can map the datastores that are associated with VASA Provider for ONTAP to storage capability profiles. You can assign a profile to a datastore that is not associated with a storage capability profile.
+
+*What you will need*
+
+* You must have registered your VASA Provider instance with ONTAP® tools for VMware vSphere.
+* Virtual Storage Console (VSC) must have already discovered your storage.
+
+You can map traditional datastore with a storage capability profile or change the storage capability profile that is associated with a datastore. VASA Provider does _not_ display any virtual volume (VVol) datastores on the Storage Mappings page. All the datastores that are referred to in this task are traditional datastores.
+
+*Steps*
+
+. From the ONTAP tools Home page, click *Storage Mapping*.
++
+From the Storage Mapping page, you can determine the following information:
+
+ ** The vCenter Server that is associated with the datastore
+ ** How many profiles match the datastore
++
+The Storage Mapping page displays only traditional datastores. This page does not display any VVol datastores or qtree datastores.
+
+ ** Whether the datastore is currently associated with a profile
++
+A datastore can match multiple profiles, but a datastore can be associated with only one profile.
+
+ ** Whether the datastore is compliant with the profile that is associated with it
+
+. To map a storage capability profile to a datastore or to change the existing profile of a datastore, select the datastore.
++
+To locate specific datastores or other information on the Storage Mapping page, you can enter a name or a partial string in the search box. VSC displays the search results in a dialog box. To return to the full display, you should remove the text from the search box, and then click *Enter*.
+
+. From the Actions menu, select *Assign matching profile*.
+. Select the profile that you want to map to the datastore from the list of matching profiles that is provided in the *Assign profile to datastore* dialog box, and then click *OK* to map the selected profile to the datastore.
+. Refresh the screen to verify the new assignment.

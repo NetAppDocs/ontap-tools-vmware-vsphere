@@ -1,0 +1,26 @@
+---
+permalink: manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
+sidebar: sidebar
+keywords:
+summary: 'If you are using the latest version of ONTAP tools for VMware vSphere, then you should migrate your virtual machines that are provisioned with the “MaxThroughput MBPS” or “MaxThroughput IOPS” QoS metrics to new VVol datastores that are provisioned with the “Max IOPS” QoS metrics of the latest version of ONTAP tools.'
+---
+= Migrate virtual machines with older storage capability profiles
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you are using the latest version of ONTAP tools for VMware vSphere, then you should migrate your virtual machines that are provisioned with the "`MaxThroughput MBPS`" or "`MaxThroughput IOPS`" QoS metrics to new VVol datastores that are provisioned with the "`Max IOPS`" QoS metrics of the latest version of ONTAP tools.
+
+*About this task*
+
+With the latest version of ONTAP tools, you can configure QoS metrics for each virtual machine or virtual machine disk (VMDK). The QoS metrics were earlier applied at the ONTAP FlexVol volume level and were shared by all of the virtual machines or VMDKs that were provisioned on that FlexVol volume.
+
+Starting with the 7.2 version of ONTAP tools, the QoS metrics of one virtual machine is not shared with other virtual machines.
+
+NOTE: You must not modify the existing VM Storage Policy as the virtual machines might become non-compliant.
+
+*Steps*
+
+. Create vVols datastores by using a new storage capability profile with the required "`Max IOPS`" value.
+. Create a VM Storage Policy, and then map the new VM Storage Policy with the new storage capability profile.
+. Migrate the existing virtual machines to the newly created VVol datastores by using the new VM Storage Policy.

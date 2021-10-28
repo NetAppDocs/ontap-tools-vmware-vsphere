@@ -1,0 +1,65 @@
+---
+permalink: deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
+sidebar: sidebar
+keywords:
+summary: 'The ONTAP tools for VMware vSphere has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes \(vVols\) datastores with required storage capability profiles for each vVols datastore.'
+---
+= Enable VASA Provider for configuring virtual datastores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP tools for VMware vSphere has the VASA Provider capability enabled by default. You can configure VMware Virtual Volumes (vVols) datastores with required storage capability profiles for each vVols datastore.
+
+*What you will need*
+
+* You must have set up your vCenter Server instance and configured ESXi.
+* You must have deployed ONTAP tools .
+
+*About this task*
+
+If the VASA Provider capability is disabled before upgrading to the 9.7.1 release of ONTAP tools , the VASA Provider capability remains disabled after the upgrade. This release allows you to enable vVols replication feature for vVols datastores.
+
+*Steps*
+
+. Log in to the web user interface of VMware vSphere.
+. From the vSphere Client, click *Menu* > *ONTAP tools Console*.
+. Click *Settings*.
+. Click *Manage Capabilities* in the Administrative Settings tab.
+. In the Manage Capabilities dialog box, select the VASA Provider extension to enable.
+. If you want to use replication capability for vVols datastores, then use the *Enable vVols replication* toggle button.
+. Enter the IP address of ONTAP tools and the administrator password, and then click *Apply*.
++
+NOTE: If VASA Provider status displays as "`Offline`" even after enabling the VASA Provider extension, then check the ``/var/log/vmware/vmware-sps/sps.log` file for any connection errors with VASA Provider or restart the "`vmware-sps`" service.
+
+== Register OnCommand API services with ONTAP 9.6 or earlier releases
+
+If you are using ONTAP 9.6 or earlier, then the vVols dashboard can display the details of VMware Virtual Volumes (vVols) datastores and virtual machines only if you have registered OnCommand API Services for VASA Provider to obtain data for the vVols VM and datastore reports.
+
+*What you will need*
+
+You must have downloaded OnCommand API Services 2.1 or later from the NetApp Support Site.
+
+NOTE: The vVols dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
+
+*Steps*
+
+. From the ONTAP tools home page, click *Settings*.
+. Click *Manage Extension* in the Administrative Settings tab.
+. Use the Register OnCommand API Services slider to enable OnCommand API Services.
+. Enter the IP address, service port, and credentials for OnCommand API Services.
++
+You can also use the Manage VASA Provider Extensions dialog box for the following modifications:
+
+ ** To update OnCommand API Services registration when there is any change to the credentials.
+ ** To unregister OnCommand API Services when you no longer require the vVols dashboard.
++
+You must clear the Register OnCommand API Services checkbox to remove the OnCommand API Services registration for VASA Provider.
+
+. Click *Apply*.
++
+The vVols dashboard displays the metrics for ONTAP 9.6 or earlier SAN vVols datastores only after the registration of OnCommand API Services is complete.
+
+*Related information*
+
+https://mysupport.netapp.com/site/global/dashboard[NetApp Support]

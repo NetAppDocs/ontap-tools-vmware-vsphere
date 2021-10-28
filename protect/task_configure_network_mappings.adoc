@@ -1,0 +1,42 @@
+---
+permalink: protect/task_configure_network_mappings.html
+sidebar: sidebar
+keywords:
+summary: 'You must map your networks on the protected site and the recovery site to enable communication between them.'
+---
+= Configure network mappings
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must configure your resource mappings like VM networks, ESXi hosts, and folders on both sites to enable the mapping of each resource from the protected site to the appropriate resource at the recovery site.
+
+You must complete the following resource configurations:
+
+* Network mappings
+* Folder mappings
+* Resource mappings
+* Placeholder datastores
+
+*What you will need*
+
+You must have connected the protected and recovery sites.
+
+*Steps*
+
+. Log in to your vCenter Server and click on *Site Recovery* > *Sites*.
+. Select your protected site, and then click *Manage*.
+. In the Manage tab, select *Network Mappings*.
+. Click the image:../media/new_network_mappings.gif[] icon to create a new network mapping.
++
+The Create Network Mapping wizard appears.
+
+. In the Create Network Mapping wizard, perform the following:
+ .. Select *Automatically Prepare Mappings for Networks with Matching Names*, and click *Next*.
+ .. Select the required data center objects for the protected and recovery sites, and click *Add Mappings*.
+ .. Click *Next* after mappings are created successfully.
+ .. Select the object that was used earlier to create reverse mapping, and then click *Finish*.
+
+*Result*
+
+The Network Mappings page displays the protected site resources and the recovery site resources. You can follow the same steps for other networks in your environment.

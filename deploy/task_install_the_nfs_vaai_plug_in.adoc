@@ -1,0 +1,42 @@
+---
+permalink: deploy/task_install_the_nfs_vaai_plug_in.html
+sidebar: sidebar
+keywords:
+summary: 'You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration \(VAAI\) using the GUI of ONTAP tools for VMware vSphere.'
+---
+= Install the NFS VAAI plug-in
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integration (VAAI) using the GUI of ONTAP tools for VMware vSphere.
+
+*What you will need*
+
+* You should have downloaded the installation package for the NFS Plug-in for VAAI (``.vib`) from the NetApp Support Site.
++
+https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
+
+* You should have installed ESXi host 6.5 or later and ONTAP 9.1 or later.
+* You should have powered on the ESXi host and mounted an NFS datastore.
+* You should have set the values of the `DataMover.HardwareAcceleratedMove`, `DataMover.HardwareAcceleratedInit`, and `VMFS3.HardwareAcceleratedLocking` host settings to "`1`".
++
+These values are set automatically on the ESXi host when the Recommended Settings dialog box is updated.
+
+* You should have enabled the vstorage option on the storage virtual machine (SVM) by using the `vserver nfs modify -vserver vserver_name -vstorage enabled` command.
+* You should have ESXi 7.0 update1 or later if you are using NetApp NFS VAAI plug-in 2.0.
+
+*Steps*
+
+. Rename the `.vib` file that you downloaded from the NetApp Support Site to NetAppNasPlugin.vib to match the predefined name that VSC uses.
+. Click *Settings* in the ONTAP tools home page.
+. Click *NFS VAAI Tools* tab.
+. Click *Change* in the *Existing version* section.
+. Browse and select the renamed `.vib` file, and then click *Upload* to upload the file to ONTAP tools.
+. In the Install on ESXi Hosts section, select the ESXi host on which you want to install the NFS VAAI plug-in, and then click *Install*.
++
+You should follow the on-screen instructions to complete the installation. You can monitor the installation progress in the Tasks section of vSphere Web Client.
+
+. Reboot the ESXi host after the installation finishes.
++
+When you reboot the ESXi host, VSC automatically detects the NFS VAAI plug-in. You do not have to perform additional steps to enable the plug-in.

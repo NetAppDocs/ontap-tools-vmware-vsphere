@@ -1,0 +1,37 @@
+---
+permalink: protect/task_pair_protected_and_recovery_sites.html
+sidebar: sidebar
+keywords:
+summary: 'You must pair the protected and recovery sites created using your vSphere Client to enable Storage Replication Adapter \(SRA\) to discover the storage systems.'
+---
+= Pair protected and recovery sites
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must pair the protected and recovery sites created using your vSphere Client to enable Storage Replication Adapter (SRA) to discover the storage systems.
+
+*What you will need*
+
+* You must have installed Site Recovery Manager (SRM) on the protected and recovery sites.
+* You must have installed SRA on the protected and recovery sites.
+
+*About this task*
+
+SnapMirror fan-out configurations are those where a source volume is replicated to two different destinations. These create a problem during recovery when SRM needs to recover the virtual machine from destination.
+
+NOTE: Storage Replication Adapter (SRA) does not support fan-out SnapMirror configurations.
+
+*Steps*
+
+. Double-click *Site Recovery* on the vSphere Client home page, and then click *Sites*.
+. Click *Objects* > *Actions* > *Pair Sites*.
+. In the Pair Site Recovery Manager Servers dialog box, enter the address of the protected site's Platform Services Controller, and then click *Next*.
+. In the Select vCenter Server section, do the following:
+ .. Verify that the protected site's vCenter Server appears as a matching candidate to pair.
+ .. Enter the SSO administrative credentials, and then click *Finish*.
+. If prompted, click *Yes* to accept the security certificates.
+
+*Result*
+
+Both the protected and recovery sites will appear in the Objects dialog box.

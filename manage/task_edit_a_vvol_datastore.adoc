@@ -1,0 +1,33 @@
+---
+permalink: manage/task_edit_a_vvols_datastore.html
+sidebar: sidebar
+keywords:
+summary: 'You can edit an existing VMware Virtual Volumes \(vVols\) datastore to change the default storage capability profile. The default storage capability profile is primarily used for Swap vVols.'
+---
+= Edit a vVols datastore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can edit an existing VMware Virtual Volumes (vVols) datastore to change the default storage capability profile. The default storage capability profile is primarily used for Swap vVols.
+
+*Steps*
+
+. From the vSphere Client page, click *Hosts and Clusters*.
+. Right-click the datastore, and then select *NetApp ONTAP tools* > *Edit Properties of vVols Datastore*.
++
+The Edit Properties of vVols Datastore dialog box is displayed.
+
+. Make the required changes.
++
+You can change the default storage capability profile for the vVols datastore by selecting a new profile from the drop-down list in the Edit vVols Datastore dialog box. You can also change the vVols datastore name and description.
++
+NOTE: You cannot change the vCenter Server where the vVols datastore is located.
+
+. When you have made your changes, click *OK*.
++
+A message box asks whether you want to update the vVols datastore.
+
+. Click *OK* to apply your changes.
++
+A success message appears to inform that the vVols datastore has been updated.

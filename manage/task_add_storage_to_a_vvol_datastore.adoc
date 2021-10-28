@@ -1,0 +1,70 @@
+---
+permalink: manage/task_add_storage_to_a_vvols_datastore.html
+sidebar: sidebar
+keywords: virtual volume datastores
+summary: 'You can increase the available storage by using the Add Storage wizard to add FlexVol volumes to an existing VMWare Virtual Volumes \(vVols\) datastore.'
+---
+= Add storage to a vVols datastore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can increase the available storage by using the Add Storage wizard to add FlexVol volumes to an existing VMWare Virtual Volumes (vVols) datastore.
+
+*About this task*
+
+When you add a FlexVol volume, you also have the option of changing the storage capability profile associated with that volume. You can either use the VASA Provider auto-generate feature to create a new profile for the volume, or you can assign one of the existing profiles to the volume.
+
+[NOTE]
+====
+
+* While expanding a vVols datastore with replication capabilities, you cannot create new FlexVol volumes but can only select pre-configured FlexVol volumes from the existing list.
++
+* When cloning a protected virtual machine deployed on datastore with vVols replication fails due to insufficient space, then you should increase the FlexVol volume size.
+* When a vVols datastore is created on a AFF cluster, then you cannot expand the datastore with another FlexVol volume that has auto generate storage capability profile.
+** You can expand the vVols datastore with FlexVol volumes that have pre-created storage capability profiles.
+
+====
+
+*Steps*
+
+. On the vSphere Client Home page, click *Hosts and Clusters*.
+. Right-click the vVols datastore, and then select *NetApp ONTAP tools* > *Expand Storage of vVol Datastore*.
+. On the Expand Storage of vVols Datastore page, you can either add an existing FlexVol volume to the vVols datastore, or create a new FlexVol volume to add to the database.
++
+|===
+| *If you select...*| *Perform the following...*
+a|
+Select volumes
+a|
+
+ .. Select the FlexVol volumes that you want to add to the vVols datastore.
+ .. In the Storage Capability Profiles column, use the drop-down list to either create a new profile based on the FlexVol volumes, or select one of the existing profiles.
++
+The auto-generate feature creates a profile based the storage capabilities that are associated with that FlexVol volume. For example: disk type, high availability, disaster recovery, performance features, and deduplication.
+
+a|
+Create new volumes
+a|
+
+ .. Enter the name, size, and storage capability profile for the FlexVol.
++
+The aggregates are selected by the system based on the storage capability profile selected.
+
+ .. Select the *Auto Grow* option and provide the maximum size.
+ .. Click *ADD* to add the FlexVol to the list of volumes.
+
++
+|===
+*Reminder*: All FlexVol volumes in a vVols datastore must be from the same storage virtual machine (SVM, formerly known as Vserver).
++
+After you create a FlexVol volume, you can edit it by clicking the *Modify* button. You can also delete it.
+
+. Select a default storage capability profile to be used during virtual machine creation, and then click *Next* to review the summary of the storage added to vVols datastore.
+. Click *Finish*.
+
+*Result*
+
+The wizard adds the storage that you specified to the vVols datastore. It displays a success message when it finishes.
+
+NOTE: The Expand Storage of vVols Datastore wizard automatically handles any ESXi storage rescans or any other significant operations that are required. Because a vVols datastore is a logical entity controlled by VASA Provider, adding the FlexVol volume is the only thing you need to do to enlarge the capacity of your storage container.

@@ -1,0 +1,54 @@
+---
+permalink: manage/concept_what_vasa_provider_reports_do.html
+sidebar: sidebar
+keywords: VSC, VASA Provider, and SRA
+summary: 'vVols reports display detailed information about VMware Virtual Volumes \(vVols\) datastores and the virtual machines that are created on these datastores. The vVols dashboard enables you to review and identify potential issues with the vVols datastores and virtual machines in your vCenter Server.'
+---
+= vVols reports
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+vVols reports display detailed information about VMware Virtual Volumes (vVols) datastores and the virtual machines that are created on these datastores. The vVols dashboard enables you to review and identify potential issues with the vVols datastores and virtual machines in your vCenter Server.
+
+You can view, organize, and export reports. The data for the vVols datastores and virtual machines report is provided by the ONTAP along with OnCommand API Services.
+
+vVols provides the following pre-canned reports:
+
+* vVols Datastore Report
+* vVols VM Report
+
+*vVols Datastore Report*
++
+The vVols Datastore Report menu provides information about the following parameters for datastores:
+
+ ** vVols datastore name
+ ** Free space
+ ** Used space
+ ** Total space
+ ** Percentage of space utilized
+ ** Percentage of space available
+ ** IOPS
+ ** Latency
+Performance metrics are available for NFS based vVols datastores on ONTAP 9.8 and later. You can also verify the time at which the report was generated. The vVols Datastore Report menu enables you to organize the report as per your requirement, and then export the organized report by using the *Export to CSV* button. Each SAN vVols datastore name in the report is a link that navigates to the Monitor tab of the selected SAN vVols datastore, which you can use to view the performance metrics.
+
+*vVols Virtual Machine Report*
++
+The vVols Virtual Machine Summary Report menu provides the performance metrics for all of the virtual machines that use the SAN vVols datastores that are provisioned by VASA Provider for ONTAP for a selected vCenter Server. The virtual machine metrics displayed in VM reports is historical data that is collected every 10 minutes for virtual machines on vVols datastores. "`Last refresh time` and "`Next refresh time`" are added to the table to provide information on when data was collected and when will be the next data collection.
+
+ ** Name of the virtual machine
+ ** Committed capacity
+ ** Uptime
+ ** IOPS
+ ** Throughput
++
+The report displays whether the virtual machine is powered on or powered off.
+
+ ** Logical space
+ ** Host
+ ** Power state
+ ** Latency
++
+The report displays the latency for virtual machines across all of the vVols datastores that are associated with the virtual machines.
+
+Each virtual machine name in the report is a link to the Monitor tab of the selected virtual machine. You can organize the virtual machine report according to your requirement, export the report in .CSV format, and then save the report on your local system. The timestamp of the report is appended to the saved report.
