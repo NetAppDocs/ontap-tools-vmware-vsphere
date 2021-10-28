@@ -2,14 +2,14 @@
 permalink: concepts/concept_virtual_storage_console_overview.html
 sidebar: sidebar
 keywords:
-summary: 'The ONTAP tools for VMware vSphere provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server.'
+summary: 'ONTAP tools for VMware vSphere provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server.'
 ---
 = ONTAP tools overview
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP tools for VMware vSphere provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server.
+ONTAP tools for VMware vSphere provides end-to-end life cycle management for virtual machines in VMware environments that use NetApp storage systems. It simplifies storage and data management for VMware environments by enabling administrators to directly manage storage within the vCenter Server.
 
 With vSphere 6.5, VMware introduced a new HTML5-based client called vSphere Client. The 9.6 release of ONTAP tools supports only vSphere Client. The ONTAP tools integrates with vSphere Client and enables you to use single sign-on (SSO) services. In an environment with multiple vCenter Server instances, each vCenter Server instance that you want to manage must have its own registered instance of VSC.
 
