@@ -46,7 +46,7 @@ VASA Provider for ONTAP uses VMware vSphere APIs for Storage Awareness (VASA) to
 * Set alarms to warn you when volumes and aggregates are approaching the threshold limits
 * Monitor the performance of virtual machine disks (VMDKs) and the virtual machines that are created on vVols datastores
 
-If you are using ONTAP 9.6 or earlier, then VASA Provider communicates with the vCenter Server by using VASA APIs and communicates with ONTAP by using NetApp APIs called ZAPIs. To view the vVols dashboard for ONTAP 9.6 and earlier, you must have installed and registered OnCommand API Services with your vCenter Server. If you are using ONTAP 9.7, then you do not require OnCommand API Services to be registered with VASA Provider to view the vVols dashboard.
+If you are using ONTAP 9.6 or earlier, then VASA Provider communicates with the vCenter Server by using VASA APIs and communicates with ONTAP by using NetApp APIs called ZAPIs. To view the vVols dashboard for ONTAP 9.6 and earlier, you must have installed and registered OnCommand API Services with your vCenter Server. If you are using ONTAP 9.7 and later versions, then you do not require OnCommand API Services to be registered with VASA Provider to view the vVols dashboard.
 
 NOTE: For ONTAP 9.6 and earlier, VASA Provider requires a dedicated instance of OnCommand API Services. One instance of OnCommand API Services cannot be shared with multiple VASA Provider instances.
 

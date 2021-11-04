@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP Tools for VMware vSphere
+  name: ONTAP tools for VMware vSphere
   internal:
     pdf_enabled: true
   prod:
