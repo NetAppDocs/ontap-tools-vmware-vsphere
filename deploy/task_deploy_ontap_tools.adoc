@@ -45,7 +45,7 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
 |===
-| *Location*| *Action*
+| *Location* | *Action*
 a|
 URL
 a|
