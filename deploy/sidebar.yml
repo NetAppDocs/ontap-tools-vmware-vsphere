@@ -1,4 +1,4 @@
-section: Deploy
+section: deploy
 title: Deploy and upgrade ONTAP tools
 entries:
   - title: Deployment workflow for new users of ONTAP tools for VMware vSphere
