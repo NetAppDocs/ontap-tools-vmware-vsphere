@@ -5,7 +5,7 @@ keywords: QSG, ONTAP tools for VMware vSphere, Quick start guide, Installing
 summary: Provides instructions for deploying and initializing ONTAP tools for VMware vSphere.
 ---
 
-= Deploying ONTAP tools
+= ONTAP tools for VMware vSphere Quick Start Guide
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -90,7 +90,7 @@ You must deploy the `.ova` file on both the source and destination sites if you 
 +
 You can view the progress of the deployment from the *Tasks* tab, and wait for deployment to complete.
 
-=== Deploying SRA on SRM
+=== Deploying SRA on SRM 
 You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 
 ==== Installing SRA on Windows SRM server

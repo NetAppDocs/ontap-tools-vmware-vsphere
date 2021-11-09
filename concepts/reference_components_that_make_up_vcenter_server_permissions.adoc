@@ -33,7 +33,7 @@ image::../media/permission_updated_graphic.gif[]
 
 == Privileges
 
-Two kinds of privileges are associated with ONTAP® tools for VMware vSphere:
+Two kinds of privileges are associated with ONTAP tools for VMware vSphere:
 
 * Native vCenter Server privileges
 +
@@ -52,7 +52,7 @@ If you change the privileges within a permission, the user that is associated wi
 |===
 | *Privilege* | *Roles* | *Tasks*
 a|
-*NetApp ONTAP tools Console* > *View*
+NetApp ONTAP tools Console > View
 a|
 
 * VSC Administrator
@@ -62,7 +62,7 @@ a|
 a|
 All the VSC and VASA Provider specific tasks require the View Privilege.
 a|
-*NetApp Virtual Storage Console* > *Policy Based Management* > *Management* or *privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label* > *Management*
+NetApp Virtual Storage Console > Policy Based Management > Management or privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label > Management
 a|
 VSC Administrator
 a|

@@ -13,7 +13,7 @@ To simplify working with vCenter Server privileges and role-based access control
 
 The standard VSC roles have both the required VSC-specific privileges and the native vCenter Server privileges that are required for users to perform VSC tasks. In addition, the roles are set up so that they have the required privileges across all supported versions of the vCenter Server.
 
-As an administrator, you can assign these roles to users, as required.
+As an administrator, you can assign these roles to users as required.
 
 NOTE: When you upgrade VSC to the latest version, the standard roles are automatically upgraded to work with the new version of VSC.
 
@@ -44,7 +44,7 @@ Provides all of the native vCenter Server privileges and VSC-specific privileges
 |===
 
 == Guidelines for using VSC standard roles
-When you work with standard ONTAP® tools for VMware vSphere roles, there are certain guidelines you should follow.
+When you work with standard ONTAP tools for VMware vSphere roles, there are certain guidelines you should follow.
 
 You should not directly modify the standard roles. If you do, VSC will overwrite your changes each time you upgrade VSC. The installer updates the standard role definitions each time you upgrade VSC. Doing this ensures that the roles are current for your version of VSC as well as for all supported versions of the vCenter Server.
 
