@@ -20,7 +20,7 @@ If plug-ins are not updated automatically after deploying or upgrading ONTAP too
 |===
 | *If you are using...*| *Perform the following...*
 a|
-*Windows vCenter server *
+Windows vCenter server
 a|
 Remove the following folders `com.netapp.vasa.vvol.webclient-x.x.x.xxxx`, `com.netapp.nvpf.webclient-x.x.x.xxxx`, and `com.netapp.vsch5-x.x.x.xxxx` located at:
 
@@ -28,7 +28,7 @@ Remove the following folders `com.netapp.vasa.vvol.webclient-x.x.x.xxxx`, `com.n
  ** vSphere Client(HTML5) path: `C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity`
 
 a|
-*VCSA *
+VCSA
 a|
 
  .. SSH into the VCSA appliance.
