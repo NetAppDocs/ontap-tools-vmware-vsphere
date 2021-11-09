@@ -74,13 +74,13 @@ ONTAP tools can be used with either a Windows vCenter Server or with a VMware vC
 |===
 | *Optional requirements for SRA*
 | If you are deploying the virtual appliance for use with VMware Site Recovery Manager, then you must have:
-| * Downloaded the .msi file for the SRA plug-in only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution. column 1 |
-| * Downloaded the `.tar.gz` file for SRA if you are using the SRM appliance.
+ * Downloaded the `.msi` file for the SRA plug-in only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution. column 1
+ * Downloaded the `.tar.gz` file for SRA if you are using the SRM appliance.
 |===
 
 == Deploying the ONTAP tools
 .Steps
-. Download the `.ova` file from the https://mysupport.netapp.com/site/products/all/details/vsc/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
+. Download the `.ova` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
 +
 You must deploy the `.ova` file on both the source and destination sites if you are deploying SRA.
 . Log in to the vSphere Web Client, select *Home* > *Host & Clusters*.
@@ -91,9 +91,7 @@ You must deploy the `.ova` file on both the source and destination sites if you 
 You can view the progress of the deployment from the *Tasks* tab, and wait for deployment to complete.
 
 === Deploying SRA on SRM
-
 You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
-
 
 ==== Installing SRA on Windows SRM server
 .Steps
@@ -103,7 +101,7 @@ You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 
 ==== Uploading and configuring SRA on SRM Appliance
 .Steps
-. Download the `.tar.gz` file from the https://mysupport.netapp.com/site/products/all/details/vsc/downloads-tab[NetApp Support Site^].
+. Download the `.tar.gz` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^].
 . On the SRM Appliance screen, click *Storage Replication Adapter* > *New Adapter*.
 . Upload the `.tar.gz` file to SRM.
 . Rescan the adapters to verify that the details are updated in the SRM Storage Replication Adapters page.
@@ -135,8 +133,8 @@ VASA Provider is enabled by default. If you want to use replication capability f
 You can refer to the _Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere Deployment and Setup Guide_ for details on additional configuration, adding storage systems, and setting up role-based access control for your vSphere objects.
 
 == Where to find additional information
-* https://www.netapp.com/support-and-training/documentation/virtual-storage-console-documentation/?&access=a[ONTAP tools for VMware vSphere Resources page^]
-* https://docs.netapp.com/vapp-98/index.jsp[ONTAP tools for VMware Documentation^]
+* https://www.netapp.com/support-and-training/documentation/ontap-tools-for-vmware-vsphere-documentation/[ONTAP tools for VMware vSphere Resources page^]
+* https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware Documentation^]
 * https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html[VMware Site Recovery Manager 8.2^]
-* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
+* https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation Center^]
 // Give at least three fun/interesting facts about you in a bulleted or numbered list
