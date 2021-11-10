@@ -78,7 +78,8 @@ ONTAP tools can be used with either a Windows vCenter Server or with a VMware vC
  * Downloaded the `.tar.gz` file for SRA if you are using the SRM appliance.
 |===
 
-== Deploying the ONTAP tools
+== Deploying ONTAP tools
+
 .Steps
 . Download the `.ova` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
 +
@@ -90,16 +91,19 @@ You must deploy the `.ova` file on both the source and destination sites if you 
 +
 You can view the progress of the deployment from the *Tasks* tab, and wait for deployment to complete.
 
-=== Deploying SRA on SRM 
+=== Deploying SRA on SRM
+
 You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 
 ==== Installing SRA on Windows SRM server
+
 .Steps
 . Download the `.msi` installer for the SRA plug-in from the NetApp Support Site.
 . Double-click the downloaded `.msi` installer for the SRA plug-in and follow the on-screen instructions.
 . Enter the IP address and password of your deployed virtual appliance to complete the installation of the SRA plug-in on the SRM server.
 
 ==== Uploading and configuring SRA on SRM Appliance
+
 .Steps
 . Download the `.tar.gz` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^].
 . On the SRM Appliance screen, click *Storage Replication Adapter* > *New Adapter*.
@@ -113,6 +117,7 @@ You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 A success message confirming that the storage credentials are stored is displayed.
 
 ==== Updating SRA credentials
+
 .Steps
 . Delete the contents of the /srm/sra/conf directory using:
 .. `cd /srm/sra/conf`
@@ -122,6 +127,7 @@ A success message confirming that the storage credentials are stored is displaye
 .. `perl command.pl -I <va-IP> administrator <va-password>`
 
 ==== Enabling VASA Provider and SRA
+
 .Steps
 . Log in to the vSphere web client by using the IP address that you specified during deployment.
 . Click the *OTV* icon, and enter the username and password specified during deployment, click *Sign In*.
@@ -133,6 +139,7 @@ VASA Provider is enabled by default. If you want to use replication capability f
 You can refer to the _Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere Deployment and Setup Guide_ for details on additional configuration, adding storage systems, and setting up role-based access control for your vSphere objects.
 
 == Where to find additional information
+
 * https://www.netapp.com/support-and-training/documentation/ontap-tools-for-vmware-vsphere-documentation/[ONTAP tools for VMware vSphere Resources page^]
 * https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware Documentation^]
 * https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html[VMware Site Recovery Manager 8.2^]
