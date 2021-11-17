@@ -11,8 +11,6 @@ sidebar:
       url: /index.html
     - title: Release notes
       url: /release_notes.html
-    - title: Quick Start Guide
-      url: /qsg.html
     - section: concepts
     - section: deploy
     - section: configure

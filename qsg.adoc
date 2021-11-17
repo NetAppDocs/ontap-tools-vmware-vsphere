@@ -5,7 +5,7 @@ keywords: QSG, ONTAP tools for VMware vSphere, Quick start guide, Installing
 summary: Provides instructions for deploying and initializing ONTAP tools for VMware vSphere.
 ---
 
-= ONTAP tools for VMware vSphere Quick Start Guide
+= ONTAP tools for VMware vSphere Quick Start
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -25,6 +25,7 @@ You deploy the plug-in as a virtual appliance, which reduces your effort of inst
 
 ONTAP tools can be used with either a Windows vCenter Server or with a VMware vCenter Server Virtual Appliance (vCSA). You must be deploy the ONTAP tools on a supported vSphere that includes ESXi system.
 
+The minimum space and host sizing requirements are:
 [cols=2*,options="header", cols="25,75"]
 |===
 | *System* | *Minimum requirements*
@@ -33,6 +34,7 @@ ONTAP tools can be used with either a Windows vCenter Server or with a VMware vC
 | Host sizing | Recommended memory: 12 GB, Recommended CPUs: 2
 |===
 
+You should be aware of the following licenses:
 [cols=2*,options="header", cols="25,75"]
 |===
 | *License* | *Description*
@@ -41,6 +43,7 @@ ONTAP tools can be used with either a Windows vCenter Server or with a VMware vC
 | FlexClone  | (optional) Required for performing test failover operations for SRA and for vVols operations of VASA Provider.
 |===
 
+ONTAP tools uses the following default bidirectional TCP ports:
 |===
 | *Additional requirements* | *Description column*
 
@@ -50,18 +53,18 @@ ONTAP tools can be used with either a Windows vCenter Server or with a VMware vC
 | 7 | VSC sends an echo request to ONTAP to verify reachability and is required only when adding storage system and can be disabled later.
 |===
 
+Minimum storage and application requirements:
 |===
 | *Storage, host, and applications* | *Version requirements*
 
 | ONTAP | ONTAP 9.1, 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
-| VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in applications, and databases column 1 | See the https://mysupport.netapp.com/matrix/#welcome[Interoperability Matrix Tool^]
+| VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in applications, and databases column 1 | See the https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool^]
 |===
 
 
-|===
-| *ONTAP tools requirements*
+=== ONTAP tools requirements
 
-| * Configure and set up your vCenter Server environment.
+ * Configure and set up your vCenter Server environment.
  * Download the .ova file.
  * The login credentials for your vCenter Server instance.
  * Delete the browser cache to avoid any browser cache issue during the deployment of the ONTAP tools.
@@ -69,14 +72,12 @@ ONTAP tools can be used with either a Windows vCenter Server or with a VMware vC
  * A valid DNS hostname for the virtual appliance.
  * Download and install OnCommand API Services for ONTAP 9.6 or earlier if you want to view the vVols dashboard.
   You do not need to register OnCommand API Services with VASA Provider if you are using ONTAP 9.7 or later.
-|===
 
-|===
-| *Optional requirements for SRA*
-| If you are deploying the virtual appliance for use with VMware Site Recovery Manager, then you must have:
+=== Optional requirements for SRA
+
+If you are deploying the virtual appliance for use with VMware Site Recovery Manager, then you must have:
  * Downloaded the `.msi` file for the SRA plug-in only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution. column 1
  * Downloaded the `.tar.gz` file for SRA if you are using the SRM appliance.
-|===
 
 == Deploying ONTAP tools
 
@@ -136,12 +137,4 @@ A success message confirming that the storage credentials are stored is displaye
 VASA Provider is enabled by default. If you want to use replication capability for vVols datastores, then use the Enable vVols replication toggle button.
 . Enter the IP address of the ONTAP tools and the administrator password, and then click *Apply*.
 
-You can refer to the _Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere Deployment and Setup Guide_ for details on additional configuration, adding storage systems, and setting up role-based access control for your vSphere objects.
-
-== Where to find additional information
-
-* https://www.netapp.com/support-and-training/documentation/ontap-tools-for-vmware-vsphere-documentation/[ONTAP tools for VMware vSphere Resources page^]
-* https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware Documentation^]
-* https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html[VMware Site Recovery Manager 8.2^]
-* https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation Center^]
 // Give at least three fun/interesting facts about you in a bulleted or numbered list
