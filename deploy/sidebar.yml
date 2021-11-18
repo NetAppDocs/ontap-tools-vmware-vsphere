@@ -5,7 +5,7 @@ entries:
     url: /deploy/concept_installation_workflow_for_new_users.html
   - title: Deployment workflow for existing users of ONTAP tools
     url: /deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html
-  - title: Quick start for ONTAP tools
+  - title: ONTAP tools Quick start
     url: /qsg.html
   - title: Requirements for deploying the ONTAP tools
     entries:

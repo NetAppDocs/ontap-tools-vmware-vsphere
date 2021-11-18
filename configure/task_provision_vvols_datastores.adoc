@@ -15,7 +15,7 @@ You can provision a vVols datastore using the Provision Datastore wizard only if
 
 * You should ensure that the subnet details of all the networks to which the ESXi hosted is connected is entered in the Kaminoprefs.xml.
 +
-See *Enabling datastore mounting across different subnets* section in _ONTAP tools for VMware vSphere 9.8 Deployment and Setup Guide_.
+See *Enabling datastore mounting across different subnets* section.
 
 * You should configure similar replication policy and schedule on the datastores at both the source and target sites for reverse replication to be successful.
 
