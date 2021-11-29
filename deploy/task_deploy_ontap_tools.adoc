@@ -74,6 +74,8 @@ link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Cl
 
 NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
+link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
+
 *Related information*
 
 https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Storage_Software%2FVirtual_Storage_Console_for_VMware_vSphere%2FError_during_fresh_deployment_of_virtual_appliance_for_VSC%252C_VASA_Provider%252C_and_SRA[Error during fresh deployment of virtual appliance for VSC, VASA Provider, and SRA]
