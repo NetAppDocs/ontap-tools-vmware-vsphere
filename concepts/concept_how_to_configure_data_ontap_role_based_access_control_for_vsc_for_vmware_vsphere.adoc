@@ -63,8 +63,4 @@ You can create only Policy Based Management at the cluster level. This role enab
 
 SRA classifies the ONTAP privileges into a SAN or NAS role at either the cluster level or the SVM level. This enables users to run SRM operations.
 
-NOTE: You must refer to the NetApp knowledge base articles if you want to manually configure roles and privileges using ONTAP commands.
-
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/VSC%2C_VASA%2C_and_SRA_7.0_ONTAP_RBAC_Configuration_Version_1[VSC, VASA, and SRA 7.0 ONTAP RBAC Configuration]
-
 VSC performs an initial privilege validation of ONTAP RBAC roles when you add the cluster to VSC. If you have added a direct SVM storage IP, then VSC does not perform the initial validation. VSC checks and enforces the privileges later in the task workflow.
