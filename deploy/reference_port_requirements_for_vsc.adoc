@@ -13,12 +13,12 @@ By default, Virtual Storage Console (VSC) uses designated ports to enable commun
 
 For firewalls other than Windows, you should manually grant access to specific ports that VSC uses. If you do not grant access to these ports, an error message such as the following is displayed.
 
-_Unable to communicate with the server_
+`Unable to communicate with the server.`
 
 VSC uses the following default bidirectional TCP ports:
 
 |===
-| *Default port number*|*Description* 
+| *Default port number*|*Description*
 a|
 9083
 a|

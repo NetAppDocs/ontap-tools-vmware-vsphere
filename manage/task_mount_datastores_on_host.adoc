@@ -15,7 +15,7 @@ Mounting a datastore provides storage access to additional hosts. You can mount 
 
 You must ensure that the subnet details of all the networks to which the ESXi hosted is connected is entered in the `Kaminoprefs.xml`.
 
-See Enabling datastore mounting across different subnets section in _VSC 9.6 Deployment and Setup Guide_.
+See Enabling datastore mounting across different subnets section.
 
 *Steps*
 

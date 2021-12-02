@@ -1,4 +1,4 @@
- ---
+---
 permalink: manage/task_resize_datastores.html
 sidebar: sidebar
 keywords:
