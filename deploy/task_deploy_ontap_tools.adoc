@@ -17,16 +17,13 @@ You should deploy ONTAP tools in your environment, and specify the required para
 +
 NOTE: ONTAP tools can be registered either with a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
 +
-https://mysupport.netapp.com/matrix/imt.jsp?components=97563;&solution=56&isHWU&src=IMT[Interoperability Matrix Tool: VSC 9.7]
+https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool: OTV 9.8]
 
 * You must have configured and set up your vCenter Server environment.
 * You must have set up an ESXi host for your virtual machine.
 * You must have downloaded the _.ova_ file.
 * You must have the administrator login credentials for your vCenter Server instance.
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
-+
-link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
-
 * You must have enabled Internet Control Message Protocol (ICMP ).
 +
 If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
@@ -45,7 +42,7 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
 |===
-| *Location*| *Action*
+| *Location* | *Action*
 a|
 URL
 a|
@@ -58,7 +55,7 @@ Select the _.ova_ file for ONTAP tools from the saved location.
 
 . Enter the details to customize the deployment wizard.
 +
-See link:../deploy/reference_deployment_customization_requirements.html[Deployment customization considerations] for complete details.
+See link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html[Deployment customization considerations] for complete details.
 
 . Review the configuration data, and then click *Next* to finish deployment.
 +
@@ -77,7 +74,7 @@ link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Cl
 
 NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
-link:../deploy/task_register_oncommand_api_services_with_ONTAP_tools.html[Registering OnCommand API Services with ONTAP tools]
+link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
 
 *Related information*
 
