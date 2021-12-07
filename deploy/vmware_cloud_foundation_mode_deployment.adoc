@@ -1,0 +1,25 @@
+---
+permalink: deploy/vmware_cloud_foundation_mode_deployment.html
+sidebar: sidebar
+keywords:
+summary: 'ONTAP tools for VMware vSphere can be deployed in VMware Cloud foundation environment.'
+---
+= VMware Cloud Foundation mode of deployment for ONTAP tools
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+ONTAP tools for VMware vSphere can be deployed in VMware Cloud Foundation (VCF) environment. The main objective of VCF deployment is to use ONTAP tools in a cloud setup and create containers without vCenter Server.
+
+The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add storage systems and create vVols datastores and FlexVol volumes using REST APIs. You can only create vVols datastores in the VCF deployment mode.
+
+To create container, you need to use REST APIs customized for VCF deployment. The REST APIs can be accessed from the Swagger interface after the deployment is complete.
+
+The APIs that are available are:
+<<TBD>>
+
+If you want to use ONTAP tools to perform other workflows like creating storage capability profiles or disaster recovery, then you can register with vCenter Server using the register.html page.
+
+The VCF deployment of ONTAP tools permits you to only perform the deployment, datastore creation, and container creation workflows. But the limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
+
+link:../deploy/task_deploy_ontap_tools.html[How to deploy ONTAP tools]

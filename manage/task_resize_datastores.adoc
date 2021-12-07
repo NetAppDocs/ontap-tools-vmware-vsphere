@@ -17,6 +17,8 @@ If you want VSC to resize the containing volume when it resizes the VMFS datasto
 
 You can increase or decrease the size of an NFS datastore but for a VMFS datastore, you can only increase the size. Resizing of datastore is also supported for FlexGroup datastores with auto grow and shrink option. A FlexGroup that is part of a traditional datastore and FlexVol volume that is part of a vVols datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup and FlexVol volumes.
 
+NOTE: If you are using All SAN Array (ASA) type storage platforms with ONTAP 9.9.1 or later, only then you can create vVols datastores with vmdk size greater than 16TB.
+
 *Steps*
 
 . From the vSphere Client Home page, click *Hosts and Clusters*.
