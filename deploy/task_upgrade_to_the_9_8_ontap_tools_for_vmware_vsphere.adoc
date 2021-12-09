@@ -13,7 +13,7 @@ You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your 
 
 *What you will need*
 
-* You must have downloaded the _.iso_ file for the 9.8 release of ONTAP tools.
+* You must have downloaded the _.iso_ file for the latest release of ONTAP tools.
 * You must have reserved at least 12 GB of RAM for the ONTAP tools to work optimally after the upgrade.
 * You must clean the vSphere Client browser cache.
 +
@@ -55,5 +55,6 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
   * If upgrading from an earlier version to the 9.8 version of ONTAP tools, it is found that the `vvol.rebalance.threshold` property is missing in the `vvol.properties file.
 +
 The default value of the property is set to 85%.
-
+ * After you upgrade to the latest OTV(9.10) release that has FIPS enabled but you have a older version of vCenter where FIPS is not supported, the deployment will still work.
+ But if you upgrade your vCenter to the latest FIPS supported version and you have an earlier version of ONTAP tools, then the deployment will work only of FIPS is disabled on the vCenter.
 ====

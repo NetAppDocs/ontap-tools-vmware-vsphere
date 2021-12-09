@@ -27,9 +27,10 @@ An existing datastore does not have replication groups created.
 . Execute the REST API command <<TBD>> to configure replication group for existing datastore.
 . Create VM Storage policy for existing vVols datastore with the storage capability profile that was used to create the datastore.
 +
- Add the replication policy, replication schedule, and compatible datastore from the available list.
-. Access the unprotected virtual machine and edit the VM storage policy.
-. Select the VM Storage policy and datastore.
-. Add the replication group to the unprotected virtual machine.
+Add the replication policy, replication schedule, and compatible datastore from the available list.
+
+ .. Access the unprotected virtual machine and edit the VM storage policy.
+ .. Select the VM Storage policy and datastore.
+ .. Add the replication group to the unprotected virtual machine.
 
 You should perform the same steps on the destination site.
