@@ -35,4 +35,5 @@ Add the replication policy, replication schedule, and compatible datastore from 
 
 image::../media/vvols_replication_existing_datastore.png[]
 
+
 You should perform the same steps on the destination site.
