@@ -43,7 +43,7 @@ If you have the VASA Provider deployment, then after the upgrade from existing s
 
 If you are having 7.2 or 7.2.1 release of ONTAP tools in your setup, then you cannot directly upgrade to 9.7P1 or later release of the ONTAP tools. You must first upgrade your existing setup to the 9.7 release of ONTAP tools and then upgrade to the latest release.
 
-If you are going to deploy the latest release of ONTAP tools, you must see the topic "`Requirements for deploying the ONTAP tools.`" The topic "`Upgrading to the 9.8 release of ONTAP tools`" has information on performing an in-place upgrade.
+If you are going to deploy the latest release of ONTAP tools, you must see the topic "`Requirements for deploying the ONTAP tools.`" The topic "`Upgrading to the latest release of ONTAP tools`" has information on performing an in-place upgrade.
 
 *Related information*
 
