@@ -33,4 +33,6 @@ Add the replication policy, replication schedule, and compatible datastore from 
  .. Select the VM Storage policy and datastore.
  .. Add the replication group to the unprotected virtual machine.
 
+image::../media/vvols_replication_existing_datastore.png[]
+
 You should perform the same steps on the destination site.
