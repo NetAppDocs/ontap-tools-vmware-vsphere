@@ -18,6 +18,6 @@ To create container, you need to use REST APIs customized for VCF deployment. Th
 The APIs that are available are:
 <<TBD>>
 
-The VCF deployment of ONTAP tools allows only deployment and container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the register.html page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
+The VCF deployment of ONTAP tools allows only deployment and container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the Register.html page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
 
 link:../deploy/task_deploy_ontap_tools.html[How to deploy ONTAP tools]
