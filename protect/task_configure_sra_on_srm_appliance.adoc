@@ -23,8 +23,8 @@ The configuration of SRA on SRM Appliance stores the SRA credentials in the SRM 
 
 . Log in using administrator account to the SRM Appliance using putty.
 . Switch to the root user using the command: `su root`
-. At the log location enter the command to get the docker ID used by SRA docker `ps -l`
-. To login to the container ID, enter command docker `exec -it -u srm <container id> sh`
-. Configure SRM with the ONTAP tools IP address and password using the command: `perl command.pl -I <va-IP> administrator <va-password>``
+. At the log location enter the command to get the docker ID used by SRA: `docker ps -l`
+. To login to the container ID, enter command: `docker exec -it -u srm <container id> sh`
+. Configure SRM with the ONTAP tools IP address and password using the command: `perl command.pl -I <va-IP> administrator <va-password>`
 +
 A success message confirming that the storage credentials are stored is displayed. SRA can communicate with SRA server using the provided IP address, port and credentials.
