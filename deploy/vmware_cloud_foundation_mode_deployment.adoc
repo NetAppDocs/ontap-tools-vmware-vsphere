@@ -86,4 +86,6 @@ You can only work with vVols datastores in the VCF deployment mode. To create co
 
 The VCF deployment of ONTAP tools allows only container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the Register.html page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
 
+image: VCF_deployment.png[VMware Cloud Foundation deployment workflow]
+
 link:../deploy/task_deploy_ontap_tools.html[How to deploy ONTAP tools]
