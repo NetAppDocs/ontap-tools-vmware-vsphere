@@ -9,7 +9,7 @@ summary: 'The 9.8 release of ONTAP tools supports a command to rebalance FlexVol
 :imagesdir: ../media/
 
 [.lead]
-The 9.8 release of ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.
+ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.
 
 The rebalancing of vVols datastore is performed by LUN move or file move. The criteria considered during vVols rebalancing is:
 

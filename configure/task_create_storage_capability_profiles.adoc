@@ -13,7 +13,7 @@ You can use VSC to manually create storage capability profiles, automatically ge
 
 *What you'll need*
 
-You must have registered your VASA Provider instance with ONTAP® tools for VMware vSphere.
+You must have registered your VASA Provider instance with ONTAP tools for VMware vSphere.
 
 After setting up a profile, you can edit the profile as required.
 
@@ -55,7 +55,11 @@ If you have enabled "`linked`" mode for your vCenter Servers, then you must sele
 a|
 Platform
 a|
-You can select your storage system to have either the AFF or FAS platform type.     The options on the subsequent screens are updated based on your selection of the type of storage system.
+You can select your storage system to have either the AFF or FAS platform type. The options on the subsequent screens are updated based on your selection of the type of storage system.
+a|
+Protocol
+a|
+You can select from the available protocols listed based on the platform selected for the storage system. While configuring virtual machines you can configure VM storage policies with storage capability profile and the protocol field filters datastores based on specific protocol. The field 'Any' allows you to work with all protocols.
 a|
 Performance
 a|
@@ -64,7 +68,7 @@ You can set traditional QoS policies for your storage system by using the Perfor
  ** When you select *None*, a QoS policy with no limit (infinite) is applied to a data VVol.
  ** When you select *QoS Policy Group*, then a traditional QoS policy is applied to a VVol.
 +
-You can set the value for *Max IOPS* and *Min IOPS* which enables you to use the QoS functionality. If you select Infinite IOPS, the Max IOPS field is disabled. When applied for a traditional datastore, a QoS policy with "`Max IOPS`" value is created and assigned to a FlexVol volume. When used with a VVol datastore, a QoS policy with Max IOPS and Min IOPS values is created for each data VVol.
+You can set the value for *Max IOPS* and *Min IOPS* which enables you to use the QoS functionality. If you select Infinite IOPS, the Max IOPS field is disabled. When applied for a traditional datastore, a QoS policy with "`Max IOPS`" value is created and assigned to a FlexVol volume. When used with a vVols datastore, a QoS policy with Max IOPS and Min IOPS values is created for each data vVols datastore.
 +
 *NOTE*:
 
@@ -87,10 +91,8 @@ Deduplication and compression are enabled by default for AFF storage and cannot 
 +
 The tiering attribute enables the use of volumes that are part of a FabricPool-enabled aggregate (supported by VASA Provider for AFF systems with ONTAP 9.4 and later). You can configure one of the following policies for the tiering attribute:
 
- ** Any: Allows use of this storage capability profile with any FlexVol volume whether Fabric Pool is used or not
  ** None: Prevents volume data from being moved to the capacity tier
- ** Snapshot-Only: Moves user data blocks of volume Snapshot copies that are not associated with the active file system to the capacity tier
- ** Auto: Moves cold user data blocks in the Snapshot copies and the active file system to the capacity tier
+ ** Snapshot: Moves user data blocks of volume Snapshot copies that are not associated with the active file system to the capacity tier
 
 +
 |===

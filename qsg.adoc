@@ -57,7 +57,7 @@ Minimum storage and application requirements:
 |===
 | *Storage, host, and applications* | *Version requirements*
 
-| ONTAP | ONTAP 9.1, 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
+| ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
 | VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in applications, and databases column 1 | See the https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool^]
 |===
 
