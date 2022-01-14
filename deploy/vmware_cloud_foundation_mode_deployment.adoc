@@ -11,7 +11,7 @@ summary: 'ONTAP tools for VMware vSphere can be deployed in VMware Cloud foundat
 [.lead]
 ONTAP tools for VMware vSphere can be deployed in VMware Cloud Foundation (VCF) environment. The main objective of VCF deployment is to use ONTAP tools in a cloud setup and create containers without vCenter Server.
 
-The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add storage systems and create containers using REST APIs. A new API is introduced to generate the _appliance-api-token_ that authenticates API calls. Some existing APIs are modified to include the _appliance-api-token_ header.
+The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add storage systems and create containers using REST APIs. A new API is introduced to generate the _appliance-api-token_ that authenticates API calls. Some of the existing APIs are modified to include the _appliance-api-token_ header.
 
 The APIs available for VCF deployment mode are:
 |===
