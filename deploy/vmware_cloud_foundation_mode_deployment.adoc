@@ -81,6 +81,7 @@ Modified
 a|
 Task
 a|
+===|
 
 You can only work with vVols datastores in the VCF deployment mode. To create container, you need to use REST APIs customized for VCF deployment. The REST APIs can be accessed from the Swagger interface after the deployment is complete.
 
