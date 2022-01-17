@@ -2,7 +2,7 @@
 permalink: deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html
 sidebar: sidebar
 keywords: Virtual Storage Console, Storage Replication Adapter
-summary: 'You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.'
+summary: 'You can perform an in-place upgrade to the latest release of ONTAP tools from your existing 9.7 or later setup following the instructions provided here.'
 ---
 = Upgrade to the latest release of ONTAP tools
 :icons: font
