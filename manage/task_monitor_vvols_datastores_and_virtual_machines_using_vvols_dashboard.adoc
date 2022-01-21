@@ -21,7 +21,7 @@ https://mysupport.netapp.com/site/global/dashboard
 
 * You should be using ONTAP 9.3 or later for your storage system.
 
-The IOPS data that is provided by ONTAP is rounded off and displayed on the vVols dashboard. There might be a difference between the actual IOPS value that is provided by ONTAP and the IOPS value that is displayed on the vVols dashboard. From the 9.8 release of ONTAP tools, performance monitoring is available for NFS based vVols datastores.
+The IOPS data that is provided by ONTAP is rounded off and displayed on the vVols dashboard. There might be a difference between the actual IOPS value that is provided by ONTAP and the IOPS value that is displayed on the vVols dashboard. ONTAP tools provides performance monitoring for NFS based vVols datastores.
 
 NOTE: If you are registering OnCommand API Services for the first time, then you can view all of the performance metrics data for SAN vVols datastores on the vVols dashboard only after 15 to 30 minutes.
 
