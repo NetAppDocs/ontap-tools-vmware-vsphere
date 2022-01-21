@@ -86,7 +86,7 @@ The tiering attribute is disabled because this attribute is not applicable to FA
 
  ** If you select AFF storage, you can enable encryption and tiering.
 +
-Deduplication and compression are enabled by default for AFF storage and cannot be disabled. Space reserve is configured as thin and cannot be changed to thick (thin is required for aggregate efficiency and tiering).
+Deduplication and compression are enabled by default for AFF storage and cannot be disabled.
 
 +
 The tiering attribute enables the use of volumes that are part of a FabricPool-enabled aggregate (supported by VASA Provider for AFF systems with ONTAP 9.4 and later). You can configure one of the following policies for the tiering attribute:

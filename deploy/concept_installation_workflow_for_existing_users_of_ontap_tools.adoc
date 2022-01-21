@@ -9,7 +9,7 @@ summary: 'The 9.x releases of ONTAP tools for VMware vSphere support in-place up
 :imagesdir: ../media/
 
 [.lead]
-The 9.x releases of ONTAP tools for VMware vSphere support in-place upgrade to the latest version.
+The 9.x releases of ONTAP tools for VMware vSph ere support in-place upgrade to the latest version.
 
 The earlier releases of individual applications like Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x and VASA Provider 6.x use a different upgrade process. If you have these legacy versions of VSC or VASA Provider or SRA installed in your setup, then you should perform the following operations:
 

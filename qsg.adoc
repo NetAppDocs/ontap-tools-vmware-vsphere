@@ -90,6 +90,8 @@ You must deploy the `.ova` file on both the source and destination sites if you 
 . You can either enter the URL for the .ova file or browse to the folder where the .ova file is saved, and then click *Next*.
 . Enter the required details to complete the deployment.
 +
+NOTE: (Optional) If you want to create containers without registering to vCenter Server, then in the Configure vCenter or Enable VCF section, select the Enable VMware Cloud Foundation (VCF) checkbox.
+
 You can view the progress of the deployment from the *Tasks* tab, and wait for deployment to complete.
 
 === Deploying SRA on SRM

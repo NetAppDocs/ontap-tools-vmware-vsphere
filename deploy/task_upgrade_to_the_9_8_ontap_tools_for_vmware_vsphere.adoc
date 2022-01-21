@@ -52,7 +52,7 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 ====
 
   * If upgrading from the 7.0 version of ONTAP tools to the latest version of ONTAP tools, you must first create storage capability profiles before attempting to edit an existing VM Storage Policy or you might get an error that there are incorrect or missing values.
-  * If upgrading from an earlier version to the 9.8 version of ONTAP tools, it is found that the `vvol.rebalance.threshold` property is missing in the `vvol.properties file.
+  * If upgrading from an earlier version to the latest version of ONTAP tools, it is found that the `vvol.rebalance.threshold` property is missing in the `vvol.properties file.
 +
 The default value of the property is set to 85%.
  * After you upgrade to the latest OTV(9.10) release that has FIPS enabled but you have a older version of vCenter where FIPS is not supported, the deployment will still work.

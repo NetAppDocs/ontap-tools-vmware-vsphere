@@ -40,8 +40,6 @@ Add the replication policy, replication schedule, and compatible datastore from 
 image::../media/vvols_replication_existing_datastore.png[]
 
 
-You should perform the same steps on the destination site.
-
 *NOTE:*
 
 * When configuring a virtual machine to enable replication for an existing datastores, ensure to verify the FlexVol volume that has a  Config vVols.

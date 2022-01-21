@@ -26,6 +26,7 @@ When used with vVols, the storage capability profile is also used to set the sto
 * AFF_Encrypted
 * AFF_Encrypted_Tiering
 * AFF_Encrypted_Min50
+* AFF_Thick
 
 The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.
 
