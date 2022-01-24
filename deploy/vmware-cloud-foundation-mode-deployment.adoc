@@ -86,18 +86,19 @@ a|
 You can only work with vVols datastores in the VCF deployment mode. To create container, you need to use REST APIs customized for VCF deployment. The REST APIs can be accessed from the Swagger interface after the deployment is complete. While creating containers in VCF mode, you need to provide names of storage VM, aggregate and volume. You need to use ONTAP APIs to get these details as the ONTAP tools GET APIs for these resources are not updated.
 
 |===
+| *Storage object* | *API*
 a|
 Storage VM
 a|
-/api/svm/svms
+api/svm/svms
 a|
 Aggregate
 a|
-/storage/aggregates
+storage/aggregates
 a|
 Volume
 a|
-/storage/volumes
+storage/volumes
 a|
 |===
 

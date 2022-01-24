@@ -21,7 +21,7 @@ To create a new user and to connect a cluster or an SVM to ONTAP tools, you shou
 +
 NOTE: You can use one of the following to create these roles:
 
- ** ONTAP System Manager 9.8
+ ** ONTAP System Manager 9.8P1 or later
 +
 link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges]
 

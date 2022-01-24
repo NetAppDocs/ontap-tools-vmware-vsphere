@@ -19,6 +19,7 @@ When used with vVols datastores, the provisioning wizard can use multiple storag
 
 When used with vVols, the storage capability profile is also used to set the storage performance for the individual virtual machine and place it on the FlexVol volume in the vVols datastore that best satisfies the performance requirement. You can specify QoS policy with minimum and/or maximum IOPS for performance. You can use the default policies when you initially provision a virtual machine, or change your VM storage policy later if your business requirements change. The default storage capability profiles for this release of ONTAP tools:
 
+* AFF_Thick
 * FAS_MAX20
 * FAS_Default
 * AFF_Default
@@ -26,7 +27,8 @@ When used with vVols, the storage capability profile is also used to set the sto
 * AFF_Encrypted
 * AFF_Encrypted_Tiering
 * AFF_Encrypted_Min50
-* AFF_Thick
+* Platinum
+* Bronze
 
 The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.
 
@@ -44,12 +46,12 @@ This capability provides greater flexibility in assigning varied QoS metrics for
 
 * You can configure storage capability profiles for both FAS and AFFdatastores.
 +
-For FAS systems, you can configure space reserve to be either thick or thin, but for AFF systems, space reserve can only be configured to thin.
+For FAS and AFF systems, you can configure space reserve to be either thick or thin.
 
 * You can use storage capability profiles to provide encryption for your datastores.
 * You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.
 +
-The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics related to the performance of the storage capability profiles.
+The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics and tiering policies related to the performance of the storage capability profiles.
 
 * You cannot modify or use the legacy storage capability profiles to provision new virtual datastores or VM storage policies.
 * You must use new storage capability profiles for all new datastores.

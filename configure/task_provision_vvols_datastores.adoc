@@ -66,7 +66,7 @@ The General section of the New Datastore dialog box provides options to enter th
 *Note:*
 
 * If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
-* If you are using All SAN Array (ASA) type storage platforms with ONTAP 9.9.1 or later, only then you can create vVols datastores with vmdk size greater than 16TB.
+* The 9.10 release of ONTAP tools supports creating vVols datastores with vmdk size greater than 16TB for All SAN Array (ASA) type ONTAP 9.9.1 or later storage platforms.
 a|
 Storage system
 a|
