@@ -9,7 +9,7 @@ summary: 'You must configure ONTAP role-based access control \(RBAC\) on the sto
 :imagesdir: ../media/
 
 [.lead]
-You must configure ONTAP role-based access control (RBAC) on the storage system if you want to use role-based access control with ONTAP® tools for VMware vSphere. You can create one or more custom user accounts with limited access privileges with the ONTAP RBAC feature.
+You must configure ONTAP role-based access control (RBAC) on the storage system if you want to use role-based access control with ONTAP tools for VMware vSphere. You can create one or more custom user accounts with limited access privileges with the ONTAP RBAC feature.
 
 VSC and SRA can access storage systems at either the cluster level or the storage virtual machine (SVM)SVM level. If you are adding storage systems at the cluster level, then you must provide the credentials of the admin user to provide all of the required capabilities. If you are adding storage systems by directly adding SVM details, you must be aware that the "`vsadmin`" user does not have all of the required roles and capabilities to perform certain tasks.
 
