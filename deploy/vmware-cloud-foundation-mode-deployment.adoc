@@ -85,6 +85,22 @@ a|
 
 You can only work with vVols datastores in the VCF deployment mode. To create container, you need to use REST APIs customized for VCF deployment. The REST APIs can be accessed from the Swagger interface after the deployment is complete. While creating containers in VCF mode, you need to provide names of storage VM, aggregate and volume. You need to use ONTAP APIs to get these details as the ONTAP tools GET APIs for these resources are not updated.
 
+|===
+a|
+Storage VM
+a|
+/api/svm/svms
+a|
+Aggregate
+a|
+/storage/aggregates
+a|
+Volume
+a|
+/storage/volumes
+a|
+|===
+
 The VCF deployment of ONTAP tools allows only container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the Register.html page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
 
 image::../media/VCF_deployment.png[VMware Cloud Foundation deployment workflow]
