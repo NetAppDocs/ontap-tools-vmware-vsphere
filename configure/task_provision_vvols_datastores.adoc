@@ -30,6 +30,10 @@ You cannot use SVM credentials to create vVols datastores.
 * VASA Provider does not support the cloning of a virtual machine that is hosted on the vVols datastore of one protocol to another datastore with a different protocol.
 * You should have completed cluster pairing and SVM pairing both on the source and destination sites.
 
+*About this task*
+
+NOTE: The 9.10 release of ONTAP tools supports creating vVols datastores with vmdk size greater than 16TB for All SAN Array (ASA) type ONTAP 9.9.1 or later storage platforms.
+
 *Steps*
 
 . From the vSphere Client home page, click *Hosts and Clusters*.
@@ -63,10 +67,8 @@ General
 a|
 The General section of the New Datastore dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.
 
-*Note:*
+NOTE: If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
 
-* If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
-* The 9.10 release of ONTAP tools supports creating vVols datastores with vmdk size greater than 16TB for All SAN Array (ASA) type ONTAP 9.9.1 or later storage platforms.
 a|
 Storage system
 a|
