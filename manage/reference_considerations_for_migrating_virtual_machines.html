@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Considerations for migrating or cloning virtual machines</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Considerations for migrating or cloning virtual machines" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html" />
+	<meta property="og:description" content="You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="You should be aware of some of the considerations while migrating exisitng virtual machines in your datacenter.">
+  <meta name="keywords" content=" ">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/ontap-tools-vmware-vsphere/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-tools-vmware-vsphere/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-tools-vmware-vsphere/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-tools-vmware-vsphere/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-tools-vmware-vsphere/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/ontap-tools-vmware-vsphere/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/ontap-tools-vmware-vsphere/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-tools-vmware-vsphere/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-tools-vmware-vsphere/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/us-en/ontap-tools-vmware-vsphere/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/us-en/ontap-tools-vmware-vsphere/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/ontap-tools-vmware-vsphere/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/ontap-tools-vmware-vsphere/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-tools-vmware-vsphere/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/na-utility.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/toc.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/version-dropdown.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/product-family.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/FileSaver.min.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/jszip-utils.min.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/jszip.min.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/ontap-tools-vmware-vsphere/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation" 
+          data-no-results-found="No results were found for {query}" 
+          data-did-you-mean="Search for {suggestion}." 
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
+          data-results-found="{hitCount} results found"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">English</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>Available PDFs<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/us-en/ontap-tools-vmware-vsphere/pdfs/fullsite-sidebar/ONTAP_tools_for_VMware_vSphere_Documentation.pdf" >
+          <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Concepts.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Concepts
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Role_based_access_control.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Role based access control
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Deploy_and_upgrade_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Deploy and upgrade ONTAP tools
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Requirements_for_deploying_the_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Requirements for deploying the ONTAP tools
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Deploy_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Deploy ONTAP tools
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Upgrade_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Upgrade ONTAP tools
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure ONTAP tools
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_ESXi_settings.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure ESXi settings
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_guest_operating_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure guest operating systems
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_the_ONTAP_tools_preferences_file.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure the ONTAP tools preferences file
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_storage_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure storage systems
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_storage_capability_profiles.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure storage capability profiles
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_datastores.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure datastores
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Protect_datastores_and_virtual_machines.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Protect datastores and virtual machines
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_storage_system_for_disaster_recovery.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure storage system for disaster recovery
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_protected_and_recovery_sites.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure protected and recovery sites
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_protected_and_recovery_site_resources.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Configure protected and recovery site resources
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Manage_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Manage ONTAP tools
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Manage_datastores.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Manage datastores
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Manage_virtual_machines.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Manage virtual machines
+          </a>
+          
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/us-en/ontap-tools-vmware-vsphere/pdfs/pages/manage/reference_considerations_for_migrating_virtual_machines.pdf" >
+    <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Access_ONTAP_tools_maintenance_console.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Access ONTAP tools maintenance console
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Monitor_performance_of_datastores_and_vVols_reports.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            Monitor performance of datastores and vVols reports
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-zip.png" width="16" height="16"/>
+      <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
+        ONTAP tools for VMware vSphere docs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
+        Release notes
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Concepts</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_virtual_storage_console_overview.html">
+        ONTAP tools Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_configure_vvols_datastores.html">
+        VASA Provider configurations for vVols
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_manage_disaster_recovery_setup_using_srm.html">
+        Storage Replication Adapter for disaster recovery
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Role based access control</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html">
+        Overview of role-based access control for ONTAP Tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/reference_components_that_make_up_vcenter_server_permissions.html">
+        Components of vCenter Server permissions
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/reference_key_points_about_assigning_and_modifying_permissions.html">
+        Key points about assigning and modifying permissions for vCenter Server
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html">
+        Standard roles packaged with ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_privileges_required_for_vsc_tasks.html">
+        Privileges required for VSC tasks
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html">
+        Permissions for ONTAP storage systems and vSphere objects
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html">
+        How to configure role-based access control for ONTAP tools
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html">
+        Configure high availability for ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html">
+        MetroCluster configurations supported by ONTAP tools
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Deploy and upgrade ONTAP tools</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_new_users.html">
+        Deployment workflow for new users of ONTAP tools for VMware vSphere
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
+        Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
+        ONTAP tools Quick start
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Requirements for deploying the ONTAP tools</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/reference_port_requirements_for_vsc.html">
+        Port requirements for VSC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html">
+        Space and sizing requirements for the ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_supported_storage_system_and_applications.html">
+        Supported storage system, licensing, and applications for the ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html">
+        Considerations for deploying ONTAP tools
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Deploy ONTAP tools</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_how_to_download_ontap_tools.html">
+        How to download ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/task_deploy_ontap_tools.html">
+        How to deploy ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html">
+        Enable VASA Provider for configuring virtual datastores
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/task_install_the_nfs_vaai_plug_in.html">
+        Install the NFS VAAI plug-in
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html">
+        Clear the vSphere cached downloaded plug-in packages
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Upgrade ONTAP tools</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html">
+        Upgrade to the latest release of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_storage_replication_adapter.html">
+        Upgrade Storage Replication Adapter
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure ONTAP tools</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/concept_workflow_for_configuring_the_unified_appliance.html">
+        Workflow for configuring ONTAP tools
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure ESXi settings</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_configure_esx_server_multipathing_and_timeout_settings.html">
+        Configure ESXi server multipathing and timeout settings
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html">
+        ESXi host values set using ONTAP tools
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure guest operating systems</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html">
+        Configure guest operating system scripts
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_windows.html">
+        Set timeout values for Windows guest operating systems
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_solaris.html">
+        Set timeout values for Solaris guest operating systems
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html">
+        Set timeout values for Linux guest operating systems
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html">
+        Requirements for registering VSC in multiple vCenter Servers environment
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure the ONTAP tools preferences file</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
+        Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
+        Enable datastore mounting across different subnets
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
+        Regenerate an SSL certificate for vsc
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure storage systems</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html">
+        Overview of storage system for ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_set_default_credentials_for_storage_systems.html">
+        Set default credentials for storage systems
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_add_storage_systems.html">
+        Add storage systems to VSC
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_discover_storage_systems_and_hosts.html">
+        Discover storage systems and hosts
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_refresh_the_storage_system_display.html">
+        Refresh the storage system display
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_configure_alarm_thresholds.html">
+        Configure alarm thresholds
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_configure_user_role_and_privileges.html">
+        Configure user roles and privileges
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure storage capability profiles</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_storage_capability_profiles.html">
+        Overview of storage capability profiles
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_create_storage_capability_profiles.html">
+        Create storage capability profiles
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_automatically_generating_scps.html">
+        Generate storage capability profiles automatically
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure datastores</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_provision_datastores.html">
+        Provision traditional datastores
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_map_storage_to_storage_capability_profiles.html">
+        Map datastores to storage capability profiles
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_assign_qos_policies.html">
+        Assign QoS policies
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html">
+        Verify datastore compliance with the mapped storage capability profile
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_provision_vvols_datastores.html">
+        Provision vVols datastores
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_rebalance_vvols_datastore.html">
+        Rebalance vVols datastores
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Protect datastores and virtual machines</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_enable_storage_replication_adapter.html">
+        Enable Storage Replication Adapter to protect datastores
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure storage system for disaster recovery</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_storage_replication_adapter_for_san_environment.html">
+        Configure storage systems for SAN and NAS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html">
+        Configure storage for highly scaled environments
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_sra_on_srm_appliance.html">
+        Configure SRA on the SRM Appliance
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_update_sra_credentials.html">
+        Update SRA credentials
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html">
+        Migrate Windows SRM to SRM Appliance
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
+        Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
+        Protect unprotected virtual machines
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure protected and recovery sites</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_vm_storage_policies.html">
+        Configure VM Storage Policies
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_protection_groups.html">
+        Configure protection groups
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_pair_protected_and_recovery_sites.html">
+        Pair protected and recovery sites
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Configure protected and recovery site resources</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_network_mappings.html">
+        Configure network mappings
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_folder_mappings.html">
+        Configure folder mappings
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_resource_mappings.html">
+        Configure resource mappings
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_map_storage_policies.html">
+        Map storage policies
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_placeholder_datastores.html">
+        Configure placeholder datastores
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_array_manager.html">
+        Configure SRA using array manager
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_verify_the_replicated_storage_environment.html">
+        Verify the replicated storage systems
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage ONTAP tools</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage datastores</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_mount_datastores_on_host.html">
+        Mount datastore on additional hosts
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_resize_datastores.html">
+        Resize datastores
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_edit_a_vvols_datastore.html">
+        Edit a vVols datastore
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_add_storage_to_a_vvols_datastore.html">
+        Add storage to a vVols datastore
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_remove_storage_from_a_vvols_datastore.html">
+        Remove storage from a vVols datastore
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_mount_a_vvols_datastore.html">
+        Mount a vVols datastore
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage virtual machines</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html">
+        Considerations for migrating or cloning virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html">
+        Migrate traditional virtual machines to vVols datastores
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html">
+        Migrate virtual machines with older storage capability profiles
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_edit_esxi_host_settings.html">
+        Modify ESXi host settings
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Access ONTAP tools maintenance console</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html">
+        Overview of ONTAP tools maintenance console
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html">
+        VSC and VASA Provider log files
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_change_the_administrative_password.html">
+        Change the administrator password
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_configure_vasa_provider_to_work_with_ssh.html">
+        Configure VASA Provider to work with SSH
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html">
+        Configure remote diagnostic access
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_collect_the_log_files.html">
+        Collect the log files
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Monitor performance of datastores and vVols reports</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_reports.html">
+        Overview of ONTAP tools datastores and virtual machine reports
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_monitor_datastores_using_the_traditional_dashboard.html">
+        Analyze performance data using the traditional dashboard
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html">
+        Analyze performance data using the vVols dashboard
+      </a></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Considerations for migrating or cloning virtual machines
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Considerations for migrating or cloning virtual machines</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-10-25 06:16:16 +0000">10/25/2021</time>
+    
+  
+
+<span>Contributors
+  <a target="_blank" href="https://github.com/Netapp-shabaana">
+    <img  class="avatar avatar-small"
+          alt="Netapp-shabaana"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64952604?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>You should be aware of some of the considerations while migrating existing virtual machines in your datacenter.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="migrate-protected-virtual-machines">Migrate protected virtual machines</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can migrate the protected virtual machines to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Same vVols datastore in a different ESXi host</p>
+</li>
+<li>
+<p>Different compatible vVols datastore in same ESXi host</p>
+</li>
+<li>
+<p>Different compatible vVols datastore in a different ESXi host</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If virtual machine is migrated to different FlexVol volume, then respective metadata file also gets updated with the virtual machine information. If a virtual machine is migrated to a different ESXi host but same storage then underlying FlexVol volume metada file will not be modified.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="clone-protected-virtual-machines">Clone protected virtual machines</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can clone protected virtual machines to the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Same container of same FlexVol volume using replication group</p>
+<div class="paragraph">
+<p>Same FlexVol volume&#8217;s metadata file is updated with the cloned virtual machine details.</p>
+</div>
+</li>
+<li>
+<p>Same container of a different FlexVol volume using replication group</p>
+<div class="paragraph">
+<p>The FlexVol volume where the cloned virtual machine is placed, the metadata file gets updated with the cloned virtual machine details.</p>
+</div>
+</li>
+<li>
+<p>Different container or vVols datastore</p>
+<div class="paragraph">
+<p>The FlexVol volume where the cloned virtual machine is placed, the metadata file gets updated virtual machine details.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>VMware presently does not support virtual machine cloned to a VM template.</p>
+</div>
+<div class="paragraph">
+<p>Clone-of-Clone of a protected virtual machine is supported.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="virtual-machine-snapshots">Virtual Machine Snapshots</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Presently only virtual machine Snapshots without memory are supported. If virtual machine has Snapshot with memory, then the virtual machine is not considered for protection.</p>
+</div>
+<div class="paragraph">
+<p>You also cannot protect unprotected virtual machine that has memory Snapshot. For this release, you are expected to delete memory snapshot before enabling protection for the virtual machine.</p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/new?body=Page%3A%20[Considerations for migrating or cloning virtual machines](https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-tools-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/blob/main/manage/reference_considerations_for_migrating_virtual_machines.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-tools-vmware-vsphere/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-tools-vmware-vsphere/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-tools-vmware-vsphere/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/ontap-tools-vmware-vsphere/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/ontap-tools-vmware-vsphere/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/ontap-tools-vmware-vsphere/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/ontap-tools-vmware-vsphere/js/www-ntap.js'></script>
+    <script src='/us-en/ontap-tools-vmware-vsphere/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
