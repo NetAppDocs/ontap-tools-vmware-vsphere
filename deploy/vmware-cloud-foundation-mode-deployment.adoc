@@ -102,6 +102,77 @@ storage/volumes
 a|
 |===
 
+While executing container create API, you can add existing volumes to the container. But you should ensure that the compression and deduplication values of the existing volumes matches the storage capability of the container. The container creation fails when the values do not match. The following table provides details on the values that existing volumes should have for corresponding storage capability profiles.
+
+|===
+| *Container Storage capability profile* | *Deduplication* | *Compression*
+a|
+Platinum
+a|
+Both
+a|
+Both
+a|
+AFF_Thick
+a|
+Both
+a|
+Both
+a|
+AFF_Default
+a|
+Both
+a|
+Both
+a|
+AFF_Tiering
+a|
+Both
+a|
+Both
+a|
+AFF_Encrypted
+a|
+Both
+a|
+Both
+a|
+AFF_Encrypted_Tiering
+a|
+Both
+a|
+Both
+a|
+AFF_Encrypted_Min50
+a|
+Both
+a|
+Both
+a|
+FAS_Default
+a|
+Background
+a|
+None
+a|
+FAS_Max20
+a|
+Background
+a|
+None
+a|
+Bronze
+a|
+None
+a|
+None
+a|
+|===
+
+You can use the ONTAP PATCH API to set the appropriate values.
+
+`https://<machine_IP>/api/storage/volumes/{uuid}`
+
 The VCF deployment of ONTAP tools allows only container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the Register.html page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
 
 image::../media/VCF_deployment.png[VMware Cloud Foundation deployment workflow]
