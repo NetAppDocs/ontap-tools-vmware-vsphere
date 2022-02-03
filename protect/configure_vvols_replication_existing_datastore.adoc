@@ -33,6 +33,8 @@ API: /3.0/admin/{datastore}/replication-groups
 +
 Add the replication policy, replication schedule, and compatible datastore from the available list.
 
+NOTE: If you are using System Manager to protect the Flexvol volumes and storage capability profile has QoS policy as 'None', then ensure that the *Enforce Performance Limit* option is unchecked for disaster recovery to succeed.
+
  .. Access the unprotected virtual machine and edit the VM storage policy.
  .. Select the VM Storage policy and datastore.
  .. Add the replication group to the unprotected virtual machine.
