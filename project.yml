@@ -1,13 +1,13 @@
 ---
 settings:
-  name: ONTAP tools for VMware vSphere
+  name: ONTAP tools for VMware vSphere 9.10
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
 sidebar:
   entries:
-    - title: ONTAP tools for VMware vSphere docs
+    - title: ONTAP tools for VMware vSphere 9.10 docs
       url: /index.html
     - title: Release notes
       url: /release_notes.html
@@ -58,7 +58,7 @@ homepage:
   - title: More resources
     links:
     - title: Documentation for earlier versions of ONTAP tools for VMware
-      url: https://docs.netapp.com/vapp-98/index.jsp?topic=%2Fcom.netapp.ndc.vapp-vers%2FGUID-DEB0FBD4-89B8-4EA1-98BF-685190F79086.html
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63792
     - title: NetApp Knowledge Base - ONTAP tools
       url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
     - title: NetApp Import Utility - Video
