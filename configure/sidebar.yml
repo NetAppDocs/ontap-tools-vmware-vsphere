@@ -25,6 +25,8 @@ entries:
     entries:
       - title: Set IPv4 or IPv6 using the preferences file
         url: /configure/reference_set_ipv4_or_ipv6.html
+      - title: Add different subnets
+        url: /configure/add_different_subnets.html
       - title: Enable datastore mounting across different subnets
         url: /configure/task_enable_datastore_mounting_across_different_subnets.html
       - title: Regenerate an SSL certificate for vsc

@@ -17,6 +17,8 @@ entries:
     url: /protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html
   - title: Configure replication for vVols datastore to protect virtual machines
     url: /protect/concept_configure_replication_for_vvols_datastore.html
+  - title: Configure vVols replication for existing datastores
+    url: /protect/configure_vvols_replication_existing_datastore.html
   - title: Protect unprotected virtual machines
     url: /protect/task_protect_non_protected_virtual_machines.html
   - title: Configure protected and recovery sites

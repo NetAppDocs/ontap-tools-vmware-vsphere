@@ -11,7 +11,7 @@ summary: 'The 9.x releases of ONTAP tools for VMware vSphere support in-place up
 [.lead]
 The 9.x releases of ONTAP tools for VMware vSphere support in-place upgrade to the latest version.
 
-The earlier releases of individual applications like ONTAP tools use a different upgrade process. If you have VSC or VASA Provider or SRA installed in your setup, then you should perform the following operations:
+The earlier releases of individual applications like Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x and VASA Provider 6.x use a different upgrade process. If you have these legacy versions of VSC or VASA Provider or SRA installed in your setup, then you should perform the following operations:
 
 . Deploy the latest release of ONTAP tools.
 . Migrate any existing configuration data.
@@ -29,7 +29,7 @@ If you are upgrading from VASA Provider 6.X, you should unregister VASA Provider
 
 If you are also upgrading from SRA 4.0 or earlier:
 
-* If you are using SRA 4.0P1, then you must first upgrade to SRA9.6 and only then you can perform an in-place upgrade of the SRA 9.6 to the latest release.
+* If you are using SRA 4.0P1, then you must first upgrade to SRA9.6, and then perform an in-place upgrade of the SRA 9.6 release. You can later upgrade to the latest release of ONTAP tools.
 +
 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html[Upgrade to the latest release of ONTAP tools]
 
@@ -41,9 +41,11 @@ For any SRA upgrade, the SRA software (the adapter on the Site Recovery Manager 
 
 If you have the VASA Provider deployment, then after the upgrade from existing setup, you must configure the memory size for your ONTAP tools to be 12GB using the `Edit Settings` option. You must also modify the virtual memory reservation. The virtual machine must be powered off to modify the memory size.
 
-If you are having 7.2 or 7.2.1 release of ONTAP tools in your setup, then you cannot directly upgrade to 9.7P1 or later release of the ONTAP tools. You must first upgrade your existing setup to the 9.7 release of ONTAP tools and then upgrade to the latest release.
+If you are having 7.2 or 7.2.1 release of the virtual appliance for VSC, VASA Provider, and SRA, then you cannot directly upgrade to 9.7P1 or later release of the unified appliance. You must first upgrade your existing setup to the 9.7 release of the virtual appliance, and then upgrade to the latest release.
 
-If you are going to deploy the latest release of ONTAP tools, you must see the topic "`Requirements for deploying the ONTAP tools.`" The topic "`Upgrading to the 9.8 release of ONTAP tools`" has information on performing an in-place upgrade.
+To upgrade to ONTAP tools 9.10 you should be running virtual appliance 9.7P1 or later.  Upgrading from an earlier version prior to 9.7P1 of the virtual appliance is not supported.
+
+If you are going to deploy the latest release of ONTAP tools, you must see the topic `Requirements for deploying the ONTAP tools.` The topic `Upgrading to the latest release of ONTAP tools` has information on performing an in-place upgrade.
 
 *Related information*
 

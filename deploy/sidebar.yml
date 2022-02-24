@@ -5,6 +5,8 @@ entries:
     url: /deploy/concept_installation_workflow_for_new_users.html
   - title: Deployment workflow for existing users of ONTAP tools
     url: /deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html
+  - title: VMware Cloud Foundation mode of deployment for ONTAP tools
+    url: /deploy/vmware_cloud_foundation_mode_deployment.html
   - title: ONTAP tools Quick start
     url: /qsg.html
   - title: Requirements for deploying the ONTAP tools
