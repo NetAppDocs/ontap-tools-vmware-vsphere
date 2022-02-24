@@ -18,7 +18,7 @@ This capability provides greater flexibility in assigning varied QoS metrics for
 
 * You can configure storage capability profiles for both FAS and AFF datastores.
 +
-For FAS systems, you can configure space reserve to be either thick or thin, but for AFF systems, space reserve can only be configured to thin.
+For FAS systems AFF systems, you can configure space reserve to be either thick or thin.
 
 * You can use storage capability profiles to provide encryption for your datastores.
 * You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.

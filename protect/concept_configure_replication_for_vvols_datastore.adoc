@@ -20,3 +20,5 @@ Replication groups are created during vVols datastore create workflow for each F
 NOTE: If you are using disaster recovery for vVols datastore, then you do not need to configure Storage Replication Adapter (SRA) separately as VASA Provider capability is enhanced to have vVols replication.
 
 image::../media/vvols_replication.png[]
+
+link:../protect/configure_vvols_replication_existing_datastore.html[Configure vVols replication for existing datastores]

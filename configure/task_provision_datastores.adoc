@@ -19,11 +19,11 @@ You can also provision a datastore by adding a cluster.
 
 * You must ensure that the subnet details of all the networks to which the ESXi host is connected is entered in the kaminoprefs.xml.
 +
-See "Enabling datastore mounting across different subnets" section in _VSC 9.8 Deployment and Setup Guide_.
+See "Enabling datastore mounting across different subnets".
 
 * If you use NFS or iSCSI, and the subnet is different between your ESXi hosts and your storage system, then the NFS or iSCSI settings in the kaminoprefs preferences file must include ESXi host subnet masks.
 +
-This preference file is also applicable to vVols datastore creation. _ONTAP tools for VMware vSphere Deployment and Setup Guide for 9.8 release_ has more information on preferences file and enabling datastore mounting across different subnets.
+This preference file is also applicable to vVols datastore creation. See _Enable datastore mounting across different subnets_ and _Configure the VSC preferences files_ for more information.
 
 * If you have enabled VASA Provider and you want to specify storage capability profiles for your NFS datastores or VMFS datastores, then you must have created one or more storage capability profiles.
 * To create an NFSv4.1 datastore, you must have enabled NFSv4.1 at the SVM level.
@@ -41,7 +41,7 @@ VSC can create a datastore on either an NFS volume or a LUN:
 [NOTE]
 ====
 
-* The 9.8 version of ONTAP tools supports provisioning of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
+* ONTAP tools supports provisioning of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
 +
 On other platforms the maximum LUN size supported is 16TB.
 

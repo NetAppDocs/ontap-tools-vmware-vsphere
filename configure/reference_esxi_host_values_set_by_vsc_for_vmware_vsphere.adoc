@@ -2,14 +2,14 @@
 permalink: configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
-summary: 'You can set timeouts and other values on the ESXi hosts using ONTAP® tools for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console \(VSC\) sets are based on internal NetApp testing.'
+summary: 'You can set timeouts and other values on the ESXi hosts using ONTAP tools for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console \(VSC\) sets are based on internal NetApp testing.'
 ---
 = ESXi host values set using ONTAP tools
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can set timeouts and other values on the ESXi hosts using ONTAP® tools for VMware vSphere to ensure best performance and successful failover. The values that Virtual Storage Console (VSC) sets are based on internal NetApp testing.
+You can set timeouts and other values on the ESXi hosts using ONTAP tools for VMware vSphere to ensure best performance and successful failover. The values that ONTAP tools sets are based on internal NetApp testing.
 
 You can set the following values on an ESXi host:
 
@@ -31,7 +31,7 @@ If you are using vSphere 6.0 or later, you should set this value to 32.
 
 * *Net.TcpipHeapMax*
 +
-If you are using vSphere 6.0 or later, you should set this value to 1536.
+If you are using vSphere 6.0 or later, for ESXi host 6.x set the value to 512 and for ESXi 7.x to 1024.
 
 * *NFS.MaxVolumes*
 +

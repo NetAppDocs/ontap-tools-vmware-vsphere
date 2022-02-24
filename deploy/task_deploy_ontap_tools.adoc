@@ -17,7 +17,7 @@ You should deploy ONTAP tools in your environment, and specify the required para
 +
 NOTE: ONTAP tools can be registered either with a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
 +
-https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool: OTV 9.8]
+https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool]
 
 * You must have configured and set up your vCenter Server environment.
 * You must have set up an ESXi host for your virtual machine.
@@ -55,7 +55,12 @@ Select the _.ova_ file for ONTAP tools from the saved location.
 
 . Enter the details to customize the deployment wizard.
 +
-See link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html[Deployment customization considerations] for complete details.
+(Optional) In the Configure vCenter or Enable VCF section, select the *Enable VMware Cloud Foundation (VCF)* checkbox and provide a password for ONTAP tools credentials.
+You do not need to provide IP address but providing a password is mandatory.
+See the following for complete details.
+
+* link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html[Deployment customization considerations]
+* link:../deploy/vmware_cloud_foundation_mode_deployment.html[VMware Cloud Foundation mode of deployment for ONTAP tools]
 
 . Review the configuration data, and then click *Next* to finish deployment.
 +

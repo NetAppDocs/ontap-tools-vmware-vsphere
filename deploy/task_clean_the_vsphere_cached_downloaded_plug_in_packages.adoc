@@ -41,7 +41,7 @@ a|
   rm -rf com.netapp.vsch5-x.x.x.xxxx
  ----
 
- .. Change directories to the vCenter client(HTML5) UI extensions directory using `cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity`
+ .. Change directories to the vCenter client(HTML5) UI extensions directory using `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
  .. Remove the cached plugin packages specific to NetApp plug-in using the `rm -rf` commands:
 Example: Here x.x.x.xxxx is the version of your plug-in
  ----

@@ -1,0 +1,48 @@
+---
+permalink: protect/configure_vvols_replication_existing_datastore.html
+sidebar: sidebar
+keywords:
+summary: 'You can configure Storage Replication Adapter \(SRA\) by using the Array Manager wizard of Site Recovery Manager \(SRM\) to enable interactions between SRM and storage virtual machines \(SVMs\).'
+---
+= Configure vVols replication for existing datastores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The vVols replication feature is enhanced to provide vVols replication for existing virtual machines that were created before SRM setup. This enables you to recover existing virtual machines and protect them on the recovery site.
+
+*What you will need*
+
+* Cluster and SVM are peered.
+* Datastores and FlexVol volumes are created on source and target sites.
+* Source and target sites have same storage capability profiles.
+* FlexVol volumes are having same SnapMirror schedule.
+* vVols replication is enabled.
+
+An existing datastore does not have replication groups created.
+
+*Steps*
+
+. Access Swagger interface.
+. Execute the REST API to configure replication group for existing datastore.
++
+
+API: /3.0/admin/{datastore}/replication-groups
+
+. Create VM Storage policy for existing vVols datastore with the storage capability profile that was used to create the datastore.
++
+Add the replication policy, replication schedule, and compatible datastore from the available list.
+
+NOTE: If you are using System Manager to protect the Flexvol volumes and storage capability profile has QoS policy as 'None', then ensure that the *Enforce Performance Limit* option is unchecked for disaster recovery to succeed.
+
+ .. Access the unprotected virtual machine and edit the VM storage policy.
+ .. Select the VM Storage policy and datastore.
+ .. Add the replication group to the unprotected virtual machine.
+
+image::../media/vvols_replication_existing_datastore.png[]
+
+
+*NOTE:*
+
+* When configuring a virtual machine to enable replication for an existing datastores, ensure to verify the FlexVol volume that has a  Config vVols.
+* When vVols of an existing virtual machine are spread across multiple datastores, then you should move all the vVols of that virtual machine using vMotion to a single datastore before enabling replication.
