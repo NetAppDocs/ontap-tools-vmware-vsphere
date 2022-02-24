@@ -445,6 +445,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -634,6 +636,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
-        ONTAP tools for VMware vSphere docs
+        ONTAP tools for VMware vSphere 9.10 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         Deployment workflow for new users of ONTAP tools for VMware vSphere
       </a></li><li class="  active "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP tools Quick start
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         Enable datastore mounting across different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Migrate Windows SRM to SRM Appliance
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         Protect unprotected virtual machines
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           Deployment workflow for existing users of ONTAP tools
@@ -1362,7 +1374,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:00:09 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:06:10 +0000">02/24/2022</time>
     
   
 
@@ -1385,7 +1397,7 @@
 <p>The 9.x releases of ONTAP tools for VMware vSphere support in-place upgrade to the latest version.</p>
 </div>
 <div class="paragraph">
-<p>The earlier releases of individual applications like ONTAP tools use a different upgrade process. If you have VSC or VASA Provider or SRA installed in your setup, then you should perform the following operations:</p>
+<p>The earlier releases of individual applications like Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x and VASA Provider 6.x use a different upgrade process. If you have these legacy versions of VSC or VASA Provider or SRA installed in your setup, then you should perform the following operations:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1425,7 +1437,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>If you are using SRA 4.0P1, then you must first upgrade to SRA9.6 and only then you can perform an in-place upgrade of the SRA 9.6 to the latest release.</p>
+<p>If you are using SRA 4.0P1, then you must first upgrade to SRA9.6, and then perform an in-place upgrade of the SRA 9.6 release. You can later upgrade to the latest release of ONTAP tools.</p>
 <div class="paragraph">
 <p><a href="../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html">Upgrade to the latest release of ONTAP tools</a></p>
 </div>
@@ -1445,10 +1457,13 @@
 <p>If you have the VASA Provider deployment, then after the upgrade from existing setup, you must configure the memory size for your ONTAP tools to be 12GB using the <code>Edit Settings</code> option. You must also modify the virtual memory reservation. The virtual machine must be powered off to modify the memory size.</p>
 </div>
 <div class="paragraph">
-<p>If you are having 7.2 or 7.2.1 release of ONTAP tools in your setup, then you cannot directly upgrade to 9.7P1 or later release of the ONTAP tools. You must first upgrade your existing setup to the 9.7 release of ONTAP tools and then upgrade to the latest release.</p>
+<p>If you are having 7.2 or 7.2.1 release of the virtual appliance for VSC, VASA Provider, and SRA, then you cannot directly upgrade to 9.7P1 or later release of the unified appliance. You must first upgrade your existing setup to the 9.7 release of the virtual appliance, and then upgrade to the latest release.</p>
 </div>
 <div class="paragraph">
-<p>If you are going to deploy the latest release of ONTAP tools, you must see the topic &#8220;Requirements for deploying the ONTAP tools.&#8221; The topic &#8220;Upgrading to the 9.8 release of ONTAP tools&#8221; has information on performing an in-place upgrade.</p>
+<p>To upgrade to ONTAP tools 9.10 you should be running virtual appliance 9.7P1 or later.  Upgrading from an earlier version prior to 9.7P1 of the virtual appliance is not supported.</p>
+</div>
+<div class="paragraph">
+<p>If you are going to deploy the latest release of ONTAP tools, you must see the topic <code>Requirements for deploying the ONTAP tools.</code> The topic <code>Upgrading to the latest release of ONTAP tools</code> has information on performing an in-place upgrade.</p>
 </div>
 <div class="paragraph">
 <p><strong>Related information</strong></p>

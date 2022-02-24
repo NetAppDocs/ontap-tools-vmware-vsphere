@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
-        ONTAP tools for VMware vSphere docs
+        ONTAP tools for VMware vSphere 9.10 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         Deployment workflow for new users of ONTAP tools for VMware vSphere
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP tools Quick start
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         Enable datastore mounting across different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Migrate Windows SRM to SRM Appliance
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         Protect unprotected virtual machines
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           Create storage capability profiles
@@ -1362,7 +1374,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:00:09 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:06:10 +0000">02/24/2022</time>
     
   
 
@@ -1388,7 +1400,7 @@
 <p><strong>What you&#8217;ll need</strong></p>
 </div>
 <div class="paragraph">
-<p>You must have registered your VASA Provider instance with ONTAP® tools for VMware vSphere.</p>
+<p>You must have registered your VASA Provider instance with ONTAP tools for VMware vSphere.</p>
 </div>
 <div class="paragraph">
 <p>After setting up a profile, you can edit the profile as required.</p>
@@ -1431,20 +1443,23 @@
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p><strong>Note:</strong></p>
+</li>
+</ol>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.</p>
-</li>
-<li>
-<p>You cannot modify any existing storage capability profiles that were created before the 9.6 ONTAP tools.</p>
-</li>
-</ul>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-tools-vmware-vsphere/images/note.svg" alt="Note">
+</td>
+<td class="content">
+To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.
+</td>
+</tr>
+</table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Complete the pages in the Create Storage Capability Profile wizard to set up a profile or to edit values to modify an existing profile.</p>
 <div class="paragraph">
@@ -1479,7 +1494,15 @@
 <p>Platform</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>You can select your storage system to have either the AFF or FAS platform type.     The options on the subsequent screens are updated based on your selection of the type of storage system.</p>
+<p>You can select your storage system to have either the AFF or FAS platform type. The options on the subsequent screens are updated based on your selection of the type of storage system.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Protocol</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>You can select from the available protocols listed based on the platform selected for the storage system. While configuring virtual machines you can configure VM storage policies with storage capability profile and the protocol field filters datastores based on specific protocol. The field 'Any' allows you to work with all protocols.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1497,7 +1520,7 @@
 <li>
 <p>When you select <strong>QoS Policy Group</strong>, then a traditional QoS policy is applied to a VVol.</p>
 <div class="paragraph">
-<p>You can set the value for <strong>Max IOPS</strong> and <strong>Min IOPS</strong> which enables you to use the QoS functionality. If you select Infinite IOPS, the Max IOPS field is disabled. When applied for a traditional datastore, a QoS policy with &#8220;Max IOPS&#8221; value is created and assigned to a FlexVol volume. When used with a VVol datastore, a QoS policy with Max IOPS and Min IOPS values is created for each data VVol.</p>
+<p>You can set the value for <strong>Max IOPS</strong> and <strong>Min IOPS</strong> which enables you to use the QoS functionality. If you select Infinite IOPS, the Max IOPS field is disabled. When applied for a traditional datastore, a QoS policy with &#8220;Max IOPS&#8221; value is created and assigned to a FlexVol volume. When used with a vVols datastore, a QoS policy with Max IOPS and Min IOPS values is created for each data vVols datastore.</p>
 </div>
 <div class="paragraph">
 <p><strong>NOTE</strong>:</p>
@@ -1534,23 +1557,17 @@
 <li>
 <p>If you select AFF storage, you can enable encryption and tiering.</p>
 <div class="paragraph">
-<p>Deduplication and compression are enabled by default for AFF storage and cannot be disabled. Space reserve is configured as thin and cannot be changed to thick (thin is required for aggregate efficiency and tiering).</p>
+<p>Deduplication and compression are enabled by default for AFF storage and cannot be disabled.</p>
 </div>
 <div class="paragraph">
 <p>The tiering attribute enables the use of volumes that are part of a FabricPool-enabled aggregate (supported by VASA Provider for AFF systems with ONTAP 9.4 and later). You can configure one of the following policies for the tiering attribute:</p>
 </div>
 </li>
 <li>
-<p>Any: Allows use of this storage capability profile with any FlexVol volume whether Fabric Pool is used or not</p>
-</li>
-<li>
 <p>None: Prevents volume data from being moved to the capacity tier</p>
 </li>
 <li>
-<p>Snapshot-Only: Moves user data blocks of volume Snapshot copies that are not associated with the active file system to the capacity tier</p>
-</li>
-<li>
-<p>Auto: Moves cold user data blocks in the Snapshot copies and the active file system to the capacity tier</p>
+<p>Snapshot: Moves user data blocks of volume Snapshot copies that are not associated with the active file system to the capacity tier</p>
 </li>
 </ul>
 </div></div></td>

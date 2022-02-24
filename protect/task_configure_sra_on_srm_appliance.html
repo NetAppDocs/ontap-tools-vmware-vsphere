@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -790,6 +794,8 @@
 
 </ul>
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
-        ONTAP tools for VMware vSphere docs
+        ONTAP tools for VMware vSphere 9.10 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         Deployment workflow for new users of ONTAP tools for VMware vSphere
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP tools Quick start
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         Enable datastore mounting across different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Migrate Windows SRM to SRM Appliance
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         Protect unprotected virtual machines
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           Configure SRA on the SRM Appliance
@@ -1362,7 +1374,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:00:09 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:06:10 +0000">02/24/2022</time>
     
   
 
@@ -1388,7 +1400,7 @@
 <p><strong>What you will need</strong></p>
 </div>
 <div class="paragraph">
-<p>You should have uploaded the <em>tar.gz</em> file to SRM Appliance.</p>
+<p>You should have downloaded the <em>tar.gz</em> file from <a href="https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab">NetApp Support Site</a>.</p>
 </div>
 <div class="paragraph">
 <p><strong>About this task</strong></p>
@@ -1402,19 +1414,28 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
+<p>On the SRM Appliance screen, click <strong>Storage Replication Adapter</strong> &gt; <strong>New Adapter</strong>.</p>
+</li>
+<li>
+<p>Upload the <em>.tar.gz</em> file to SRM.</p>
+</li>
+<li>
+<p>Rescan the adapters to verify that the details are updated in the SRM Storage Replication Adapters page.</p>
+</li>
+<li>
 <p>Log in using administrator account to the SRM Appliance using putty.</p>
 </li>
 <li>
 <p>Switch to the root user using the command: <code>su root</code></p>
 </li>
 <li>
-<p>At the log location enter the command to get the docker ID used by SRA docker <code>ps -l</code></p>
+<p>At the log location enter the command to get the docker ID used by SRA: <code>docker ps -l</code></p>
 </li>
 <li>
-<p>To login to the container ID, enter command docker <code>exec -it -u srm &lt;container id&gt; sh</code></p>
+<p>To login to the container ID, enter command: <code>docker exec -it -u srm &lt;container id&gt; sh</code></p>
 </li>
 <li>
-<p>Configure SRM with the ONTAP tools IP address and password using the command: <code>perl command.pl -I &lt;va-IP&gt; administrator &lt;va-password&gt;`</code></p>
+<p>Configure SRM with the ONTAP tools IP address and password using the command: <code>perl command.pl -I &lt;va-IP&gt; administrator &lt;va-password&gt;</code></p>
 <div class="paragraph">
 <p>A success message confirming that the storage credentials are stored is displayed. SRA can communicate with SRA server using the provided IP address, port and credentials.</p>
 </div>

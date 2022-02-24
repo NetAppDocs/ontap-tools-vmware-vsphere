@@ -9,7 +9,7 @@
   <meta property="og:title" content="Enable datastore mounting across different subnets" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html" />
-	<meta property="og:description" content="If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP® tools for VMware vSphere p..." />
+	<meta property="og:description" content="If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP tools for VMware vSphere pr..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP® tools for VMware vSphere p...">
+  <meta name="description" content="If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP tools for VMware vSphere pr...">
   <meta name="keywords" content=" ">
   
   
@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -620,6 +622,8 @@
           
 
 
+
+
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
   <a target="_blank" href="/us-en/ontap-tools-vmware-vsphere/pdfs/pages/configure/task_enable_datastore_mounting_across_different_subnets.pdf" >
     <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
-        ONTAP tools for VMware vSphere docs
+        ONTAP tools for VMware vSphere 9.10 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         Deployment workflow for new users of ONTAP tools for VMware vSphere
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP tools Quick start
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
       </a></li><li class="  active "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         Enable datastore mounting across different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Migrate Windows SRM to SRM Appliance
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         Protect unprotected virtual machines
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           Enable datastore mounting across different subnets
@@ -1362,7 +1374,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:00:09 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:06:10 +0000">02/24/2022</time>
     
   
 
@@ -1382,7 +1394,7 @@
 
 
 <div class="paragraph lead">
-<p>If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP® tools for VMware vSphere preferences files. If you do not modify the preferences file, then datastore provisioning fails because Virtual Storage Console (VSC) cannot mount the datastore.</p>
+<p>If you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the ONTAP tools for VMware vSphere preferences files. If you do not modify the preferences file, then datastore provisioning fails because Virtual Storage Console (VSC) cannot mount the datastore.</p>
 </div>
 <div class="paragraph">
 <p><strong>About this task</strong></p>

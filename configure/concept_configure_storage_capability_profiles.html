@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
-        ONTAP tools for VMware vSphere docs
+        ONTAP tools for VMware vSphere 9.10 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         Deployment workflow for new users of ONTAP tools for VMware vSphere
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP tools Quick start
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         Enable datastore mounting across different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Migrate Windows SRM to SRM Appliance
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         Protect unprotected virtual machines
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           Overview of storage capability profiles
@@ -1362,7 +1374,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:00:09 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:06:10 +0000">02/24/2022</time>
     
   
 
@@ -1396,10 +1408,13 @@
 <p>When used with vVols datastores, the provisioning wizard can use multiple storage capability profiles to create different FlexVol volumes in the datastore. You can use the VM storage policy to automatically create vVols for a virtual machine in appropriate FlexVol volumes as defined. For example, you can create profiles for common storage classes (such as for performance limits and other capabilities like encryption or FabricPool). You can later create VM storage policies in vCenter Server representing business classes of virtual machines and link these to the appropriate storage capability profile by name (for example Production, Test, HR).</p>
 </div>
 <div class="paragraph">
-<p>When used with vVols, the storage capability profile is also used to set the storage performance for the individual virtual machine and place it on the FlexVol volume in the vVols datastore that best satisfies the performance requirement. You can specify QoS policy with minimum and/or maximum IOPS for performance. You can use the default policies when you initially provision a virtual machine, or change your VM storage policy later if your business requirements change. The 9.8 release of ONTAP tools provides the following new default storage capability profiles:</p>
+<p>When used with vVols, the storage capability profile is also used to set the storage performance for the individual virtual machine and place it on the FlexVol volume in the vVols datastore that best satisfies the performance requirement. You can specify QoS policy with minimum and/or maximum IOPS for performance. You can use the default policies when you initially provision a virtual machine, or change your VM storage policy later if your business requirements change. The default storage capability profiles for this release of ONTAP tools:</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>AFF_Thick</p>
+</li>
 <li>
 <p>FAS_MAX20</p>
 </li>
@@ -1421,13 +1436,19 @@
 <li>
 <p>AFF_Encrypted_Min50</p>
 </li>
+<li>
+<p>Platinum</p>
+</li>
+<li>
+<p>Bronze</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
 <p>The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.</p>
 </div>
 <div class="paragraph">
-<p>With ONTAP tools for VMware vSphere, you can configure every virtual volume (vVols) datastore with a new storage capability profile that supports the provisioning of virtual machines with varying IOPS requirements on the same vVols datastore. While executing the VM provisioning workflow with IOPS requirement, all of the vVols datastores are listed in the compatible datastore list.</p>
+<p>With ONTAP tools, you can configure every virtual volume (vVols) datastore with a new storage capability profile that supports the provisioning of virtual machines with varying IOPS requirements on the same vVols datastore. While executing the VM provisioning workflow with IOPS requirement, all of the vVols datastores are listed in the compatible datastore list.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1455,7 +1476,7 @@ When you try to provision or modify virtual machines for vCenter Server earlier 
 <p>You can configure Min IOPS only on AFF systems.</p>
 </li>
 <li>
-<p>You can configure QoS metrics at a virtual volume (VVol) datastore level.</p>
+<p>You can configure QoS metrics at a virtual volume (vVols) datastore level.</p>
 <div class="paragraph">
 <p>This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.</p>
 </div>
@@ -1463,7 +1484,7 @@ When you try to provision or modify virtual machines for vCenter Server earlier 
 <li>
 <p>You can configure storage capability profiles for both FAS and AFFdatastores.</p>
 <div class="paragraph">
-<p>For FAS systems, you can configure space reserve to be either thick or thin, but for AFF systems, space reserve can only be configured to thin.</p>
+<p>For FAS and AFF systems, you can configure space reserve to be either thick or thin.</p>
 </div>
 </li>
 <li>
@@ -1472,7 +1493,7 @@ When you try to provision or modify virtual machines for vCenter Server earlier 
 <li>
 <p>You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.</p>
 <div class="paragraph">
-<p>The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics related to the performance of the storage capability profiles.</p>
+<p>The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics and tiering policies related to the performance of the storage capability profiles.</p>
 </div>
 </li>
 <li>

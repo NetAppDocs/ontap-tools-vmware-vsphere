@@ -9,7 +9,7 @@
   <meta property="og:title" content="Upgrade to the latest release of ONTAP tools" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html" />
-	<meta property="og:description" content="You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here." />
+	<meta property="og:description" content="You can perform an in-place upgrade to the latest release of ONTAP tools from your existing 9.7.1 or later setup following the instructions provided here." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.">
+  <meta name="description" content="You can perform an in-place upgrade to the latest release of ONTAP tools from your existing 9.7.1 or later setup following the instructions provided here.">
   <meta name="keywords" content=" Virtual Storage Console, Storage Replication Adapter">
   
   
@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -634,6 +636,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/index.html">
-        ONTAP tools for VMware vSphere docs
+        ONTAP tools for VMware vSphere 9.10 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         Deployment workflow for new users of ONTAP tools for VMware vSphere
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         Deployment workflow for existing users of ONTAP tools
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP tools Quick start
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         Set IPv4 or IPv6 using the preferences file
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         Enable datastore mounting across different subnets
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Migrate Windows SRM to SRM Appliance
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         Configure replication for vVols datastore to protect virtual machines
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         Protect unprotected virtual machines
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/us-en/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           Upgrade to the latest release of ONTAP tools
@@ -1362,7 +1374,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:00:09 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:06:10 +0000">02/24/2022</time>
     
   
 
@@ -1382,7 +1394,7 @@
 
 
 <div class="paragraph lead">
-<p>You can perform an in-place upgrade to the 9.8 release of ONTAP tools from your existing 9.7 setup following the instructions provided here.</p>
+<p>You can perform an in-place upgrade to the latest release of ONTAP tools from your existing 9.7P1 or later release following the instructions provided here.</p>
 </div>
 <div class="paragraph">
 <p><strong>What you will need</strong></p>
@@ -1390,7 +1402,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>You must have downloaded the <em>.iso</em> file for the 9.8 release of ONTAP tools.</p>
+<p>You must have downloaded the <em>.iso</em> file for the latest release of ONTAP tools.</p>
 </li>
 <li>
 <p>You must have reserved at least 12 GB of RAM for the ONTAP tools to work optimally after the upgrade.</p>
@@ -1413,7 +1425,7 @@
 <img src="/us-en/ontap-tools-vmware-vsphere/images/note.svg" alt="Note">
 </td>
 <td class="content">
-You can perform an in-place upgrade to the 9.8 release of ONTAP tools only from your existing 9.7 version. When you upgrade to 9.7.1 release of ONTAP tools and you want to use vVols replication, then you will need to setup one more vCenter Server with ONTAP tools with Site Recovery Manager (SRM) installed.
+You can perform an in-place upgrade to the latest release of ONTAP tools only from your existing 9.7P1 or later versions. When you upgrade to 9.7.1 release of ONTAP tools and you want to use vVols replication, then you will need to setup one more vCenter Server with ONTAP tools with Site Recovery Manager (SRM) installed.
 </td>
 </tr>
 </table>
@@ -1510,10 +1522,14 @@ IPv6 is supported only with vCenter Server 6.7 and later.
 <p>If upgrading from the 7.0 version of ONTAP tools to the latest version of ONTAP tools, you must first create storage capability profiles before attempting to edit an existing VM Storage Policy or you might get an error that there are incorrect or missing values.</p>
 </li>
 <li>
-<p>If upgrading from an earlier version to the 9.8 version of ONTAP tools, it is found that the <code>vvol.rebalance.threshold</code> property is missing in the `vvol.properties file.</p>
+<p>If upgrading from an earlier version to the latest release of ONTAP tools, it is found that the <code>vvol.rebalance.threshold</code> property is missing in the `vvol.properties file.</p>
 <div class="paragraph">
 <p>The default value of the property is set to 85%.</p>
 </div>
+</li>
+<li>
+<p>After you upgrade to the latest OTV(9.10) release that has FIPS enabled but you have a older version of vCenter where FIPS is not supported, the deployment will still work.
+But if you upgrade your vCenter to the latest FIPS supported version and you have an earlier version of ONTAP tools, then the deployment will work only if FIPS is disabled on the vCenter.</p>
 </li>
 </ul>
 </div>
