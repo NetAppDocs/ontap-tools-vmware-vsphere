@@ -13,7 +13,7 @@ You should be aware of the basic storage system requirements, application requir
 
 The Interoperability Matrix Tool (IMT) contains the latest information about the supported versions of ONTAP, vCenter Server, ESXi hosts, plug-in applications, and Site Recovery Manager (SRM).
 
-https://mysupport.netapp.com/matrix/[Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool]
 
 You must enable the FlexClone license for performing virtual machine snapshot operations and clone operations for VMware Virtual Volumes (vVols) datastores.
 

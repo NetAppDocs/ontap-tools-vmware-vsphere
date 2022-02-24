@@ -9,11 +9,11 @@ summary: 'You can set up several recommended ONTAP roles for working with ONTAPÂ
 :imagesdir: ../media/
 
 [.lead]
-You can set up several recommended ONTAP roles for working with ONTAPÂ® tools for VMware vSphere and role-based access control (RBAC). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the Virtual Storage Console (VSC) tasks.
+You can set up several recommended ONTAP roles for working with ONTAP tools for VMware vSphere and role-based access control (RBAC). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the Virtual Storage Console (VSC) tasks.
 
 To create new user roles, you must log in as an administrator on storage systems running ONTAP. You can create ONTAP roles using one of the following:
 
-* ONTAP System Manager 9.7 or later
+* ONTAP System Manager 9.8P1 or later
 +
 link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges]
 

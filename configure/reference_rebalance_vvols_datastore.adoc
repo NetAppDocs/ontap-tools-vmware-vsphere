@@ -2,14 +2,14 @@
 permalink: configure/reference_rebalance_vvols_datastore.html
 sidebar: sidebar
 keywords: vVols datastore,rebalancing
-summary: 'The 9.8 release of ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.'
+summary: 'ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.'
 ---
 = Rebalance vVols datastores
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The 9.8 release of ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.
+ONTAP tools supports a command to rebalance FlexVol volumes in your datacenter. The main goal is to enable even space utilization among FlexVol volumes. ONTAP tools redistributes vVols among existing volumes based on space usage, thin provisioning, LUN count, and storage capability profiles.
 
 The rebalancing of vVols datastore is performed by LUN move or file move. The criteria considered during vVols rebalancing is:
 
@@ -29,5 +29,5 @@ The rebalance command removes empty FlexVol volumes to provide space for other d
 * During vVols rebalance operation, if large number of vVols datastores are identified, then the transfer operation times out after the set default value.
 ** If this occurs, then you should modify the `vvol.properties` file to set the value to `offtap.operation.timeout.period.seconds=29700` and restart VASA Provider service.
 * If a FlexVol volume has Snapshots, then during the vVols rebalance operation, the vVols are not correctly rebalanced due to insufficient details on the space utilization.
-
+* You can set the VASA Provider property _enable.update.vvol.through.discovery_ to true to get consistent data between ONTAP tools and ONTAP, when timeout occurs during container rebalance operation.
 ====

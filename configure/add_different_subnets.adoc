@@ -1,0 +1,21 @@
+---
+permalink: configure/add_different_subnets.html
+sidebar: sidebar
+keywords:
+summary: 'You can now add different subnets for datastore mounting using the ONTAP tools interface.'
+---
+= Add different subnets
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the ONTAP tools interface or REST APIs to add different subnets of ESXi hosts. This enables you to either allow or restrict the subnets for datastore mount operation after provisioning storage systems. If you do not add subnets of ESXi hosts then ONTAP tools blocks datastore mount operation for those subnets.
+
+*Steps*
+
+. Log in to your vCenter Server instance and access ONTAP tools.
+. On the homepage, click *Settings* > *Manage Subnet Access*.
+. In the Manage Subnet Access dialog box, click *Selected* option in Allowed subnets for NFS Subnets Access.
+. Enter the values for the required subnets, and then click *ADD*.
+. Select either *None* or *Selected* for Restricted subnets.
+. Repeat the above steps for iSCSI Subnets Access, and click *Apply*.
