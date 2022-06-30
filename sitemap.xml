@@ -293,14 +293,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/</loc>
+      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/</loc>
       
       <lastmod>2021-06-23T11:38:44+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/</loc>
+      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/</loc>
       
       <lastmod>2021-06-23T11:38:44+00:00</lastmod>
       
@@ -316,7 +316,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/legal-notices.html</loc>
       
-      <lastmod>2022-02-04T06:26:36+00:00</lastmod>
+      <lastmod>2022-06-23T10:51:51+00:00</lastmod>
       
     </url>
   
@@ -342,16 +342,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
+      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
       
-      <lastmod>2021-09-02T09:37:09+00:00</lastmod>
+      <lastmod>2021-09-27T08:15:21+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
+      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
       
-      <lastmod>2021-09-27T08:15:21+00:00</lastmod>
+      <lastmod>2021-09-02T09:37:09+00:00</lastmod>
       
     </url>
   
@@ -401,13 +401,6 @@
       <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/reference_key_points_about_assigning_and_modifying_permissions.html</loc>
       
       <lastmod>2021-11-09T10:43:45+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/reference_legal_notices.html</loc>
-      
-      <lastmod>2021-09-29T09:40:23+00:00</lastmod>
       
     </url>
   
@@ -477,7 +470,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere//search.html</loc>
       
-      <lastmod>2022-05-17T14:10:40+00:00</lastmod>
+      <lastmod>2022-06-30T12:36:08+00:00</lastmod>
       
     </url>
   
