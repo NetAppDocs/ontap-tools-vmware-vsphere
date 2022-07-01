@@ -55,9 +55,6 @@ On other platforms the maximum LUN size supported is 16TB.
 ** ONTAP Storage System (Cluster) with Kerberos configured
 ** ESXi host with Kerberos configured
 
-+
-For more details see, https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html[Enable Kerberos on a data LIF]
-
 If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile. You can apply storage QoS settings, throughput ceiling (Max IOPS) and throughput floor (Min IOPS) on data VMDK files of virtual machines provisioned on FlexGroup backed datastore. QoS settings can be applied either at datastore level or at individual virtual machine level by right clicking the datastore. The right click option is available only on those datastores or virtual machines that are backed by FlexGroup datastore. After the QoS is applied to a datastore, any pre-existing datastore or virtual machine QoS settings are overridden. QoS settings cannot be applied at a datastore level or at a virtual machine level for datastores that are provisioned on direct SVM's, because ONTAP does not support QoS at SVM management level.
 
 *Steps*
@@ -127,7 +124,10 @@ Kerberos authentication is supported only for Flexvols.
 a|
 Storage system
 a|
-You can select one of the listed storage capability profiles if you have selected the option in the General section. If you are provisioning a FlexGroup datastore, then storage capability profile for this datastore is not supported. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
+You can select one of the listed storage capability profiles if you have selected the option in the General section.
+
+* If you are provisioning a FlexGroup datastore, then the storage capability profile for this datastore is not supported. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
+* For Kerberos authentication, the storage systems enabled for Kerberos are listed.
 a|
 Storage attributes
 a|
@@ -143,7 +143,9 @@ The *Space reserve* option available under *Advanced* menu is also populated to 
 a|
 Summary
 a|
-You can review the summary of the parameters you specified for the new datastore. There is a new field "`Volume Style`" available in the Summary page that enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
+You can review the summary of the parameters you specified for the new datastore.
+
+The field "`Volume Style`" enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
 |===
 
 NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup volumes.
@@ -152,3 +154,13 @@ NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below th
 *Related information*
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline[Datastore inaccessible when volume status is changed to offline]
+
+https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html[ONTAP support for Kerberos]
+
+https://docs.netapp.com/us-en/ontap/nfs-admin/requirements-configuring-kerberos-concept.html[Requirements for configuring Kerberos with NFS]
+
+https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html[Manage Kerberos realm services with System Manager - ONTAP 9.7 and earlier]
+
+https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html[Enable Kerberos on a data LIF]
+
+https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-BDCB7500-72EC-4B6B-9574-CFAEAF95AE81.html[Configure ESXi Hosts for Kerberos Authentication]
