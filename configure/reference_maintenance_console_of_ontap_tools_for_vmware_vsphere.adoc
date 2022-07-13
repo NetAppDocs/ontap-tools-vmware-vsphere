@@ -35,8 +35,6 @@ a|
 . Change LOG level for Virtual Storage Console service
 . Change LOG level for VASA Provider and SRA service
 . Display TLS configuration
-. Enable TLS protocol
-. Disable TLS protocol
 
 a|
 System Configuration
