@@ -140,6 +140,7 @@ The *Space reserve* option available under *Advanced* menu is also populated to 
 * A new initiator group will be created with this name if one does not already exist.
 * The protocol name will be appended to the specified initiator group name.
 * If an existing igroup is found with the selected initiators, the igroup will be renamed with the provided name and will be reused.
+* If you do not specify an igroup name, igroup will be created with the default name.
 a|
 Summary
 a|
