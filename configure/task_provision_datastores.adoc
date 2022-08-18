@@ -48,6 +48,13 @@ On other platforms the maximum LUN size supported is 16TB.
 * VMware does not support NFSv4.1 with datastore clusters.
 ====
 
+* For Kerberos authentication, you will need the following:
+** Windows machine with Active Directory (AD)
+** Domain Name Server (DNS)
+** Key Distribution Center (KDC)
+** ONTAP Storage System (Cluster) with Kerberos configured
+** ESXi host with Kerberos configured
+
 If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile. You can apply storage QoS settings, throughput ceiling (Max IOPS) and throughput floor (Min IOPS) on data VMDK files of virtual machines provisioned on FlexGroup backed datastore. QoS settings can be applied either at datastore level or at individual virtual machine level by right clicking the datastore. The right click option is available only on those datastores or virtual machines that are backed by FlexGroup datastore. After the QoS is applied to a datastore, any pre-existing datastore or virtual machine QoS settings are overridden. QoS settings cannot be applied at a datastore level or at a virtual machine level for datastores that are provisioned on direct SVM's, because ONTAP does not support QoS at SVM management level.
 
 *Steps*
@@ -103,19 +110,43 @@ Most of the fields in the dialog box are self-explanatory. The following table d
 a|
 General
 a|
-The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore. You can select *NFS* or *VMFS* protocol to configure a traditional datastore. This release allows you to configure a VMFS datastore of maximum size 64TB. You can select the option "`Distribute datastore data across the ONTAP cluster`" to provision a FlexGroup volume on the storage system. Selecting this option automatically deselects the checkbox "`Use Storage Capability Profile for provisioning`". For FlexGroup datastore provisioning, ONTAP cluster that are 9.8 and above only are listed for selection. The vVols datastore type is used to configure a vVols datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
+The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore.
+
+You can select either *NFS* or *VMFS* type of protocol to configure a traditional datastore. For NFS, you can either select NFS3 or NFS 4.1.
+
+This release allows you to configure a VMFS datastore of maximum size 64TB. You can select the option "`Distribute datastore data across the ONTAP cluster`" to provision a FlexGroup volume on the storage system. Selecting this option automatically deselects the checkbox "`Use Storage Capability Profile for provisioning`". For FlexGroup datastore provisioning, ONTAP cluster that are 9.8 and above only are listed for selection. The vVols datastore type is used to configure a vVols datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
+a|
+Kerberos authentication
+a|
+If you have selected NFS 4.1 in the *General* page, select the security level.
+
+Kerberos authentication is supported only for Flexvols.
 a|
 Storage system
 a|
-You can select one of the listed storage capability profiles if you have selected the option in the General section. If you are provisioning a FlexGroup datastore, then storage capability profile for this datastore is not supported. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
+You can select one of the listed storage capability profiles if you have selected the option in the General section.
+
+* If you are provisioning a FlexGroup datastore, then the storage capability profile for this datastore is not supported. The system-recommended values for the storage system and storage virtual machine are populated for ease. But you can modify the values if required.
+* For Kerberos authentication, the storage systems enabled for Kerberos are listed.
 a|
 Storage attributes
 a|
-By default, VSC populates the recommended values for *Aggregates* and *Volumes* options. You can customize the values based on your requirements. Aggregate selection is not supported for FlexGroup datastores as ONTAP manages the aggregate selection. The *Space reserve* option available under *Advanced* menu is also populated to give optimum results.
+By default, VSC populates the recommended values for *Aggregates* and *Volumes* options. You can customize the values based on your requirements. Aggregate selection is not supported for FlexGroup datastores as ONTAP manages the aggregate selection.
+
+The *Space reserve* option available under *Advanced* menu is also populated to give optimum results.
+
+(Optional) You can specify the initiator group name in the *Change initiator group name* field.
+
+* A new initiator group will be created with this name if one does not already exist.
+* The protocol name will be appended to the specified initiator group name.
+* If an existing igroup is found with the selected initiators, the igroup will be renamed with the provided name and will be reused.
+* If you do not specify an igroup name, igroup will be created with the default name.
 a|
 Summary
 a|
-You can review the summary of the parameters you specified for the new datastore. There is a new field "`Volume Style`" available in the Summary page that enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
+You can review the summary of the parameters you specified for the new datastore.
+
+The field "`Volume Style`" enables you to differentiate the type of datastore created. The "`Volume Style`" can be either "`FlexVol`" or "`FlexGroup`".
 |===
 
 NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below the existing size but can grow by 120% maximum. Default snapshots are enabled on these FlexGroup volumes.
@@ -124,3 +155,13 @@ NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below th
 *Related information*
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline[Datastore inaccessible when volume status is changed to offline]
+
+https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html[ONTAP support for Kerberos]
+
+https://docs.netapp.com/us-en/ontap/nfs-admin/requirements-configuring-kerberos-concept.html[Requirements for configuring Kerberos with NFS]
+
+https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html[Manage Kerberos realm services with System Manager - ONTAP 9.7 and earlier]
+
+https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html[Enable Kerberos on a data LIF]
+
+https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-BDCB7500-72EC-4B6B-9574-CFAEAF95AE81.html[Configure ESXi Hosts for Kerberos Authentication]

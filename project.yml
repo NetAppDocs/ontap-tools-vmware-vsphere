@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP tools for VMware vSphere 9.10
+  name: ONTAP tools for VMware vSphere 9.11
   internal:
     pdf_enabled: true
   prod:
@@ -8,7 +8,7 @@ settings:
     harmony_enabled: true
 sidebar:
   entries:
-    - title: ONTAP tools for VMware vSphere 9.10 docs
+    - title: ONTAP tools for VMware vSphere 9.11 docs
       url: /index.html
     - title: Release notes
       url: /release_notes.html
