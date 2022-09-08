@@ -5,6 +5,7 @@ settings:
     pdf_enabled: true
   prod:
     pdf_enabled: true
+    harmony_enabled: true
   versions:
     - name: ONTAP tools for VMware vSphere
       url: /ontap-tools-vmware-vsphere
@@ -75,3 +76,4 @@ homepage:
       url: https://www.youtube.com/watch?v=CEQmIEzNVfA
     - title: NetApp Community - ONTAP tools
       url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions
+
