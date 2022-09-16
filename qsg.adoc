@@ -58,7 +58,7 @@ Minimum storage and application requirements:
 | *Storage, host, and applications* | *Version requirements*
 
 | ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
-| VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in applications, and databases column 1 | See the https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool: OTV 9.10]
+| VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in applications, and databases column 1 | See the https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool^]
 |===
 
 
