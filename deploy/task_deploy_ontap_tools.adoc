@@ -17,7 +17,7 @@ You should deploy ONTAP tools in your environment, and specify the required para
 +
 NOTE: ONTAP tools can be registered either with a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
 +
-https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool]
+https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool^]
 
 * You must have configured and set up your vCenter Server environment.
 * You must have set up an ESXi host for your virtual machine.
