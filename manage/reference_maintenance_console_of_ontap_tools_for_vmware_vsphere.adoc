@@ -15,7 +15,7 @@ You must have installed VMware tools after deploying ONTAP tools to access the m
 
 NOTE: You must set a password for the "`diag`" user while enabling remote diagnostics.
 
-You should use the Summary tab of your deployed ONTAP tools to access the maintenance console. When you click  image:../media/launch_maintenance_console.gif[], the maintenance console starts.
+You should use the *Summary* tab of your deployed ONTAP tools to access the maintenance console. When you click  image:../media/launch_maintenance_console.gif[], the maintenance console starts.
 
 |===
 | *Console Menu*| *Options*
@@ -35,8 +35,6 @@ a|
 . Change LOG level for Virtual Storage Console service
 . Change LOG level for VASA Provider and SRA service
 . Display TLS configuration
-. Enable TLS protocol
-. Disable TLS protocol
 
 a|
 System Configuration
