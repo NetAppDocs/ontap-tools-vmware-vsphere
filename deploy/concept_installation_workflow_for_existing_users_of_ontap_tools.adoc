@@ -22,7 +22,7 @@ link:../configure/reference_set_ipv4_or_ipv6.html[Set IPv4 or IPv6 using the pre
 
 In many cases, you might not need to migrate configuration data. However, if you have customized the preferences files earlier, you might want to review them and make similar changes to the newly deployed ONTAP tools. You can perform one of the following:
 
-* Use https://mysupport.netapp.com/tools/index.html[NetApp Import Utility for SnapCenter and Virtual Storage Console] to migrate storage system credentials from VSC 6.X and SRA 4.X to the new deployment.
+* Use System Manager to migrate storage system credentials from VSC 6.X and SRA 4.X to the new deployment.
 * Add the storage systems to the newly deployed ONTAP tools and specify the credentials as you add them.
 
 If you are upgrading from VASA Provider 6.X, you should unregister VASA Provider before upgrading. See the documentation for your current release for more details.
