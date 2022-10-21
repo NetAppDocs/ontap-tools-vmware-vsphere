@@ -52,3 +52,8 @@ a|
 * If the SVM does not have an IPv6 data LIF, then the provisioning happens through the IPv4 data LIF, if it is available in the SVM.
 
 |===
+
+To configure the IPv4 or IPv6 using the user interface, see the following sections:
+
+* link:../configure/add_different_subnets.html[Add different subnets]
+* link:../configure/task_enable_datastore_mounting_across_different_subnets.html[Enable datastore mounting across different subnets]
