@@ -31,7 +31,7 @@ If you are using vSphere 6.0 or later, you should set this value to 32.
 
 * *Net.TcpipHeapMax*
 +
-If you are using vSphere 6.0 or later, for ESXi host 6.x set the value to 512 and for ESXi 7.x to 1024.
+You should set this value to 512MB for vSphere 6.X releases, except for 6.5U3 and 6.7U3 releases. For vSphere 6.5U3 and 6.7U3 releases set this value to 1024MB. If you are using vSphere 7.0 or later versions, you should set this value to 1024MB.
 
 * *NFS.MaxVolumes*
 +
