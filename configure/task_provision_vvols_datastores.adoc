@@ -45,15 +45,15 @@ NOTE: The 9.10 release of ONTAP tools supports creating vVols datastores with vm
 a|
 All of the hosts in a datacenter
 a|
-Right-click a datacenter, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a datacenter, and then select *NetApp ONTAP tools* > *Provision Datastore*.
 a|
 All of the hosts in a cluster
 a|
-Right-click a cluster, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a cluster, and then select *NetApp ONTAP tools* > *Provision Datastore*.
 a|
 A single host
 a|
-Right-click a host, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a host, and then select *NetApp ONTAP tools* > *Provision Datastore*.
 |===
 
 . Complete the fields in the New Datastore dialog box to create the datastore.
@@ -88,7 +88,7 @@ You should select the schedule for SnapMirror and the required FlexVol volume fr
 * The minimum size of FlexVol volume that you should create is 5GB.
 |===
 +
-. In the Summary section, click **Finish**.
+. In the Summary section, click *Finish*.
 
 *Result*
 

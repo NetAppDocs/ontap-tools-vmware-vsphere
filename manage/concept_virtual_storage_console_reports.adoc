@@ -103,7 +103,7 @@ For virtual machines that are backed by FlexGroup volumes, when new virtual mach
 == vVols reports
 vVols reports display detailed information about VMware Virtual Volumes (vVols) datastores and the virtual machines that are created on these datastores. The vVols dashboard enables you to review and identify potential issues with the vVols datastores and virtual machines in your vCenter Server.
 
-You can view, organize, and export reports. The data for the vVols datastores and virtual machines report is provided by the ONTAP along with OnCommand API Services.
+You can view, organize, and export reports. The data for the vVols datastores and virtual machines report is provided by ONTAP.
 
 vVols provides the following pre-canned reports:
 

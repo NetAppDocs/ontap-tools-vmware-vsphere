@@ -37,8 +37,8 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 *Steps*
 
 . Log in to the vSphere Client.
-. Select *Home* > *Host & Clusters*.
-. Right-click the required datacenter, and then click *Deploy OVA template*.
+. Select *Home* > *Host and Clusters*.
+. Right-click the required datacenter, and then click *Deploy OVF template...*.
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
 |===
@@ -76,8 +76,6 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 *Troubleshooting:* If you cannot view the plug-in even after logging in, you must clean the vSphere Client cache.
 +
 link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
-
-NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
 

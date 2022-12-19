@@ -22,6 +22,6 @@ If your environment includes multiple vCenter Server instances, when you add a s
 Discovery happens in one of the following ways. In each case, you must supply credentials for any newly discovered storage system.
 
 * When the VSC service starts, VSC begins its automatic background discovery process.
-* You can click the *REDISCOVER All* button in the Storage Systems page, or on a host or datacenter to select it from the *Actions* menu (*Actions* > *Netapp VSC* > *Update Host and Storage Data*). You can also click *DISCOVER* on the Getting Started tab of Overview section.
+* You can click the *REDISCOVER All* button in the Storage Systems page, or on a host or datacenter to select it from the *Actions* menu (*Actions* > *Netapp ONTAP tools* > *Update Host and Storage Data*). You can also click *DISCOVER* on the Getting Started tab of Overview section.
 
 All of the VSC features require specific permissions to perform tasks. You can limit what users can do based on the credentials that are associated with the ONTAP role. All of the users that have the same storage system user name and password pair share the same set of storage system credentials and can perform the same operations.

@@ -32,7 +32,7 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html[Upgra
 
 * If you are using SRA 2.1 or 3.0, you should first make note of existing site configuration details.
 +
-_Installation and Setup Guide for Storage Replication Adapter 4.0 for ONTAP_ has the detailed instructions in the "Upgrade Overview" section. These SRA releases also use the VASA Provider, so you must unregister VASA Provider and then deploy the latest version of ONTAP tools. The previous release of the server (`.ova`) can be removed when the upgrade is complete.
+The Storage Replication Adapter (SRA) 4.0 for ONTAP releases also use the VASA Provider, so you must unregister VASA Provider and then deploy the latest version of ONTAP tools. The previous release of the server (`.ova`) can be removed when the upgrade is complete.
 
 For any SRA upgrade, the SRA software (the adapter on the Site Recovery Manager server, installed by the `.msi` file) should be removed from the Site Recovery Manager server. You can use the Windows system control panel to uninstall the software and then install the latest SRA software on the SRA server using the `.msi` file.
 

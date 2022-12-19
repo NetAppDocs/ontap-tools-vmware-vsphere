@@ -13,13 +13,13 @@ You can use the update feature that is provided by ONTAP® tools for VMware vSph
 
 *About this task*
 
-The "`refresh`" option is useful if you changed the default credentials for the storage systems after receiving an authentication error. You should always perform an update operation if you changed the storage system credentials after the storage system reported an "`Authentication Failure Status`". During the update operation, VSC tries to connect to the storage system by using the new credentials.
+The `refresh` option is useful if you changed the default credentials for the storage systems after receiving an authentication error. You should always perform an update operation if you changed the storage system credentials after the storage system reported an `Authentication Failure Status`. During the update operation, VSC tries to connect to the storage system by using the new credentials.
 
 Depending on your system setup, this task can take a long time to complete.
 
 *Steps*
 
-. On the VMware vSphere Client Home page, click *Storage Systems*.
+. On the VMware vSphere Client Home page, click *Storage*.
 . Start the update:
 +
 |===
@@ -31,7 +31,7 @@ The *REDISCOVER ALL* icon.
 a|
 Datacenter
 a|
-Right-click the datacenter, and then click *NetApp VSC* > *Update Host and Storage Data*.
+Right-click the datacenter, and then click *NetApp ONTAP tools* > *Update Host and Storage Data*.
 |===
 
 . In the Update Host and Storage Data dialog box, click *OK*.

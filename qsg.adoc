@@ -85,7 +85,7 @@ If you are deploying the virtual appliance for use with VMware Site Recovery Man
 . Download the `.ova` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
 +
 You must deploy the `.ova` file on both the source and destination sites if you are deploying SRA.
-. Log in to the vSphere Web Client, select *Home* > *Host & Clusters*.
+. Log in to the vSphere Web Client, select *Home* > *Host and Clusters*.
 . Right-click the required datacenter, and then click *Deploy OVF template*.
 . You can either enter the URL for the .ova file or browse to the folder where the .ova file is saved, and then click *Next*.
 . Enter the required details to complete the deployment.

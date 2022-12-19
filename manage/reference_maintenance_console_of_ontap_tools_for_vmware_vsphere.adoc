@@ -35,6 +35,9 @@ a|
 . Change LOG level for Virtual Storage Console service
 . Change LOG level for VASA Provider and SRA service
 . Display TLS configuration
+. Generate Web-Cli Authentication token
+. Start ONTAP tools plug-in service
+. Stop ONTAP tools plug-in service
 
 a|
 System Configuration
