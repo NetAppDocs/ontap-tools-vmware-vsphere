@@ -82,7 +82,8 @@ If you are deploying the virtual appliance for use with VMware Site Recovery Man
 == Deploying ONTAP tools
 
 .Steps
-. Download the `.ova` file from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
+. Download `.zip` file that contains  binaries and signed certificates from the https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab[NetApp Support Site^] to a vSphere Client system to deploy the ONTAP tools.
+. Extract the `.zip` file and deploy the `.ova` file.
 +
 You must deploy the `.ova` file on both the source and destination sites if you are deploying SRA.
 . Log in to the vSphere Web Client, select *Home* > *Host and Clusters*.

@@ -19,7 +19,7 @@ After setting up a profile, you can edit the profile as required.
 
 *Steps*
 
-. On the ONTAP tools Home page, click *Policies and Profiles*.
+. On the ONTAP tools Home page, click *Storage Capability Profiles*.
 . Create a profile or edit an existing profile, as required:
 +
 |===
@@ -31,12 +31,12 @@ Click *CREATE*.
 a|
 Edit an existing profile
 a|
-Click the profile that you want to modify from the profiles listed on the *VM Storage Policies* page and click *EDIT*.
+Click the profile that you want to modify from the profiles listed on the *Storage Capability Profiles* page.
 |===
 
 NOTE: To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.
 
-. Complete the pages in the Create VM Storage Policy wizard to set up a profile or to edit values to modify an existing profile.
+. Complete the pages in the Create Storage Capability Profile wizard to set up a profile or to edit values to modify an existing profile.
 +
 Most of the fields in this wizard are self-explanatory. The following table describes some of the fields for which you might require guidance.
 +
