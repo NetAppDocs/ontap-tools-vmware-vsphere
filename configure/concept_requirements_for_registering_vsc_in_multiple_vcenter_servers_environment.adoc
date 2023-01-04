@@ -9,7 +9,7 @@ summary: 'If you are using ONTAP® tools for VMware vSphere in an environment wh
 :imagesdir: ../media/
 
 [.lead]
-If you are using ONTAP tools for VMware vSphere in an environment where a single VMware vSphere HTML5 client is managing multiple vCenter Server instances, you must register one instance of VSC with each vCenter Server so that there is a 1:1 pairing between VSC and the vCenter Server. Doing this enables you to manage all of the servers running vCenter 6.0 or later in both linked mode and non-linked mode from a single vSphere HTML5 client.
+If you are using ONTAP tools for VMware vSphere in an environment where a single VMware vSphere HTML5 client is managing multiple vCenter Server instances, you must register one instance of VSC with each vCenter Server so that there is a 1:1 pairing between VSC and the vCenter Server. Doing this enables you to manage all of the servers running vCenter 7.0 or later in both linked mode and non-linked mode from a single vSphere HTML5 client.
 
 NOTE: If you want to use VSC with a vCenter Server, then you must have set up or registered one VSC instance for every vCenter Server instance that you want to manage. Each registered VSC instance must be of the same version.
 

@@ -34,8 +34,6 @@ The vCenter Server then associates the storage capability of a LUN or volume wit
 
 With ONTAP tools, you can configure every virtual volume (vVols) datastore with a new storage capability profile that supports the provisioning of virtual machines with varying IOPS requirements on the same vVols datastore. While executing the VM provisioning workflow with IOPS requirement, all of the vVols datastores are listed in the compatible datastore list.
 
-NOTE: When you try to provision or modify virtual machines for vCenter Server earlier than 6.5, only the vVols datastores that contain storage capability profiles with performance set to "`MAX_IOPS`" are listed in the compatible datastore list. The remaining vVols datastores are listed in the incompatible datastore list. You can ignore this classification and select any vVols datastore from the incompatible datastore list to provision or modify the virtual machine.
-
 == Considerations for creating and editing storage capability profiles
 You should be aware of the considerations for creating and editing storage capability profiles.
 
