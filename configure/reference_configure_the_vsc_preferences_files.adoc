@@ -17,4 +17,4 @@ VSC has several preference files. These files include entry keys and values that
 
 `/opt/netapp/vscserver/etc/vsc/vscPreferences.xml`
 
-You might have to modify the preferences files in certain situations. For example, if you use iSCSI or NFS and the subnet is different between your ESXi hosts and your storage system, you have to modify the preferences files. If you do not modify the settings in the preferences file, datastore provisioning fails because VSC cannot mount the datastore.
+You might have to modify the preferences files in certain situations. For example, if you use iSCSI, NFS, or NVMe/FC and the subnet is different between your ESXi hosts and your storage system, you have to modify the preferences files. If you do not modify the settings in the preferences file, datastore provisioning fails because VSC cannot mount the datastore.

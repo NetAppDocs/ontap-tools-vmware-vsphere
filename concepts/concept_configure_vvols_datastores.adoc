@@ -13,7 +13,7 @@ You can use VASA Provider for ONTAP to create and manage VMware Virtual Volumes 
 
 A vVols datastore consists of one or more FlexVol volumes within a storage container (also called "`backing storage`"). A virtual machine can be spread across one vVols datastore or multiple vVols datastores.
 
-While you can create a vVols datastore that has multiple FlexVol volumes, all of the FlexVol volumes within the storage container must use the same protocol (NFS, iSCSI, or FCP) and the same storage virtual machines (SVMs).
+While you can create a vVols datastore that has multiple FlexVol volumes, all of the FlexVol volumes within the storage container must use the same protocol (NFS, iSCSI, FCP, or NVMe/FC) and the same storage virtual machines (SVMs).
 
 You do not require detailed knowledge of the underlying storage. For example, you do not have to identify a specific FlexVol volume to contain the storage. After you add FlexVol volumes to the vVols datastore, the storage container manages the storage requirements and prevents any situations during VM provisioning where VMware provisioned to a backing volume with no capacity.
 

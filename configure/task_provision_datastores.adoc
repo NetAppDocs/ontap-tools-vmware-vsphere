@@ -32,6 +32,7 @@ The *Provision Datastore* option enables you to specify a storage capability pro
 
 * NFSv3 and NFSv4.1
 * VMFS5 and VMFS6
+* From vSphere 8.0 release, NVMe/FC protocol is supported.
 
 VSC can create a datastore on either an NFS volume or a LUN:
 

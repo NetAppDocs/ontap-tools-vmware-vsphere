@@ -14,7 +14,7 @@ When you first run Virtual Storage Console (VSC) in a vSphere Client, VSC discov
 *What you will need*
 
 * All of the ESXi hosts must be powered on and connected.
-* All the storage virtual machines (SVMs) to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI or FC).
+* All the storage virtual machines (SVMs) to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI, FC, or NVMe/FC).
 
 *About this task*
 
