@@ -70,7 +70,6 @@ Minimum storage and application requirements:
  * Delete the browser cache to avoid any browser cache issue during the deployment of the ONTAP tools.
  * Configure the default gateway to be used by the virtual appliance to respond to ICMP pings.
  * A valid DNS hostname for the virtual appliance.
- * You do not need to register OnCommand API Services with VASA Provider if you are using ONTAP 9.7 or later.
 
 === Optional requirements for SRA
 
