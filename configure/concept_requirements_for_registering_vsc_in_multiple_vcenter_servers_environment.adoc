@@ -29,7 +29,7 @@ If a VMware inventory includes a vCenter Server that does not have a VSC server 
 +
 You must also have the correct RBAC permissions.
 
-When you are performing a task that requires you to specify a vCenter Server, the *vCenter Server* drop-down box displays the available vCenter Servers in alphanumeric order. The default vCenter Server is always the first server in the drop-down list.
+When you are performing a task that requires you to specify a vCenter Server, the *INSTANCE* drop-down box displays the available vCenter Servers in alphanumeric order. The default vCenter Server is always the first server in the drop-down list.
 
 If the location of the storage is known (for example, when you use the Provisioning wizard and the datastore is on a host managed by a specific vCenter Server), the vCenter Server list is displayed as a read-only option. This happens only when you use the right-click option to select an item in the vSphere Web Client.
 

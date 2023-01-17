@@ -26,7 +26,7 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 *Steps*
 
 . Log in to the web user interface of VMware vSphere.
-. From the vSphere Client, click *Menu* > *ONTAP tools Console*.
+. From the vSphere Client, click *Menu* > *NetApp ONTAP tools* Console.
 . Click *Settings*.
 . Click *Manage Capabilities* in the *Administrative Settings* tab.
 . In the *Manage Capabilities* dialog box, select the SRA extension want to enable.
