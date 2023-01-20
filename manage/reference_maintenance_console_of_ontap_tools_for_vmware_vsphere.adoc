@@ -38,6 +38,8 @@ a|
 . Generate Web-Cli Authentication token
 . Start ONTAP tools plug-in service
 . Stop ONTAP tools plug-in service
+. Start Log Integrity services
+. Stop Log Integrity services
 
 a|
 System Configuration
