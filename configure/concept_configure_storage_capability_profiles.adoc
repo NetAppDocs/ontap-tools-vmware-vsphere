@@ -9,7 +9,7 @@ summary: 'VASA Provider for ONTAP allows you to create storage capability profil
 :imagesdir: ../media/
 
 [.lead]
-VASA Provider for ONTAP allows you to create storage capability profiles and map them to your storage. This helps you maintain consistency across the storage. You can also use VASA Provider to check for compliance between the storage and the storage capability profiles.
+VASA Provider for ONTAP allows you to create storage capability profiles and map them to your storage. This helps to maintain consistency across the storage. You can also use VASA Provider to check for compliance between the storage and the storage capability profiles.
 
 A storage capability is a set of storage system attributes that identifies a specific level of storage performance, storage efficiency, and other capabilities such as encryption for the storage object that is associated with the storage capability.
 
