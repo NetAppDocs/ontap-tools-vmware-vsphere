@@ -93,6 +93,19 @@ NOTE: (Optional) If you want to create containers without registering to vCenter
 
 You can view the progress of the deployment from the *Tasks* tab, and wait for deployment to complete.
 
+As part of the deployment checksum verifications are performed. If the deployment fails, do the following:
+
+1. Verify vpserver/logs/checksum.log. If it says "checksum verification failed",
+you can see the failed jar's verification in same log.
++
+Log file contains the execution of _sha256sum -c /opt/netapp/vpserver/conf/checksums_.
+
+2. Verify vscserver/log/checksum.log. If it says "checksum verification failed",
+you can see the failed jar's verification in same log.
++
+Log file contains the execution of _sha256sum -c /opt/netapp/vscerver/etc/checksums_.
+
+
 === Deploying SRA on SRM
 
 You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
@@ -131,9 +144,9 @@ A success message confirming that the storage credentials are stored is displaye
 ==== Enabling VASA Provider and SRA
 
 .Steps
-. Log in to the vSphere web client by using the IP address that you specified during deployment.
-. Click the *OTV* icon, and enter the username and password specified during deployment, click *Sign In*.
-. In the left pane of OTV, *Settings > Administrative Settings > Manage Capabilities*, and enable the required capabilities.
+. Log in to the vSphere web client by using the vCenter IP that was provided during OVA ONTAP tools deployment.
+.  In the shortcuts page, click on *NetApp ONTAP tools* under plug-ins section.
+. In the left pane of ONTAP tools, *Settings > Administrative Settings > Manage Capabilities*, and enable the required capabilities.
 [NOTE]
 VASA Provider is enabled by default. If you want to use replication capability for vVols datastores, then use the Enable vVols replication toggle button.
 . Enter the IP address of the ONTAP tools and the administrator password, and then click *Apply*.

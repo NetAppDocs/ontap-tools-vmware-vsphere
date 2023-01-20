@@ -113,15 +113,25 @@ General
 a|
 The General section of the New Datastore provisioning dialog box provides options to enter the destination, name, size, type, and protocol for the new datastore.
 
-You can select either *NFS*, *VMFS*, or *vVols* type of protocol to configure a traditional datastore. 
+You can select either *NFS*, *VMFS*, or *vVols* type to configure a datastore. 
 When you select vVols type, NVMe/FC protocol becomes available.
 
 [NOTE] 
 NVMe/FC protocol is supported for ONTAP 9.91P3 and later releases.
 
-For NFS, you can either select NFS3 or NFS 4.1. 
-
-This release allows you to configure a VMFS datastore of maximum size 64TB. You can select the option "`Distribute datastore data across the ONTAP cluster`" to provision a FlexGroup volume on the storage system. Selecting this option automatically deselects the checkbox "`Use Storage Capability Profile for provisioning`". For FlexGroup datastore provisioning, ONTAP cluster that are 9.8 and above only are listed for selection. The vVols datastore type is used to configure a vVols datastore. If VASA Provider is enabled, then you can also decide whether to use storage capability profiles. The *Datastore cluster* option is available only for traditional datastores. You should use the *Advanced* option to specify *VMFS5* or *VMFS6* file system.
+* NFS: You can provision NFS datastore using either NFS3 or NFS4.1 protocols. 
++
+You can select
+the option *Distribute datastore data across the
+ONTAP cluster* to provision a FlexGroup volume on
+the storage system. Selecting this option
+automatically deselects the checkbox *Use Storage
+Capability Profile for provisioning*.
+* VMFS: You can provision VMFS datastore of file system type  VMFS5 or VMFS6  using either iSCSI or FC/FCoE protocols.
+[NOTE]
+If VASA Provider is enabled, then you
+can choose to use the storage capability
+profiles.
 a|
 Kerberos authentication
 a|

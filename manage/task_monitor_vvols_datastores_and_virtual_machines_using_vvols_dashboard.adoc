@@ -27,8 +27,8 @@ The IOPS data that is provided by ONTAP is rounded off and displayed on the vVol
 *Steps*
 
 . From the vSphere Client home page, click *ONTAP tools*.
-. Select the required vCenter Server using the *INSTANCE* drop-down menu to view the datastores.
-. Click *vVols Dashboard*.
+. Select the required vCenter Server using the *INSTANCE* selector to view the datastores.
+. Click *Overview > vVols Dashboard*.
 +
 The Datastores portlet provides the following details:
 

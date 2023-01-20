@@ -35,8 +35,10 @@ VSC displays a Confirm dialog box that informs you that this action will restart
 +
 When the certificate has expired, you get a message saying: Cluster is not trusted. You will be prompted to authorize the cluster certificate.
 + 
-In the *Modify Storage system* window, in the *Upload Certificate* field, *Browse* to the location where the certificate is stored and upload the certificate.
-If you do not upload the certificate, it is automatically fetched and you need to authorize the cluster certificate.
+In the *Modify Storage system* window, in the *Upload Certificate* field, *Browse* to the location where the ONTAP certificate is stored and upload the certificate.
+If you do not upload the certificate, it is automatically fetched from the ONTAP storage and you need to authorize the cluster certificate.
++
+If ONTAP tools certificate has expired, you can renew the certificate by selecting *Generate a new client certificate for ONTAP*
 
 . Repeat steps 4 and 5 for all storage controllers with `Authentication Failure` status.
 

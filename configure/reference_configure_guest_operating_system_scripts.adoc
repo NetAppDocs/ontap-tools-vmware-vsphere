@@ -32,6 +32,6 @@ a|
 a|
 \https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
 |===
-You should install the script from the copy of the VSC instance that is registered to the vCenter Server that manages the virtual machine. If your environment includes multiple vCenter Servers, you should select the instance that contains the virtual machine for which you want to set the storage timeout values.
+You should install the script from the copy of the VSC instance that is registered to the vCenter Server (ELM) that manages the virtual machine. If your environment includes multiple vCenter Servers, you should select the instance that contains the virtual machine for which you want to set the storage timeout values.
 
 You should log in to the virtual machine, and then run the script to set the storage timeout values.
