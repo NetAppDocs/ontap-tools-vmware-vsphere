@@ -40,6 +40,7 @@ a|
 . Stop ONTAP tools plug-in service
 . Start Log Integrity services
 . Stop Log Integrity services
+. Change database password
 
 a|
 System Configuration

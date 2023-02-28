@@ -86,6 +86,14 @@ If you are deploying the virtual appliance for use with VMware Site Recovery Man
 You must deploy the `.ova` file on both the source and destination sites if you are deploying SRA.
 . Log in to the vSphere Web Client, select *Home* > *Host and Clusters*.
 . Right-click the required datacenter, and then click *Deploy OVF template*.
++
+If you are using vCenter7.0u3e and later releases perform the following actions, otherwise proceed to Step 5:
+
+* Download the _OTV_INTER_ROOT_CERT_CHAIN.pem_ file from the build folder.
+* Navigate to *vcenter*  > *administration* > *certificate management*.
+* Click on *Add trusted root certificate* option.
+* Click *Browse* and provide the path for _OTV_INTER_ROOT_CERT_CHAIN.pem_ file.
+* Click *Add*.
 . You can either enter the URL for the .ova file or browse to the folder where the .ova file is saved, and then click *Next*.
 . Enter the required details to complete the deployment.
 +

@@ -157,3 +157,25 @@ The available log file status are:
 * TAMPERED: Indicates that the file was modified after archival
 * ROLLOVER_DELETE: Indicates that the file was deleted as part of log4j retention policy.
 * UNEXPECTED_DELETE: Indicates that the file was deleted manually.
+
+The ONTAP tools for VMware vSphere generates Audit logging for following:
+
+* VSC service
++
+Audit log location for vscservice: _/opt/netapp/vscservice/vsc-audit.log_.
+You can change the following parameters of the log integrity report in _/opt/netapp/vscserver/etc/log4j2.properties_ file:
+
+** Max log size for roll over.
+** Retention policy, the default value of this parameter is 10 files.
+** File size, the default value of this parameter is 10MB before the files are archived.
+* VP service
++
+Audit log location for VP service: _/opt/netapp/vpservice/vp-audit.log_
+The VP audit logs can be modified in the file _/opt/netapp/vpserver/conf/log4j2.properties_. You need to restart the services for the new values to come into effect.
+* Maint commands
++
+Audit log location for maintenance services: _/opt/netapp/vscservice/maint-audit.log_
+Maint log files can be modified in the _/opt/netapp/vscserver/etc/maint_logger.properties_ file. 
+When you change the default values, restart the server for the new values to come into effect.
+
+The scheduler can be set up to check the audit logs on regular bases. The default value for the scheduler is  <tbd>. You can alter the value in _/opt/netapp/vscserver/etc/maint_logger.properties_ file.
