@@ -74,7 +74,6 @@ Minimum storage and application requirements:
 === Optional requirements for SRA
 
 If you are deploying the virtual appliance for use with VMware Site Recovery Manager, then you must have:
- * Downloaded the `.msi` file for the SRA plug-in only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution. column 1
  * Downloaded the `.tar.gz` file for SRA if you are using the SRM appliance.
 
 == Deploying ONTAP tools
