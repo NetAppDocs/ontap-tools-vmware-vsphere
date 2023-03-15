@@ -91,9 +91,9 @@ To use storage capability profiles or to set up alarms, you must enable VASA Pro
 == Additional deployment considerations
 You must consider few requirements while customizing the deployment ONTAP tools.
 
-=== Appliance administrator user password
+=== Application user password
 
-You must not use any spaces in the administrator password.
+This is the password assigned to the administrator account. For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character.
 
 === Appliance maintenance console credentials
 
@@ -104,6 +104,10 @@ You must access the maintenance console by using the "`maint`" user name. You ca
 You can set the administrator credentials for the vCenter Server while deploying ONTAP tools.
 
 If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: ``\https://<IP>:8143/Register.html` where the IP address is of ONTAP tools that you provide during deployment.
+
+=== Derby database password
+
+For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character.
 
 === vCenter Server IP address
 
