@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can manually add storage system to Virtual Storage Console \(VSC\).'
 ---
-= Add storage systems to VSC
+= Add storage systems
 :icons: font
 :imagesdir: ../media/
 
@@ -18,13 +18,15 @@ Each time you start Virtual Storage Console (VSC) or select the *REDISCOVER All*
 *Steps*
 
 . Add a storage system to VSC by using either one of the options in the ONTAP tools home page:
- ** Click *Storage Systems* > *Add*.
+ ** Click *Storage Systems* > *Add*. or
  ** Click *Overview* > *Getting Started*, and then click *ADD* button under Add Storage System.
 . In the *Add Storage System* dialog box, enter the management IP address and credentials for that storage system.
 +
+When you add a storage system any communication between ONTAP tools plug-in and the storage system should be mutually authenticated.
++
 You can also add storage systems using the IPv6 address of the cluster or SVM.
 +
-When you add storage from the VSC Storage System page, you must also specify the vCenter Server instance where the storage will be located. The Add Storage System dialog box provides a drop-down list of the available vCenter Server instances. VSC does not display this option if you are adding storage to a datacenter that is already associated with a vCenter Server instance.
+When you add storage from the VSC Storage System page, specify the vCenter Server instance where the storage is located. The Add Storage System dialog box provides a drop-down list of the available vCenter Server instances. VSC does not display this option if you are adding storage to a datacenter that is already associated with a vCenter Server instance.
 +
 [NOTE]
 From ONTAP tools 9.12 release onwards all ONTAP storage systems communication happens through certificate based authentication.
@@ -35,3 +37,7 @@ In the advanced options, there are two ways to upload the *ONTAP Cluster Certifi
 2. *Manually upload* - You need to manually browse to the location where the certificate is located and upload the certificate.
 
 . Click *OK* after you have added all of the required information.
++
+Authorize Cluster Certificate pop-up appears.
+. Click on *Show certificate* to view the certificate details.
+Click *Yes* to add the storage system 

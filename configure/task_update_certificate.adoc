@@ -1,0 +1,32 @@
+---
+permalink: configure/task_update_certificate.html
+sidebar: sidebar
+keywords:
+summary: 'You need to update the certificate when the certificate expires or when the certificate is manually altered. When either the client or the cluste certificate expires or does not match, communication with the ONTAP system is discontinued.'
+---
+= Update certificate
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to update the certificate when the certificate expires or when the certificate is manually altered. When either the client or the cluste certificate expires or does not match, communication with the ONTAP system is discontinued.
+
+Cluster certificate is the server certificate that is generated on the ONTAP side by the storage admin.
+Client certificate can be generated in the ONTAP tools.
+
+*Steps*
+
+. From the vSphere Client Home page, select *Storage systems*.
++
+The license status is displayed against the datastore.
+. Click on the datastore where you want to update the certificate.
+. Click *ACTIONS* > *Modify*.
+. In the *Modify Storage system* window, in the *Upload Certificate* field, *Browse* to the location where the ONTAP certificate is stored and upload the certificate.
+. For Cluster certificate:
+* If you have modified the cluster certificate on the ONTAP, you need to upload the modified certificate to the ONTAP tools manually. This is a mandatory step.
+* When the cluster certificate expires, the storage admin needs to generate the new certificate on the ONTAP side. The *Modify Storage system* window automatically fetched the cluster certificate from ONTAP storage and you need to authorize the cluster certificate.
+. When the client certificate has expired, you get a message saying: Cluster is not trusted. You will be prompted to authorize the cluster certificate.
+* If client certificate has expired, select *Generate a new client certificate for ONTAP* option to regenerate the certificate.
+* If ONTAP tools certificate has expired, the *Modify storage system* window fetches the new ONTAP certificate automatically and present it to the user to trust and accept. When the user trusts the certificate, it keeps the new certificate in the keystore for further communication.
+
+Once the certificates are installed the communication with ONTAP is restored.
