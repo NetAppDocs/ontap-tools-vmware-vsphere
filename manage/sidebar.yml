@@ -23,6 +23,8 @@ entries:
         url: /manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html
       - title: Migrate virtual machines with older storage capability profiles
         url: /manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html
+      - title: Delete virtual machine
+        url: /manage/task_delete_virtual_machines.html
   - title: Modify ESXi host settings
     url: /manage/task_edit_esxi_host_settings.html
   - title: Access ONTAP tools maintenance console

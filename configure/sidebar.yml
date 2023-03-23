@@ -71,3 +71,5 @@ entries:
         url: /configure/task_provision_vvols_datastores.html
       - title: Rebalance vVols datastores
         url: /configure/reference_rebalance_vvols_datastore.html
+      - title: Delete vVols datastores
+        url: /configure/reference_delete_vvols.html        

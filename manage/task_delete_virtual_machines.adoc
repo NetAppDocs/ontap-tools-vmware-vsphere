@@ -1,0 +1,20 @@
+---
+permalink: manage/task_delete_virtual_machines.html
+sidebar: sidebar
+keywords:
+summary: 'Use the steps in this section to delete the virtual machine.'
+---
+= Delete virtual machine
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the steps in this section to delete the virtual machine.
+
+
+*Steps*
+
+. Unregister the plugin by going into https://OTV_IP:8143/Register.html
+. Verify that the plugin is no longer available on the vCenter.
+. Shutdown the ONTAP tools for VMware vSphere VM
+. Delete the ONTAP tools for VMware vSphere VM

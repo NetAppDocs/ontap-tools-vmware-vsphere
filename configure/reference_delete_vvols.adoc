@@ -1,0 +1,25 @@
+---
+permalink: configure/reference_delete_vvols.html
+sidebar: sidebar
+keywords: vVols datastore,delete vVol
+summary: 'ONTAP tools supports a command to delete FlexVol volumes in your datacenter.'
+---
+= Delete vVols datastores
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Delete vVOL datastore task from ONTAP tools in the VCenter does the following: 
+
+* Unmounts the vVol container 
+* Cleans up Igroup. If igroup is not in use, removes iqn from igroup and deletes igroup. 
+* Deletes Vvol container 
+* Leaves the Flex volumes on the array. 
+
+Follow the steps below to delete vVOL datastore from ONTAP Tools from the vCenter:
+
+Steps:
+
+. From the Inventory *view* select vVOL. 
+. Right click on the vVol and select *NetApp Ontap tools* > *Delete datastore*
+. Clean up the Flex volumes at the Storage array.
