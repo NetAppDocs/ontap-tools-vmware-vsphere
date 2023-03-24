@@ -28,8 +28,13 @@ You can also add storage systems using the IPv6 address of the cluster or SVM.
 +
 When you add storage from the VSC Storage System page, specify the vCenter Server instance where the storage is located. The Add Storage System dialog box provides a drop-down list of the available vCenter Server instances. VSC does not display this option if you are adding storage to a datacenter that is already associated with a vCenter Server instance.
 +
-[NOTE]
-From ONTAP tools 9.12 release onwards all ONTAP storage systems communication happens through certificate based authentication.
+NOTE: 
++
+* From ONTAP tools 9.12 release onwards all ONTAP storage systems communication happens through certificate based authentication.
+* The traditional datastore actions like Delete, Resize, and Mount are not allowed when either of the client or cluster certificate is not valid.
+* The vVol datastore actions like Expand Storage, Mount datastore are not allowed when either of the client or cluster certificate is not valid.
+* Actions like Delete, Remove Storage, and Edit Properties are allowed as these 
+actions doesn't require ONTAP communication.
 +
 In the advanced options, there are two ways to upload the *ONTAP Cluster Certificate*:
 
