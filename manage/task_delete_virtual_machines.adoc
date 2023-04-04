@@ -2,14 +2,14 @@
 permalink: manage/task_delete_virtual_machines.html
 sidebar: sidebar
 keywords:
-summary: 'Use the steps in this section to delete the virtual machine.'
+summary: 'Use the steps in this section to perform VASA cleanup.'
 ---
-= Delete virtual machine
+= VASA cleanup
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use the steps in this section to delete the virtual machine.
+Use the steps in this section to perform VASA cleanup.
 
 
 *Steps*

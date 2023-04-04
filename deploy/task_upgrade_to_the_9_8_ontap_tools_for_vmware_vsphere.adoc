@@ -36,6 +36,8 @@ The status of VASA Provider from the existing deployment is retained after the u
 [NOTE]
 As part of ONTAP tools 9.12 upgrade all storage systems authentication and communication process is changed from basic authentication to certificate based authentication by auto trusting the ONTAP storage certificates. No action required from the user.
 
+Adding a Storage system without certificate authentication is restricted.
+
 *Steps*
 
 . Mount the downloaded _.iso_ file to the ONTAP tools:
