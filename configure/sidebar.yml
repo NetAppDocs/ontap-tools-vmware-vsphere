@@ -40,7 +40,7 @@ entries:
       - title: Add storage systems to VSC
         url: /configure/task_add_storage_systems.html
       - title: Update certificate
-        url: configure/task_update_certificate.html
+        url: /configure/task_update_certificate.html
       - title: Discover storage systems and hosts
         url: /configure/task_discover_storage_systems_and_hosts.html
       - title: Refresh the storage system display

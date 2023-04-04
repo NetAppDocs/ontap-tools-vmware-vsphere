@@ -2,7 +2,7 @@
 permalink: configure/task_update_certificate.html
 sidebar: sidebar
 keywords:
-summary: 'You need to update the certificate when the certificate expires or when the certificate is manually altered. When either the client or the cluste certificate expires or does not match, communication with the ONTAP system is discontinued.'
+summary: 'You need to update the certificate when the certificate expires or when the certificate is manually altered. When either the client or the cluster certificate expires or does not match, communication with the ONTAP system is discontinued.'
 ---
 = Update certificate
 :icons: font
