@@ -20,7 +20,7 @@ a|
 Storage system
 a|
 
-* You are using ONTAP 9.3 or later.
+* You are using ONTAP 9.7 or later.
 * You are using appropriate credentials for the storage system.
 * Your storage system is active and accessible.
 * The virtual machine that you selected must be using at least one vVols datastore, and I/O operations are executing on the disk of the virtual machine.

@@ -36,7 +36,7 @@ NOTE:
 * The traditional datastore actions like Delete, Resize, and Mount are not allowed when either of the client or cluster certificate is not valid.
 * The vVol datastore actions like Expand Storage, Mount datastore are not allowed when either of the client or cluster certificate is not valid.
 * Actions like Delete, Remove Storage, and Edit Properties are allowed as these 
-actions doesn't require ONTAP communication.
+actions does not require ONTAP communication.
 +
 In the advanced options, there are two ways to upload the *ONTAP Cluster Certificate*:
 

@@ -43,11 +43,8 @@ You can maintain all of the controller credentials in one place.
 == Recommended ONTAP roles when using ONTAP tools for VMware vSphere
 You can set up several recommended ONTAP roles for working with ONTAP® tools for VMware vSphere and role-based access control (RBAC). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the Virtual Storage Console (VSC) tasks.
 
-To create new user roles, you must log in as an administrator on storage systems running ONTAP. You can create ONTAP roles using one of the following:
-
-* ONTAP System Manager 9.8P1 or later
-+
-link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges]
+To create new user roles, you must log in as an administrator on storage systems running ONTAP. You can create ONTAP roles using ONTAP System Manager 9.8P1 or later.
+See link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges] for more information.
 
 Each ONTAP role has an associated user name and password pair, which constitute the credentials of the role. If you do not log in by using these credentials, you cannot access the storage operations that are associated with the role.
 

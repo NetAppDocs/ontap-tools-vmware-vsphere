@@ -17,13 +17,8 @@ VASA Provider can access storage systems only at the cluster level. If VASA Prov
 
 To create a new user and to connect a cluster or an SVM to ONTAP tools, you should perform the following:
 
-* Create a cluster administrator or an SVM administrator role
-+
-NOTE: You can use one of the following to create these roles:
-
- ** ONTAP System Manager 9.8P1 or later
-+
-link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges]
+* Create a cluster administrator or an SVM administrator role using ONTAP System Manager 9.8P1 or later.
+See link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges] for more information.
 
 * Create users with the role assigned and the appropriate application set using ONTAP
 +
