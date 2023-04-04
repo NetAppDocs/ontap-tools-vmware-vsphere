@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_edit_a_vvols_datastore.html
+permalink: manage/task_edit_a_vvol_datastore.html
 sidebar: sidebar
 keywords:
 summary: 'You can edit an existing VMware Virtual Volumes \(vVols\) datastore to change the default storage capability profile. The default storage capability profile is primarily used for Swap vVols.'

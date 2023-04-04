@@ -8,9 +8,9 @@ entries:
       - title: Resize datastores
         url: /manage/task_resize_datastores.html
       - title: Edit a vVols datastore
-        url: /manage/task_edit_a_vvols_datastore.html
+        url: /manage/task_edit_a_vvol_datastore.html
       - title: Add storage to a vVols datastore
-        url: /manage/task_add_storage_to_a_vvols_datastore.html
+        url: /manage/task_add_storage_to_a_vvol_datastore.html
       - title: Remove storage from a vVols datastore
         url: /manage/task_remove_storage_from_a_vvols_datastore.html
       - title: Mount a vVols datastore
