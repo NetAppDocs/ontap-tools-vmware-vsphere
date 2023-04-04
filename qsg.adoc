@@ -57,7 +57,7 @@ Minimum storage and application requirements:
 |===
 | *Storage, host, and applications* | *Version requirements*
 
-| ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
+| ONTAP | ONTAP 9.7, 9.8P1 or later.
 | VMware vSphere, vCenter server, ESXi hosts, Site Recovery Manager (SRM), plug-in applications, and databases column 1 | See the https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool^]
 |===
 
@@ -86,16 +86,21 @@ You must deploy the `.ova` file on both the source and destination sites if you 
 . Log in to the vSphere Web Client, select *Home* > *Host and Clusters*.
 . Right-click the required datacenter, and then click *Deploy OVF template*.
 +
-If you are using vCenter7.0u3e and later releases perform the following actions, otherwise proceed to Step 5:
-
-* Download the _OTV_INTER_ROOT_CERT_CHAIN.pem_ file from the build folder.
+If you are using vCenter7.0u3e and later releases perform the following actions, otherwise proceed to Step 5. This is an optional step to verify that the OVA binary integrity is not tampered.
++
+* Download the _OTV_INTER_ROOT_CERT_CHAIN.pem_ file from the NetApp Support Site.
 * Navigate to *vcenter*  > *administration* > *certificate management*.
 * Click on *Add trusted root certificate* option.
 * Click *Browse* and provide the path for _OTV_INTER_ROOT_CERT_CHAIN.pem_ file.
 * Click *Add*.
++
+[NOTE]
+The message Entrust Code Signing - OVCS2 (Trusted certificate) confirms the integrity of the downloaded OVA file.
+If you see the message Entrust Code Signing - OVCS2 (Invalid certificate), then upgrade the VMware vCenter Server to 7.0U3E or greater version.
+
 . You can either enter the URL for the .ova file or browse to the folder where the .ova file is saved, and then click *Next*.
 . Enter the required details to complete the deployment.
-+
+
 NOTE: (Optional) If you want to create containers without registering to vCenter Server, then select the Enable VMware Cloud Foundation (VCF) checkbox in the Configure vCenter or Enable VCF section.
 
 You can view the progress of the deployment from the *Tasks* tab, and wait for deployment to complete.

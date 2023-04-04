@@ -80,7 +80,7 @@ If a user attempts to perform a task without the correct privileges and permissi
 a|
 ONTAP version
 a|
-Your storage systems must be running ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
+Your storage systems must be running ONTAP 9.7, 9.8P1 or later.
 a|
 Storage capability profiles
 a|

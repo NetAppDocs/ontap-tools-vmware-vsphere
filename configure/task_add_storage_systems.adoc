@@ -10,6 +10,8 @@ summary: 'You can manually add storage system to Virtual Storage Console \(VSC\)
 
 [.lead]
 You can manually add storage system to Virtual Storage Console (VSC).
+[NOTE]
+If ONTAP cluster is SAML enabled, communication with ONTAP is done with basic authentication.
 
 *About this task*
 

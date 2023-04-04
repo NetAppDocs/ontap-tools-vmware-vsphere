@@ -25,10 +25,6 @@ NOTE: You can use one of the following to create these roles:
 +
 link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges]
 
- ** RBAC User Creator for ONTAP tool (if using ONTAP 9.6 or earlier)
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203/t5/Virtualization-Articles-and-Resources/How-to-use-the-RBAC-User-Creator-for-Data-ONTAP/ta-p/86601[RBAC User Creator tool for VSC, VASA Provider and Storage Replication Adapter 7.0 for VMware vSphere]
-
 * Create users with the role assigned and the appropriate application set using ONTAP
 +
 You require these storage system credentials to configure the storage systems for VSC. You can configure storage systems for VSC by entering the credentials in VSC. Each time you log in to a storage system with these credentials, you will have permissions to the VSC functions that you had set up in ONTAP while creating the credentials.
