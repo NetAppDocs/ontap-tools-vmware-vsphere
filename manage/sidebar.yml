@@ -41,6 +41,8 @@ entries:
       url: /manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html
   - title: Collect the log files
     url: /manage/task_collect_the_log_files.html
+  - title: Manage syslog
+    url: /manage/task_syslog_files.html
   - title: Monitor performance of datastores and vVols reports
     entries:
       - title: Overview of ONTAP tools datastores and virtual machine reports
