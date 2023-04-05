@@ -122,13 +122,6 @@ Log file contains the execution of _sha256sum -c /opt/netapp/vscerver/etc/checks
 
 You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 
-==== Installing SRA on Windows SRM server
-
-.Steps
-. Download the `.msi` installer for the SRA plug-in from the NetApp Support Site.
-. Double-click the downloaded `.msi` installer for the SRA plug-in and follow the on-screen instructions.
-. Enter the IP address and password of your deployed virtual appliance to complete the installation of the SRA plug-in on the SRM server.
-
 ==== Uploading and configuring SRA on SRM Appliance
 
 .Steps

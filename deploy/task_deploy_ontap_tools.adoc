@@ -24,7 +24,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * You must have downloaded the _.ova_ file.
 * You must have the administrator login credentials for your vCenter Server instance.
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
-* You must have enabled Internet Control Message Protocol (ICMP ).
+* You must have enabled Internet Control Message Protocol (ICMP).
 +
 If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
 
