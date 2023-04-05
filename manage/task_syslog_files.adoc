@@ -31,4 +31,5 @@ Here is an example on how to do it for syslog-ng docker:
     - `ln -s vsccert.pem 6d2962a8.0` this creates a symbolic link to the certificate as hash with suffix .0
     - start the syslog server
 . Run _PATCH /3.0/appliance-management/syslog-config_ API by passing the server IP, port, pattern(OPTIONAL), log_level and the syslog server's public certificate.
-. Route the logs to the specified syslog server.
+
+Logs are routed to the specified syslog server.
