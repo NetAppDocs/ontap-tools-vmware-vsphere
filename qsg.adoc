@@ -144,7 +144,7 @@ A success message confirming that the storage credentials are stored is displaye
 .. `rm -rf *`
 . Execute the perl command to configure SRA with the new credentials:
 .. `cd /srm/sra/`
-.. `perl command.pl -I <otv-IP> administrator <va-password>`
+.. `perl command.pl -I <otv-IP> administrator <otv-password>`
 
 ==== Enabling VASA Provider and SRA
 
