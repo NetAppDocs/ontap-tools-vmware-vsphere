@@ -93,7 +93,7 @@ You must consider few requirements while customizing the deployment ONTAP tools.
 
 === Application user password
 
-This is the password assigned to the administrator account. For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character.
+This is the password assigned to the administrator account. For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character. Password expires after 90 days.
 
 === Appliance maintenance console credentials
 
@@ -107,7 +107,7 @@ If the password for the vCenter Server changes, then you can update the password
 
 === Derby database password
 
-For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character.
+For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character. Password expires after 90 days.
 
 === vCenter Server IP address
 

@@ -20,6 +20,6 @@ Follow the steps below to delete vVOL datastore from ONTAP Tools from the vCente
 
 Steps:
 
-. From the Inventory *view* select vVOL. 
-. Right click on the vVol and select *NetApp Ontap tools* > *Delete datastore*
+. From the Inventory *view* select the datastore. 
+. Right click on the vVol datastore and select *NetApp Ontap tools* > *Delete datastore*
 . Clean up the Flex volumes at the Storage array.
