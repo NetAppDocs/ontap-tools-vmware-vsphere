@@ -13,10 +13,7 @@ You can install the NetApp NFS Plug-in for VMware vStorage APIs for Array Integr
 
 *What you will need*
 
-* You should have downloaded the installation package for the NFS Plug-in for VAAI (``.vib`) from the NetApp Support Site.
-+
-https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
-
+* You should have downloaded the installation package for the NFS Plug-in for VAAI (``.vib`) from the NetApp Support Site. https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 * You should have installed ESXi host 6.5 or later and ONTAP 9.1 or later.
 * You should have powered on the ESXi host and mounted an NFS datastore.
 * You should have set the values of the `DataMover.HardwareAcceleratedMove`, `DataMover.HardwareAcceleratedInit`, and `VMFS3.HardwareAcceleratedLocking` host settings to "`1`".
@@ -25,6 +22,7 @@ These values are set automatically on the ESXi host when the Recommended Setting
 
 * You should have enabled the vstorage option on the storage virtual machine (SVM) by using the `vserver nfs modify -vserver vserver_name -vstorage enabled` command.
 * You should have ESXi 7.0 update1 or later if you are using NetApp NFS VAAI plug-in 2.0.
+* You should have the vSphere 7.x releases as vSphere 6.5 has been deprecated and vSphere 8.x is not supported.
 
 *Steps*
 
