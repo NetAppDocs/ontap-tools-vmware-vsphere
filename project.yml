@@ -7,6 +7,8 @@ settings:
     pdf_enabled: true
   versions:
     - name: ONTAP tools for VMware vSphere
+      url: /ontap-tools-vmware-vsphere-912
+    - name: ONTAP tools for VMware vSphere
       url: /ontap-tools-vmware-vsphere-911
       version-number: "9.11"
     - name: ONTAP tools for VMware vSphere
