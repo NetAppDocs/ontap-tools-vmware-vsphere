@@ -36,7 +36,7 @@ homepage:
   - title: Get started
     links:
     - title: Release notes
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883436
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885833
     - title: Learn about ONTAP tools for VMware vSphere
       url: /concepts/concept_virtual_storage_console_overview.html
     - title: ONTAP tools Quick start
