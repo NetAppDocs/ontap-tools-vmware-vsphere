@@ -45,15 +45,15 @@ NOTE: The 9.10 release of ONTAP tools supports creating vVols datastores with vm
 a|
 All of the hosts in a datacenter
 a|
-Right-click a datacenter, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a datacenter, and then select *NetApp ONTAP tools* > *Provision Datastore*.
 a|
 All of the hosts in a cluster
 a|
-Right-click a cluster, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a cluster, and then select *NetApp ONTAP tools* > *Provision Datastore*.
 a|
 A single host
 a|
-Right-click a host, and then select *NetApp VSC* > *Provision Datastore*.
+Right-click a host, and then select *NetApp ONTAP tools* > *Provision Datastore*.
 |===
 
 . Complete the fields in the New Datastore dialog box to create the datastore.
@@ -66,6 +66,12 @@ a|
 General
 a|
 The General section of the New Datastore dialog box provides options to enter the location, name, description, type, and protocol for the new datastore. The vVols datastore type is used to configure a vVols datastore.
+
+You can provision the vVols datastore if VASA provider capability is enabled. See, link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores] for details. The
+vVols datastore supports NFS, iSCSI, FC/FEoE, and NVMe/FC protocols.
+
+[NOTE]
+NVMe/FC protocol for vVols datastore is available if ONTAP tools is registered with vCenter 8.0 and later, and if the ONTAP version is ONTAP 9.91P3 and later.
 
 NOTE: If you are provisioning iSCSI vVols datastore for vVols replication, then before creating vVols datastore at the target site, you need to perform SnapMirror update and cluster rediscovery.
 
@@ -88,7 +94,7 @@ You should select the schedule for SnapMirror and the required FlexVol volume fr
 * The minimum size of FlexVol volume that you should create is 5GB.
 |===
 +
-. In the Summary section, click **Finish**.
+. In the Summary section, click *Finish*.
 
 *Result*
 

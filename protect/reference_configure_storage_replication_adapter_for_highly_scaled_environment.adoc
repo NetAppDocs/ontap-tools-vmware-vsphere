@@ -48,7 +48,7 @@ NOTE: The timeout interval specified is the maximum value. You do not need to wa
 
 You should also set the maximum time for SRA to perform a single operation in the vvol.properties file: offtap.operation.timeout.period.seconds=86400.
 
-https://kb.netapp.com/app/answers/answer_view/a_id/1001111[NetApp Knowledgebase Answer 1001111: NetApp Storage Replication Adapter 4.0/7.X for ONTAP Sizing Guide]
+https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7.X_for_ONTAP_Sizing_Guide[NetApp Knowledgebase Answer 1001111: NetApp Storage Replication Adapter 4.0/7.X for ONTAP Sizing Guide]
 
 VMware documentation on modifying SAN Provider settings has more information.
 

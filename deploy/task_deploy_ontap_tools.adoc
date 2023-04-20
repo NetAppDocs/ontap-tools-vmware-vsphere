@@ -24,7 +24,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * You must have downloaded the _.ova_ file.
 * You must have the administrator login credentials for your vCenter Server instance.
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
-* You must have enabled Internet Control Message Protocol (ICMP ).
+* You must have enabled Internet Control Message Protocol (ICMP).
 +
 If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
 
@@ -37,8 +37,8 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 *Steps*
 
 . Log in to the vSphere Client.
-. Select *Home* > *Host & Clusters*.
-. Right-click the required datacenter, and then click *Deploy OVA template*.
+. Select *Home* > *Host and Clusters*.
+. Right-click the required datacenter, and then click *Deploy OVF template...*.
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
 |===
@@ -50,7 +50,7 @@ Provide the URL for the _.ova_ file for ONTAP tools.
 a|
 Folder
 a|
-Select the _.ova_ file for ONTAP tools from the saved location.
+Extract the .zip file, which contains the .ova file onto your local system. On the Select an OVF template page, specify the location of the .ova file inside the extracted folder.
 |===
 
 . Enter the details to customize the deployment wizard.
@@ -68,7 +68,7 @@ As you wait for deployment to finish, you can view the progress of the deploymen
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
 . Verify that ONTAP tools is running after the deployment is completed.
-. If ONTAP tools is not registered with any vCenter Server, use ``\https://appliance_ip:8143/Register.html` to register the VSC instance.
+. If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the VSC instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
 . Log out and re-log in to the vSphere Client to view the deployed ONTAP tools.
 +
 It might take a few minutes for the plug-in to be updated in the vSphere Client.
@@ -76,8 +76,6 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 *Troubleshooting:* If you cannot view the plug-in even after logging in, you must clean the vSphere Client cache.
 +
 link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html[Clear the vSphere cached downloaded plug-in packages]
-
-NOTE: If you are using ONTAP 9.6 or earlier, then to view the vVols dashboard, you must download and install OnCommand API Services. But for ONTAP 9.7 you do not require OnCommand API Services to be registered with VASA Provider.
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
 

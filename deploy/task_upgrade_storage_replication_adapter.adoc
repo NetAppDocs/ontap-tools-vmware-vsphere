@@ -22,9 +22,7 @@ Windows
 a|
 
  .. Log in to the SRM Windows Server.
- .. Uninstall existing SRA _.msi_ installer from SRM Server.
  .. Change the system path to `C:\Program Files\VMware\VMware vCenter Site Recovery Manager\external\perl\c\bin`
- .. Double-click on the _.msi_ installer you downloaded from NetApp support site, and follow on-screen instructions.
  .. Enter the IP address and password of your deployed ONTAP tools .
 
 a|

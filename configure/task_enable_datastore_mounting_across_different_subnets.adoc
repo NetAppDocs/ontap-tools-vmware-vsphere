@@ -15,16 +15,15 @@ If you use iSCSI or NFS and the subnet is different between your ESXi hosts and 
 
 When datastore provisioning fails, VSC logs the following error messages:
 
-`Unable to continue. No ip addresses found when cross-referencing kernel ip addresses and addresses on the controller.
+'Unable o continue. No ip addresses found when cross-referencing kernel ip addresses and addresses on the controller. Unable to find a matching network to NFS mount volume to these hosts.'
 
-Unable to find a matching network to NFS mount volume to these hosts.`
 
 *Steps*
 
 . Log in to your vCenter Server instance.
 . Launch the maintenance console using your unified appliance virtual machine.
 +
-link:reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html[Maintenance Console of ONTAP tools for VMware vSphere]
+link:../manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html[Maintenance Console of ONTAP tools for VMware vSphere]
 
 . Enter `4` to access the Support and Diagnostics option.
 . Enter `2` to access the Access Diagnostic Shell option.

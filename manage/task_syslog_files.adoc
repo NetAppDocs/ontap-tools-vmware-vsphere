@@ -1,0 +1,35 @@
+---
+permalink: manage/task_syslog_files.html
+sidebar: sidebar
+keywords:
+summary: 'Syslog is used to send system logs to centralized logging server.'
+---
+= Manage syslog
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use syslog to send system logs to centralized logging server.
+
+*About this task*
+
+The ONTAP tools for VMware vSphere 9.12 release removes earlier 2.0 syslog APIs and contains new 3.0 syslog related APIs which support mutual authentication.
+Follow the steps below to setup syslog.
+
+*Steps*
+
+. Run _POST /2.0/security/user/login to obtain_ a session ID.
+. Run _POST /3.0/appliance-management/logging-client-certificate_ by passing the sessionid received in the above response.
++
+This generates certificates for the VP server as well as the VSC server.
+. Copy both the certificates to your syslog server and make them trusted on the syslog server.
++
+Here is an example on how to do it for syslog-ng docker:
+
+	- JSON unescape both the certificates and copy the pem formatted certs to the ca.d directory
+	- `openssl x509 -noout -hash -in vsccert.pem` the result is a hash (for example 6d2962a8)
+    - `ln -s vsccert.pem 6d2962a8.0` this creates a symbolic link to the certificate as hash with suffix .0
+    - start the syslog server
+. Run _PATCH /3.0/appliance-management/syslog-config_ API by passing the server IP, port, pattern(OPTIONAL), log_level and the syslog server's public certificate.
+
+Logs are routed to the specified syslog server.

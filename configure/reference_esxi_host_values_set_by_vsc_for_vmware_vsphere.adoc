@@ -27,55 +27,53 @@ You should set this value to 0.
 
 * *Net.TcpipHeapSize*
 +
-If you are using vSphere 6.0 or later, you should set this value to 32.
+Set this value to 32.
 
 * *Net.TcpipHeapMax*
 +
-You should set this value to 512MB for vSphere 6.X releases, except for 6.5U3 and 6.7U3 releases. For vSphere 6.5U3 and 6.7U3 releases set this value to 1024MB. If you are using vSphere 7.0 or later versions, you should set this value to 1024MB.
+Set this value to 1024MB.
 
 * *NFS.MaxVolumes*
 +
-If you are using vSphere 6.0 or later, you should set this value to 256.
+Set this value to 256.
 
 * *NFS41.MaxVolumes*
 +
-If you are using vSphere 6.0 or later, you should set this value to 256.
+Set this value to 256.
 
 * *NFS.MaxQueueDepth*
 +
-If you are using the vSphere 6.0 or later version of ESXi host, then you should set this value to 128 or higher to avoid queuing bottlenecks.
-+
-For vSphere versions prior to 6.0, you should set this value to 64.
+Set this value to 128 or higher to avoid queuing bottlenecks.
 
 * *NFS.HeartbeatMaxFailures*
 +
-You should set this value to 10 for all NFS configurations.
+Set this value to 10 for all NFS configurations.
 
 * *NFS.HeartbeatFrequency*
 +
-You should set this value to 12 for all NFS configurations.
+Set this value to 12 for all NFS configurations.
 
 * *NFS.HeartbeatTimeout*
 +
-You should set this value to 5 for all NFS configurations.
+Set this value to 5 for all NFS configurations.
 
 == FC/FCoE settings
 
 * *Path selection policy*
 +
-You should set this value to "`RR`" (round robin) when FC paths with ALUA are used.
+Set this value to "`RR`" (round robin) when FC paths with ALUA are used.
 +
-You should set this value to "`FIXED`" for all other configurations.
+Set this value to "`FIXED`" for all other configurations.
 +
 Setting this value to "`RR`" helps to provide load balancing across all of the active/optimized paths. The value "`FIXED`" is used for older, non-ALUA configurations and helps to prevent proxy I/O.
 
 * *Disk.QFullSampleSize*
 +
-You should set this value to 32 for all configurations. Setting this value helps to prevent I/O errors.
+Set this value to 32 for all configurations. Setting this value helps to prevent I/O errors.
 
 * *Disk.QFullThreshold*
 +
-You should set this value to 8 for all configurations. Setting this value helps prevent I/O errors.
+Set this value to 8 for all configurations. Setting this value helps prevent I/O errors.
 
 * *Emulex FC HBA timeouts*
 +
@@ -89,14 +87,14 @@ Use the default value.
 
 * *Path selection policy*
 +
-You should set this value to "`RR`" for all iSCSI paths.
+Set this value to "`RR`" for all iSCSI paths.
 +
 Setting this value to "`RR`" helps to provide load balancing across all of the active/optimized paths.
 
 * *Disk.QFullSampleSize*
 +
-You should set this value to 32 for all configurations. Setting this value helps to prevent I/O errors.
+Set this value to 32 for all configurations. Setting this value helps to prevent I/O errors.
 
 * *Disk.QFullThreshold*
 +
-You should set this value to 8 for all configurations. Setting this value helps prevent I/O errors.
+Set this value to 8 for all configurations. Setting this value helps prevent I/O errors.

@@ -1,0 +1,18 @@
+---
+permalink: configure/task_update_certificate.html
+sidebar: sidebar
+keywords:
+summary: 'You need to update the certificate when the certificate expires or when the certificate is manually altered. When either the client or the cluster certificate expires or does not match, communication with the ONTAP system is discontinued.'
+---
+= Update certificate
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to update the certificate when the client or cluster certificate is about to expire or has expired, or when the cluster certificate is manually altered. When either the client or the cluster certificate expires or does not match, communication with the ONTAP system is discontinued.
+
+Cluster certificate is the server certificate that is generated on the ONTAP side by the storage admin. Client certificate can be generated in the ONTAP tools.
+When the cluster certificate expires, the storage admin needs to generate the new certificate on the ONTAP side. The Modify Storage system window automatically fetched the cluster certificate from ONTAP storage, and you need to authorize the cluster certificate.
+
+When the certificate is about to expire or if it has already expired follow the procedure in link:../configure/task_modify_storage_system.html[Modify storage systems] section to update the certificate.
+

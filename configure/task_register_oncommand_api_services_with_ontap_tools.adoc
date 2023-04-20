@@ -15,7 +15,7 @@ If you are using ONTAP 9.6 or earlier, then the vVols dashboard can display the 
 
 You must have downloaded OnCommand API Services 2.1 or later from the NetApp Support Site.
 
-NOTE: The vVols dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.3 or later.
+NOTE: The vVols dashboard displays performance metrics only when the SAN vVols datastores and virtual machines are configured using ONTAP 9.7 or later.
 
 *Steps*
 

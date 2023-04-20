@@ -20,8 +20,6 @@ First-time deployment of ONTAP tools
 a|
 The deployment of the ONTAP tools automatically installs the VSC features.
 
-link:../deploy/concept_deploy_or_upgrade_ontap_tools.html[Deploy and upgrade ONTAP tools]
-
 link:../deploy/concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
 
 a|
@@ -82,7 +80,7 @@ If a user attempts to perform a task without the correct privileges and permissi
 a|
 ONTAP version
 a|
-Your storage systems must be running ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 or later.
+Your storage systems must be running ONTAP 9.7, 9.8P1 or later.
 a|
 Storage capability profiles
 a|
@@ -93,9 +91,9 @@ To use storage capability profiles or to set up alarms, you must enable VASA Pro
 == Additional deployment considerations
 You must consider few requirements while customizing the deployment ONTAP tools.
 
-=== Appliance administrator user password
+=== Application user password
 
-You must not use any spaces in the administrator password.
+This is the password assigned to the administrator account. For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character. Password expires after 90 days.
 
 === Appliance maintenance console credentials
 
@@ -106,6 +104,10 @@ You must access the maintenance console by using the "`maint`" user name. You ca
 You can set the administrator credentials for the vCenter Server while deploying ONTAP tools.
 
 If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: ``\https://<IP>:8143/Register.html` where the IP address is of ONTAP tools that you provide during deployment.
+
+=== Derby database password
+
+For security reasons, it is recommended that the password length is eight to thirty characters long and contains a minimum of one upper, one lower, one digit, and one special character. Password expires after 90 days.
 
 === vCenter Server IP address
 

@@ -26,8 +26,8 @@ The traditional dashboard of the ONTAP tools enables you to view either NFS data
 *Steps*
 
 . From the vSphere Client home page, click *ONTAP tools for VMware vSphere*.
-. Select the required vCenter Server using the vCenter Server drop-down menu to view the datastores.
-. Click *Traditional Dashboard*.
+. Select the required vCenter Server using the *INSTANCE* selector to view the datastores.
+. Click *Overview > Traditional Dashboard*.
 +
 The Datastores portlet provides the following details:
 

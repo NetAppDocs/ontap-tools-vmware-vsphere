@@ -19,7 +19,7 @@ After setting up a profile, you can edit the profile as required.
 
 *Steps*
 
-. On the ONTAP tools Home page, click *Storage Capability Profiles*.
+. On the ONTAP tools Home page, click *Policies and Profiles*.
 . Create a profile or edit an existing profile, as required:
 +
 |===
@@ -27,14 +27,22 @@ After setting up a profile, you can edit the profile as required.
 a|
 Create a profile
 a|
-Click *image:../media/create_icon.gif[]*.
+Click *CREATE*.
 a|
 Edit an existing profile
 a|
 Click the profile that you want to modify from the profiles listed on the *Storage Capability Profiles* page.
 |===
-
++
 NOTE: To view the values that are associated with an existing profile, you can click the profile name in the Storage Capabilities Profile page. VASA Provider then displays the Summary page for that profile.
+
+. From *New Datastore* > *Storage Systems*, click on *Create storage capability profile*.
++
+You Get the following message to confirm navigating away from the datastore window.
++
+_This will remove the data entered by closing the current workflow and opens the Create storage capability profile workflow. Do you wish to continue?_
+
+. Click *YES* to open the Create storage capability profile window.
 
 . Complete the pages in the Create Storage Capability Profile wizard to set up a profile or to edit values to modify an existing profile.
 +

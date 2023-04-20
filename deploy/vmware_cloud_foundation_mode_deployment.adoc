@@ -11,13 +11,13 @@ summary: 'ONTAP tools for VMware vSphere can be deployed in VMware Cloud foundat
 [.lead]
 ONTAP tools for VMware vSphere can be deployed in VMware Cloud Foundation (VCF) environment. The main objective of VCF deployment is to use ONTAP tools in a cloud setup and create containers without vCenter Server.
 
-The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add storage systems and create containers using REST APIs. A new API is introduced to generate the _appliance-api-token_ that authenticates API calls. Some of the existing APIs are modified to include the _appliance-api-token_ header.
+The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add storage systems and create containers using REST APIs. A new API is introduced to generate the _appliance-api-token_ that authenticates API calls. Some of the existing APIs are modified to include the _appliance-api-token_ header. With ONTAP tools 9.12 release, swagger does not support 1.0 APIs. The pointers that were previously on 1.0 are moved to 2.0 or 3.0 APIs.
 
 The APIs available for VCF deployment mode are:
 |===
 | *API* | *HTTP method* | *New/modified* | *Section header*
 a|
-/1.0/admin/containers
+/2.0/admin/containers
 a|
 GET
 a|
@@ -25,7 +25,7 @@ New
 a|
 Container
 a|
-/1.0/admin/containers
+/2.0/admin/containers
 a|
 POST
 a|
@@ -33,7 +33,7 @@ New
 a|
 Container
 a|
-/1.0/vcf/user/login
+/2.0/vcf/user/login
 a|
 POST
 a|
@@ -41,7 +41,7 @@ New
 a|
 User Authentication
 a|
-/1.0/admin/storage-systems
+/3.0/storage/clusters
 a|
 GET
 a|
@@ -49,7 +49,7 @@ Modified
 a|
 Storage Systems
 a|
-/1.0/admin/storage-systems
+/3.0/storage/clusters
 a|
 POST
 a|
@@ -173,7 +173,9 @@ You can use the ONTAP PATCH API to set the appropriate values.
 
 `https://<machine_IP>/api/storage/volumes/{uuid}`
 
-The VCF deployment of ONTAP tools allows only container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the Register.html page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery.
+The VCF deployment of ONTAP tools allows only container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery until you register the plugin. When you deploy ONTAP tools without VCF mode, the registration happens automatically.
+[NOTE]
+ The Register.html will be removed in the upcoming releases of ONTAP tools.
 
 image::../media/VCF_deployment.png[VMware Cloud Foundation deployment workflow]
 

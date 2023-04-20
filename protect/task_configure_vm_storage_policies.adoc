@@ -17,8 +17,8 @@ The vSphere web client provides default storage policies. But you can create pol
 
 *Steps*
 
-. On the vSphere Client page, click *Menu* > *Policies and Profiles*.
-. Click *VM Storage Policies* > *Create VM Storage Policy*.
+. On the vSphere Client page, click *Policies and Profiles*.
+. In the VM Storage Policies page, click *CREATE*.
 . In the Create VM Storage Policy page, provide the following details:
  .. Enter a name and description for the VM Storage Policy.
  .. Select *Enable rules for "NetApp clustered Data ONTAP.VP.vvol" storage*.

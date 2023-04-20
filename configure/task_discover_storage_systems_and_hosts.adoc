@@ -14,7 +14,7 @@ When you first run Virtual Storage Console (VSC) in a vSphere Client, VSC discov
 *What you will need*
 
 * All of the ESXi hosts must be powered on and connected.
-* All the storage virtual machines (SVMs) to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI or FC).
+* All the storage virtual machines (SVMs) to be discovered must be running, and each cluster node must have at least one data LIF configured for the storage protocol in use (NFS, iSCSI, FC, or NVMe/FC).
 
 *About this task*
 
@@ -25,14 +25,15 @@ While discovering the storage systems, VSC collects information from the ESXi ho
 *Steps*
 
 . From the vSphere Client Home page, select *Hosts and Clusters*.
-. Right-click the required datacenter, and then select *NetApp VSC* > *Update Host and Storage Data* .
+. Right-click the required datacenter, and then select *NetApp ONTAP tools* > *Update Host and Storage Data* .
 +
-VSC displays a Confirm dialog box that informs you that this operation might take a long time.
+VSC displays a Confirm dialog box that informs you that this action will restart the discovery of all connected storage systems and might take a few minutes. Do you want to continue?
 
-. Click *OK*.
-. Select the discovered storage controllers that have the status "`Authentication Failure`", and then click *ACTIONS* > *Modify*.
-. Fill in the required information in the Modify Storage System dialog box.
-. Repeat steps 4 and 5 for all storage controllers with "`Authentication Failure`" status.
+. Click *YES*.
+. Select the discovered storage controllers that have the status `Authentication Failure`, and then click *ACTIONS* > *Modify*.
+. Fill in the required information in the *Modify Storage System* dialog box.
++
+. Repeat steps 4 and 5 for all storage controllers with `Authentication Failure` status.
 
 After the discovery process is complete, perform the following:
 

@@ -22,7 +22,7 @@ After you create a storage capability profile, you can modify the profile to inc
 
 *Steps*
 
-. From the ONTAP tools home page, click *Storage Mapping*.
+. From the NetApp ONTAP tools home page, click *Storage Mapping*.
 . Select the datastore from the available list.
 . From the Actions menu, select *Auto-generate*.
 . When the auto-generate process finishes, refresh the screen to view information about the new profile.
