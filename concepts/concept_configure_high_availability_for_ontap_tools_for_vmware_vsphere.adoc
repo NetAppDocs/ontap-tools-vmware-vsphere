@@ -31,7 +31,7 @@ The VMware HA feature monitors virtual machines to detect operating system failu
 
 The procedure to configure VMware HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure VMware HA.
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html[VMware vSphere Documentation: Creating and Using vSphere HA Clusters]
+https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-availability/GUID-5432CA24-14F1-44E3-87FB-61D937831CF6.html[VMware vSphere Documentation: Creating and Using vSphere HA Clusters]
 
 == VMware vSphere Fault Tolerance
 The VMware vSphere Fault Tolerance (FT) feature provides high availability (HA) at a higher level and enables you to protect virtual machines without any loss of data or connections. You must enable or disable vSphere FT for ONTAP tools from your vCenter Server.

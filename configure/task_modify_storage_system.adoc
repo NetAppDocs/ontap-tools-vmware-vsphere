@@ -1,0 +1,34 @@
+---
+permalink: configure/task_modify_storage_system.html
+sidebar: sidebar
+keywords:
+summary: 'You need to update the certificate when the certificate expires or when the certificate is manually altered. When either the client or the cluster certificate expires or does not match, communication with the ONTAP system is discontinued.'
+---
+= Modify storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the following procedure to modify the storage systems. 
+
+*Steps*
+
+. From the *NetApp ONTAP tools* select *Storage systems*.
+. Click on the Storage system *Available action* (three vertical dots) button where you want to update the certificate.
+. Select *Modify*.
++
+[NOTE]
++
+ It is recommended that before the cluster or the client certificate expires, you get the renewed certificate from ONTAP or generate the client certificate from the ONTAP tools for VMware vSphere.
+
+. In the *Modify Storage system* window, in the *Upload Certificate* field, *Browse* to the location where the ONTAP certificate is stored and upload the certificate.
++
+For Cluster certificate:
+
+* If you have modified the cluster certificate on the ONTAP, you need to upload the modified certificate to the ONTAP tools manually. This is a mandatory step.
+* When the cluster certificate has expired, status of the storage system changes to cluster Certificate Expired. When the cluster certificate expires, the storage admin needs to generate the new certificate on the ONTAP side. The *Modify Storage system* window automatically fetches the cluster certificate from ONTAP storage and you need to authorize the cluster certificate.
+. When the client certificate has expired, status of the storage system changes to Client Certificate Expired.
++ 
+If client certificate has expired, in the *Modify Storage system* window, select *Generate a new client certificate for ONTAP* option to regenerate the certificate.
+
+Once the certificates are installed the communication with ONTAP is restored.

@@ -9,7 +9,7 @@ summary: 'You should be aware of the considerations for creating and editing sto
 :imagesdir: ../media/
 
 [.lead]
-You should be aware of the considerations for creating and editing storage capability profiles.
+Following are the considerations for creating and editing storage capability profiles.
 
 * You can configure Min IOPS only on AFF systems.
 * You can configure QoS metrics at a virtual volume (VVol) datastore level.
