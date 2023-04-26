@@ -18,3 +18,18 @@ This release of ONTAP tools provides you with an option to use synchronous SnapM
 NOTE: VMware Site Recovery Manager (SRM) does not use SRA for managing disaster recovery of vVols datastores. Instead VASA Provider is used for replication and failover control of vVols datastores on ONTAP 9.7 and later clusters.
 
 link:../protect/task_enable_storage_replication_adapter.html[Enable Storage Replication Adapter]
+
+You can enable quick_resync flag to perform the Reprotect and Restore operation in SRA. This is applicable only for datastores backed by volumes with asynchronous SnapMirror relationship. quick_resync flag enables faster resync time of the destination volume because resync does not incur storage efficiency overhead
+before the transfer of new data.
+The quick_resync is not enabled by default. It is recommended to enable the quick_resync flag:
+
+* When the source of the resync does not have volume efficiency enabled.
+* When reducing resync time is more important than preserving all possible storage efficiency on the network.
+
+Follow the below steps to enable the quick_resync flag:
+.Steps
+
+. Log into the control panel at _https://<IP address>:9083_ and click Web based CLI interface.
+. Run the command `vp updateconfig -key=snapmirror.quick.resync.enabled -value=true`.
+. Run the command `vp reloadconfig`.
+
