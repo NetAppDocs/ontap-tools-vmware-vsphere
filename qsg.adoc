@@ -23,7 +23,7 @@ You deploy the plug-in as a virtual appliance, which reduces your effort of inst
 
 === Deployment requirements
 
-ONTAP tools can be used with either a Windows vCenter Server or with a VMware vCenter Server Virtual Appliance (vCSA). You must be deploy the ONTAP tools on a supported vSphere that includes ESXi system.
+ONTAP tools can be used with a VMware vCenter Server Virtual Appliance (vCSA). You must be deploy the ONTAP tools on a supported vSphere that includes ESXi system.
 
 The minimum space and host sizing requirements are:
 [cols=2*,options="header", cols="25,75"]

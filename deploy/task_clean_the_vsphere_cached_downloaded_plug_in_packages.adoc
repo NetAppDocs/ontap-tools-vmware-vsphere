@@ -15,21 +15,7 @@ If plug-ins are not updated automatically after deploying or upgrading ONTAP too
 
 . Logout from your existing vSphere web client or vSphere-UI.
 . Remove the browser cache.
-. Remove the vSphere Client cached plug-in packages.
-+
-|===
-| *If you are using...*| *Perform the following...*
-a|
-Windows vCenter server
-a|
-Remove the following folders `com.netapp.vasa.vvol.webclient-x.x.x.xxxx`, `com.netapp.nvpf.webclient-x.x.x.xxxx`, and `com.netapp.vsch5-x.x.x.xxxx` located at:
-
- ** vSphere Web Client path: `C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity`
- ** vSphere Client(HTML5) path: `C:\ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenity`
-
-a|
-VCSA
-a|
+. Remove the vSphere Client cached plug-in packages. For VCSA, Perform the following:
 
  .. SSH into the VCSA appliance.
  .. Change directories to the vCenter web client UI extensions directory using `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
