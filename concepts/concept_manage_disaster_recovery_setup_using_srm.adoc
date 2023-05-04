@@ -29,6 +29,7 @@ The quick_resync is not enabled by default. It is recommended to enable the quic
 * When reducing resync time is more important than preserving all possible storage efficiency on the network.
 
 Follow the below steps to enable the quick_resync flag:
+
 .Steps
 
 . Log into the control panel at _https://<IP address>:9083_ and click Web based CLI interface.
