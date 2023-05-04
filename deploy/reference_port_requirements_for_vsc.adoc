@@ -31,10 +31,6 @@ a|
 8143
 a|
 VSC listens for secure communications on this port. The port is used in client-server communication architecture. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data in both the directions.This port is enabled for VSC services and for exporting VSC server logs. The register.html page is hosted on this port. The REST swagger is exposed on this port.
-a|
-7
-a|
-VSC sends an echo request to ONTAP to verify reachability and is required only when adding storage system and can be disabled later.
 |===
 NOTE: You should have enabled Internet Control Message Protocol (ICMP) before deploying the ONTAP tools.
 
