@@ -26,7 +26,7 @@ When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this 
 a|
 443
 a|
-Depending on how you have configured your credentials, the VMware vCenter Server and the storage systems listen for secure communications on this port. The port is used in client-server communication architecture. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data in both the directions.The 443 port is enabled by default for secure connections.
+Depending on how you have configured your credentials, the VMware vCenter Server and the storage systems listen for secure communications on this port. The port is used in client-server communication architecture. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data in both the directions. The 443 port is enabled by default for secure connections.
 
 a|
 8143
