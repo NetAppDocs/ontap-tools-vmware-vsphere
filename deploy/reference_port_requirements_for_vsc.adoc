@@ -22,12 +22,11 @@ VSC uses the following default bidirectional TCP ports:
 a|
 9083
 a|
-When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port supports bundle download, Web-CLI user interface, and the control path communication from VMware to VP. SRA communicates on this PORT number with backend SRA service.
+When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port is used to download support bundle, access Web-CLI user interface, and control path communication from VMware to VP. 
 a|
 443
 a|
-Depending on how you have configured your credentials, the VMware vCenter Server and the storage systems listen for secure communications on this port. The port is used in client-server communication architecture. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data in both the directions. The 443 port is enabled by default for secure connections.
-
+Depending on how you have configured your credentials, the VMware vCenter Server and the storage systems listen for secure communications on this port. The port is used in client-server communication architecture. The 443 port is enabled by default for secure connections. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data in both the directions. 
 a|
 8143
 a|
