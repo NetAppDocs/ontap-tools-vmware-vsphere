@@ -47,8 +47,7 @@ ONTAP tools uses the following default bidirectional TCP ports:
 |===
 | *Additional requirements* | *Description column*
 
-| 9083 | When enabled, both VASA Provider and SRA use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings.
-| 443  | Depending on how you have configured your credentials, the VMware vCenter Server and the storage systems listen for secure communications on this port.
+| 9083 | When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port supports bundle download, Web-CLI user interface, and the control path communication from VMware to VP. SRA communicates on this PORT number with backend SRA service.
 | 8143  | VSC listens for secure communications on this port.
 | 7 | VSC sends an echo request to ONTAP to verify reachability and is required only when adding storage system and can be disabled later.
 |===
