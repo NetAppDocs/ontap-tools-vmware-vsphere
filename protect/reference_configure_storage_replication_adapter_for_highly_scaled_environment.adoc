@@ -52,4 +52,4 @@ https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7
 
 VMware documentation on modifying SAN Provider settings has more information.
 
-https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html[VMware Site Recovery Manager Documentation: Change Storage Settings]
+https://docs.vmware.com/en/Site-Recovery-Manager/index.html?hWord=N4IghgNiBcIGoFkDuYBOBTABAZQJYBcsAldAYwHsA3dVAT0wTADswBzGzAEXNIFcBbdE3xh8uckxABfIA[VMware Site Recovery Manager Documentation: Change Storage Settings]

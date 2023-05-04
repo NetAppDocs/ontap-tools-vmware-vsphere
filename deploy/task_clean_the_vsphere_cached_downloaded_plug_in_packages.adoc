@@ -7,7 +7,6 @@ summary: 'If plug-ins are not updated automatically after deploying or upgrading
 = Clear the vSphere cached downloaded plug-in packages
 :icons: font
 :imagesdir: ../media/
-
 [.lead]
 If plug-ins are not updated automatically after deploying or upgrading ONTAP tools, you should clean up the cached download plug-in packages on the browser and on the vCenter Server to resolve vCenter Server plug-in issues.
 
@@ -18,13 +17,18 @@ If plug-ins are not updated automatically after deploying or upgrading ONTAP too
 . Remove the vSphere Client cached plug-in packages. For VCSA, Perform the following:
 
  .. SSH into the VCSA appliance.
- .. Change directories to the vCenter web client UI extensions directory using `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
+ .. Stop the VMware vSphere Client service:
+ `service-control --stop vsphere-ui`
+ .. Change directories to the vCenter client UI extensions directory: `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
  .. Remove the cached plug-in packages specific to NetApp using the `rm -rf` commands:
- Example: Here x.x.x.xxxx is the version of your plug-in.
- ----
-  rm -rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx
-  rm -rf com.netapp.nvpf.webclient-x.x.x.xxxx
-  rm -rf com.netapp.vsch5-x.x.x.xxxx
++
+`rm -rf com.netapp.nvpf.webclient-*`
++
+`rm -rf com.netapp.vasa.vvol.webclient-*`
++
+`rm -rf com.netapp.vsch5-*`
+.. Start the VMware vSphere Client service:
+`service-control --start vsphere-ui`
  ----
 
  .. Change directories to the vCenter client(HTML5) UI extensions directory using `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
