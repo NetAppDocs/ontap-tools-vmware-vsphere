@@ -16,6 +16,8 @@ If ONTAP cluster is SAML enabled, communication with ONTAP is done with basic au
 *About this task*
 
 Each time you start Virtual Storage Console (VSC) or select the *REDISCOVER All* option, VSC automatically discovers the available storage systems.
+[NOTE]
+vVol datastores are not supported on direct SVM.
 
 *Steps*
 

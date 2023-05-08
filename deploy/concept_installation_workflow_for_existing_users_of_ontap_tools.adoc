@@ -40,7 +40,7 @@ If you are having 7.2 or 7.2.1 release of the virtual appliance for VSC, VASA Pr
 
 To upgrade to ONTAP tools 9.10 and later you should be running virtual appliance 9.7P1 or later.  Upgrading from an earlier version prior to 9.7P1 of the virtual appliance is not supported.
 
-If you are going to deploy the latest release of ONTAP tools, you must see the topic link:..deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html[Requirements for deploying the ONTAP tools]. The topic link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html[Upgrade to the latest release of ONTAP tools] has information on performing an in-place upgrade.
+If you are going to deploy the latest release of ONTAP tools, you must see the topic link:../deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html[Space and sizing requirements for the ONTAP tools]. The topic link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html[Upgrade to the latest release of ONTAP tools] has information on performing an in-place upgrade.
 
 *Related information*
 
