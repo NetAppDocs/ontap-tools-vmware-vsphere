@@ -50,6 +50,8 @@ run the below commands on the ONTAP CLI with cluster admin access before upgrade
 
 a.	_security login role create -role <role-name> -cmddirname "security certificate install" -access all -vserver  <vserver-name>_
 b.	_security login role create -role <role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name>_
+c. _security login create -user-or-group-name <user> -application http -authentication-method cert -role <role-name> -vserver <vserver-name>_
+d. _security login create -user-or-group-name <user> -application ontapi -authentication-method cert -role <role-name> -vserver <vserver-name>_
 
 *Steps*
 
