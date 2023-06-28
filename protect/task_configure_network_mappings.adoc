@@ -27,7 +27,7 @@ You must have connected the protected and recovery sites.
 . Log in to your vCenter Server and click on *Site Recovery* > *Sites*.
 . Select your protected site, and then click *Manage*.
 . In the Manage tab, select *Network Mappings*.
-. Click the image:../media/new_network_mappings.gif[] icon to create a new network mapping.
+. Click the image:../media/new_network_mappings.gif["globe icon"] icon to create a new network mapping.
 +
 The Create Network Mapping wizard appears.
 

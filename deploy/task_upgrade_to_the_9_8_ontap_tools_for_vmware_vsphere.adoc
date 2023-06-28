@@ -60,7 +60,7 @@ d. _security login create -user-or-group-name <user> -application ontapi -authen
  .. Select *Datastore ISO* file from the drop-down list.
  .. Browse to and select the downloaded _.iso_ file, and then select the *Connect at power on* checkbox.
 . Access the Summary tab of your deployed ONTAP tools.
-. Click *image:../media/launch_maintenance_console.gif[]* to start the maintenance console.
+. Start the maintenance console.
 . At the "`Main Menu`" prompt, enter option `2` for *System Configuration*, and then enter option `8` for *Upgrade*.
 +
 After the upgrade finishes, the ONTAP tools restarts. ONTAP tools is registered to the vCenter Server with the same IP address as before the upgrade.
