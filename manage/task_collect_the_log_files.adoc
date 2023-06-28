@@ -17,11 +17,11 @@ If you need VASA Provider log files, you can generate a support bundle from the 
 
 `\https://vm_ip:9083`
 
-You can collect the VSC log files by using the "`Export VSC Logs`" feature in the VSC GUI. When you collect a VSC log bundle with VASA Provider enabled, the VSC log bundle will also have the VP logs. The following steps tell you how to collect the VSC log files:
+You can collect the ONTAP tools for VMware vSphere Log files by using the "`Export ONTAP tools for VMware vSphere Logs`" feature in the VSC GUI. When you collect a ONTAP tools for VMware vSphere Log bundle with VASA Provider enabled, the ONTAP tools for VMware vSphere Log bundle will also have the VP logs. The following steps tell you how to collect the ONTAP tools for VMware vSphere Log files:
 
 *Steps*
 
-. From the ONTAP tools home page, click *Configuration* > *Export VSC Logs*.
+. From the ONTAP tools home page, click *Configuration* > *Export ONTAP tools for VMware vSphere Logs*.
 +
 This operation can take several minutes.
 
