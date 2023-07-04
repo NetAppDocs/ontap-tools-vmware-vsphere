@@ -39,19 +39,19 @@ As part of ONTAP tools 9.12 upgrade all storage systems authentication and commu
 Adding a Storage system without certificate authentication is restricted.
 
 If the storage system is added with custom created cluster scoped user using the json file and you want to upgrade to 9.12, then
-run the below commands on the ONTAP CLI before you upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP. The following commands do not create new roles, but they provide access to the APIs mentioned. 
+run the below commands on the ONTAP CLI before you upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP. 
 
-a.	_security login role create -role <role-name> -cmddirname "security login show" -access all_
-b.	_security login role create -role <role-name> -cmddirname "security certificate show" -access all_
-c.	_security login role create -role <role-name> -cmddirname "security certificate install" -access all_
+a.	_security login role create -role <existing-role-name> -cmddirname "security login show" -access all_
+b.	_security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all_
+c.	_security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all_
 
 If the storage system is added with custom created SVM scoped user using the json file and you want to upgrade to 9.12, then
 run the below commands on the ONTAP CLI with cluster admin access before upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP:
 
-a.	_security login role create -role <role-name> -cmddirname "security certificate install" -access all -vserver  <vserver-name>_
-b.	_security login role create -role <role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name>_
-c. _security login create -user-or-group-name <user> -application http -authentication-method cert -role <role-name> -vserver <vserver-name>_
-d. _security login create -user-or-group-name <user> -application ontapi -authentication-method cert -role <role-name> -vserver <vserver-name>_
+a.	_security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all -vserver  <vserver-name>_
+b.	_security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name>_
+c. _security login create -user-or-group-name <user> -application http -authentication-method cert -role <existing-role-name> -vserver <vserver-name>_
+d. _security login create -user-or-group-name <user> -application ontapi -authentication-method cert -role <existing-role-name> -vserver <vserver-name>_
 
 *Steps*
 
