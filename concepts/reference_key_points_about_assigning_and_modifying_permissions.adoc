@@ -15,7 +15,7 @@ There are several key points to keep in mind when you are working with vCenter S
 
 You only need to set up vCenter Server permissions if you want to limit access to vSphere objects and tasks. Otherwise, you can log in as an administrator. This login automatically allows you to access all vSphere objects.
 
-Where you assign a permission determines the VSC tasks that a user can perform.
+Where you assign a permission determines the ONTAP tools tasks that a user can perform.
 
 Sometimes, to ensure the completion of a task, you must assign the permission at a higher level, such as the root object. This is the case when a task requires a privilege that does not apply to a specific vSphere object (for example, tracking the task) or when a required privilege applies to a non-vSphere object (for example, a storage system).
 
@@ -25,9 +25,9 @@ TIP: Unless your company's security policies require more restrictive permission
 
 == Permissions and non-vSphere objects
 
-The permission that you create are applied to a non-vSphere object. For example, a storage system is not a vSphere object. If a privilege applies to a storage system, you must assign the permission containing that privilege to the VSC root object because there is no vSphere object to which you can assign it.
+The permission that you create are applied to a non-vSphere object. For example, a storage system is not a vSphere object. If a privilege applies to a storage system, you must assign the permission containing that privilege to the ONTAP tools root object because there is no vSphere object to which you can assign it.
 
-For example, any permission that includes a privilege such as the VSC privilege "Add/Modify/Skip storage systems" must be assigned at the root object level.
+For example, any permission that includes a privilege such as the ONTAP tools privilege "Add/Modify/Skip storage systems" must be assigned at the root object level.
 
 == Modifying permissions
 

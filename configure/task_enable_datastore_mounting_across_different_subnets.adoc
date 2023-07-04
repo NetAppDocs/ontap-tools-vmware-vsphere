@@ -13,7 +13,7 @@ If you use iSCSI or NFS and the subnet is different between your ESXi hosts and 
 
 *About this task*
 
-When datastore provisioning fails, VSC logs the following error messages:
+When datastore provisioning fails, ONTAP tools for VMware vSphere Logs the following error messages:
 
 'Unable o continue. No ip addresses found when cross-referencing kernel ip addresses and addresses on the controller. Unable to find a matching network to NFS mount volume to these hosts.'
 

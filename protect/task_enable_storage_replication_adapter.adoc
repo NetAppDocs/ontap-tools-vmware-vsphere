@@ -26,7 +26,7 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 *Steps*
 
 . Log in to the web user interface of VMware vSphere.
-. From the vSphere Client, click *Menu* > *NetApp ONTAP tools* Console.
+. From the vSphere Client, select *Menu* > *NetApp ONTAP tools*.
 . Click *Settings*.
 . Click *Manage Capabilities* in the *Administrative Settings* tab.
 . In the *Manage Capabilities* dialog box, select the SRA extension want to enable.
@@ -35,7 +35,7 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 +
 *For SRM appliance*
 
- .. Access the SRM appliance page, and then go to Storage Replication Adapters page of SRM appliance.
+ .. Access the VMware SRM Appliance Management Interface, and then go to Storage Replication Adapters page of SRM appliance.
  .. Click *New Adapter*.
  .. Upload the _.tar.gz_ installer for the SRA plug-in to SRM.
  .. Rescan the adapters to verify that the details are updated in the SRM Storage Replication Adapters page.

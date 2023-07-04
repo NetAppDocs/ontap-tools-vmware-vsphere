@@ -23,7 +23,7 @@ If the VASA Provider capability is disabled before upgrading to the 9.7.1 releas
 *Steps*
 
 . Log in to the web user interface of VMware vSphere.
-. From the vSphere Client, click *Menu* > *NetApp ONTAP tools* Console.
+. From the vSphere Client, select *Menu* > *NetApp ONTAP tools*.
 . Click *Settings*.
 . Click *Manage Capabilities* in the Administrative Settings tab.
 . In the Manage Capabilities dialog box, select the VASA Provider extension to enable.

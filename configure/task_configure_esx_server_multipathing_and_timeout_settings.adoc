@@ -23,6 +23,6 @@ This process might take a long time, depending on your configuration and system 
 +
 The standard, recommended values are set by default.
 +
-image::../media/vsc_recommended_hosts_settings.gif[]
+image::../media/vsc_recommended_hosts_settings.gif["Set recommended values screen"]
 
 . Click *OK*.
