@@ -21,7 +21,7 @@ You must configure a placeholder datastore to hold a place in the vCenter invent
 . Log in to your vCenter Server, and click on *Site Recovery* > *Sites*.
 . Select your protected site, and then click *Manage*.
 . In the Manage tab, select *Placeholder Datastores*.
-. Click the image:../media/new_placeholder_datastore.gif[] icon to create a new placeholder datastore.
+. Click the image:../media/new_placeholder_datastore.gif["search and add icon"] icon to create a new placeholder datastore.
 . Select the appropriate datastore, and then click *OK*.
 +
 NOTE: Placeholder datastores can be local or remote and should not be replicated.
