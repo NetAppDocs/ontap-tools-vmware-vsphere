@@ -1,5 +1,4 @@
 ---
----
 permalink: manage/concept_decide_whether_to_use_this_guide.html
 sidebar: sidebar
 keywords: scope of guide
