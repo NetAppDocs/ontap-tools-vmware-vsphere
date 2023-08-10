@@ -45,7 +45,7 @@ a|
 ESXi Host Systems portlet
 a|
 
- .. Click the *Traditional dashboard* tab in the Overview section of VSC.
+ .. Click the *Traditional dashboard* tab in the Overview section of ONTAP tools.
  .. Click *Edit ESXi Host Settings*.
  .. Select the ESXi host name in the Host settings and status tab for which you want to modify the settings, and click *NEXT*.
  .. Select the required settings in the Recommended host settings tab, and then click *Next*.

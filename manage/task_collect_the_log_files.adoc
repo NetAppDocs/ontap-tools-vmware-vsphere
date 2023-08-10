@@ -2,14 +2,14 @@
 permalink: manage/task_collect_the_log_files.html
 sidebar: sidebar
 keywords:
-summary: 'You can collect log files for ONTAP® tools for VMware vSphere from the option available in the VSC graphical user interface \(GUI\). Technical support might ask you to collect the log files to help troubleshoot a problem.'
+summary: 'You can collect log files for ONTAP® tools for VMware vSphere from the option available in the ONTAP tools graphical user interface \(GUI\). Technical support might ask you to collect the log files to help troubleshoot a problem.'
 ---
 = Collect the log files
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can collect log files for ONTAP tools for VMware vSphere from the option available in the VSC graphical user interface (GUI). Technical support might ask you to collect the log files to help troubleshoot a problem.
+You can collect log files for ONTAP tools for VMware vSphere from the option available in the ONTAP tools graphical user interface (GUI). Technical support might ask you to collect the log files to help troubleshoot a problem.
 
 *About this task*
 
@@ -17,7 +17,7 @@ If you need VASA Provider log files, you can generate a support bundle from the 
 
 `\https://vm_ip:9083`
 
-You can collect the ONTAP tools for VMware vSphere Log files by using the "`Export ONTAP tools for VMware vSphere Logs`" feature in the VSC GUI. When you collect a ONTAP tools for VMware vSphere Log bundle with VASA Provider enabled, the ONTAP tools for VMware vSphere Log bundle will also have the VP logs. The following steps tell you how to collect the ONTAP tools for VMware vSphere Log files:
+You can collect the ONTAP tools for VMware vSphere Log files by using the "`Export ONTAP tools for VMware vSphere Logs`" feature in the ONTAP tools GUI. When you collect a ONTAP tools for VMware vSphere Log bundle with VASA Provider enabled, the ONTAP tools for VMware vSphere Log bundle will also have the VP logs. The following steps tell you how to collect the ONTAP tools for VMware vSphere Log files:
 
 *Steps*
 

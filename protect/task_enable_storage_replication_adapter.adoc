@@ -2,14 +2,14 @@
 permalink: protect/task_enable_storage_replication_adapter.html
 sidebar: sidebar
 keywords:
-summary: 'The ONTAP tools for VMware vSphere provides the option to enable the SRA capability to be used with VSC to configure disaster recovery.'
+summary: 'The ONTAP tools for VMware vSphere provides the option to enable the SRA capability to be used with ONTAP tools to configure disaster recovery.'
 ---
 = Enable SRA to protect datastores
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP tools for VMware vSphere provides the option to enable the SRA capability to be used with VSC to configure disaster recovery.
+The ONTAP tools for VMware vSphere provides the option to enable the SRA capability to be used with ONTAP tools to configure disaster recovery.
 
 *What you will need*
 
