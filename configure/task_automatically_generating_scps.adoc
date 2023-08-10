@@ -13,8 +13,8 @@ VASA Provider for ONTAP enables you to automatically generate storage capability
 
 *What you will need*
 
-* You must have registered your VASA Provider instance with Virtual Storage Console (VSC).
-* VSC must have discovered your storage.
+* You must have registered your VASA Provider instance with ONTAP tools.
+* ONTAP tools must have discovered your storage.
 
 *About this task*
 
