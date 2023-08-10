@@ -69,6 +69,13 @@ As you wait for deployment to finish, you can view the progress of the deploymen
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
 . Verify that ONTAP tools is running after the deployment is completed.
 . If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the VSC instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
++
+Use the POST API to register ONTAP tools with vCenter from 9.12 onwards.
++
+----
+/2.0/plugin/vcenter
+----
+
 . Log out and re-log in to the vSphere Client to view the deployed ONTAP tools.
 +
 It might take a few minutes for the plug-in to be updated in the vSphere Client.

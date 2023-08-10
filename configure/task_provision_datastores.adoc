@@ -13,7 +13,7 @@ Provisioning a datastore creates a logical container for your virtual machines a
 
 *What you will need*
 
-* To provision a datastore on an SVM that is directly connected to Virtual Storage Console (VSC), you must have added the SVM to VSC by using a user account that has the appropriate privileges, not the default vsadmin user account or vsadmin role.
+* To provision a datastore on an SVM that is directly connected to ONTAP tools, you must have added the SVM to ONTAP tools by using a user account that has the appropriate privileges, not the default vsadmin user account or vsadmin role.
 +
 You can also provision a datastore by adding a cluster.
 
@@ -23,7 +23,7 @@ See "Enabling datastore mounting across different subnets".
 
 * If you use NFS or iSCSI, and the subnet is different between your ESXi hosts and your storage system, then the NFS or iSCSI settings in the kaminoprefs preferences file must include ESXi host subnet masks.
 +
-This preference file is also applicable to vVols datastore creation. See _Enable datastore mounting across different subnets_ and _Configure the VSC preferences files_ for more information.
+This preference file is also applicable to vVols datastore creation. See _Enable datastore mounting across different subnets_ and _Configure the ONTAP tools preferences files_ for more information.
 
 * If you have enabled VASA Provider and you want to specify storage capability profiles for your NFS datastores or VMFS datastores, then you must have created one or more storage capability profiles.
 * To create an NFSv4.1 datastore, you must have enabled NFSv4.1 at the SVM level.
@@ -34,10 +34,10 @@ The *Provision Datastore* option enables you to specify a storage capability pro
 * VMFS5 and VMFS6
 * From vSphere 8.0 release, NVMe/FC protocol is supported.
 
-VSC can create a datastore on either an NFS volume or a LUN:
+ONTAP tools can create a datastore on either an NFS volume or a LUN:
 
-* For an NFS datastore, VSC creates an NFS volume on the storage system, and then updates the export policies.
-* For a VMFS datastore, VSC creates a new volume (or uses an existing volume, if you selected that option), and then creates a LUN and an igroup.
+* For an NFS datastore, ONTAP tools creates an NFS volume on the storage system, and then updates the export policies.
+* For a VMFS datastore, ONTAP tools creates a new volume (or uses an existing volume, if you selected that option), and then creates a LUN and an igroup.
 
 [NOTE]
 ====
@@ -148,7 +148,7 @@ You can select one of the listed storage capability profiles if you have selecte
 a|
 Storage attributes
 a|
-By default, VSC populates the recommended values for *Aggregates* and *Volumes* options. You can customize the values based on your requirements. Aggregate selection is not supported for FlexGroup datastores as ONTAP manages the aggregate selection.
+By default, ONTAP tools populates the recommended values for *Aggregates* and *Volumes* options. You can customize the values based on your requirements. Aggregate selection is not supported for FlexGroup datastores as ONTAP manages the aggregate selection.
 
 The *Space reserve* option available under *Advanced* menu is also populated to give optimum results.
 
