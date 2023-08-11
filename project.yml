@@ -19,6 +19,7 @@ settings:
     - name: ONTAP tools for VMware vSphere
       url: /ontap-tools-vmware-vsphere-98
       version-number: "9.8"
+
 sidebar:
   entries:
     - title: ONTAP tools for VMware vSphere 9.12 docs

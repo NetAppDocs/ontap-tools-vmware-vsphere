@@ -18,14 +18,14 @@ The following table presents an overview of what you should consider before you 
 a|
 First-time deployment of ONTAP tools
 a|
-The deployment of the ONTAP tools automatically installs the VSC features.
+The deployment of the ONTAP tools automatically installs the ONTAP tools features.
 
 link:../deploy/concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
 
 a|
-Upgrading from an existing deployment of VSC
+Upgrading from an existing deployment of ONTAP tools
 a|
-The upgrade procedure from an existing deployment of VSC to ONTAP tools depends on the version of VSC, and whether you have deployed ONTAP tools. The deployment workflows and upgrade section has more information.
+The upgrade procedure from an existing deployment of ONTAP tools to ONTAP tools depends on the version of ONTAP tools, and whether you have deployed ONTAP tools. The deployment workflows and upgrade section has more information.
 
 link:concept_installation_workflow_for_existing_users_of_vsc.html[Deployment workflow for existing users of ONTAP tools]
 
@@ -35,12 +35,12 @@ Best practices before an upgrade:
 +
 After the upgrade, you should verify that all of the storage systems were automatically discovered and that they have the correct credentials.
 
-* If you modified any of the standard VSC roles, you should copy those roles to save your changes.
+* If you modified any of the standard ONTAP tools roles, you should copy those roles to save your changes.
 +
-VSC overwrites the standard roles with the current defaults each time you restart the VSC service.
+ONTAP tools overwrites the standard roles with the current defaults each time you restart the ONTAP tools service.
 
 a|
-Regenerating an SSL certificate for VSC
+Regenerating an SSL certificate for ONTAP tools
 a|
 The SSL certificate is automatically generated when you deploy the ONTAP tools. You might have to regenerate the SSL certificate to create a site-specific certificate.
 
@@ -66,9 +66,9 @@ The following table presents an overview of what you require to configure the ON
 a|
 Requirements of role-based access control (RBAC)
 a|
-VSC supports both vCenter Server RBAC and ONTAP RBAC. The account used to register VSC to vCenter Server (`https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run VSC as an administrator, you must have all of the required permissions and privileges for all of the tasks.
+ONTAP tools supports both vCenter Server RBAC and ONTAP RBAC. The account used to register ONTAP tools to vCenter Server (`https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run ONTAP tools as an administrator, you must have all of the required permissions and privileges for all of the tasks.
 
-If your company requires that you restrict access to vSphere objects, you can create and assign standard VSC roles to users to meet the vCenter Server requirements.
+If your company requires that you restrict access to vSphere objects, you can create and assign standard ONTAP tools roles to users to meet the vCenter Server requirements.
 
 You can create the recommended ONTAP roles by using ONTAP System Manager using the JSON file provided with the ONTAP tools.
 

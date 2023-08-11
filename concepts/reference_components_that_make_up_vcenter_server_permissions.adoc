@@ -77,6 +77,6 @@ Permissions are associated with vSphere objects, such as the vCenter Server, ESX
 
 You can use Active Directory (or the local vCenter Server machine) to set up users and groups of users. You can then use vCenter Server permissions to grant access to these users or groups to enable them to perform specific ONTAP tools tasks.
 
-NOTE: These vCenter Server permissions apply to ONTAP tools vCenter users, not to VSC administrators. By default, VSC administrators have full access to the product and do not require permissions assigned to them.
+NOTE: These vCenter Server permissions apply to ONTAP tools vCenter users, not to ONTAP tools administrators. By default, ONTAP tools administrators have full access to the product and do not require permissions assigned to them.
 
 Users and groups do not have roles assigned to them. They gain access to a role by being part of a vCenter Server permission.

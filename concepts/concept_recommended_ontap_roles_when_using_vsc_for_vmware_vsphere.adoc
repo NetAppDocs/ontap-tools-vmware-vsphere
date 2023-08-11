@@ -2,23 +2,23 @@
 permalink: concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html
 sidebar: sidebar
 keywords:
-summary: 'You can set up several recommended ONTAP roles for working with ONTAP® tools for VMware vSphere and role-based access control \(RBAC\). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the Virtual Storage Console \(VSC\) tasks.'
+summary: 'You can set up several recommended ONTAP roles for working with ONTAP® tools for VMware vSphere and role-based access control \(RBAC\). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the ONTAP tools tasks.'
 ---
 = Recommended ONTAP roles when using ONTAP tools for VMware vSphere
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can set up several recommended ONTAP roles for working with ONTAP tools for VMware vSphere and role-based access control (RBAC). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the Virtual Storage Console (VSC) tasks.
+You can set up several recommended ONTAP roles for working with ONTAP tools for VMware vSphere and role-based access control (RBAC). These roles contain the ONTAP privileges that are required to perform the required storage operations that are executed by the ONTAP tools tasks.
 
 To create new user roles, you must log in as an administrator on storage systems running ONTAP. You can create ONTAP roles using ONTAP System Manager 9.8P1 or later. See
 link:../configure/task_configure_user_role_and_privileges.html[Configure user roles and privileges] for more information.
 
 Each ONTAP role has an associated user name and password pair, which constitute the credentials of the role. If you do not log in by using these credentials, you cannot access the storage operations that are associated with the role.
 
-As a security measure, the VSC-specific ONTAP roles are ordered hierarchically. This means that the first role is the most restrictive role and has only the privileges that are associated with the most basic set of VSC storage operations. The next role includes both its own privileges and all of the privileges that are associated with the previous role. Each additional role is less restrictive with regard to the supported storage operations.
+As a security measure, the ONTAP tools-specific ONTAP roles are ordered hierarchically. This means that the first role is the most restrictive role and has only the privileges that are associated with the most basic set of ONTAP tools storage operations. The next role includes both its own privileges and all of the privileges that are associated with the previous role. Each additional role is less restrictive with regard to the supported storage operations.
 
-The following are some of the recommended ONTAP RBAC roles when using VSC. After you create these roles, you can assign the roles to users who have to perform tasks related to storage, such as provisioning virtual machines.
+The following are some of the recommended ONTAP RBAC roles when using ONTAP tools. After you create these roles, you can assign the roles to users who have to perform tasks related to storage, such as provisioning virtual machines.
 
 . Discovery
 +
