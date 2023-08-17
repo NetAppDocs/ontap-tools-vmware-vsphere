@@ -23,6 +23,7 @@ When used with vVols datastores, the provisioning wizard can use multiple storag
 When used with vVols, the storage capability profile is also used to set the storage performance for the individual virtual machine and place it on the FlexVol volume in the vVols datastore that best satisfies the performance requirement. You can specify QoS policy with minimum and/or maximum IOPS for performance. You can use the default policies when you initially provision a virtual machine, or change your VM storage policy later if your business requirements change. The default storage capability profiles for this release of ONTAP tools:
 
 * AFF_Thick
+* ASA_Thick
 * FAS_MAX20
 * FAS_Default
 * AFF_Default
@@ -30,6 +31,11 @@ When used with vVols, the storage capability profile is also used to set the sto
 * AFF_Encrypted
 * AFF_Encrypted_Tiering
 * AFF_Encrypted_Min50
+* ASA_Default
+* ASA_Tiering
+* ASA_Encrypted
+* ASA_Encrypted_Tiering
+* ASA_Encrypted_Min50
 * Platinum
 * Bronze
 
@@ -45,9 +51,9 @@ You should be aware of the considerations for creating and editing storage capab
 +
 This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.
 
-* You can configure storage capability profiles for both FAS and AFFdatastores.
+* You can configure storage capability profiles for FAS, ASA, and AFF datastores.
 +
-For FAS and AFF systems, you can configure space reserve to be either thick or thin.
+For FAS, ASA, and AFF systems, you can configure space reserve to be either thick or thin.
 
 * You can use storage capability profiles to provide encryption for your datastores.
 * You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.

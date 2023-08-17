@@ -16,9 +16,9 @@ Following are the considerations for creating and editing storage capability pro
 +
 This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.
 
-* You can configure storage capability profiles for both FAS and AFF datastores.
+* You can configure storage capability profiles for FAS, ASA, and AFF datastores.
 +
-For FAS systems AFF systems, you can configure space reserve to be either thick or thin.
+For FAS systems, ASA and AFF systems, you can configure space reserve to be either thick or thin.
 
 * You can use storage capability profiles to provide encryption for your datastores.
 * You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.

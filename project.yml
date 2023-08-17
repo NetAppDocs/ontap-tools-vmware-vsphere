@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP tools for VMware vSphere 9.12
+  name: ONTAP tools for VMware vSphere 9.13
   internal:
     pdf_enabled: true
   prod:
@@ -22,7 +22,7 @@ settings:
 
 sidebar:
   entries:
-    - title: ONTAP tools for VMware vSphere 9.12 docs
+    - title: ONTAP tools for VMware vSphere 9.13 docs
       url: /index.html
     - title: Release notes
       url: /release_notes.html

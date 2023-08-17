@@ -13,7 +13,7 @@ Use syslog to send system logs to centralized logging server.
 
 *About this task*
 
-The ONTAP tools for VMware vSphere 9.12 release removes earlier 2.0 syslog APIs and contains new 3.0 syslog related APIs which support mutual authentication.
+From ONTAP tools for VMware vSphere 9.12 onwards, the ONTAP tools removes the earlier 2.0 syslog APIs. They contain new 3.0 syslog related APIs which support mutual authentication.
 Follow the steps below to setup syslog.
 
 *Steps*
