@@ -32,7 +32,7 @@ NOTE: VMware does not support NFS4.1 protocol for SRM.
   *** If you are connecting to a cluster, you should enter the cluster management LIF.
   *** If you are connecting directly to an SVM, you should enter the IP address of the SVM management LIF.
 +
-NOTE: When configuring the array manager, you must use the same connection and credentials for the storage system that was used to add the storage system in Virtual Storage Console's Storage Systems menu. For example, if the array manager configuration is SVM scoped, then the storage under VSC must be added at SVM level.
+NOTE: When configuring the array manager, you must use the same connection and credentials for the storage system that was used to add the storage system in Virtual Storage Console's Storage Systems menu. For example, if the array manager configuration is SVM scoped, then the storage under ONTAP tools must be added at SVM level.
 
  .. If you are connecting to a cluster, enter the name of the SVM in the *SVM name* field.
 +

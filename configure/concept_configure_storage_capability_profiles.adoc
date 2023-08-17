@@ -13,7 +13,7 @@ VASA Provider for ONTAP allows you to create storage capability profiles and map
 
 A storage capability is a set of storage system attributes that identifies a specific level of storage performance, storage efficiency, and other capabilities such as encryption for the storage object that is associated with the storage capability.
 
-For traditional datastores, you can use a storage capability profile to create datastores consistently with common attributes, and assign QoS policy to them. During provisioning VSC displays clusters, SVMs, and aggregates that match the storage capability profile. You can generate a storage capability profile from existing traditional datastores by using the *GLOBAL AUTO-GENERATE PROFILES* option from the Storage Mapping menu. After the profile is created, you can use VSC to monitor the compliance of datastores with the profile.
+For traditional datastores, you can use a storage capability profile to create datastores consistently with common attributes, and assign QoS policy to them. During provisioning ONTAP tools displays clusters, SVMs, and aggregates that match the storage capability profile. You can generate a storage capability profile from existing traditional datastores by using the *GLOBAL AUTO-GENERATE PROFILES* option from the Storage Mapping menu. After the profile is created, you can use ONTAP tools to monitor the compliance of datastores with the profile.
 
 [NOTE]
 vVol datastores are not supported on direct SVM.

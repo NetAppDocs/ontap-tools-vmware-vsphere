@@ -21,7 +21,7 @@ Follow the steps below to setup syslog.
 . Run _POST /2.0/security/user/login to obtain_ a session ID.
 . Run _POST /3.0/appliance-management/logging-client-certificate_ by passing the sessionid received in the above response.
 +
-This generates certificates for the VP server as well as the VSC server.
+This generates certificates for the VP server as well as the ONTAP tools server.
 . Copy both the certificates to your syslog server and make them trusted on the syslog server.
 +
 Here is an example on how to do it for syslog-ng docker:

@@ -2,14 +2,14 @@
 permalink: configure/reference_configure_guest_operating_system_scripts.html
 sidebar: sidebar
 keywords: Guest operating system
-summary: 'The ISO images of the guest operating system \(OS\) scripts are mounted on ONTAP® tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.'
+summary: 'The ISO images of the guest operating system \(OS\) scripts are mounted on ONTAP tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.'
 ---
 = Configure guest operating system scripts
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ISO images of the guest operating system (OS) scripts are mounted on ONTAP® tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.
+The ISO images of the guest operating system (OS) scripts are mounted on  tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.
 
 |===
 |*Operating System Type*| *60-second timeout settings*| *190-second timeout settings*
@@ -32,6 +32,6 @@ a|
 a|
 \https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso
 |===
-You should install the script from the copy of the VSC instance that is registered to the vCenter Server (ELM) that manages the virtual machine. If your environment includes multiple vCenter Servers, you should select the instance that contains the virtual machine for which you want to set the storage timeout values.
+You should install the script from the copy of the ONTAP tools instance that is registered to the vCenter Server (ELM) that manages the virtual machine. If your environment includes multiple vCenter Servers, you should select the instance that contains the virtual machine for which you want to set the storage timeout values.
 
 You should log in to the virtual machine, and then run the script to set the storage timeout values.

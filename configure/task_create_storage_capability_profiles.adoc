@@ -2,14 +2,14 @@
 permalink: configure/task_create_storage_capability_profiles.html
 sidebar: sidebar
 keywords:
-summary: 'You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
+summary: 'You can use ONTAP tools to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
 ---
 = Create storage capability profiles
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.
+You can use ONTAP tools to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.
 
 *What you'll need*
 

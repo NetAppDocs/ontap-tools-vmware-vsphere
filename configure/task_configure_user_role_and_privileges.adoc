@@ -39,4 +39,4 @@ The *ROLE* field is auto populated based on the product capability selected.
 
 The new role and user is added and you can see the detailed privileges under the role that you have configured.
 
-NOTE: The uninstall operation does not remove VSC roles but removes the localized names for the VSC-specific privileges and appends the prefix to "`XXX missing privilege`" them. This behavior happens because the vCenter Server does not provide an option to remove privileges. When you reinstall VSC or upgrade to a newer version of VSC, all of the standard VSC roles and VSC-specific privileges are restored.
+NOTE: The uninstall operation does not remove ONTAP tools roles but removes the localized names for the ONTAP tools-specific privileges and appends the prefix to "`XXX missing privilege`" them. This behavior happens because the vCenter Server does not provide an option to remove privileges. When you reinstall ONTAP tools or upgrade to a newer version of ONTAP tools, all of the standard ONTAP tools roles and ONTAP tools-specific privileges are restored.
