@@ -12,4 +12,4 @@ summary: 'Provides important information about this release of ONTAP tools for V
 
 Provides important information about this release of ONTAP tools for VMware vSphere, including fixed issues, known issues, cautions, and limitations.
 
-For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2885833[ONTAP tools for VMware vSphere 9.13 Release Notes^].
+For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2886293[ONTAP tools for VMware vSphere 9.13 Release Notes^].
