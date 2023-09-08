@@ -82,7 +82,7 @@ This section enables you to select whether you want the vVols datastore to have 
 
 *Note:* While creating FlexVol volumes in ONTAP, you should ensure to create them with the attributes you wish to select in the storage capability profile. Both read write and data protection FlexVol volumes should have similar attributes.
 
-After FlexVol volumes are created and SnapMirror is initialized in ONTAP, you should run a storage rediscovery in VSC to be able to see the new volumes.
+After FlexVol volumes are created and SnapMirror is initialized in ONTAP, you should run a storage rediscovery in ONTAP tools to be able to see the new volumes.
 a|
 Storage attributes
 a|

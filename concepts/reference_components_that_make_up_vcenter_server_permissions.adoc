@@ -66,7 +66,7 @@ NetApp Virtual Storage Console > Policy Based Management > Management or privile
 a|
 VSC Administrator
 a|
-VSC and VASA Provider tasks related to storage capability profiles and threshold settings.
+ONTAP tools and VASA Provider tasks related to storage capability profiles and threshold settings.
 |===
 
 == vSphere objects

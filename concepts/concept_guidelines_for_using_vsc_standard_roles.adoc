@@ -9,7 +9,7 @@ summary: 'When you work with standard ONTAP® tools for VMware vSphere roles, th
 :imagesdir: ../media/
 
 [.lead]
-When you work with standard ONTAP® tools for VMware vSphere roles, there are certain guidelines you should follow.
+When you work with standard ONTAP tools for VMware vSphere roles, there are certain guidelines you should follow.
 
 You should not directly modify the standard roles. If you do, ONTAP tools will overwrite your changes each time you upgrade ONTAP tools. The installer updates the standard role definitions each time you upgrade ONTAP tools. Doing this ensures that the roles are current for your version of ONTAP tools as well as for all supported versions of the vCenter Server.
 

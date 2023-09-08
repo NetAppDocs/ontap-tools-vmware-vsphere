@@ -2,14 +2,14 @@
 permalink: configure/task_create_storage_capability_profiles.html
 sidebar: sidebar
 keywords:
-summary: 'You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
+summary: 'You can use ONTAP tools to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.'
 ---
 = Create storage capability profiles
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use VSC to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.
+You can use ONTAP tools to manually create storage capability profiles, automatically generate a profile based on the capabilities of a datastore, or modify a profile to meet your requirements.
 
 *What you'll need*
 
@@ -53,15 +53,16 @@ Most of the fields in this wizard are self-explanatory. The following table desc
 a|
 Identifying multiple profiles
 a|
-You can use the *Description* field on the Name and Description tab to describe the purpose of the storage capability profile.    Providing a good description is useful because it is a good practice to set up different profiles based on the applications that are being used.
+You can use the *Description* field on the Name and Description tab to describe the purpose of the storage capability profile (SCP). Providing a good description is useful because it is a good practice to set up different profiles based on the applications that are being used.
 
-For example, a business-critical application requires a profile with capabilities that support higher performance, such as an AFF platform. A datastore that is used for testing or training might use a profile with a lower performance FAS platform, and enable all of the storage efficiency capabilities and tiering to control costs.
+For example, a business-critical application requires a profile with capabilities that support higher performance, such as AFF and ASA platform. A datastore that is used for testing or training might use a profile with a lower performance Flash Array Hybrid platform, and enable all of the storage efficiency capabilities and tiering to control costs.
+Combination of Platform type and asymmetric flag determines the type of SCPs. For example: Platinum_ASA_A,  Platinum_AFF_A, Platinum_AFF_C.
 
 If you have enabled "`linked`" mode for your vCenter Servers, then you must select the vCenter Server for which you are creating the storage capability profile.
 a|
 Platform
 a|
-You can select your storage system to have either the AFF or FAS platform type. The options on the subsequent screens are updated based on your selection of the type of storage system.
+You can create storage capability profile with Platform types - Performance, Capacity, Flash Array Hybrid and a new storage capability that is Asymmetric flag. The options on the subsequent screens are updated based on your selection of the type of storage system.
 a|
 Protocol
 a|
@@ -86,14 +87,18 @@ Storage Attributes
 a|
 The storage attributes that you can enable in this tab depend on the storage type that you select in the Personality tab.
 
- ** If you select FAS storage, you can configure space reserve (thick or thin), enable deduplication, compression, and encryption.
+ ** If you select Flash Array Hybrid storage, you can configure space reserve (thick or thin), enable deduplication, compression, and encryption.
 +
-The tiering attribute is disabled because this attribute is not applicable to FAS storage.
+The tiering attribute is disabled because this attribute is not applicable to Flash Array Hybrid storage.
 
  ** If you select AFF storage, you can enable encryption and tiering.
 +
 Deduplication and compression are enabled by default for AFF storage and cannot be disabled.
 
+ ** If you select ASA storage, you can enable encryption and tiering.
++
+Deduplication and compression are enabled by default for ASA storage and cannot be disabled.
+ 
 +
 The tiering attribute enables the use of volumes that are part of a FabricPool-enabled aggregate (supported by VASA Provider for AFF systems with ONTAP 9.4 and later). You can configure one of the following policies for the tiering attribute:
 

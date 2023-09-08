@@ -19,7 +19,7 @@ entries:
         url: /configure/task_run_the_gos_timeout_scripts_for_solaris.html
       - title: Set timeout values for Linux guest operating systems
         url: /configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html
-  - title: Requirements for registering VSC in multiple vCenter Servers environment
+  - title: Requirements for registering ONTAP tools in multiple vCenter Servers environment
     url: /configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html
   - title: Configure the ONTAP tools preferences file
     entries:
@@ -29,7 +29,7 @@ entries:
         url: /configure/add_different_subnets.html
       - title: Enable datastore mounting across different subnets
         url: /configure/task_enable_datastore_mounting_across_different_subnets.html
-      - title: Regenerate an SSL certificate for vsc
+      - title: Regenerate an SSL certificate for ONTAP tools
         url: /configure/task_regenerate_an_ssl_certificate_for_vsc.html
   - title: Configure storage systems
     entries:

@@ -2,20 +2,20 @@
 permalink: manage/concept_virtual_storage_console_reports.html
 sidebar: sidebar
 keywords:
-summary: 'You can use the ONTAP tools console Reports menu to view pre-defined reports for all the datastores managed by a selected VSC instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.'
+summary: 'You can use the ONTAP tools console Reports menu to view pre-defined reports for all the datastores managed by a selected ONTAP tools instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.'
 ---
 = Overview of ONTAP tools datastore and vVols reports
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the ONTAP tools console *Reports* menu to view pre-defined reports for all the datastores managed by a selected VSC instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.
+You can use the ONTAP tools console *Reports* menu to view pre-defined reports for all the datastores managed by a selected ONTAP tools instance in a particular vCenter Server. You can perform operations such as sorting and exporting reports.
 
 Reports display detailed information about datastores and virtual machines, that enables you to review and identify potential issues with datastores and virtual machines in your vCenter Server
 
 You can view, sort, and export reports.
 
-Virtual Storage Console (VSC) provides the following pre-defined reports:
+ONTAP tools provide the following pre-defined reports:
 
 * Datastore Report
 * Virtual Machine Report
@@ -63,7 +63,7 @@ You can also verify the time at which the report was generated. The Datastore Re
 
 *Virtual Machine Report*
 
-The Virtual Machine Report menu provides the performance metrics for all the virtual machines that use datastores provisioned by VSC for a selected vCenter Server. The virtual machine metrics displayed in the Virtual Machine Reports is historical data that is collected every 30 minutes for virtual machines on traditional datastores. The "Last refresh time" and "Next refresh time" are added to the table to provide details on when the data was collected and when will be the next data collection.
+The Virtual Machine Report menu provides the performance metrics for all the virtual machines that use datastores provisioned by ONTAP tools for a selected vCenter Server. The virtual machine metrics displayed in the Virtual Machine Reports is historical data that is collected every 30 minutes for virtual machines on traditional datastores. The "Last refresh time" and "Next refresh time" are added to the table to provide details on when the data was collected and when will be the next data collection.
 
  ** Name of the virtual machine
  ** Datastore name
@@ -160,7 +160,7 @@ The available log file status are:
 
 The ONTAP tools for VMware vSphere generates Audit logging for following:
 
-* VSC service
+* ONTAP tools service
 +
 Audit log location for vscservice: _/opt/netapp/vscservice/vsc-audit.log_.
 You can change the following parameters of the log integrity report in _/opt/netapp/vscserver/etc/log4j2.properties_ file:
