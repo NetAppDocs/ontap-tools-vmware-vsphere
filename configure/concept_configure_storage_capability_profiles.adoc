@@ -13,7 +13,7 @@ VASA Provider for ONTAP allows you to create storage capability profiles and map
 
 A storage capability is a set of storage system attributes that identifies a specific level of storage performance, storage efficiency, and other capabilities such as encryption for the storage object that is associated with the storage capability.
 
-For traditional datastores, you can use a storage capability profile to create datastores consistently with common attributes, and assign QoS policy to them. During provisioning VSC displays clusters, SVMs, and aggregates that match the storage capability profile. You can generate a storage capability profile from existing traditional datastores by using the *GLOBAL AUTO-GENERATE PROFILES* option from the Storage Mapping menu. After the profile is created, you can use VSC to monitor the compliance of datastores with the profile.
+For traditional datastores, you can use a storage capability profile to create datastores consistently with common attributes, and assign QoS policy to them. During provisioning ONTAP tools displays clusters, SVMs, and aggregates that match the storage capability profile. You can generate a storage capability profile from existing traditional datastores by using the *GLOBAL AUTO-GENERATE PROFILES* option from the Storage Mapping menu. After the profile is created, you can use ONTAP tools to monitor the compliance of datastores with the profile.
 
 [NOTE]
 vVol datastores are not supported on direct SVM.
@@ -22,15 +22,30 @@ When used with vVols datastores, the provisioning wizard can use multiple storag
 
 When used with vVols, the storage capability profile is also used to set the storage performance for the individual virtual machine and place it on the FlexVol volume in the vVols datastore that best satisfies the performance requirement. You can specify QoS policy with minimum and/or maximum IOPS for performance. You can use the default policies when you initially provision a virtual machine, or change your VM storage policy later if your business requirements change. The default storage capability profiles for this release of ONTAP tools:
 
-* AFF_Thick
-* FAS_MAX20
-* FAS_Default
-* AFF_Default
-* AFF_Tiering
-* AFF_Encrypted
-* AFF_Encrypted_Tiering
-* AFF_Encrypted_Min50
-* Platinum
+* Platinum_AFF_A
+* Platinum_AFF_C
+* Platinum_ASA_A
+* AFF_NVMe_AFF_A
+* AFF_NVMe_AFF_C 
+* AFF_NVMe_ASA_A
+* AFF_Thick_AFF_A
+* AFF_Thick_AFF_C
+* AFF_Thick_ASA_A
+* AFF_Default_AFF_A
+* AFF_Default_AFF_C
+* AFF_Default_ASA_A
+* AFF_Tiering_AFF_A
+* AFF_Tiering_AFF_C
+* AFF_Tiering_ASA_A
+* AFF_Encrypted_AFF_A
+* AFF_Encrypted_AFF_C
+* AFF_Encrypted_ASA_A
+* AFF_Encrypted_Tiering_AFF_A
+* AFF_Encrypted_Tiering_AFF_C
+* AFF_Encrypted_Tiering_ASA_A
+* AFF_Encrypted_Min50_AFF_A
+* AFF_Encrypted_Min50_AFF_C 
+* AFF_Encrypted_Min50_ASA_A
 * Bronze
 
 The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.
@@ -45,9 +60,9 @@ You should be aware of the considerations for creating and editing storage capab
 +
 This capability provides greater flexibility in assigning varied QoS metrics for different VMDKs of the same virtual machine that is provisioned on a virtual datastore.
 
-* You can configure storage capability profiles for both FAS and AFFdatastores.
+* You can configure storage capability profiles for Flash Array Hybrid, ASA, and AFF datastores.
 +
-For FAS and AFF systems, you can configure space reserve to be either thick or thin.
+For Flash Array Hybrid, ASA, and AFF systems, you can configure space reserve to be either thick or thin.
 
 * You can use storage capability profiles to provide encryption for your datastores.
 * You cannot modify existing storage capability profiles (created prior to 7.2 version) after upgrading from an earlier version of the ONTAP tools for VMware vSphere to the latest version of the ONTAP tools.

@@ -26,7 +26,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
 * You must have enabled Internet Control Message Protocol (ICMP).
 +
-If ICMP is disabled, then the initial configuration of ONTAP tools fails, and VSC cannot start the VSC and VASA Provider services after deployment. You must manually enable the VSC and VASA Provider services after deployment.
+If ICMP is disabled, then the initial configuration of ONTAP tools fails, and ONTAP tools cannot start the ONTAP tools and VASA Provider services after deployment. You must manually enable the ONTAP tools and VASA Provider services after deployment.
 
 *About this task*
 
@@ -68,7 +68,7 @@ As you wait for deployment to finish, you can view the progress of the deploymen
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
 . Verify that ONTAP tools is running after the deployment is completed.
-. If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the VSC instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
+. If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the ONTAP tools instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
 +
 Use the POST API to register ONTAP tools with vCenter from 9.12 onwards.
 +

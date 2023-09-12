@@ -2,14 +2,14 @@
 permalink: configure/task_configure_alarm_thresholds.html
 sidebar: sidebar
 keywords:
-summary: 'You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.'
+summary: 'You can use ONTAP tools to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.'
 ---
 = Configure alarm thresholds
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use VSC to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.
+You can use ONTAP tools to set alarms to notify you when volume thresholds and aggregate thresholds reach the set limits.
 
 *Steps*
 

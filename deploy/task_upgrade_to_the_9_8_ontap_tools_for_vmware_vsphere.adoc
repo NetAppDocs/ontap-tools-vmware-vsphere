@@ -34,18 +34,18 @@ The status of VASA Provider from the existing deployment is retained after the u
  You can perform an in-place upgrade to the latest release of ONTAP tools only from your existing 9.10 or later versions. 
 
 [NOTE]
-As part of ONTAP tools 9.12 upgrade all storage systems authentication and communication process is changed from basic authentication to certificate based authentication by auto trusting the ONTAP storage certificates. No action required from the user.
+From ONTAP tools 9.12 upgrade all storage systems authentication and communication process is changed from basic authentication to certificate based authentication by auto trusting the ONTAP storage certificates. No action required from the user.
 
 Adding a Storage system without certificate authentication is restricted.
 
-If the storage system is added with custom created cluster scoped user using the json file and you want to upgrade to 9.12, then
+If the storage system is added with custom created cluster scoped user using the json file and you want to upgrade to 9.12 and later versions, then
 run the below commands on the ONTAP CLI before you upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP. 
 
 a.	_security login role create -role <existing-role-name> -cmddirname "security login show" -access all_
 b.	_security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all_
 c.	_security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all_
 
-If the storage system is added with custom created SVM scoped user using the json file and you want to upgrade to 9.12, then
+If the storage system is added with custom created SVM scoped user using the json file and you want to upgrade to 9.12 and later versions, then
 run the below commands on the ONTAP CLI with cluster admin access before upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP:
 
 a.	_security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all -vserver  <vserver-name>_

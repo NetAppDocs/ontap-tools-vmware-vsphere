@@ -11,6 +11,9 @@ summary: 'You can configure replication for your vVols datastore using ONTAP too
 [.lead]
 You can configure replication for your vVols datastore using ONTAP tools. The main aim of vVols replication is to protect critical virtual machines during disaster recovery using VMware Site Recovery Manager (SRM).
 
+[NOTE]
+Site Recovery Manager (SRM) workflows fail in vCenter 8.0 with an error message. Vvol replication works as expected in vCenter 7.0u3 release.
+
 However, to configure vVols replication for ONTAP tools, VASA Provider capability and vVols replication must be enabled. VASA Provider is enabled by default in ONTAP tools. The Array Based Replication is performed at the FlexVol level. Each vVols datastore is mapped to a storage container that consists of one or more FlexVol volumes. The FlexVol volumes should be pre-configured with SnapMirror from ONTAP.
 
 WARNING: You should not configure a mix of protected and unprotected virtual machines in a single vVols datastore. A reprotect operation after failover will cause unprotected virtual machines to be deleted. Ensure that all virtual machines in a vVols datastore are protected when using replication.

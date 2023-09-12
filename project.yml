@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP tools for VMware vSphere 9.12
+  name: ONTAP tools for VMware vSphere 9.13
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
     - name: ONTAP tools for VMware vSphere
       url: /ontap-tools-vmware-vsphere
+      version-number: "9.13"
+    - name: ONTAP tools for VMware vSphere
+      url: /ontap-tools-vmware-vsphere-912
       version-number: "9.12"
     - name: ONTAP tools for VMware vSphere
       url: /ontap-tools-vmware-vsphere-911
@@ -22,7 +25,7 @@ settings:
 
 sidebar:
   entries:
-    - title: ONTAP tools for VMware vSphere 9.12 docs
+    - title: ONTAP tools for VMware vSphere 9.13 docs
       url: /index.html
     - title: Release notes
       url: /release_notes.html
@@ -39,7 +42,7 @@ homepage:
   - title: Get started
     links:
     - title: Release notes
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885833
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886292
     - title: Learn about ONTAP tools for VMware vSphere
       url: /concepts/concept_virtual_storage_console_overview.html
     - title: ONTAP tools Quick start

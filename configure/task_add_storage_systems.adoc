@@ -2,26 +2,26 @@
 permalink: configure/task_add_storage_systems.html
 sidebar: sidebar
 keywords:
-summary: 'You can manually add storage system to Virtual Storage Console \(VSC\).'
+summary: 'You can manually add storage system to ONTAP tools.'
 ---
 = Add storage systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can manually add storage system to Virtual Storage Console (VSC).
+You can manually add storage system to ONTAP tools.
 [NOTE]
 If ONTAP cluster is SAML enabled, communication with ONTAP is done with basic authentication.
 
 *About this task*
 
-Each time you start Virtual Storage Console (VSC) or select the *REDISCOVER All* option, VSC automatically discovers the available storage systems.
+Each time you start ONTAP tools or select the *REDISCOVER All* option, ONTAP tools automatically discovers the available storage systems.
 [NOTE]
 vVol datastores are not supported on direct SVM.
 
 *Steps*
 
-. Add a storage system to VSC by using either one of the options in the ONTAP tools home page:
+. Add a storage system to ONTAP tools by using either one of the options in the ONTAP tools home page:
  ** Click *Storage Systems* > *Add*. or
  ** Click *Overview* > *Getting Started*, and then click *ADD* button under Add Storage System.
 . In the *Add Storage System* dialog box, enter the management IP address and credentials for that storage system.
@@ -30,7 +30,7 @@ When you add a storage system any communication between ONTAP tools plug-in and 
 +
 You can also add storage systems using the IPv6 address of the cluster or SVM.
 +
-When you add storage from the VSC Storage System page, specify the vCenter Server instance where the storage is located. The Add Storage System dialog box provides a drop-down list of the available vCenter Server instances. VSC does not display this option if you are adding storage to a datacenter that is already associated with a vCenter Server instance.
+When you add storage from the ONTAP tools Storage System page, specify the vCenter Server instance where the storage is located. The Add Storage System dialog box provides a drop-down list of the available vCenter Server instances. ONTAP tools does not display this option if you are adding storage to a datacenter that is already associated with a vCenter Server instance.
 +
 NOTE: 
 +
