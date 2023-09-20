@@ -62,7 +62,12 @@ If you have enabled "`linked`" mode for your vCenter Servers, then you must sele
 a|
 Platform
 a|
-You can create storage capability profile with Platform types - Performance, Capacity, Flash Array Hybrid and a new storage capability that is Asymmetric flag. The options on the subsequent screens are updated based on your selection of the type of storage system.
+You can create storage capability profile with Platform types - Performance, Capacity, Flash Array Hybrid and a new storage capability that is Asymmetric flag. 
+
+ONTAP tools for VMware vSphere 9.13 introduces new values for platform type capability called Performance and Capacity. Platform type Performance indicates an all flash optimized(AFF) storage system belongs from performance optimized A-Series box.
+Platform type Capacity indicates an AFF storage system belongs from capacity optimized C-Series box.
+ONTAP tools for VMware vSphere 9.13 introduces new Asymmetric keyword capability to indicate storage system's san optimized (All San Array) status. 
+The options on the subsequent screens are updated based on your selection of the type of storage system.
 a|
 Protocol
 a|

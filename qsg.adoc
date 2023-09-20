@@ -46,9 +46,22 @@ You should be aware of the following licenses:
 ONTAP tools uses the following default bidirectional TCP ports:
 |===
 | *Additional requirements* | *Description column*
-
-| 9083 | When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port supports bundle download, Web-CLI user interface, and the control path communication from VMware to VP. SRA communicates on this PORT number with backend SRA service.
-| 8143  | ONTAP tools listens for secure communications on this port.
+a|
+9083
+a|
+When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port is used to download VP support bundle, access Web-CLI user interface, and control path communication from VMware to VP. 
+a|
+443
+a|
+Depending on how you have configured your credentials, the VMware vCenter Server and the storage systems listen for secure communications on this port. The port is used in client-server communication architecture. The 443 port is enabled by default for secure connections. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data. 
+a|
+8143
+a|
+ONTAP tools listens for secure communications on this port. The port is used in client-server communication architecture. The client, which can be any automation client that uses REST API, initiates the connection to the server and the end points exchange data. This port is enabled for ONTAP tools services and for exporting ONTAP tools server logs. The register.html page is hosted on this port. The REST swagger is exposed on this port.
+a|
+8443
+a|
+This port is used for Remote plugin service.
 |===
 
 Minimum storage and application requirements:
