@@ -13,7 +13,11 @@ You can configure new user roles for managing storage systems using the JSON fil
 
 *What you'll need*
 
-* You should have downloaded the ONTAP Privileges file from ONTAP tools using \https://\{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip.
+* You should have downloaded the ONTAP Privileges file from ONTAP tools following these steps:
+** Navigate to https://{virtual_appliance_IP}:9083/vsc/config/
+** Download the file VSC_ONTAP_User_Privileges.zip
+** Extract the downloaded VSC_ONTAP_User_Privileges.zip file
+** Access System Manager
 +
 See KB article - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges[Virtual Storage Console: How to retrieve the JSON file to configure user roles and privileges] for instructions on how to download the ONTAP Privileges file from WebCLI.
 * You should have configured ONTAP 9.8P1 or later storage.
