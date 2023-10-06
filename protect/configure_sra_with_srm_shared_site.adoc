@@ -1,7 +1,7 @@
 ---
 permalink: protect/configure_sra_with_srm_shared_site.html
 sidebar: sidebar
-keywords:
+keywords: SRA with SRM, SRM
 summary: 'ONTAP tools for VMware vSphere  supports VMware's SRM Shared Recovery Site Configuration.'
 ---
 = Configure SRA with SRM in a Shared recovery site configuration
