@@ -35,6 +35,11 @@ a|
 8443
 a|
 This port is used for Remote plugin service.
+a|
+7
+a|
+ONTAP tools sends an echo request to ONTAP to verify reachability and is required only when adding storage
+system and can be disabled later.
 |===
 NOTE: You should have enabled Internet Control Message Protocol (ICMP) before deploying the ONTAP tools.
 

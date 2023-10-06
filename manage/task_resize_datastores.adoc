@@ -23,7 +23,7 @@ NOTE: If you are using All SAN Array (ASA) type storage platforms with ONTAP 9.9
 
 . From the vSphere Client Home page, click *Hosts and Clusters*.
 . In the navigation pane, select the datacenter that contains the datastore.
-. Right-click the datastore and select *NetApp ONTAP tools* > *Assign QoS*.
+. Right-click the datastore and select *NetApp ONTAP tools* > *Resize non-vVols datastore*.
 . In the Resize dialog box, specify a new size for the datastore, and then click *OK*.
 +
 You can run the *REDISCOVER ALL* option in the Storage Systems menu to manually update the storage listing under Storage Systems and dashboard, or wait for the next scheduled refresh.
