@@ -1,0 +1,16 @@
+---
+permalink: protect/configure_sra_with_srm_shared_site.html
+sidebar: sidebar
+keywords: SRA with SRM
+summary: 'ONTAP tools for VMware vSphere supports VMware SRM Shared Recovery Site Configuration.'
+---
+= Configure SRA with SRM in a Shared recovery site configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+ONTAP tools for VMware vSphere  supports VMware's SRM Shared Recovery Site Configuration. For more information, see: https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html[Site Recovery Manager in a Shared Recovery Site Configuration]. The Site Recovery Manager Server instances on the recovery site connect to the same vCenter Server instances.
+
+In a SRM Shared Recovery Site Configuration, each SRM server needs to have a dedicated SRA instance (1:1 relationship between SRM and SRA). Configure OTV in VCF mode to act as a dedicated SRA instance for each SRM server. You can also have a non-SRA enabled ONTAP tools appliance deployed that is registered with vCenter and is used for non-SRA tasks such as datastore provisioning.
+
+The https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site[How to configure SRA in a SRM Shared Recovery Site] KB article details the procedure for setting up SRA to support SRM Shared Recovery Site Configuration.
