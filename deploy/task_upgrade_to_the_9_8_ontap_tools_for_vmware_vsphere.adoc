@@ -81,10 +81,10 @@ It might take a few minutes for the plug-in to be updated in the vSphere Client.
 [NOTE]
 ====
 
-  * If upgrading from the 7.0 version of ONTAP tools to the latest version of ONTAP tools, you must first create storage capability profiles before attempting to edit an existing VM Storage Policy or you might get an error that there are incorrect or missing values.
-  * If upgrading from an earlier version to the latest release of ONTAP tools, it is found that the `vvol.rebalance.threshold` property is missing in the `vvol.properties file.
+* From ONTAP tools for VMware vSphere 9.12 onwards, the authentication with ONTAP is done through certificate. You can either add CA signed certificate or a self-signed certificate. See, link:../configure/task_modify_storage_system.html[Modify storage systems] for instructions.
+* If upgrading from the 7.0 version of ONTAP tools to the latest version of ONTAP tools, you must first create storage capability profiles before attempting to edit an existing VM Storage Policy or you might get an error that there are incorrect or missing values.
+* If upgrading from an earlier version to the latest release of ONTAP tools, it is found that the `vvol.rebalance.threshold` property is missing in the `vvol.properties file.
 +
-The default value of the property is set to 85%.
- * After you upgrade to the latest ONTAP tools release that has FIPS enabled but you have a older version of vCenter where FIPS is not supported, the deployment will still work.
- But if you upgrade your vCenter to the latest FIPS supported version and you have an earlier version of ONTAP tools, then the deployment will work only if FIPS is disabled on the vCenter.
+The default value of the property is set to 85%.* After you upgrade to the latest ONTAP tools release that has FIPS enabled but you have a older version of vCenter where FIPS is not supported, the deployment will still work.
+But if you upgrade your vCenter to the latest FIPS supported version and you have an earlier version of ONTAP tools, then the deployment will work only if FIPS is disabled on the vCenter.
 ====
