@@ -6,7 +6,6 @@ summary: Provides instructions for deploying and initializing ONTAP tools for VM
 ---
 
 = ONTAP tools for VMware vSphere Quick Start
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :nofooter:
