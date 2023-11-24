@@ -29,7 +29,7 @@ The login session remains valid only until midnight the next day.
 
 *Steps*
 
-. From the vCenter Server, open a console to VASA Provider.
+. From the vCenter Server, open a console to ONTAP Tools appliance virtual machine.
 . Log in as the maintenance user.
 . Enter `4` to select Support and Diagnostics.
 . Enter `3` to select Enable remote diagnostics access.
