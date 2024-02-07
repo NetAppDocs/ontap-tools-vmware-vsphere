@@ -26,4 +26,3 @@ For Flash Array Hybrid systems, ASA and AFF systems, you can configure space res
 The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics related to the performance of the storage capability profiles.
 
 * You cannot modify or use the legacy storage capability profiles to provision new virtual datastores or VM storage policies.
-* You must use new storage capability profiles for all new datastores.
