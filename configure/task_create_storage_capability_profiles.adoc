@@ -56,7 +56,7 @@ a|
 You can use the *Description* field on the Name and Description tab to describe the purpose of the storage capability profile (SCP). Providing a good description is useful because it is a good practice to set up different profiles based on the applications that are being used.
 
 For example, a business-critical application requires a profile with capabilities that support higher performance, such as AFF and ASA platform. A datastore that is used for testing or training might use a profile with a lower performance Flash Array Hybrid platform, and enable all of the storage efficiency capabilities and tiering to control costs.
-Combination of Platform type and asymmetric flag determines the type of SCPs. For example: Platinum_ASA_A,  Platinum_AFF_A, Platinum_AFF_C.
+Combination of Platform type and asymmetric flag determines the type of SCPs. For example: Platinum_ASA_A, Platinum_ASA_C, Platinum_AFF_A, Platinum_AFF_C.
 
 If you have enabled "`linked`" mode for your vCenter Servers, then you must select the vCenter Server for which you are creating the storage capability profile.
 a|
