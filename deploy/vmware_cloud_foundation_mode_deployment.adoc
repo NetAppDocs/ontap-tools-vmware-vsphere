@@ -11,7 +11,7 @@ summary: 'ONTAP tools for VMware vSphere can be deployed in VMware Cloud foundat
 [.lead]
 ONTAP tools for VMware vSphere can be deployed in VMware Cloud Foundation (VCF) environment. The main objective of VCF deployment is to use ONTAP tools in a cloud setup and create containers without vCenter Server.
 
-The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add storage systems and create containers using REST APIs. The following article has the procedure for adding storage to ONTAP tools when VCF is enabled, https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site[Add Storage to ONTAP tools from Swagger-UI]. 
+The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add, delete, or modify storage systems, and create containers using REST APIs. The following article has the procedure for adding storage to ONTAP tools when VCF is enabled, https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site[Add Storage to ONTAP tools from Swagger-UI]. 
 
 A new API is introduced to generate the _appliance-api-token_ that authenticates API calls. Some of the existing APIs are modified to include the _appliance-api-token_ header. From ONTAP tools 9.12 release onwards, swagger does not support 1.0 APIs. The pointers that were previously on 1.0 are moved to 2.0 or 3.0 APIs.
 [NOTE]
@@ -58,6 +58,22 @@ a|
 POST
 a|
 Modified
+a|
+Storage Systems
+a|
+/3.0/storage/clusters
+a|
+DELETE
+a|
+New
+a|
+Storage Systems
+a|
+/3.0/storage/clusters
+a|
+PUT
+a|
+New
 a|
 Storage Systems
 a|
@@ -130,6 +146,12 @@ Both
 a|
 Both
 a|
+Platinum_ASA_C
+a|
+Both
+a|
+Both
+a|
 AFF_NVMe_AFF_A
 a|
 Both
@@ -143,6 +165,12 @@ a|
 Both
 a|
 AFF_NVMe_ASA_A
+a|
+Both
+a|
+Both
+a|
+AFF_NVMe_ASA_C
 a|
 Both
 a|
@@ -166,6 +194,12 @@ Both
 a|
 Both
 a|
+AFF_Thick_ASA_C
+a|
+Both
+a|
+Both
+a|
 AFF_Default_AFF_A
 a|
 Background
@@ -179,6 +213,12 @@ a|
 None
 a|
 AFF_Default_ASA_A
+a|
+Background
+a|
+None
+a|
+AFF_Default_ASA_C
 a|
 Background
 a|
@@ -202,6 +242,12 @@ Both
 a|
 Both
 a|
+AFF_Tiering_ASA_C
+a|
+Both
+a|
+Both
+a|
 AFF_Encrypted_AFF_A
 a|
 Both
@@ -215,6 +261,12 @@ a|
 Both
 a|
 AFF_Encrypted_ASA_A
+a|
+Both
+a|
+Both
+a|
+AFF_Encrypted_ASA_C
 a|
 Both
 a|
@@ -238,6 +290,12 @@ Both
 a|
 Both
 a|
+AFF_Encrypted_Tiering_ASA_C
+a|
+Both
+a|
+Both
+a|
 AFF_Encrypted_Min50_AFF_A
 a|
 Both
@@ -251,6 +309,12 @@ a|
 Both
 a|
 AFF_Encrypted_Min50_ASA_A
+a|
+Both
+a|
+Both
+a|
+AFF_Encrypted_Min50_ASA_C
 a|
 Both
 a|

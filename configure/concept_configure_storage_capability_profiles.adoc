@@ -25,27 +25,35 @@ When used with vVols, the storage capability profile is also used to set the sto
 * Platinum_AFF_A
 * Platinum_AFF_C
 * Platinum_ASA_A
+* Platinum_ASA_C
 * AFF_NVMe_AFF_A
 * AFF_NVMe_AFF_C 
 * AFF_NVMe_ASA_A
+* AFF_NVMe_ASA_C
 * AFF_Thick_AFF_A
 * AFF_Thick_AFF_C
 * AFF_Thick_ASA_A
+* AFF_Thick_ASA_C
 * AFF_Default_AFF_A
 * AFF_Default_AFF_C
 * AFF_Default_ASA_A
+* AFF_Default_ASA_C
 * AFF_Tiering_AFF_A
 * AFF_Tiering_AFF_C
 * AFF_Tiering_ASA_A
+* AFF_Tiering_ASA_C
 * AFF_Encrypted_AFF_A
 * AFF_Encrypted_AFF_C
 * AFF_Encrypted_ASA_A
+* AFF_Encrypted_ASA_C
 * AFF_Encrypted_Tiering_AFF_A
 * AFF_Encrypted_Tiering_AFF_C
 * AFF_Encrypted_Tiering_ASA_A
+* AFF_Encrypted_Tiering_ASA_C
 * AFF_Encrypted_Min50_AFF_A
 * AFF_Encrypted_Min50_AFF_C 
 * AFF_Encrypted_Min50_ASA_A
+* AFF_Encrypted_Min50_ASA_C
 * Bronze
 
 The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.
@@ -70,4 +78,3 @@ For Flash Array Hybrid, ASA, and AFF systems, you can configure space reserve to
 The legacy storage capability profiles are retained for backward compatibility. If the default templates are not in use, then during the upgrade to the latest version of the ONTAP tools, the existing templates are overridden to reflect the new QoS metrics and tiering policies related to the performance of the storage capability profiles.
 
 * You cannot modify or use the legacy storage capability profiles to provision new virtual datastores or VM storage policies.
-* You must use new storage capability profiles for all new datastores.
