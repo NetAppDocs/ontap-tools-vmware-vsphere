@@ -56,6 +56,8 @@ When used with vVols, the storage capability profile is also used to set the sto
 * AFF_Encrypted_Min50_ASA_C
 * Bronze
 
+[NOTE]
+ASA-C storage capability profile is supported from ONTAP tools for VMware vSphere 9.13P1 onwards.
 The vCenter Server then associates the storage capability of a LUN or volume with the datastore that is provisioned on that LUN or volume. This enables you to provision a virtual machine in a datastore that matches the storage profile of the virtual machine and to ensure that all of the datastores in a datastore cluster have the same storage service levels.
 
 With ONTAP tools, you can configure every virtual volume (vVols) datastore with a new storage capability profile that supports the provisioning of virtual machines with varying IOPS requirements on the same vVols datastore. While executing the VM provisioning workflow with IOPS requirement, all of the vVols datastores are listed in the compatible datastore list.
