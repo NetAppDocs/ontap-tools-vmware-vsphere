@@ -14,6 +14,7 @@ ONTAP tools for VMware vSphere can be deployed in VMware Cloud Foundation (VCF) 
 The VCF mode enables you to create containers for your storage without the need for a vCenter Server. VASA Provider is enabled by default after the deployment of ONTAP tools in VCF mode. After the deployment is complete, you can add, delete, or modify storage systems, and create containers using REST APIs. 
 [NOTE]
 Modify and delete storage system is supported from ONTAP tools for VMware vSphere 9.13P1 release onwards.
+
 The following article has the procedure for adding storage to ONTAP tools when VCF is enabled, https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site[Add Storage to ONTAP tools from Swagger-UI]. 
 
 A new API is introduced to generate the _appliance-api-token_ that authenticates API calls. Some of the existing APIs are modified to include the _appliance-api-token_ header. From ONTAP tools 9.12 release onwards, swagger does not support 1.0 APIs. The pointers that were previously on 1.0 are moved to 2.0 or 3.0 APIs.
