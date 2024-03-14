@@ -334,7 +334,7 @@ a|
 
 You can use the ONTAP PATCH API to set the appropriate values.
 
-`https://<machine_IP>/api/storage/volumes/{uuid}`
+`\https://<machine_IP>/api/storage/volumes/{uuid}`
 
 The VCF deployment of ONTAP tools allows only container creation workflows. If you want to use other workflows such as provisioning datastores, creating storage capability profiles, or disaster recovery, then you should register ONTAP tools with vCenter Server using the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. The limitation of ONTAP tools in VCF mode is that you cannot configure SRA for disaster recovery until you register the plugin. When you deploy ONTAP tools without VCF mode, the registration happens automatically.
 [NOTE]

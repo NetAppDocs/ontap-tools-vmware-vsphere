@@ -66,7 +66,7 @@ The following table presents an overview of what you require to configure the ON
 a|
 Requirements of role-based access control (RBAC)
 a|
-ONTAP tools supports both vCenter Server RBAC and ONTAP RBAC. The account used to register ONTAP tools to vCenter Server (`https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run ONTAP tools as an administrator, you must have all of the required permissions and privileges for all of the tasks.
+ONTAP tools supports both vCenter Server RBAC and ONTAP RBAC. The account used to register ONTAP tools to vCenter Server (`\https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run ONTAP tools as an administrator, you must have all of the required permissions and privileges for all of the tasks.
 
 If your company requires that you restrict access to vSphere objects, you can create and assign standard ONTAP tools roles to users to meet the vCenter Server requirements.
 
@@ -103,7 +103,7 @@ You must access the maintenance console by using the "`maint`" user name. You ca
 
 You can set the administrator credentials for the vCenter Server while deploying ONTAP tools.
 
-If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: ``\https://<IP>:8143/Register.html` where the IP address is of ONTAP tools that you provide during deployment.
+If the password for the vCenter Server changes, then you can update the password for the administrator by using the following URL: `\https://<IP>:8143/Register.html` where the IP address is of ONTAP tools that you provide during deployment.
 
 === Derby database password
 

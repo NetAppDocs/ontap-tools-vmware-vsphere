@@ -32,6 +32,6 @@ Follow the below steps to enable the quick_resync flag:
 
 .Steps
 
-. Log into the control panel at _https://<IP address>:9083_ and click Web based CLI interface.
+. Log into the control panel at `/https://<IP address>:9083` and click Web based CLI interface.
 . Run the command `vp updateconfig -key=snapmirror.quick.resync.enabled -value=true`.
 . Run the command `vp reloadconfig`.

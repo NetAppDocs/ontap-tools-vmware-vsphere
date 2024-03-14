@@ -14,7 +14,7 @@ You can configure new user roles for managing storage systems using the JSON fil
 *What you'll need*
 
 * You should have downloaded the ONTAP Privileges file from ONTAP tools following these steps:
-** Navigate to https://{virtual_appliance_IP}:9083/vsc/config/
+** Navigate to `\https://{virtual_appliance_IP}:9083/vsc/config/`
 ** Download the file VSC_ONTAP_User_Privileges.zip
 ** Extract the downloaded VSC_ONTAP_User_Privileges.zip file
 ** Access System Manager
