@@ -1,0 +1,2854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Configure guest operating system scripts</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Configure guest operating system scripts" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+	<meta property="og:description" content="The ISO images of the guest operating system \(OS\) scripts are mounted on ONTAP tools for VMware vSphere server. To use the guest OS scripts to set the stor..." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="The ISO images of the guest operating system \(OS\) scripts are mounted on ONTAP tools for VMware vSphere server. To use the guest OS scripts to set the stor...">
+  <meta name="keywords" content=" Guest operating system"><!-- Icons -->
+  <link rel="icon" href="/us-en/ontap-tools-vmware-vsphere/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-tools-vmware-vsphere/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/ontap-tools-vmware-vsphere/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/ontap-tools-vmware-vsphere/js/na-search.js'></script><script src='/us-en/ontap-tools-vmware-vsphere/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/custom-dropdown.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/FileSaver.min.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/jszip-utils.min.js'></script>
+  <script src='/us-en/ontap-tools-vmware-vsphere/js/jszip.min.js'></script><script src='/us-en/ontap-tools-vmware-vsphere/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/us-en/ontap-tools-vmware-vsphere/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/">
+                <image id="ie-header-logo" src="/us-en/ontap-tools-vmware-vsphere/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">English</span>
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">All NetApp</span>
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/us-en/ontap-tools-vmware-vsphere/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">All docs</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/us-en/ontap-tools-vmware-vsphere/">-->
+      ONTAP tools for VMware vSphere 9.13
+    <!--</a>-->
+  </div>
+</div>
+
+            
+<div id="ie-selectors"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title=" 9.13">
+    <label>Version</label>
+    <span translate="no" class="notranslate">9.13</span>
+    <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown version invisible" />
+    <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup version" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html" target="_self">
+        <span translate="no" class="notranslate"><span class="version"> 9.13</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-912/configure/reference_configure_guest_operating_system_scripts.html" target="_self">
+        <span translate="no" class="notranslate"><span class="version"> 9.12</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-911/configure/reference_configure_guest_operating_system_scripts.html" target="_self">
+        <span translate="no" class="notranslate"><span class="version"> 9.11</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-910/configure/reference_configure_guest_operating_system_scripts.html" target="_self">
+        <span translate="no" class="notranslate"><span class="version"> 9.10</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-98/configure/reference_configure_guest_operating_system_scripts.html" target="_self">
+        <span translate="no" class="notranslate"><span class="version"> 9.8</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div></div>
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/us-en/ontap-tools-vmware-vsphere/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/us-en/ontap-tools-vmware-vsphere/search.html" 
+        data-type="widget"
+        data-placeholder="Search documentation"
+        data-no-results-found="No results were found for {query}"
+        data-did-you-mean="Search for {suggestion}."
+        data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+        data-results-found="{hitCount} results found"
+        data-error-message="An error occurred. Please try again."
+        data-error-reset="Reset search"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP tools for VMware vSphere 9.13 docs"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/ontap-tools-vmware-vsphere/index.html">
+        ONTAP tools for VMware vSphere 9.13 docs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Release notes"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/release_notes.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/ontap-tools-vmware-vsphere/release_notes.html">
+        Release notes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Concepts"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Concepts</div>-->
+         Concepts
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP tools Overview"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_virtual_storage_console_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_virtual_storage_console_overview.html">
+        ONTAP tools Overview
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VASA Provider configurations for vVols"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_configure_vvols_datastores.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_configure_vvols_datastores.html">
+        VASA Provider configurations for vVols
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Storage Replication Adapter for disaster recovery"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_manage_disaster_recovery_setup_using_srm.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_manage_disaster_recovery_setup_using_srm.html">
+        Storage Replication Adapter for disaster recovery
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Role based access control"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Role based access control</div>-->
+         Role based access control
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview of role-based access control for ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html">
+        Overview of role-based access control for ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Components of vCenter Server permissions"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/reference_components_that_make_up_vcenter_server_permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/reference_components_that_make_up_vcenter_server_permissions.html">
+        Components of vCenter Server permissions
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Key points about assigning and modifying permissions for vCenter Server"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/reference_key_points_about_assigning_and_modifying_permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/reference_key_points_about_assigning_and_modifying_permissions.html">
+        Key points about assigning and modifying permissions for vCenter Server
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Standard roles packaged with ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html">
+        Standard roles packaged with ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Privileges required for ONTAP tools tasks"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_privileges_required_for_vsc_tasks.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_privileges_required_for_vsc_tasks.html">
+        Privileges required for ONTAP tools tasks
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permissions for ONTAP storage systems and vSphere objects"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html">
+        Permissions for ONTAP storage systems and vSphere objects
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="How to configure role-based access control for ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html">
+        How to configure role-based access control for ONTAP tools
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure high availability for ONTAP tools"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html">
+        Configure high availability for ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MetroCluster configurations supported by ONTAP tools"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html">
+        MetroCluster configurations supported by ONTAP tools
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy and upgrade ONTAP tools"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Deploy and upgrade ONTAP tools</div>-->
+         Deploy and upgrade ONTAP tools
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment workflow for new users of ONTAP tools for VMware vSphere"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/concept_installation_workflow_for_new_users.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_new_users.html">
+        Deployment workflow for new users of ONTAP tools for VMware vSphere
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deployment workflow for existing users of ONTAP tools"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
+        Deployment workflow for existing users of ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware Cloud Foundation mode of deployment for ONTAP tools"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/vmware_cloud_foundation_mode_deployment.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        VMware Cloud Foundation mode of deployment for ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP tools Quick start"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/qsg.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/qsg.html">
+        ONTAP tools Quick start
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Requirements for deploying the ONTAP tools"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Requirements for deploying the ONTAP tools</div>-->
+         Requirements for deploying the ONTAP tools
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Port requirements for ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/reference_port_requirements_for_vsc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/reference_port_requirements_for_vsc.html">
+        Port requirements for ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Space and sizing requirements for the ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html">
+        Space and sizing requirements for the ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supported storage system, licensing, and applications for the ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/concept_supported_storage_system_and_applications.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_supported_storage_system_and_applications.html">
+        Supported storage system, licensing, and applications for the ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Considerations for deploying ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html">
+        Considerations for deploying ONTAP tools
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Deploy ONTAP tools"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Deploy ONTAP tools</div>-->
+         Deploy ONTAP tools
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="How to download ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/concept_how_to_download_ontap_tools.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/concept_how_to_download_ontap_tools.html">
+        How to download ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="How to deploy ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/task_deploy_ontap_tools.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/task_deploy_ontap_tools.html">
+        How to deploy ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable VASA Provider for configuring virtual datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html">
+        Enable VASA Provider for configuring virtual datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Install the NFS VAAI plug-in"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/task_install_the_nfs_vaai_plug_in.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/task_install_the_nfs_vaai_plug_in.html">
+        Install the NFS VAAI plug-in
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Clear the vSphere cached downloaded plug-in packages"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html">
+        Clear the vSphere cached downloaded plug-in packages
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Upgrade ONTAP tools"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Upgrade ONTAP tools</div>-->
+         Upgrade ONTAP tools
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Upgrade to the latest release of ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html">
+        Upgrade to the latest release of ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Upgrade Storage Replication Adapter"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/deploy/task_upgrade_storage_replication_adapter.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_storage_replication_adapter.html">
+        Upgrade Storage Replication Adapter
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure ONTAP tools"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure ONTAP tools</div>-->
+         Configure ONTAP tools
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Workflow for configuring ONTAP tools"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/concept_workflow_for_configuring_the_unified_appliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/configure/concept_workflow_for_configuring_the_unified_appliance.html">
+        Workflow for configuring ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure ESXi settings"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure ESXi settings</div>-->
+         Configure ESXi settings
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure ESXi server multipathing and timeout settings"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_configure_esx_server_multipathing_and_timeout_settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_configure_esx_server_multipathing_and_timeout_settings.html">
+        Configure ESXi server multipathing and timeout settings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ESXi host values set using ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html">
+        ESXi host values set using ONTAP tools
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure guest operating systems"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure guest operating systems</div>-->
+         Configure guest operating systems
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure guest operating system scripts"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html">
+        Configure guest operating system scripts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set timeout values for Windows guest operating systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_run_the_gos_timeout_scripts_for_windows.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_windows.html">
+        Set timeout values for Windows guest operating systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set timeout values for Solaris guest operating systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_run_the_gos_timeout_scripts_for_solaris.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_solaris.html">
+        Set timeout values for Solaris guest operating systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set timeout values for Linux guest operating systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html">
+        Set timeout values for Linux guest operating systems
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Requirements for registering ONTAP tools in multiple vCenter Servers environment"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html">
+        Requirements for registering ONTAP tools in multiple vCenter Servers environment
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure the ONTAP tools preferences file"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure the ONTAP tools preferences file</div>-->
+         Configure the ONTAP tools preferences file
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Set IPv4 or IPv6 using the preferences file"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/reference_set_ipv4_or_ipv6.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
+        Set IPv4 or IPv6 using the preferences file
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add different subnets"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/add_different_subnets.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        Add different subnets
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable datastore mounting across different subnets"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_enable_datastore_mounting_across_different_subnets.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
+        Enable datastore mounting across different subnets
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regenerate an SSL certificate for ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_regenerate_an_ssl_certificate_for_vsc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
+        Regenerate an SSL certificate for ONTAP tools
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage systems"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure storage systems</div>-->
+         Configure storage systems
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview of storage system for ONTAP tools"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html">
+        Overview of storage system for ONTAP tools
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_add_storage_systems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_add_storage_systems.html">
+        Add storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modify storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_modify_storage_system.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_modify_storage_system.html">
+        Modify storage systems
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Update certificate"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_update_certificate.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_update_certificate.html">
+        Update certificate
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Discover storage systems and hosts"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_discover_storage_systems_and_hosts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_discover_storage_systems_and_hosts.html">
+        Discover storage systems and hosts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Refresh the storage system display"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_refresh_the_storage_system_display.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_refresh_the_storage_system_display.html">
+        Refresh the storage system display
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure alarm thresholds"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_configure_alarm_thresholds.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_configure_alarm_thresholds.html">
+        Configure alarm thresholds
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure user roles and privileges"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_configure_user_role_and_privileges.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_configure_user_role_and_privileges.html">
+        Configure user roles and privileges
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage capability profiles"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure storage capability profiles</div>-->
+         Configure storage capability profiles
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview of storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/concept_configure_storage_capability_profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_storage_capability_profiles.html">
+        Overview of storage capability profiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Create storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_create_storage_capability_profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_create_storage_capability_profiles.html">
+        Create storage capability profiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Generate storage capability profiles automatically"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_automatically_generating_scps.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_automatically_generating_scps.html">
+        Generate storage capability profiles automatically
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure datastores"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure datastores</div>-->
+         Configure datastores
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Provision traditional datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_provision_datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_provision_datastores.html">
+        Provision traditional datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Map datastores to storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_map_storage_to_storage_capability_profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_map_storage_to_storage_capability_profiles.html">
+        Map datastores to storage capability profiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Assign QoS policies"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_assign_qos_policies.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_assign_qos_policies.html">
+        Assign QoS policies
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Verify datastore compliance with the mapped storage capability profile"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html">
+        Verify datastore compliance with the mapped storage capability profile
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Provision vVols datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/task_provision_vvols_datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/task_provision_vvols_datastores.html">
+        Provision vVols datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rebalance vVols datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/reference_rebalance_vvols_datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/reference_rebalance_vvols_datastore.html">
+        Rebalance vVols datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Delete vVols datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/configure/reference_delete_vvols.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/configure/reference_delete_vvols.html">
+        Delete vVols datastores
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Protect datastores and virtual machines"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Protect datastores and virtual machines</div>-->
+         Protect datastores and virtual machines
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Enable Storage Replication Adapter to protect datastores"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_enable_storage_replication_adapter.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_enable_storage_replication_adapter.html">
+        Enable Storage Replication Adapter to protect datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage system for disaster recovery"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure storage system for disaster recovery</div>-->
+         Configure storage system for disaster recovery
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage systems for SAN and NAS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_storage_replication_adapter_for_san_environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_storage_replication_adapter_for_san_environment.html">
+        Configure storage systems for SAN and NAS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure storage for highly scaled environments"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html">
+        Configure storage for highly scaled environments
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure SRA with SRM in a Shared recovery site configuration"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/configure_sra_with_srm_shared_site.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/configure_sra_with_srm_shared_site.html">
+        Configure SRA with SRM in a Shared recovery site configuration
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure SRA on the SRM Appliance"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_sra_on_srm_appliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_sra_on_srm_appliance.html">
+        Configure SRA on the SRM Appliance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Update SRA credentials"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_update_sra_credentials.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_update_sra_credentials.html">
+        Update SRA credentials
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migrate Windows SRM to SRM Appliance"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html">
+        Migrate Windows SRM to SRM Appliance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure replication for vVols datastore to protect virtual machines"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/concept_configure_replication_for_vvols_datastore.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
+        Configure replication for vVols datastore to protect virtual machines
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure vVols replication for existing datastores"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/configure_vvols_replication_existing_datastore.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        Configure vVols replication for existing datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Protect unprotected virtual machines"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_protect_non_protected_virtual_machines.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
+        Protect unprotected virtual machines
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure protected and recovery sites"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure protected and recovery sites</div>-->
+         Configure protected and recovery sites
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure VM Storage Policies"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_vm_storage_policies.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_vm_storage_policies.html">
+        Configure VM Storage Policies
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure protection groups"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_protection_groups.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_protection_groups.html">
+        Configure protection groups
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Pair protected and recovery sites"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_pair_protected_and_recovery_sites.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_pair_protected_and_recovery_sites.html">
+        Pair protected and recovery sites
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure protected and recovery site resources"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Configure protected and recovery site resources</div>-->
+         Configure protected and recovery site resources
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure network mappings"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_network_mappings.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_network_mappings.html">
+        Configure network mappings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure folder mappings"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_folder_mappings.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_folder_mappings.html">
+        Configure folder mappings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure resource mappings"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_resource_mappings.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_resource_mappings.html">
+        Configure resource mappings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Map storage policies"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_map_storage_policies.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_map_storage_policies.html">
+        Map storage policies
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure placeholder datastores"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_placeholder_datastores.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_placeholder_datastores.html">
+        Configure placeholder datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure SRA using array manager"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_configure_array_manager.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_configure_array_manager.html">
+        Configure SRA using array manager
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Verify the replicated storage systems"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/protect/task_verify_the_replicated_storage_environment.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/protect/task_verify_the_replicated_storage_environment.html">
+        Verify the replicated storage systems
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage ONTAP tools"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage ONTAP tools</div>-->
+         Manage ONTAP tools
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage datastores"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage datastores</div>-->
+         Manage datastores
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mount datastore on additional hosts"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_mount_datastores_on_host.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_mount_datastores_on_host.html">
+        Mount datastore on additional hosts
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Resize datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_resize_datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_resize_datastores.html">
+        Resize datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Edit a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_edit_a_vvol_datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_edit_a_vvol_datastore.html">
+        Edit a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Add storage to a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_add_storage_to_a_vvol_datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_add_storage_to_a_vvol_datastore.html">
+        Add storage to a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Remove storage from a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_remove_storage_from_a_vvols_datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_remove_storage_from_a_vvols_datastore.html">
+        Remove storage from a vVols datastore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mount a vVols datastore"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_mount_a_vvols_datastore.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_mount_a_vvols_datastore.html">
+        Mount a vVols datastore
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage virtual machines"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manage virtual machines</div>-->
+         Manage virtual machines
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Considerations for migrating or cloning virtual machines"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/reference_considerations_for_migrating_virtual_machines.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html">
+        Considerations for migrating or cloning virtual machines
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migrate traditional virtual machines to vVols datastores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html">
+        Migrate traditional virtual machines to vVols datastores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migrate virtual machines with older storage capability profiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html">
+        Migrate virtual machines with older storage capability profiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VASA cleanup"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_delete_virtual_machines.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_delete_virtual_machines.html">
+        VASA cleanup
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modify ESXi host settings"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_edit_esxi_host_settings.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_edit_esxi_host_settings.html">
+        Modify ESXi host settings
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Access ONTAP tools maintenance console"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Access ONTAP tools maintenance console</div>-->
+         Access ONTAP tools maintenance console
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview of ONTAP tools maintenance console"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html">
+        Overview of ONTAP tools maintenance console
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP tools and VASA Provider log files"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html">
+        ONTAP tools and VASA Provider log files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Change the administrator password"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_change_the_administrative_password.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_change_the_administrative_password.html">
+        Change the administrator password
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure VASA Provider to work with SSH"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_configure_vasa_provider_to_work_with_ssh.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_configure_vasa_provider_to_work_with_ssh.html">
+        Configure VASA Provider to work with SSH
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure remote diagnostic access"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html">
+        Configure remote diagnostic access
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Collect the log files"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_collect_the_log_files.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_collect_the_log_files.html">
+        Collect the log files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manage syslog"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_syslog_files.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_syslog_files.html">
+        Manage syslog
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitor performance of datastores and vVols reports"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/us-en/ontap-tools-vmware-vsphere/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/us-en/ontap-tools-vmware-vsphere/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Monitor performance of datastores and vVols reports</div>-->
+         Monitor performance of datastores and vVols reports
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Overview of ONTAP tools datastores and virtual machine reports"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/concept_virtual_storage_console_reports.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_reports.html">
+        Overview of ONTAP tools datastores and virtual machine reports
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Analyze performance data using the traditional dashboard"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_monitor_datastores_using_the_traditional_dashboard.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_monitor_datastores_using_the_traditional_dashboard.html">
+        Analyze performance data using the traditional dashboard
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Analyze performance data using the vVols dashboard"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/us-en/ontap-tools-vmware-vsphere/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html">
+        Analyze performance data using the vVols dashboard
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VASA Provider Disaster Recovery"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/manage/vasa_provider_disaster_recovery.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/us-en/ontap-tools-vmware-vsphere/manage/vasa_provider_disaster_recovery.html">
+        VASA Provider Disaster Recovery
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Legal notices"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/configure/reference_configure_guest_operating_system_scripts.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/us-en/ontap-tools-vmware-vsphere/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/us-en/ontap-tools-vmware-vsphere"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/us-en/ontap-tools-vmware-vsphere"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Configure guest operating system scripts</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-08-17 07:00:34 +0000">08/17/2023</time>
+        
+    
+    
+        <span>Contributors
+            <a target="_blank" class="ext-link-indicator" href="https://github.com/Netapp-shabaana"><img  class="avatar avatar-small" alt="Netapp-shabaana" width="20" height="20" src="https://avatars.githubusercontent.com/u/64952604?v=4" style="border-radius: 50%;"/></a>
+        
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/ontap-tools-vmware-vsphere/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html&page-title=Configure guest operating system scripts" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/blob/main/configure/reference_configure_guest_operating_system_scripts.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/ontap-tools-vmware-vsphere/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/ontap-tools-vmware-vsphere/pdfs/fullsite-sidebar/ONTAP_tools_for_VMware_vSphere_Documentation.pdf" >
+                    <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Concepts.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Concepts
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Role_based_access_control.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Role based access control
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Deploy_and_upgrade_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Deploy and upgrade ONTAP tools
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Requirements_for_deploying_the_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Requirements for deploying the ONTAP tools
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Deploy_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Deploy ONTAP tools
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Upgrade_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Upgrade ONTAP tools
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure ONTAP tools
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_ESXi_settings.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure ESXi settings
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_guest_operating_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure guest operating systems
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_the_ONTAP_tools_preferences_file.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure the ONTAP tools preferences file
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_storage_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure storage systems
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_storage_capability_profiles.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure storage capability profiles
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_datastores.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure datastores
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Protect_datastores_and_virtual_machines.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Protect datastores and virtual machines
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_storage_system_for_disaster_recovery.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure storage system for disaster recovery
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_protected_and_recovery_sites.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure protected and recovery sites
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Configure_protected_and_recovery_site_resources.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Configure protected and recovery site resources
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Manage_ONTAP_tools.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage ONTAP tools
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Manage_datastores.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage datastores
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Manage_virtual_machines.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manage virtual machines
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Access_ONTAP_tools_maintenance_console.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Access ONTAP tools maintenance console
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/us-en/ontap-tools-vmware-vsphere/pdfs/sidebar/Monitor_performance_of_datastores_and_vVols_reports.pdf" 
+            
+          >
+            <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Monitor performance of datastores and vVols reports
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/ontap-tools-vmware-vsphere/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph lead">
+<p>The ISO images of the guest operating system (OS) scripts are mounted on  tools for VMware vSphere server. To use the guest OS scripts to set the storage timeouts for virtual machines, you must mount the scripts from the vSphere Client.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Operating System Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>60-second timeout settings</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>190-second timeout settings</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Linux</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://&lt;appliance_ip&gt;:8143/vsc/public/writable/linux_gos_timeout-install.iso</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://&lt;appliance_ip&gt;:8143/vsc/public/writable/linux_gos_timeout_190-install.iso</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Windows</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://&lt;appliance_ip&gt;:8143/vsc/public/writable/windows_gos_timeout.iso</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://&lt;appliance_ip&gt;:8143/vsc/public/writable/windows_gos_timeout_190.iso</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Solaris</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://&lt;appliance_ip&gt;:8143/vsc/public/writable/solaris_gos_timeout-install.iso</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://&lt;appliance_ip&gt;:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>You should install the script from the copy of the ONTAP tools instance that is registered to the vCenter Server (ELM) that manages the virtual machine. If your environment includes multiple vCenter Servers, you should select the instance that contains the virtual machine for which you want to set the storage timeout values.</p>
+</div>
+<div class="paragraph">
+<p>You should log in to the virtual machine, and then run the script to set the storage timeout values.</p>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/us-en/ontap-tools-vmware-vsphere/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/us-en/ontap-tools-vmware-vsphere/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">On this page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie settings</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Send feedback about this page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/ontap-tools-vmware-vsphere/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/ontap-tools-vmware-vsphere/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/ontap-tools-vmware-vsphere/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/ontap-tools-vmware-vsphere/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/ontap-tools-vmware-vsphere/js/ie-sidebar.js'></script>
+  </body>
+
+</html>

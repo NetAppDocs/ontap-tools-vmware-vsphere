@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html</loc>
+        
+      
+      <lastmod>2022-01-07T04:42:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-04-03T11:46:39+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_protected_and_recovery_site_resources.html</loc>
+        
+      
+      <lastmod>2021-08-10T10:51:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html</loc>
+        
+      
+      <lastmod>2023-08-25T11:10:51+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_storage_capability_profiles.html</loc>
+        
+      
+      <lastmod>2024-03-07T06:35:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_configure_storage_replication_adapter_for_disaster_recovery.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_configure_vsc_for_vmware_vsphere_environment.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_configure_vvols_datastores.html</loc>
+        
+      
+      <lastmod>2023-01-18T08:00:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_configure_your_storage_system_environment.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_considerations_for_creating_and_editing_storage_capability_profiles.html</loc>
+        
+      
+      <lastmod>2024-02-07T10:23:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_deploy_or_upgrade_ontap_tools.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_guidelines_for_using_vsc_standard_roles.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_how_to_download_ontap_tools.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html</loc>
+        
+      
+      <lastmod>2023-07-28T04:52:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_new_users.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_manage_disaster_recovery_setup_using_srm.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html</loc>
+        
+      
+      <lastmod>2023-12-18T13:36:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html</loc>
+        
+      
+      <lastmod>2023-08-01T13:08:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_privileges_required_for_vsc_tasks.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_recommended_ontap_roles_when_using_vsc_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2021-08-12T18:24:12+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/concept_supported_storage_system_and_applications.html</loc>
+        
+      
+      <lastmod>2022-09-16T11:18:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_virtual_storage_console_and_vasa_provider_log_files.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_virtual_storage_console_overview.html</loc>
+        
+      
+      <lastmod>2023-01-20T05:16:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/concept_virtual_storage_console_reports.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_vmware_fault_tolerance_for_vcenter_server.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/concept_vmware_high_availability_for_vcenter_server.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/concept_what_vasa_provider_reports_do.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/concept_workflow_for_configuring_the_unified_appliance.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/configure_sra_with_srm_shared_site.html</loc>
+        
+      
+      <lastmod>2023-10-06T12:55:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/</loc>
+        
+      
+      <lastmod>2021-06-23T11:38:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/</loc>
+        
+      
+      <lastmod>2021-06-23T11:38:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/</loc>
+        
+      
+      <lastmod>2023-11-22T10:28:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/legal-notices.html</loc>
+        
+      
+      <lastmod>2023-09-05T08:39:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/qsg.html</loc>
+        
+      
+      <lastmod>2023-11-22T10:28:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/reference_components_that_make_up_vcenter_server_permissions.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_guest_operating_system_scripts.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
+        
+      
+      <lastmod>2023-04-04T09:06:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html</loc>
+        
+      
+      <lastmod>2023-05-04T05:29:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_configure_the_vsc_preferences_files.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_considerations_for_deploying_virtual_appliance_for_vsc_vasa_provider_and_sra.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/reference_considerations_for_migrating_virtual_machines.html</loc>
+        
+      
+      <lastmod>2021-10-25T06:16:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_delete_vvols.html</loc>
+        
+      
+      <lastmod>2023-04-12T12:13:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_deployment_customization_requirements.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/reference_key_points_about_assigning_and_modifying_permissions.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-11-22T10:24:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_port_requirements_for_vsc.html</loc>
+        
+      
+      <lastmod>2023-10-06T09:52:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/concepts/reference_product_level_privilege_required_by_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_rebalance_vvols_datastore.html</loc>
+        
+      
+      <lastmod>2022-07-13T10:13:01+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/reference_verify_vvols_dashboard_data_requirements.html</loc>
+        
+      
+      <lastmod>2023-04-04T15:35:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/release_notes.html</loc>
+        
+      
+      <lastmod>2023-09-13T05:36:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere//search.html</loc>
+        
+      
+      <lastmod>2024-03-18T06:47:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_add_storage_systems.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_add_storage_to_a_vvol_datastore.html</loc>
+        
+      
+      <lastmod>2023-08-17T06:17:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_assign_qos_policies.html</loc>
+        
+      
+      <lastmod>2021-09-27T08:15:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_automatically_generating_scps.html</loc>
+        
+      
+      <lastmod>2023-08-10T10:07:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_change_the_administrative_password.html</loc>
+        
+      
+      <lastmod>2024-03-12T12:31:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html</loc>
+        
+      
+      <lastmod>2023-05-04T05:58:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_collect_the_log_files.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_configure_alarm_thresholds.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_array_manager.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_configure_esx_server_multipathing_and_timeout_settings.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_folder_mappings.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_network_mappings.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_placeholder_datastores.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:38:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_protection_groups.html</loc>
+        
+      
+      <lastmod>2021-09-27T08:15:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_resource_mappings.html</loc>
+        
+      
+      <lastmod>2023-10-06T12:49:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_sra_on_srm_appliance.html</loc>
+        
+      
+      <lastmod>2024-03-12T12:31:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_storage_replication_adapter_for_nas_environment.html</loc>
+        
+      
+      <lastmod>2021-09-01T09:53:39+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_storage_replication_adapter_for_san_environment.html</loc>
+        
+      
+      <lastmod>2023-10-06T12:40:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_configure_user_role_and_privileges.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html</loc>
+        
+      
+      <lastmod>2023-12-18T13:36:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_configure_vasa_provider_to_work_with_ssh.html</loc>
+        
+      
+      <lastmod>2021-08-31T07:37:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_configure_vm_storage_policies.html</loc>
+        
+      
+      <lastmod>2022-12-19T05:54:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_create_storage_capability_profiles.html</loc>
+        
+      
+      <lastmod>2024-01-15T11:22:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_delete_virtual_machines.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_deploy_ontap_tools.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_discover_storage_systems_and_hosts.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_edit_a_vvol_datastore.html</loc>
+        
+      
+      <lastmod>2023-04-04T06:43:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_edit_esxi_host_settings.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_enable_storage_replication_adapter.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_enable_vasa_provider_for_configuring_virtual_datastores.html</loc>
+        
+      
+      <lastmod>2023-06-28T12:18:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_install_the_nfs_vaai_plug_in.html</loc>
+        
+      
+      <lastmod>2023-11-24T05:46:24+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_map_storage_policies.html</loc>
+        
+      
+      <lastmod>2021-09-27T08:15:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_map_storage_to_storage_capability_profiles.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html</loc>
+        
+      
+      <lastmod>2021-10-25T06:16:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html</loc>
+        
+      
+      <lastmod>2023-04-04T06:43:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_modify_storage_system.html</loc>
+        
+      
+      <lastmod>2023-04-06T13:37:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_monitor_datastores_using_the_traditional_dashboard.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html</loc>
+        
+      
+      <lastmod>2023-04-04T15:35:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_mount_a_vvols_datastore.html</loc>
+        
+      
+      <lastmod>2021-08-16T10:51:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_mount_datastores_on_host.html</loc>
+        
+      
+      <lastmod>2021-11-29T09:21:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_pair_protected_and_recovery_sites.html</loc>
+        
+      
+      <lastmod>2021-10-25T06:16:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html</loc>
+        
+      
+      <lastmod>2021-09-27T08:15:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_provision_datastores.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_provision_vvols_datastores.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_refresh_the_storage_system_display.html</loc>
+        
+      
+      <lastmod>2023-08-10T07:14:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_register_oncommand_api_services_with_ontap_tools.html</loc>
+        
+      
+      <lastmod>2023-04-04T15:35:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_remove_storage_from_a_vvols_datastore.html</loc>
+        
+      
+      <lastmod>2021-08-25T08:55:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_resize_datastores.html</loc>
+        
+      
+      <lastmod>2023-10-06T09:52:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html</loc>
+        
+      
+      <lastmod>2021-09-23T06:33:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_solaris.html</loc>
+        
+      
+      <lastmod>2021-09-23T06:33:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_run_the_gos_timeout_scripts_for_windows.html</loc>
+        
+      
+      <lastmod>2021-09-23T06:33:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/task_syslog_files.html</loc>
+        
+      
+      <lastmod>2023-08-17T07:00:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/task_update_certificate.html</loc>
+        
+      
+      <lastmod>2023-04-06T13:35:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_update_sra_credentials.html</loc>
+        
+      
+      <lastmod>2023-04-06T13:35:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_storage_replication_adapter.html</loc>
+        
+      
+      <lastmod>2023-03-08T05:40:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html</loc>
+        
+      
+      <lastmod>2023-10-06T09:52:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/protect/task_verify_the_replicated_storage_environment.html</loc>
+        
+      
+      <lastmod>2021-08-25T08:55:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/manage/vasa_provider_disaster_recovery.html</loc>
+        
+      
+      <lastmod>2023-07-28T13:14:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html</loc>
+        
+      
+      <lastmod>2024-03-14T05:30:49+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
