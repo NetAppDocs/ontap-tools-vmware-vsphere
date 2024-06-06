@@ -143,8 +143,8 @@ You can deploy SRA either on Windows SRM server or on 8.2 SRM Appliance.
 . Switch to the root user: `su root`
 . At the log location enter command to get the docker ID used by SRA docker: `docker ps -l`
 . Login to the container ID: `docker exec -it -u srm <container id> sh`
-. Configure SRM with the ONTAP tools IP address and password: `perl command.pl -I <otv-IP> administrator <otv-password>`
-A success message confirming that the storage credentials are stored is displayed.
+. Configure SRM with the ONTAP tools IP address and password: `perl command.pl -I <otv-IP> administrator <otv-password>`. You need to have a single quote around the password value.
+A success message confirming that the storage credentials are stored is displayed. SRA can communicate with SRA server using the provided IP address, port and credentials.
 
 ==== Updating SRA credentials
 
@@ -154,7 +154,9 @@ A success message confirming that the storage credentials are stored is displaye
 .. `rm -rf *`
 . Execute the perl command to configure SRA with the new credentials:
 .. `cd /srm/sra/`
-.. `perl command.pl -I <otv-IP> administrator <otv-password>`
+.. `perl command.pl -I <otv-IP> administrator <otv-password>`. You need to have a single quote around the password value. 
++
+A success message confirming that the storage credentials are stored is displayed. SRA can communicate with SRA server using the provided IP address, port and credentials.
 
 ==== Enabling VASA Provider and SRA
 
