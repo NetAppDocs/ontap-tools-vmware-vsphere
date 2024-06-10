@@ -48,5 +48,5 @@ To get the list of FlexVol Volumes attached to the container, run the command _c
 .*Steps*
 
 . Login from Web-CLI using URL `\https://<OTV-IP>:9083/`
-. Run the command _container rebalance -container_name=<container-name>_
+. Run the command: _container rebalance -container_name=<container-name>_
  
