@@ -44,6 +44,8 @@ The rebalance command removes empty FlexVol volumes to provide space for other d
 * Get the container name and FlexVol Volumes name from vCenter or from the Web-CLI.
 To get the list of FlexVol Volumes attached to the container, run the command _container list_ from Web-CLI. You can find the details of the container rebalance command on the Web-CLI Page.
 
+[NOTE]
+You need to provide the container name to perform rebalance across all FlexVol volumes attached to that container. However, if FlexVol volume parameter is provided then rebalance is performed only across the provided FlexVol volume.
 
 .*Steps*
 
