@@ -36,7 +36,7 @@ The rebalance command removes empty FlexVol volumes to provide space for other d
 
 .*Before you begin*
 
-* Generate the WebCLI token from the maintenance console:
+* Generate the Web-CLI token from the maintenance console:
 . Login to maint console.
 . Select option *1* Appliance Configuration.
 . Select option *12* Generate Web-Cli Authentication token.
