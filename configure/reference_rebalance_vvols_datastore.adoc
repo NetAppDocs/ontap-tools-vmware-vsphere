@@ -31,4 +31,22 @@ The rebalance command removes empty FlexVol volumes to provide space for other d
 ** If this occurs, then you should modify the `vvol.properties` file to set the value to `offtap.operation.timeout.period.seconds=29700` and restart VASA Provider service.
 * If a FlexVol volume has Snapshots, then during the vVols rebalance operation, the vVols are not correctly rebalanced due to insufficient details on the space utilization.
 * You can set the VASA Provider property _enable.update.vvol.through.discovery_ to true to get consistent data between ONTAP tools and ONTAP, when timeout occurs during container rebalance operation.
+* There are no exposed REST APIs to re-balance vVol datastore.
 ====
+
+.*Before you begin*
+
+* Generate the WebCLI token from the maintenance console:
+. Login to maint console.
+. Select option *1* Appliance Configuration.
+. Select option *12* Generate Web-Cli Authentication token.
+
+* Get the container name and FlexVol Volumes name from vCenter or from the Web-CLI.
+To get the list of FlexVol Volumes attached to the container, run the command _container list_ from Web-CLI. You can find the details of the container rebalance command on the Web-CLI Page.
+
+
+.*Steps*
+
+. Login from Web-CLI using URL `\https://<OTV-IP>:9083/`
+. Run the command _container rebalance -container_name=<container-name>_
+ 
