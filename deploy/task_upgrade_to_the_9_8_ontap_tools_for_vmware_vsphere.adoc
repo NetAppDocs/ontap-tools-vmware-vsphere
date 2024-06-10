@@ -45,8 +45,7 @@ a.	_security login role create -role <existing-role-name> -cmddirname "security 
 b.	_security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all_
 c.	_security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all_
 
-If the storage system is added with custom created SVM scoped user using the json file and you want to upgrade to 9.12 and later versions, then
-run the below commands on the ONTAP CLI with cluster admin access before upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP:
+If the storage system is added with custom created SVM scoped user using the json file and you want to upgrade to 9.12 and later versions, then run the below commands on the ONTAP CLI with cluster admin access before upgrade to enable the certificate based communication between ONTAP tools for VMware vSphere and ONTAP:
 
 a.	_security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all -vserver  <vserver-name>_
 b.	_security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name>_

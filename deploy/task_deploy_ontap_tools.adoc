@@ -55,7 +55,8 @@ Extract the .zip file, which contains the .ova file onto your local system. On t
 
 . Enter the details to customize the deployment wizard.
 +
-(Optional) In the Configure vCenter or Enable VCF section, select the *Enable VMware Cloud Foundation (VCF)* checkbox and provide a password for ONTAP tools credentials.
+(Optional) In the Configure vCenter or Enable VCF section, select the *Enable VMware Cloud Foundation (VCF)* checkbox and provide a password for ONTAP tools credentials. ONTAP tools stores the user details in an encoded format. For any communication from ONTAP tools to vCenter, these vCenter user details are used.
+//github 78
 You do not need to provide IP address but providing a password is mandatory.
 See the following for complete details.
 
@@ -67,6 +68,10 @@ See the following for complete details.
 As you wait for deployment to finish, you can view the progress of the deployment from the Tasks tab.
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
+//github 77
++
+[NOTE]
+Do not store ONTAP tools virtual machine on a vVol datastore that it manages. 
 . Verify that ONTAP tools is running after the deployment is completed.
 . If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the ONTAP tools instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
 +
