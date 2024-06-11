@@ -13,7 +13,7 @@ You can set timeouts and other values on the ESXi hosts using ONTAP tools for VM
 
 You can set the following values on an ESXi host:
 
-== ESXi advanced configuration
+== ESXi host advanced configuration
 
 * *VMFS3.HardwareAcceleratedLocking*
 +

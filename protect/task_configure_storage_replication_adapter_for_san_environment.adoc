@@ -32,7 +32,7 @@ The adapter is installed either on SRM.
 . Verify that the ESXi hosts at the recovery site have appropriate FC or iSCSI connectivity to the storage virtual machine (SVM). The secondary site ESXi hosts should have access to the secondary site storage, similarly the primary site ESXi hosts should have access to the primary site storage.
 +
 You can do this either by verifying that the ESXi hosts have local LUNs connected on the SVM or by using the `fcp show initiators` command or the `iscsi show initiators` command on the SVMs. 
-Check the LUN access for the mapped LUNs in the ESXi to verify FC and iSCSI connectivity.
+Check the LUN access for the mapped LUNs in the ESXi host to verify FC and iSCSI connectivity.
 
 == Configure Storage Replication Adapter for NAS environment
 
