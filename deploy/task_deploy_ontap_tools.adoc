@@ -37,8 +37,12 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 *Steps*
 
 . Log in to the vSphere Client.
-. Select *Home* > *Host and Clusters*.
+. Select *Home* > *Hosts and Clusters*.
 . Right-click the required datacenter, and then click *Deploy OVF template...*.
+[NOTE]
+Do not deploy ONTAP tools VMware vSphere virtual machine on a vVols datastore that it manages.
+
+//github 77
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
 |===
@@ -68,10 +72,6 @@ See the following for complete details.
 As you wait for deployment to finish, you can view the progress of the deployment from the Tasks tab.
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
-//github 77
-+
-[NOTE]
-Do not store ONTAP tools virtual machine on a vVol datastore that it manages. 
 . Verify that ONTAP tools is running after the deployment is completed.
 . If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the ONTAP tools instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
 +
