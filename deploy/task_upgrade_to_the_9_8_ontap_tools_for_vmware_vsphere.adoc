@@ -67,7 +67,7 @@ After the upgrade finishes, the ONTAP tools restarts. ONTAP tools is registered 
 . If you want ONTAP tools to be registered with the vCenter Server with the IPv6 address, then you must perform the following:
  .. Unregister ONTAP tools.
  .. Register the IPv6 address of ONTAP tools to vCenter Server using the *Register* page.
- .. Regenerate ONTAP tools and VASA Provider certificates after the registration.
+ .. Regenerate ONTAP tools for VMware vSphere and VASA Provider certificates after the registration.
 
 +
 IMPORTANT: IPv6 is supported only with vCenter Server 6.7 and later.

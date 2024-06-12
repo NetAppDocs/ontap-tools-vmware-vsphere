@@ -30,7 +30,7 @@ The flexibility to enable VASA Provider and SRA capabilities enables you to exec
 . Click *Settings*.
 . Click *Manage Capabilities* in the *Administrative Settings* tab.
 . In the *Manage Capabilities* dialog box, select the SRA extension want to enable.
-. Enter the IP address of ONTAP tools and the administrator password, and then click *Apply*.
+. Enter the IP address of ONTAP tools for VMware vSphere and the administrator password, and then click *Apply*.
 . You can use one of the following methods to deploy SRA:
 +
 *For SRM appliance*

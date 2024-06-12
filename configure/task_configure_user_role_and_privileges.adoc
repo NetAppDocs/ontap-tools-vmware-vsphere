@@ -2,14 +2,14 @@
 permalink: configure/task_configure_user_role_and_privileges.html
 sidebar: sidebar
 keywords: user roles
-summary: 'You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.'
+summary: 'You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools for VMware vSphere and ONTAP System Manager.'
 ---
 = Configure user roles and privileges
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.
+You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools for VMware vSphere and ONTAP System Manager.
 
 *What you'll need*
 
@@ -19,7 +19,7 @@ You can configure new user roles for managing storage systems using the JSON fil
 ** Extract the downloaded VSC_ONTAP_User_Privileges.zip file
 ** Access System Manager
 +
-See KB article - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges[Virtual Storage Console: How to retrieve the JSON file to configure user roles and privileges] for instructions on how to download the ONTAP Privileges file from WebCLI.
+See KB article - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges[Virtual Storage Console: How to retrieve the JSON file to configure user roles and privileges] for instructions on how to download the ONTAP Privileges file from Web-CLI.
 * You should have configured ONTAP 9.8P1 or later storage.
 * You should have logged in with administrator privileges for the storage system.
 

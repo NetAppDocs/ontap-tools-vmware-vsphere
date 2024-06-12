@@ -2,20 +2,20 @@
 permalink: deploy/task_deploy_ontap_tools.html
 sidebar: sidebar
 keywords:
-summary: 'You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.'
+summary: 'To use the ONTAP tools for VMware vSphere appliance, deploy ONTAP tools for VMware vSphere in your environment and specify the required parameters.'
 ---
 = How to deploy ONTAP tools
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You should deploy ONTAP tools in your environment, and specify the required parameters, to be able to use the appliance.
+To use the ONTAP tools for VMware vSphere appliance, deploy ONTAP tools for VMware vSphere in your environment and specify the required parameters.
 
 *What you will need*
 
-* You must be running a supported release of vCenter Server.
+* You must have the supported release of vCenter Server.
 +
-NOTE: ONTAP tools can be registered either with a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
+NOTE: You can register ONTAP tools for VMware vSphere with either a Windows deployment of vCenter Server or a VMware vCenter Server Virtual Appliance (vCSA) deployment.
 +
 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT[Interoperability Matrix Tool^]
 
@@ -26,19 +26,23 @@ https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src
 * You should have logged out of and closed all of the browser sessions of vSphere Client, and deleted the browser cache to avoid any browser cache issue during the deployment of ONTAP tools.
 * You must have enabled Internet Control Message Protocol (ICMP).
 +
-If ICMP is disabled, then the initial configuration of ONTAP tools fails, and ONTAP tools cannot start the ONTAP tools and VASA Provider services after deployment. You must manually enable the ONTAP tools and VASA Provider services after deployment.
+If ICMP is disabled, then the initial configuration of ONTAP tools for VMware vSphere fails. You must manually enable the ONTAP tools for VMware vSphere and VASA Provider services after deployment.
 
 *About this task*
 
-If you are deploying a fresh installation of ONTAP tools, then VASA Provider is enabled by default. But in case of an upgrade from an earlier release of the ONTAP tools, the state of VASA Provider is retained and you might need to enable VASA Provider manually.
+The VASA Provider is enabled by default for a fresh installation of ONTAP tools for VMware vSphere. But in case of an upgrade from an earlier release, the state of VASA Provider is retained and you might need to enable the VASA Provider manually.
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html[Enable VASA Provider for configuring virtual datastores]
 
 *Steps*
 
 . Log in to the vSphere Client.
-. Select *Home* > *Host and Clusters*.
+. Select *Home* > *Hosts and Clusters*.
 . Right-click the required datacenter, and then click *Deploy OVF template...*.
++
+[NOTE]
+Do not deploy ONTAP tools VMware vSphere virtual machine on a vVols datastore that it manages.
+//github 77
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
 |===
@@ -68,10 +72,6 @@ See the following for complete details.
 As you wait for deployment to finish, you can view the progress of the deployment from the Tasks tab.
 
 . Power on the ONTAP tools virtual machine, and then open a console of the virtual machine running the ONTAP tools.
-//github 77
-+
-[NOTE]
-Do not store ONTAP tools virtual machine on a vVol datastore that it manages. 
 . Verify that ONTAP tools is running after the deployment is completed.
 . If ONTAP tools is not registered with any vCenter Server, use `\https://appliance_ip:8143/Register.html` to register the ONTAP tools instance. The Register.html redirects you to the swagger page. From ONTAP tools 9.12 onwards the registration of ONTAP tools with vCenter happens from the swagger page. 
 +

@@ -42,7 +42,7 @@ a|
  .. Click *OK*.
 
 a|
-ESXi Host Systems portlet
+ESXi host Systems portlet
 a|
 
  .. Click the *Traditional dashboard* tab in the Overview section of ONTAP tools.

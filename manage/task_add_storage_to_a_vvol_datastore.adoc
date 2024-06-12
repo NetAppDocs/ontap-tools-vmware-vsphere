@@ -67,4 +67,4 @@ After you create a FlexVol volume, you can edit it by clicking the *Modify* butt
 
 The wizard adds the storage that you specified to the vVols datastore. It displays a success message when it finishes.
 
-NOTE: The Expand Storage of vVols Datastore wizard automatically handles any ESXi storage rescans or any other significant operations that are required. Because a vVols datastore is a logical entity controlled by VASA Provider, adding the FlexVol volume is the only thing you need to do to enlarge the capacity of your storage container.
+NOTE: The Expand Storage of vVols Datastore wizard automatically handles any ESXi host storage rescans or any other significant operations that are required. Because a vVols datastore is a logical entity controlled by VASA Provider, adding the FlexVol volume is the only thing you need to do to enlarge the capacity of your storage container.

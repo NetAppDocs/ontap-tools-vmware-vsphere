@@ -38,4 +38,4 @@ You should follow the on-screen instructions to complete the installation. You c
 
 . Reboot the ESXi host after the installation finishes.
 +
-When you reboot the ESXi host, ONTAP tools automatically detects the NFS VAAI plug-in. You do not have to perform additional steps to enable the plug-in.
+When you reboot the ESXi host, ONTAP tools for VMware vSphere automatically detects the NFS VAAI plug-in. You do not have to perform additional steps to enable the plug-in.

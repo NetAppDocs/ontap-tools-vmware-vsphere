@@ -28,7 +28,7 @@ If the VASA Provider capability is disabled before upgrading to the 9.7.1 releas
 . Click *Manage Capabilities* in the Administrative Settings tab.
 . In the Manage Capabilities dialog box, select the VASA Provider extension to enable.
 . If you want to use replication capability for vVols datastores, then use the *Enable vVols replication* toggle button.
-. Enter the IP address of ONTAP tools and the administrator password, and then click *Apply*.
+. Enter the IP address of ONTAP tools for VMware vSphere and the administrator password, and then click *Apply*.
 +
 NOTE: If VASA Provider status displays as "`Offline`" even after enabling the VASA Provider extension, then check the /var/log/vmware/vmware-sps/sps.log file for any connection errors with VASA Provider or restart the "`vmware-sps`" service.
 

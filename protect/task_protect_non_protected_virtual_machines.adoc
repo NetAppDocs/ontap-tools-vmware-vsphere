@@ -26,5 +26,5 @@ If SVM is having both IPv4 and IPv6 LIFs, then you should disable IPv6 LIFs and 
 [NOTE]
 ====
  * This release of ONTAP tools does not support hot clone of protected virtual machines. You should power off the virtual machine and then perform the clone operation.
- * If a datastore does not appear in ONTAP tools after a Reprotect operation, then you should run a storage system discovery or wait for the next scheduled discovery operation.
+ * If a datastore does not appear in ONTAP tools for VMware vSphere after a Reprotect operation, then you should run a storage system discovery or wait for the next scheduled discovery operation.
 ====

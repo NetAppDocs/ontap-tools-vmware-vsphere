@@ -30,7 +30,7 @@ Provides all of the native vCenter Server privileges and ONTAP tools-specific pr
 a|
 VSC Read-only
 a|
-Provides read-only access to ONTAP tools. These users cannot perform any ONTAP tools actions that are access-controlled.
+Provides read-only access to ONTAP tools. These users cannot perform any ONTAP tools for VMware vSphere actions that are access-controlled.
 
 a|
 VSC Provision
@@ -46,7 +46,7 @@ Provides all of the native vCenter Server privileges and ONTAP tools-specific pr
 == Guidelines for using ONTAP tools standard roles
 When you work with standard ONTAP tools for VMware vSphere roles, there are certain guidelines you should follow.
 
-You should not directly modify the standard roles. If you do, ONTAP tools will overwrite your changes each time you upgrade. The installer updates the standard role definitions each time you upgrade ONTAP tools. Doing this ensures that the roles are current for your version of ONTAP tools as well as for all supported versions of the vCenter Server.
+You should not directly modify the standard roles. If you do, ONTAP tools will overwrite your changes each time you upgrade. The installer updates the standard role definitions each time you upgrade ONTAP tools. Doing this ensures that the roles are current for your version of ONTAP tools for VMware vSphere as well as for all supported versions of the vCenter Server.
 
 You can, however, use the standard roles to create roles that are tailored to your environment. To do this, you should copy the ONTAP tools standard role and then edit the copied role. By creating a new role, you can maintain this role even when you restart or upgrade the ONTAP tools Windows service.
 
