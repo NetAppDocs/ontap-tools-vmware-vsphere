@@ -22,7 +22,7 @@ ONTAP tools uses the following default bidirectional TCP ports:
 a|
 9083
 a|
-When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port needs to be enabled on the firewall from ESXi hosts to the ONTAP tools appliance. This port is used to download VP support bundle, access Web-CLI user interface, and control path communication from VMware to VP. 
+When enabled, both VASA Provider and Storage Replication Adapter (SRA) use this port to communicate with the vCenter Server. This port is also required for obtaining the TCP/IP settings. This port needs to be enabled on the firewall from ESXi hosts to the ONTAP tools for VMware vSphere appliance. This port is used to download VP support bundle, access Web-CLI user interface, and control path communication from VMware to VP. 
 //github 80
 a|
 443
@@ -35,7 +35,7 @@ ONTAP tools listens for secure communications on this port. The port is used in 
 a|
 8443
 a|
-This port is used for Remote plugin service.
+This port is used for ONTAP tools for VMware vSphere plugin service.
 a|
 7
 a|
@@ -44,4 +44,4 @@ system and can be disabled later.
 |===
 NOTE: You should have enabled Internet Control Message Protocol (ICMP) before deploying the ONTAP tools.
 
-If ICMP is disabled, then the initial configuration of ONTAP tools fails, and ONTAP tools cannot start the ONTAP tools and VASA Provider services after deployment. You must manually enable the ONTAP tools and VASA Provider services after deployment.
+If ICMP is disabled, then the initial configuration of ONTAP tools fails, and ONTAP tools cannot start the ONTAP tools for VMware vSphere and VASA Provider services after deployment. You must manually enable the ONTAP tools for VMware vSphere and VASA Provider services after deployment.

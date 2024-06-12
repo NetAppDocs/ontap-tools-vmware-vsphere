@@ -60,7 +60,7 @@ ONTAP tools listens for secure communications on this port. The port is used in 
 a|
 8443
 a|
-This port is used for Remote plugin service.
+This port is used for ONTAP tools for VMware vSphere plugin service.
 |===
 
 Minimum storage and application requirements:
@@ -166,6 +166,6 @@ A success message confirming that the storage credentials are stored is displaye
 . In the left pane of ONTAP tools, *Settings > Administrative Settings > Manage Capabilities*, and enable the required capabilities.
 [NOTE]
 VASA Provider is enabled by default. If you want to use replication capability for vVols datastores, then use the Enable vVols replication toggle button.
-. Enter the IP address of the ONTAP tools and the administrator password, and then click *Apply*.
+. Enter the IP address of the ONTAP tools for VMware vSphere and the administrator password, and then click *Apply*.
 
 // Give at least three fun/interesting facts about you in a bulleted or numbered list

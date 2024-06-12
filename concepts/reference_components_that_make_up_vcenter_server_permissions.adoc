@@ -60,13 +60,13 @@ a|
 * VSC Read-Only
 
 a|
-All the ONTAP tools and VASA Provider specific tasks require the View Privilege.
+All the ONTAP tools for VMware vSphere and VASA Provider specific tasks require the View Privilege.
 a|
 NetApp Virtual Storage Console > Policy Based Management > Management or privilege.nvpfVSC.VASAGroup.com.netapp.nvpf.label > Management
 a|
 VSC Administrator
 a|
-ONTAP tools and VASA Provider tasks related to storage capability profiles and threshold settings.
+ONTAP tools for VMware vSphere and VASA Provider tasks related to storage capability profiles and threshold settings.
 |===
 
 == vSphere objects
@@ -77,6 +77,6 @@ Permissions are associated with vSphere objects, such as the vCenter Server, ESX
 
 You can use Active Directory (or the local vCenter Server machine) to set up users and groups of users. You can then use vCenter Server permissions to grant access to these users or groups to enable them to perform specific ONTAP tools tasks.
 
-NOTE: These vCenter Server permissions apply to ONTAP tools vCenter users, not to ONTAP tools administrators. By default, ONTAP tools administrators have full access to the product and do not require permissions assigned to them.
+NOTE: These vCenter Server permissions apply to ONTAP tools vCenter users, not to ONTAP tools for VMware vSphere administrators. By default, ONTAP tools for VMware vSphere administrators have full access to the product and do not require permissions assigned to them.
 
 Users and groups do not have roles assigned to them. They gain access to a role by being part of a vCenter Server permission.

@@ -32,7 +32,7 @@ The *Provision Datastore* option enables you to specify a storage capability pro
 
 * NFSv3 and NFSv4.1
 * VMFS5 and VMFS6
-* From vSphere 8.0 release, NVMe/FC protocol is supported for vvol datastores.
+* From vSphere 8.0 release, NVMe/FC protocol is supported for vVol datastores.
 // updated for issue 82
 
 ONTAP tools can create a datastore on either an NFS volume or a LUN:
@@ -57,7 +57,7 @@ On other platforms the maximum LUN size supported is 16TB.
 ** ONTAP Storage System (Cluster) with Kerberos configured
 ** ESXi host with Kerberos configured
 
-If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile. You can apply storage QoS settings, throughput ceiling (Max IOPS) and throughput floor (Min IOPS) on data VMDK files of virtual machines provisioned on FlexGroup backed datastore. QoS settings can be applied either at datastore level or at individual virtual machine level by right clicking the datastore. The right click option is available only on those datastores or virtual machines that are backed by FlexGroup datastore. After the QoS is applied to a datastore, any pre-existing datastore or virtual machine QoS settings are overridden. QoS settings cannot be applied at a datastore level or at a virtual machine level for datastores that are provisioned on direct SVM's, because ONTAP does not support QoS at SVM management level.
+If a storage capability profile is not specified during provisioning, you can later use the Storage Mapping page to map a datastore to a storage capability profile. You can apply storage QoS settings, throughput ceiling (Max IOPS) and throughput floor (Min IOPS) on data VMDK files of virtual machines provisioned on FlexGroup backed datastore. QoS settings can be applied either at datastore level or at individual virtual machine level by right clicking the datastore. The right click option is available only on those datastores or virtual machines that are backed by FlexGroup datastore. After the QoS is applied to a datastore, any pre-existing datastore or virtual machine QoS settings are overridden. QoS settings cannot be applied at a datastore level or at a virtual machine level for datastores that are provisioned on SVM users, because ONTAP does not support QoS at SVM management level.
 
 *Steps*
 

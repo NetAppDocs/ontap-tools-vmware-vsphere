@@ -15,9 +15,9 @@ If ONTAP cluster is SAML enabled, communication with ONTAP is done with basic au
 
 *About this task*
 
-Each time you start ONTAP tools or select the *REDISCOVER All* option, ONTAP tools automatically discovers the available storage systems.
+Each time you start ONTAP tools or select the *REDISCOVER All* option, ONTAP tools for VMware vSphere automatically discovers the available storage systems.
 [NOTE]
-vVol datastores are not supported on direct SVM.
+vVol datastores are not supported on SVM user.
 
 *Steps*
 

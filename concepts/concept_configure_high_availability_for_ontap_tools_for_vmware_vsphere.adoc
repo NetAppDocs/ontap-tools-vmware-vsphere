@@ -20,7 +20,7 @@ The ONTAP tools relies on the VMware vSphere High-availability (HA) feature and 
 
 No additional configuration is required for ONTAP tools to provide high availability. Only the vCenter Server and ESXi hosts must be configured with the VMware vSphere HA feature or the vSphere FT feature based on their requirements. Both HA and FT require clustered hosts together with shared storage. FT has additional requirements and limitations.
 
-In addition to the VMware vSphere HA solution and vSphere FT solution, ONTAP tools also helps keep the ONTAP tools services running at all times. The ONTAP tools watchdog process periodically monitors all three services, and restarts them automatically when any kind of failure is detected. This helps to prevent application failures.
+In addition to the VMware vSphere HA solution and vSphere FT solution, ONTAP tools for VMware vSphere also helps keep the ONTAP tools services running at all times. The ONTAP tools watchdog process periodically monitors all three services, and restarts them automatically when any kind of failure is detected. This helps to prevent application failures.
 
 NOTE: vCenter HA is not supported by ONTAP tools.
 
