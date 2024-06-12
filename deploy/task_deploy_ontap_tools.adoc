@@ -39,9 +39,9 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 . Log in to the vSphere Client.
 . Select *Home* > *Hosts and Clusters*.
 . Right-click the required datacenter, and then click *Deploy OVF template...*.
++
 [NOTE]
 Do not deploy ONTAP tools VMware vSphere virtual machine on a vVols datastore that it manages.
-
 //github 77
 . Select the applicable method to provide the deployment file for ONTAP tools, and then click *Next*.
 +
