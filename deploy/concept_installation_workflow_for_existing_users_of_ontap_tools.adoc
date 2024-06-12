@@ -20,7 +20,7 @@ The configuration data includes storage system credentials, as well as preferenc
 
 link:../configure/reference_set_ipv4_or_ipv6.html[Set IPv4 or IPv6 using the preferences file]
 
-In many cases, you might not need to migrate configuration data. However, if you have customized the preferences files earlier, you might want to review them and make similar changes to the newly deployed ONTAP tools. You can add the storage systems to the newly deployed ONTAP tools and specify the credentials as you add them.
+In many cases, you might not need to migrate configuration data. However, if you have customized the preferences files earlier, you might want to review them and make similar changes to the newly deployed ONTAP tools. You can add the storage systems to the newly deployed ONTAP tools for VMware vSphere and specify the credentials as you add them.
 
 If you are upgrading from VASA Provider 6.X, you should unregister VASA Provider before upgrading. See the documentation for your current release for more details.
 

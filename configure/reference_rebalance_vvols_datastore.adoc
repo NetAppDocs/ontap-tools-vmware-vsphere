@@ -30,7 +30,7 @@ The rebalance command removes empty FlexVol volumes to provide space for other d
 * During vVols rebalance operation, if large number of vVols datastores are identified, then the transfer operation times out after the set default value.
 ** If this occurs, then you should modify the `vvol.properties` file to set the value to `offtap.operation.timeout.period.seconds=29700` and restart VASA Provider service.
 * If a FlexVol volume has Snapshots, then during the vVols rebalance operation, the vVols are not correctly rebalanced due to insufficient details on the space utilization.
-* You can set the VASA Provider property _enable.update.vvol.through.discovery_ to true to get consistent data between ONTAP tools and ONTAP, when timeout occurs during container rebalance operation.
+* You can set the VASA Provider property _enable.update.vvol.through.discovery_ to true to get consistent data between ONTAP tools for VMware vSphere and ONTAP, when timeout occurs during container rebalance operation.
 * There are no exposed REST APIs to re-balance vVol datastore.
 ====
 

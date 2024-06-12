@@ -15,7 +15,7 @@ The ONTAP tools integrates with vSphere Client and enables you to use single sig
 
 Each component in ONTAP tools provides capabilities to help manage your storage more efficiently.
 
-The VMware vSphere Client remote plug-in tool is designed to integrate plug-in functionality into the vSphere Client without the need to run inside vCenter Server. This provides plug-in isolation and enables scale-out of plug-ins that operate in large vSphere environments.
+The VMware vSphere Client plug-in tool is designed to integrate plug-in functionality into the vSphere Client without the need to run inside vCenter Server. This provides plug-in isolation and enables scale-out of plug-ins that operate in large vSphere environments.
 
 == Virtual Storage Console (VSC)
 

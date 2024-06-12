@@ -2,14 +2,14 @@
 permalink: configure/task_configure_user_role_and_privileges.html
 sidebar: sidebar
 keywords: user roles
-summary: 'You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.'
+summary: 'You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools for VMware vSphere and ONTAP System Manager.'
 ---
 = Configure user roles and privileges
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools and ONTAP System Manager.
+You can configure new user roles for managing storage systems using the JSON file provided with ONTAP tools for VMware vSphere and ONTAP System Manager.
 
 *What you'll need*
 

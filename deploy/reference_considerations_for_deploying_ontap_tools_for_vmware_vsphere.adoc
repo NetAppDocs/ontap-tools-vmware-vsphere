@@ -18,7 +18,7 @@ The following table presents an overview of what you should consider before you 
 a|
 First-time deployment of ONTAP tools
 a|
-The deployment of the ONTAP tools automatically installs the ONTAP tools features.
+The deployment of the ONTAP tools for VMware vSphere automatically installs the ONTAP tools features.
 
 link:../deploy/concept_installation_workflow_for_new_users.html[Deployment workflow for new users of ONTAP tools for VMware vSphere]
 
@@ -66,7 +66,7 @@ The following table presents an overview of what you require to configure the ON
 a|
 Requirements of role-based access control (RBAC)
 a|
-ONTAP tools supports both vCenter Server RBAC and ONTAP RBAC. The account used to register ONTAP tools to vCenter Server (`\https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run ONTAP tools as an administrator, you must have all of the required permissions and privileges for all of the tasks.
+ONTAP tools supports both vCenter Server RBAC and ONTAP RBAC. The account used to register ONTAP tools to vCenter Server (`\https://<appliance_ip>:8143/Register.html`) must be a vCenter Server administrator (assigned to the vCenter Server administrator or administrator role). If you plan to run ONTAP tools for VMware vSphere as an administrator, you must have all of the required permissions and privileges for all of the tasks.
 
 If your company requires that you restrict access to vSphere objects, you can create and assign standard ONTAP tools roles to users to meet the vCenter Server requirements.
 
@@ -113,14 +113,14 @@ For security reasons, it is recommended that the password length is eight to thi
 
 * You should provide the IP address (IPv4 or IPv6) of the vCenter Server instance to which you want to register ONTAP tools.
 +
-The type of ONTAP tools and VASA certificates generated depends on the IP address (IPv4 or IPv6) that you have provided during deployment. While deploying ONTAP tools, if you have not entered any static IP details and your DHCP then the network provides both IPv4 and IPv6 addresses.
+The type of ONTAP tools for VMware vSphere and VASA certificates generated depends on the IP address (IPv4 or IPv6) that you have provided during deployment. While deploying ONTAP tools, if you have not entered any static IP details and your DHCP then the network provides both IPv4 and IPv6 addresses.
 
 * The ONTAP tools IP address used to register with vCenter Server depends on the type of vCenter Server IP address (IPv4 or IPv6) entered in the deployment wizard.
 +
-Both the ONTAP tools and VASA certificates will be generated using the same type of IP address used during vCenter Server registration.
+Both the ONTAP tools for VMware vSphere and VASA certificates will be generated using the same type of IP address used during vCenter Server registration.
 +
 NOTE: IPv6 is supported only with vCenter Server 6.7 and later.
 
 === Appliance network properties
 
-If you are not using DHCP, specify a valid DNS hostname (unqualified) as well as the static IP address for the ONTAP tools and the other network parameters. All of these parameters are required for proper installation and operation.
+If you are not using DHCP, specify a valid DNS hostname (unqualified) as well as the static IP address for the ONTAP tools for VMware vSphere and the other network parameters. All of these parameters are required for proper installation and operation.
