@@ -43,7 +43,8 @@ ONTAP tools can create a datastore on either an NFS volume or a LUN:
 [NOTE]
 ====
 
-* ONTAP tools supports provisioning of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB when used with ASA and approved AFF systems running ONTAP 9.8 and later.
+* ONTAP tools supports provisioning of VMFS5 and VMFS6 datastores up to the maximum VMFS LUN and volume size of 64TB When used with all ASA systems running ONTAP 9.8 or later and all other systems running ONTAP 9.12.1P2 or later. 
+//OTVDOC-82 
 +
 On other platforms the maximum LUN size supported is 16TB.
 
