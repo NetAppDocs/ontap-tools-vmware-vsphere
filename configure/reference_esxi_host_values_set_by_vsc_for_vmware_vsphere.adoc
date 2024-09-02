@@ -57,6 +57,10 @@ Set this value to 12 for all NFS configurations.
 +
 Set this value to 5 for all NFS configurations.
 
+* *SunRPC.MaxConnPerIP*
++
+If you are using vSphere 7.0 or later, you should set this value to 128.
+
 == FC/FCoE settings
 
 * *Path selection policy*
