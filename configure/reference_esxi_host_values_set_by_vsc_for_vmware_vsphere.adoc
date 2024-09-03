@@ -57,6 +57,12 @@ Set this value to 12 for all NFS configurations.
 +
 Set this value to 5 for all NFS configurations.
 
+* *SunRPC.MaxConnPerIP*
++
+If you are using vSphere 7.0 or later, you should set this value to 128.
+
+// added this parameter as part of github issue: https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/87 confirmed by Jayantha.
+
 == FC/FCoE settings
 
 * *Path selection policy*
