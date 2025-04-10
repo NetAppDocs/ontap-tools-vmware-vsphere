@@ -13,8 +13,9 @@ Different ONTAP tools for VMware vSphere tasks require different combinations of
 
 Information about the privileges required for ONTAP tools tasks is available in the NetApp Knowledgebase article 1032542.
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/How_to_configure_RBAC_for_Virtual_Storage_Console[How to configure RBAC for Virtual Storage Console]
+https://kb.netapp.com/data-mgmt/OTV/VSC_Kbs/VSC_VASA_and_SRA_ONTAP_RBAC_Configuration[ONTAP Tools for VMware vSphere: RBAC Configuration]
 
+//updated the link for https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/92 - jani
 == Product-level privilege required by ONTAP tools for VMware vSphere
 To access the ONTAP tools for VMware vSphere GUI, you must have the product-level, ONTAP tools-specific View privilege assigned at the correct vSphere object level. If you log in without this privilege, ONTAP tools displays an error message when you click the NetApp icon and prevents you from accessing ONTAP tools.
 
