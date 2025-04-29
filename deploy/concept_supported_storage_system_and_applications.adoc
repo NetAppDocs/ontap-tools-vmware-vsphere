@@ -30,4 +30,4 @@ You must enable the FlexClone license for performing test failover operations fo
 To view the IOPS for a datastore, you must either enable Storage I/O control or uncheck the disable Storage I/O statistics collection checkbox in the Storage I/O control configuration. You can enable the Storage I/O control only if you have the Enterprise Plus license from VMware.
 
 * https://kb.vmware.com/s/article/1022091[Troubleshooting Storage I/O Control]
-* https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-37CC0E44-7BC7-479C-81DC-FFFC21C1C4E3.html[Storage I/O Control Requirements]
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-resource-management-6-5.html[vSphere Resource Management]
