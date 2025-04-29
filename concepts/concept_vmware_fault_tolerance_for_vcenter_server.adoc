@@ -21,4 +21,4 @@ Your system must meet the CPU requirements, virtual machine limit requirements, 
 
 The procedure to configure HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure HA.
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-57929CF0-DA9B-407A-BF2E-E7B72708D825.html[VMware vSphere Documentation: Fault Tolerance Requirements, Limits, and Licensing]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html[Fault Tolerance Requirements, Limits, and Licensing]

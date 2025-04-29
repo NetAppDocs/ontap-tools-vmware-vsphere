@@ -20,4 +20,4 @@ link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html[Upgra
 . Migrate Windows based Storage Replication Adapter to Appliance based SRA.
 . Migrate Windows SRM data to SRM Appliance.
 
-See https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-F39A84D3-2E3D-4018-97DD-5D7F7E041B43.html[Migrate from Site Recovery Manager for Windows to Site Recovery Manager Virtual Appliance] for detailed steps
+See https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html[Site Recovery Manager Installation and Configuration] for detailed steps

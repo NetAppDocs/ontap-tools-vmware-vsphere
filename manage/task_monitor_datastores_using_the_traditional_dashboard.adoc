@@ -15,7 +15,7 @@ You can monitor the traditional datastores and virtual machines using the tradit
 
 You should select either the *Enable Storage I/O Control and statistics collection* or *Disable Storage I/O Control but enable statistics collection* option in the Configure Storage I/O Control dialog box. You can enable Storage I/O Control only if you have the Enterprise Plus license from VMware.
 
-https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.resmgmt.doc/GUID-BB5D9BAB-9E0E-4204-A76A-54634CD8AD51.html[VMware vSphere Documentation: Enable Storage I/O Control]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-resource-management-6-5.html[vSphere Resource Management]
 
 The traditional dashboard displays IOPS, space utilized, latency, and committed capacity metrics that are obtained from your vCenter Server. ONTAP provides aggregate space saving metrics to the traditional dashboard. You can view space saving for a specific aggregate. These performance parameters enable you to identify performance bottlenecks in the virtual environment and to take corrective action to resolve the issues.
 
