@@ -17,7 +17,7 @@ The ONTAP tools for VMware vSphere provides the option to enable the SRA capabil
 * You must have deployed ONTAP tools.
 * You must have downloaded the `.tar.gz` file for SRM appliance only if you want to configure the Site Recovery Manager (SRM) disaster recovery solution.
 +
-https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html[Site Recovery Manager Installation and Configuration Site Recovery Manager 8.2] has more information.
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html[Site Recovery Manager Installation and Configuration Site Recovery Manager] has more information.
 
 *About this task*
 
