@@ -16,7 +16,8 @@ You can configure Storage Replication Adapter (SRA) by using the Array Manager w
 * You must have paired the protected sites and recovery sites in SRM.
 * You must have configured your storage before configuring the array manager.
 * You must have configured and replicated the SnapMirror relationships between the protected sites and recovery sites.
-* You must have enabled the SVM management LIFs to enable multitenancy.
+* You must have enabled the SVM management LIFs to support multitenancy.
+// * You must have added the NFS LIF IP addresses, separated by commas, as required for environments that use NFS, for the NFS Addresses section. - Github issue?
 
 SRA supports cluster-level management and SVM-level management. If you add storage at a cluster level, then you can discover and perform operations on all of the SVMs in the cluster. If you add storage at an SVM level, then you can manage only that specific SVM.
 
