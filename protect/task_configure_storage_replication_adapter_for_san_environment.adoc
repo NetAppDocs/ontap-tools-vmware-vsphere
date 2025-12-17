@@ -19,7 +19,7 @@ You must have installed the following programs on the protected site and the rec
 +
 Documentation about installing SRM is on the VMware site.
 +
-https://www.vmware.com/support/pubs/srm_pubs.html[VMware Site Recovery Manager Documentation]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-7/site-recovery-manager-installation-and-configuration-8-7/overview-of-vmware-site-recovery-manager.html[VMware Site Recovery Manager Documentation]
 
 * SRA
 +
@@ -44,7 +44,7 @@ You must have installed the following programs on the protected site and the rec
 +
 Documentation about installing SRM can be found on the VMware site.
 +
-https://www.vmware.com/support/pubs/srm_pubs.html[VMware Site Recovery Manager Documentation]
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-7/site-recovery-manager-installation-and-configuration-8-7/overview-of-vmware-site-recovery-manager.html[VMware Site Recovery Manager Documentation]
 
 * SRA
 +

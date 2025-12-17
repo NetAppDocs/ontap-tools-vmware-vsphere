@@ -38,7 +38,8 @@ The status of VASA Provider from the existing deployment is retained after the u
  You can perform an in-place upgrade to the latest release of ONTAP tools only from your existing 9.10 or later versions. 
 
 [NOTE]
-From ONTAP tools 9.12 upgrade all storage systems authentication and communication process is changed from basic authentication to certificate based authentication by auto trusting the ONTAP storage certificates. No action required from the user.
+From ONTAP tools 9.12 upgrade all storage systems authentication and communication process is changed from basic authentication to certificate based authentication by auto trusting the ONTAP storage certificates.
+// https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/97 
 
 Adding a Storage system without certificate authentication is restricted.
 
