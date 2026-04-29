@@ -15,4 +15,4 @@ The VMware HA feature monitors virtual machines to detect operating system failu
 
 The procedure to configure VMware HA depend on the version of your vCenter Server. For example, you can use the following reference link and select the required vCenter Server version to view the steps to configure VMware HA.
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-availability.html[Creating and Using vSphere HA Clusters]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-availability/creating-and-using-vsphere-ha-clusters.html[Creating and Using vSphere HA Clusters]
