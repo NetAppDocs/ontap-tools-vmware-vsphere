@@ -37,4 +37,4 @@ The vVols dashboard displays the metrics for ONTAP 9.6 or earlier SAN vVols data
 
 *Related information*
 
-https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
+https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]

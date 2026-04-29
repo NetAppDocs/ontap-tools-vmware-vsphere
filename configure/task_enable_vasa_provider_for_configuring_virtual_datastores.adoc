@@ -34,4 +34,4 @@ NOTE: If VASA Provider status displays as "`Offline`" even after enabling the VA
 
 *Related information*
 
-https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
+https://mysupport.netapp.com/site/global/dashboard[NetApp Support^]
