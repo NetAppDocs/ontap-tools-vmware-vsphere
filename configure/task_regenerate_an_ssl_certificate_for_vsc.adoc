@@ -15,7 +15,7 @@ The SSL certificate is generated when you install ONTAP tools. The distinguished
 
 You can enable remote diagnostic using the maintenance console and generate site-specific certificate.
 
-https://kb.netapp.com/advice_and_troubleshooting/data_storage_software/vsc_and_vasa_provider/virtual_storage_console%3a_implementing_ca_signed_certificates[Virtual Storage Console: Implementing CA signed certificates]
+https://kb.netapp.com/advice_and_troubleshooting/data_storage_software/vsc_and_vasa_provider/virtual_storage_console%3a_implementing_ca_signed_certificates[Virtual Storage Console: Implementing CA signed certificates^]
 
 *Steps*
 
