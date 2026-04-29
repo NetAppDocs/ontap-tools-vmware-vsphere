@@ -10,5 +10,5 @@ summary: 'If the VASA Provider (VP) virtual appliance has been lost, rendered in
 
 [.lead]
 If the VASA Provider (VP) virtual appliance has been lost, rendered inaccessible, or otherwise non-functional, you might have to perform a VP Disaster Recovery.
-For more information, see https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/How_to_perform_a_VASA_Provider_Disaster_Recovery_-_Resolution_Guide[How to perform a VASA Provider Disaster Recovery - Resolution Guide]
+For more information, see https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/How_to_perform_a_VASA_Provider_Disaster_Recovery_-_Resolution_Guide[How to perform a VASA Provider Disaster Recovery - Resolution Guide^]
 

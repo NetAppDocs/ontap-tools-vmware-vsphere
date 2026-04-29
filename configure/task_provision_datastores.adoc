@@ -173,14 +173,14 @@ NOTE: A FlexGroup that is part of a traditional datastore cannot shrink below th
 
 *Related information*
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline[Datastore inaccessible when volume status is changed to offline]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/Datastore_inaccessible_when_volume_status_is_changed_to_offline[Datastore inaccessible when volume status is changed to offline^]
 
-https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html[ONTAP support for Kerberos]
+https://docs.netapp.com/us-en/ontap/nfs-admin/ontap-support-kerberos-concept.html[ONTAP support for Kerberos^]
 
 https://docs.netapp.com/us-en/ontap/nfs-admin/requirements-configuring-kerberos-concept.html[Requirements for configuring Kerberos with NFS]
 
-https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html[Manage Kerberos realm services with System Manager - ONTAP 9.7 and earlier]
+https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerberos_realm_services.html[Manage Kerberos realm services with System Manager - ONTAP 9.7 and earlier^]
 
-https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html[Enable Kerberos on a data LIF]
+https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html[Enable Kerberos on a data LIF^]
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-storage-7-0.html[vSphere Storage]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-storage-7-0.html[vSphere Storage^]
